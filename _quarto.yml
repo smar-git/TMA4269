@@ -10,7 +10,7 @@ website:
     logo: Image/INLA_logo.png
     right:
     - text: GitHub
-      href: https://github.com/inlabru-courses/NewCaledonia2026
+      href: https://github.com/smar-git/TMA4269
       icon: brands/github
     left:
     - text: Home
