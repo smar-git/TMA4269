@@ -1,0 +1,38 @@
+project:
+  type: website
+  output-dir: docs
+  render:
+  - index.qmd
+  
+website:
+  title: TMA4269
+  navbar:
+    logo: Image/INLA_logo.png
+    right:
+    - text: GitHub
+      href: https://github.com/inlabru-courses/NewCaledonia2026
+      icon: brands/github
+    left:
+    - text: Home
+      href: index.qmd
+    - text: Slides
+      menu:
+      - text: Slides Intro 
+  
+    - text: Practicals
+      menu:
+      - text: Practical 1 - Fit LMM
+       
+format:
+  html:
+    theme: flatly
+    respect-user-color-scheme: false
+    css: include/webex.css
+    include-after-body: include/webex.js
+    toc: true
+    toc-location: right
+    toc-depth: 3    
+execute:
+  freeze: auto
+
+
