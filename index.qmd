@@ -1,11 +1,17 @@
 ---
-title: "Material for the TMA4269 - Data Science course"
+title: "Welcome to the course TMA4269 - Data Science"
 ---
 
-This is a Quarto website.
+# Course description
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+## Content
 
-```{r}
-1 + 1
-```
+Data science is about extracting knowledge from data. This includes identifying patterns, making predictions, communicating results, and supporting decision-making. This course provides a practical and example-based introduction to fundamental topics such as data visualisation, regression models, and machine learning. We will discuss the limitations of data analysis and modeling to avoid misinterpretation or misuse of model results.
+
+## Learning outcomes
+
+The student is familiar with the most common methods and algorithms for data visualisation, modeling, and prediction. The student can critically evaluate results from various data science processes. This includes understanding the limitations of models, as well as being able to discuss the implications of these with others.
+
+## Learning and assessment activities
+
+For this course your grade is set using portfolio assessment. You will attend and participate in mandatory activities, and complete (in groups) two projects. All activities and project work are intended to take place during the lecture times.  

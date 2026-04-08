@@ -1,8 +1,8 @@
 {
-  "hash": "5fd030782956e4711998f95fc9f89829",
+  "hash": "850179ce524ac99d812afdd35390b87a",
   "result": {
     "engine": "knitr",
-    "markdown": "---\ntitle: \"Material for the TMA4269 - Data Science course\"\n---\n\nThis is a Quarto website.\n\nTo learn more about Quarto websites visit <https://quarto.org/docs/websites>.\n\n\n::: {.cell}\n\n```{.r .cell-code}\n1 + 1\n```\n\n::: {.cell-output .cell-output-stdout}\n\n```\n[1] 2\n```\n\n\n:::\n:::\n\n",
+    "markdown": "---\ntitle: \"Welcome to the course TMA4269 - Data Science\"\n---\n\n\n\n\nThis is a Quarto website.\n\nTo learn more about Quarto websites visit <https://quarto.org/docs/websites>.\n\n\n\n\n::: {.cell}\n\n```{.r .cell-code}\n1 + 1\n```\n\n::: {.cell-output .cell-output-stdout}\n\n```\n[1] 2\n```\n\n\n:::\n:::\n",
     "supporting": [],
     "filters": [
       "rmarkdown/pagebreak.lua"
