@@ -1,13 +1,26 @@
 ---
-title: "Material for the TMA4269 - Data Science course"
+title: "Welcome to the course TMA4269 Data Science"
 ---
 
-This is a Quarto website.
+## General information
 
-odufy 
+The course TMA4269 Data Science is developed by the Department of Mathematical Sciences at NTNU, and intended as a 'k-emne' (complementary course) for 5-year integrated master of technology students (Siving). Other students are also welcome to the course. The course is given for the first time in the fall semester of 2026. 
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+Teachers are Sara Martino and Thea Bjørnland.
 
-```{r}
-1 + 1
-```
+This page presents learning materials etc. Other details (schedule, messages etc) are posted at the course [wikipages](https://wiki.math.ntnu.no/tma4269/2026h/start).
+
+
+## Course description
+
+### Content
+
+Data science is about extracting knowledge from data. This includes identifying patterns, making predictions, communicating results, and supporting decision-making. This course provides a practical and example-based introduction to fundamental topics such as data visualisation, regression models, and machine learning. We will discuss the limitations of data analysis and modeling to avoid misinterpretation or misuse of model results.
+
+### Learning outcomes
+
+The student is familiar with the most common methods and algorithms for data visualisation, modeling, and prediction. The student can critically evaluate results from various data science processes. This includes understanding the limitations of models, as well as being able to discuss the implications of these with others.
+
+### Learning and assessment activities
+
+For this course your grade is set using portfolio assessment. You will attend and participate in mandatory activities, and complete (in groups) two projects. All activities and project work are intended to take place during the lecture times.  
