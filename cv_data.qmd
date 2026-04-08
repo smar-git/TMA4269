@@ -1,0 +1,102 @@
+---
+title: "Datatyper og visualisering"
+format: html
+editor: visual
+---
+
+## Hva er data?
+
+<https://snl.no/data>
+
+![](images/clipboard-148975248.png){width="500"}
+
+<https://snl.no/data_-_statistikk>
+
+![](images/clipboard-4278732301.png){width="500"}
+
+### Terminologi (datatyper)
+
+<https://www.brookes.ac.uk/students/academic-development/maths-and-stats/statistics/types-of-data>
+
+-   Kvalitative og kvantitative data: Kvalitativ informasjon som ofte er samlet inn i tekstform, f.eks. intervjuer, meninger, svar på åpne spørsmål. Kvantitative data er informasjon som uttrykkes i form av tall, f.eks. svar på spørreskjema med svaralternativer (lukkede spørsmål). Kvalitativ data som kan oppsummeres i eksempelvis kategorier kan gjøres om til kvantitativ data.
+
+-   Kategoriske data: observasjoner som kun kan tilhøre én av et endelig antall kategorier
+
+    -   Usorterte kategorier (f.eks. Norge, Sverige, Danmark)
+
+    -   Ja/nei svar
+
+    -   Ordinale kategorier (f.eks. svært uenig, uenig, nøytral, enig, svært enig)
+
+-   Numeriske data, også kalt tall-data. Både diskrete (f.eks. tellinger) eller kontinuerlige (f.eks. målinger langs en sammenhengende skale) data er numeriske tall-data. En kan skille mellom numeriske data som har et naturlig nullpunkt (f.eks. betyr 0 cm 'ingen lengde') og de som ikke har det (0 grader celsius betyr den temperaturen der is fryser, men det betyr ikke 'ingen temperatur').
+
+-   Bilder, video og lydopptak kan også lagres som tall-data
+
+-   Relative og absolutte tall
+
+NB: For å lage fornuftige visualisinger av innsamlede data er det nyttig å forså hva slags type data vi har med å gjøre.
+
+### Eksempel: Målinger over tid (tidsrekker)
+
+(værdata, flere lokasjoner)
+
+### Eksempel: Fra ubehandlede data til tabelldata
+
+<https://www.jobseeker.com/no/cv>
+
+![](images/clipboard-173199131.png){width="500"}
+
+Vi ser for oss at vi er en bedrift som mottar en rekke slike søknader (for enkelthets skyld er alle på samme format). Hva slags informasjon har vi samlet inn?
+
+-   Bilder
+
+-   Kvalitativ data (tekst, beskrivelse av en selv)
+
+-   Kategoriske data (postnummer, høyeste nivå av utdanning, kjønn (?) )
+
+-   Ordinale data (språkkunskaper på en skala fra 0 til 5)
+
+-   Etc.
+
+Bedriften har mottatt 123 søknader og noe informasjon (data) per søker er lagret i en tabell (KI-generert eksempel):
+
+```{r}
+tab = readxl::read_xlsx("Data/cv_tabell_trondheim.xlsx")
+print(head(tab))
+```
+
+#### Terminologi:
+
+-   En rad i tabellen er ett *datapunkt* (her tilsvarer det én person)
+
+-   Kolonnene i tabellen kalles *variabler* eller *features*
+
+-   Nøstede variabler; bare de studentene med høyere utdanning har et studiested
+
+## Visualisering av data
+
+### Kategoriske og numeriske data
+
+-   Hva er interessant å finne ut av? Er arbeidsplass attraktiv for kvinner og menn? Hvordan presentere dette visuelt?
+
+**Teori om figurer**
+
+Når dataene kan deles inn i ulike kategorier kan det være nyttig å visulisere egenskaper ved disse kategoriene. Hvor mange datapunkter er det i hver kategori? Hva er gjennomsnittet av en kontinuerlig variabel x i hver kategori? Hvordan er tidsrekker like eller ulike i forskjellige kategorier?
+
+*Eksempler på gode og dårlige stolpediagram: NB - ikke kutt aksene, bruk fornuftig sortering*
+
+*Pie chart - ansett som problematisk*
+
+*Line chart -* *sammenligne flere grupper mtp samme mål*
+
+Dersom vi ser på søkerne fra forrige eksempel kan datasettet deles inn med tanke på en ulike kategorier; f.eks. kjønn og høyeste nivå av utdanning. Først kan vi å telle opp antall søkere fra de ulike nivåene av utdanning og presentere antallene i et stolpediagram.
+
+```{r}
+library(ggplot2)
+ggplot(data = tab, aes(x = `høyeste nivå av utdanning`)) + geom_bar()
+
+```
+
+Den \`automatiske\` plottefunksjonen sorterer kategoriene alfabetisk. I dette tilfellet er det en naturlig rekkefølge på kategoriene som burde være representert i figuren. \[Fikses, eller skal studentene få noe litt dårlig og så lage noe bedre for hånd?\]
+
+#### Oppgave i gruppe:

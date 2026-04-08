@@ -4,6 +4,8 @@ title: "Material for the TMA4269 - Data Science course"
 
 This is a Quarto website.
 
+odufy 
+
 To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
 
 ```{r}
