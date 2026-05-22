@@ -15,7 +15,7 @@ website:
     left:
     - text: Home
       href: index.qmd
-    - text: Slides
+    - text: Intro
       menu:
       - text: Slides Intro 
   

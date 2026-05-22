@@ -1,0 +1,90 @@
+---
+title: "TMA4269: case 2"
+format: html
+editor: visual
+---
+
+# Data science
+
+## Modul A: Data og vitenskap
+
+### Læringsmål
+
+-   Fremstilling (visualisering) av data; konsekvenser av ulike valg
+
+### Undervisning
+
+1.  Har lært litt om data og enkel visualisering, nå må tenke på hvordan data og figurer brukes for å kommunisere. Dette er ikke nøytralt. Du må tenke en del selv. Trenger et lignende eksempel.
+
+### Vurdering
+
+-   ?
+
+## Case A.2: Sykefravær, kjønn og utdanning
+
+### Forkunnskap / repetisjon
+
+-   Ingen
+
+```{r}
+#| echo: false
+
+```
+
+### Bakgrunn
+
+I 2025 var det i mediene et fokus på sykefravær generelt, men spesifikt når det gjaldt forskjeller mellom kjønn og utdanningsnivå.
+
+Referanser:
+
+[https://www.vg.no/nyheter/i/gwq5J9/sykefravaer-jo-hoeyere-utdanning-jo-stoerre-kjoennsforskjell](#0)
+
+Sitat: "Jo høyere utdanning, jo større kjønnsforskjell i sykefravær. Et mysterium, mener en av landets fremste forskere på sykefravær."
+
+Sitat: "Men det som kanskje er påfallende, er at blant folk med høy utdannelse, har kvinner mye høyere sykefravær enn menn. Dette gjelder særlig unge med høy utdannelse."
+
+<https://www.adressa.no/nyheter/i/algPqO/unge-kvinner-sliter-med-aa-balansere-jobb-og-familie-du-maa-si-nei-til-det-som-ikke-gir-deg-energi-er-raadet-fra-maiken-36>
+
+Sitat: "Kjønnsforskjell i sykefravær. Men altså - kvinner med høy utdannelse er oftere sykemeldt enn menn. Randi Wågø Aas er professor ved UiS og Oslo Met og er medlem i Nasjonalt fagråd for arbeid og helse. Hun forklarer at det lenge har vært kjent at de med lavest utdanningsnivå har høyest sykefravær. - Slik er det fortsatt. Men det er lite utforsket hvorfor det er kvinner med høyest utdanningsnivå, uansett alder, som bidrar mest til kjønnsforskjellen i sykefravær."
+
+Fra artikkelen i VG får vi følgende tall for prosentvis sykefravær for kvinner og menn, fordelt på fire ulike nivåer av utdanning.
+
+```{r}
+utdanning = c("Grunnskole","Videregående skole","Universitet < 4 år","Universitet > 4 år")
+kvinner = c(8.9, 9.1, 7.8, 5.9)
+menn = c(6.4, 5.1, 3.4, 2.2)
+
+df = data.frame(utdanning = utdanning, kvinner = kvinner, menn = menn)
+print(df)
+```
+
+Dataene kan fremstilles direkte for de to kjønnskategoriene, eller en kan studere kvinners prosentvise sykefravær relativt til mennenes.
+
+### Aktivitet:
+
+Studentene deles i grupper. Halvparten av gruppene får utdelt Figur a, mens den andre halvparten får utdelt Figur b. Gruppene oppsummerer i 2-3 setninger hva de observerer når det gjelder sykefravær, utdanningsnivå og kjønn. Svarene sendes inn digitalt. Deretter får gruppene utdelt den andre figuren og ser på begge figurene samtidig. Gruppene diskuterer hva de ser.
+
+Foreleser tar opp begge figurer og viser sitater fra VG. Foreleser viser også følgende "paradoks"; dersom vi har to linjer med nedadgående trend, og som nærmer seg null, så vil ratioen mellom dem være økende.
+
+Regn også ut: dersom vi har like mange personer i hver gruppe, hvor stor andel av sykemeldte kvinner utgjør de høyt utdannede kvinnene? Er det de som "bidrar mest til kjønnsforskjellen i sykefravær" (adressa)?
+
+-   Absolutt differanse som plott nummer 3
+
+Det er x1 og x2 personer i hver gruppe (høy og lav utdanning), hvor vil det gi størst effekt å få ned sykefravær til kvinner?
+
+```{r}
+#| label: fig-charts
+#| fig-cap: "Sykefravær, utdanningsnivå og kjønn"
+#| fig-subcap: 
+#|   - "Prosentvis sykefravær"
+#|   - "Kvinners sykefravær relativt til menn"
+#| layout-ncol: 2
+
+plot(x = c(0,1,2,3), y = kvinner, pch = 6, ylim = c(0,12), ylab = "Prosent sykemeldte", xlab = "Utdanningsnivå",xaxt = "n")
+points(x = c(0,1,2,3), y = menn, pch = 1)
+axis(1, at = c(0,1,2,3), labels = utdanning)
+
+
+plot(x = c(0,1,2,3), y = kvinner/menn, pch = 6, ylim = c(1,4), ylab = "Sykefravær kvinner relativt til mennene", xlab = "Utdanningsnivå",xaxt = "n")
+axis(1, at = c(0,1,2,3), labels = utdanning)
+```
