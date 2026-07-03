@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.24">
+<meta name="generator" content="quarto-1.7.32">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -32,15 +32,14 @@ ul.task-list li input[type="checkbox"] {
 <meta name="quarto:offset" content="./">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dc55a5b9e770e841cd82e46aadbfb9b0.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-f93c2b1f3f0577f377aefa4848a86a36.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-6bdd2aebeb936dcddaa5f935a5de481c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -81,8 +80,7 @@ ul.task-list li input[type="checkbox"] {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="./Image/INLA_logo.png" alt="" class="navbar-logo light-content">
-    <img src="./Image/INLA_logo.png" alt="" class="navbar-logo dark-content">
+    <img src="./Image/INLA_logo.png" alt="" class="navbar-logo">
     </a>
     <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">TMA4269</span>
@@ -103,7 +101,10 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Intro</span>
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-intro">    
-        <li class="dropdown-header">Slides Intro</li>
+        <li>
+    <a class="dropdown-item" href="./intro.html">
+ <span class="dropdown-text">Slides Intro</span></a>
+  </li>  
     </ul>
   </li>
   <li class="nav-item dropdown ">
@@ -171,8 +172,7 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="general-information" class="level2">
 <h2 class="anchored" data-anchor-id="general-information">General information</h2>
-<p>The course TMA4269 Data Science is developed by the Department of Mathematical Sciences at NTNU, and intended as a ‘k-emne’ (complementary course) for 5-year integrated master of technology students (Siving). Other students are also welcome to the course. The course is given for the first time in the fall semester of 2026.</p>
-<p>Teachers are Sara Martino and Thea Bjørnland.</p>
+<p>The course TMA4269 Data Science is developed by the Department of Mathematical Sciences at NTNU, and intended as a ‘k-emne’ (complementary course) for 5-year integrated master of technology students (Siving). Other students are also welcome to the course. The course is given for the first time in the fall semester of 2026. Teachers are Sara Martino and Thea Bjørnland.</p>
 <p>This page presents learning materials etc. Other details (schedule, messages etc) are posted at the course <a href="https://wiki.math.ntnu.no/tma4269/2026h/start">wikipages</a>.</p>
 </section>
 <section id="course-description" class="level2">
@@ -451,14 +451,13 @@ window.onload = function() {
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-      const outerScaffold = trigger.parentElement.cloneNode(true);
-      const codeEl = outerScaffold.querySelector('code');
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
         }
-      }
-      return codeEl.innerText;
+        return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy
