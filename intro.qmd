@@ -9,3 +9,77 @@ editor: visual
 Data science is about extracting knowledge from data. This includes identifying patterns, making predictions, communicating results, and supporting decision-making.
 
 This course provides a **practical and example-based** introduction to fundamental topics such as data visualisation, regression models, and machine learning.
+
+## Teachers and assistants
+
+-   Sara Martino
+
+-   Thea Bjørnland
+
+-   Theo Xenakis
+
+-   Fredrik Eriksen
+
+## Some context (1)
+
+-   This is the first semester we run the course TMA4269 Data Science
+
+-   This is also the first time we use portfolio assessment (mappevurdering)
+
+-   This is also the first time we have built an entire course around applications and group discussions
+
+-   This is also the first time we use Canvas
+
+## Some context (2)
+
+-   The course was designed as a 'k-emne' (complementary course), which means:
+
+    -   Not technical / theoretical (if this is what you require -\> TMA4268 Statistical Learning)
+
+    -   We focus on "apply, use, and discuss" data and methods for data analysis
+
+    -   We only require that you have taken a basic statistics course (e.g. TMA4240/45)
+
+-   The course is also open to other students
+
+## Co-creation
+
+-   The course has no strict curriculum
+
+-   All learning activities and assessment types are new and being developed as we go
+
+-   You will learn from us and **we will learn from you**
+
+    -   --\> We all need to be a bit flexible
+
+## Teaching Excellence Program at NTNU (Toppundervisning)
+
+-   We are developing the course through the NTNU teaching excellence program
+
+-   "AI-assisted learning in statistics"
+
+## Before we go on to further details
+
+-   Menti: Who are you?
+
+## Portfolio assessment
+
+-   Individual letter grades (A-F) are set based on your portfolio ("mappe")
+
+-   All elements of the portfolio are completed in groups
+
+-   All the work is done during class hours
+
+-   A "polished" hand-in does not count extra
+
+-   We have a tentative plan on our wikipages -\> lets have a look
+
+## BREAK 
+
+## Group practice
+
+-   Gather in groups so that at least one person in the group has a laptop -\> connect to screen
+
+-   Access the Jupyter-hub and open the first notebook
+
+-   There are ... discussion points, discuss and answer

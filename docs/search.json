@@ -1,5 +1,12 @@
 [
   {
+    "objectID": "intro.html#course-description",
+    "href": "intro.html#course-description",
+    "title": "About the course: TMA4269 Fall 2026",
+    "section": "Course description",
+    "text": "Course description\nData science is about extracting knowledge from data. This includes identifying patterns, making predictions, communicating results, and supporting decision-making.\nThis course provides a practical and example-based introduction to fundamental topics such as data visualisation, regression models, and machine learning."
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Welcome to the course TMA4269 Data Science",
@@ -19,5 +26,68 @@
     "title": "Welcome to the course TMA4269 Data Science",
     "section": "Course description",
     "text": "Course description\n\nContent\nData science is about extracting knowledge from data. This includes identifying patterns, making predictions, communicating results, and supporting decision-making. This course provides a practical and example-based introduction to fundamental topics such as data visualisation, regression models, and machine learning. We will discuss the limitations of data analysis and modeling to avoid misinterpretation or misuse of model results.\n\n\nLearning outcomes\nThe student is familiar with the most common methods and algorithms for data visualisation, modeling, and prediction. The student can critically evaluate results from various data science processes. This includes understanding the limitations of models, as well as being able to discuss the implications of these with others.\n\n\nLearning and assessment activities\nFor this course your grade is set using portfolio assessment. You will attend and participate in mandatory activities, and complete (in groups) two projects. All activities and project work are intended to take place during the lecture times."
+  },
+  {
+    "objectID": "intro.html#some-context-1",
+    "href": "intro.html#some-context-1",
+    "title": "About the course: TMA4269 Fall 2026",
+    "section": "Some context (1)",
+    "text": "Some context (1)\n\nThis is the first semester we run the course TMA4269 Data Science\nThis is also the first time we use portfolio assessment (mappevurdering)\nThis is also the first time we have built an entire course around applications and group discussions\nThis is also the first time we use Canvas"
+  },
+  {
+    "objectID": "intro.html#some-context-2",
+    "href": "intro.html#some-context-2",
+    "title": "About the course: TMA4269 Fall 2026",
+    "section": "Some context (2)",
+    "text": "Some context (2)\n\nThe course was designed as a ‘k-emne’ (complementary course), which means:\n\nNot technical / theoretical (if this is what you require -&gt; TMA4268 Statistical Learning)\nWe focus on “apply, use, and discuss” data and methods for data analysis\nWe only require that you have taken a basic statistics course (e.g. TMA4240/45)\n\nThe course is also open to other students"
+  },
+  {
+    "objectID": "intro.html#co-creation",
+    "href": "intro.html#co-creation",
+    "title": "About the course: TMA4269 Fall 2026",
+    "section": "Co-creation",
+    "text": "Co-creation\n\nThe course has no strict curriculum\nAll learning activities and assessment types are new and being developed as we go\nYou will learn from us and we will learn from you\n\n–&gt; We all need to be a bit flexible"
+  },
+  {
+    "objectID": "intro.html#teaching-excellence-program-at-ntnu-toppundervisning",
+    "href": "intro.html#teaching-excellence-program-at-ntnu-toppundervisning",
+    "title": "About the course: TMA4269 Fall 2026",
+    "section": "Teaching Excellence Program at NTNU (Toppundervisning)",
+    "text": "Teaching Excellence Program at NTNU (Toppundervisning)\n\nWe are developing the course through the NTNU teaching excellence program\n“AI-assisted learning in statistics”"
+  },
+  {
+    "objectID": "intro.html#before-we-go-on-to-further-details",
+    "href": "intro.html#before-we-go-on-to-further-details",
+    "title": "About the course: TMA4269 Fall 2026",
+    "section": "Before we go on to further details",
+    "text": "Before we go on to further details\n\nMenti: Who are you?"
+  },
+  {
+    "objectID": "intro.html#portfolio-assessment",
+    "href": "intro.html#portfolio-assessment",
+    "title": "About the course: TMA4269 Fall 2026",
+    "section": "Portfolio assessment",
+    "text": "Portfolio assessment\n\nIndividual letter grades (A-F) are set based on your portfolio (“mappe”)\nAll elements of the portfolio are completed in groups\nAll the work is done during class hours\nA “polished” hand-in does not count extra\nWe have a tentative plan on our wikipages -&gt; lets have a look"
+  },
+  {
+    "objectID": "intro.html#teachers-and-assistants",
+    "href": "intro.html#teachers-and-assistants",
+    "title": "About the course: TMA4269 Fall 2026",
+    "section": "Teachers and assistants",
+    "text": "Teachers and assistants\n\nSara Martino\nThea Bjørnland\nTheo Xenakis\nFredrik Eriksen"
+  },
+  {
+    "objectID": "intro.html#break",
+    "href": "intro.html#break",
+    "title": "About the course: TMA4269 Fall 2026",
+    "section": "BREAK",
+    "text": "BREAK"
+  },
+  {
+    "objectID": "intro.html#group-practice",
+    "href": "intro.html#group-practice",
+    "title": "About the course: TMA4269 Fall 2026",
+    "section": "Group practice",
+    "text": "Group practice\n\nGather in groups so that at least one person in the group has a laptop -&gt; connect to screen\nAccess the Jupyter-hub and open the first notebook\nThere are … discussion points, discuss and answer"
   }
 ]
