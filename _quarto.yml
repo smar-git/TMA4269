@@ -17,7 +17,8 @@ website:
       href: index.qmd
     - text: Intro
       menu:
-      - text: Slides Intro 
+      - text: Slides Intro
+        href: intro.qmd
   
     - text: Practicals
       menu:

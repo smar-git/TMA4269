@@ -1,0 +1,5 @@
+---
+title: "About the course: TMA4269 Fall 2026"
+format: revealjs
+editor: visual
+---
