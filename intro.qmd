@@ -4,47 +4,129 @@ format: revealjs
 editor: visual
 ---
 
+## Plan for today Friday August 21st
+
+-   About the course and requirements
+
+-   MENTI to gather your thoughts and expectations
+
+-   Group discussions to introduce the way we will work in TMA4269
+
 ## Course description
 
 Data science is about extracting knowledge from data. This includes identifying patterns, making predictions, communicating results, and supporting decision-making.
 
 This course provides a **practical and example-based** introduction to fundamental topics such as data visualisation, regression models, and machine learning.
 
+## What the course description implies
+
+You will gain generic **skills** in handling, interpreting and discussing data, modelling, prediction etc etc.
+
+This is accomplished mainly through **examples and group work** and only a few lectures.
+
+## What the course description implies
+
+You will gain generic **skills** in handling, interpreting and discussing data, modelling, prediction etc etc.
+
+This is accomplished mainly through **examples and group work** and only a few lectures.
+
+If you need more fundamental/theoretical knowledge you should rather consider
+
+-   TMA4267 Linear statistical models (for multiple linear regression)
+
+-   TMA4268 Statistical learning (for machine learning)
+
+## Portfolio assessment
+
+-   Individual letter grades (A-F) are set based on your portfolio ("mappe")
+
+-   All elements of the portfolio are completed in groups
+
+-   The group work is done **during class hours**
+
+    -   You will at times be assigned some preparatory homework
+
+    -   We are not interested in polished project reports
+
+## Portfolio assessment
+
+-   The portfolio will consist of 3 types of mandatory activities:
+
+    -   8 smaller activities, participation (hand-in) counts 3 points each, but at most 20 points
+
+    -   Project 1: 2 hand-ins, at most 30 points
+
+    -   Project 2: 3 hand-ins, at most 50 points
+
+-   Everything will be delivered in Canvas
+
+## What the portfolio assessment implies
+
+-   No exam!
+
+-   You have to **show up and participate**
+
+    -   Wednesdays 10:15 - 12:00
+
+    -   Fridays 12:15 - 14:00
+
+## What the portfolio assessment implies
+
+-   No exam!
+
+-   You have to **show up and participate**
+
+    -   Wednesdays 10:15 - 12:00
+
+    -   Fridays 12:15 - 14:00
+
+<!-- -->
+
+-   Sick? Travel? OK.
+
+-   But we expect that you intend to participate in both sessions every week, and if you miss too many then you cannot get a grade
+
+-   (and also, no group wants a group member who does not show up)
+
 ## Teachers and assistants
 
--   Sara Martino
+-   Sara Martino (teacher)
 
--   Thea Bjørnland
+-   Thea Bjørnland (teacher)
 
--   Theo Xenakis
+-   Fredrik M. Eriksen (teaching assistant)
 
--   Fredrik Eriksen
+-   TBA (teaching assistant)
 
 ## Some context (1)
 
--   This is the first semester we run the course TMA4269 Data Science
+This is the first time we:
 
--   This is also the first time we use portfolio assessment (mappevurdering)
+-   run the course TMA4269 Data Science
 
--   This is also the first time we have built an entire course around applications and group discussions
+-   use portfolio assessment (mappevurdering)
 
--   This is also the first time we use Canvas
+-   built an entire course around applications and group discussions
+
+-   use Canvas
 
 ## Some context (2)
 
--   The course was designed as a 'k-emne' (complementary course), which means:
+-   The course was designed as a 'k-emne' for 'siving' students (complementary course for certain NTNU programs), which means:
 
-    -   Not technical / theoretical (if this is what you require -\> TMA4268 Statistical Learning)
+    -   Not a theoretical course
 
-    -   We focus on "apply, use, and discuss" data and methods for data analysis
-
-    -   We only require that you have taken a basic statistics course (e.g. TMA4240/45)
+    -   We focus on "apply, use, and discuss"
 
 -   The course is also open to other students
 
+-   We only require that you have taken a basic statistics course (e.g. TMA4240/45)
+
+-   Make sure the course can be approved as part of the study plan in you program
+
 ## Co-creation
 
--   The course has no strict curriculum
+-   This course has no strict curriculum
 
 -   All learning activities and assessment types are new and being developed as we go
 
@@ -58,28 +140,10 @@ This course provides a **practical and example-based** introduction to fundament
 
 -   "AI-assisted learning in statistics"
 
-## Before we go on to further details
+    -   For several assignments / projects we expect you to use AI tools to get relevant Python code and suggestions for methods
 
--   Menti: Who are you?
+## MENTI
 
-## Portfolio assessment
-
--   Individual letter grades (A-F) are set based on your portfolio ("mappe")
-
--   All elements of the portfolio are completed in groups
-
--   All the work is done during class hours
-
--   A "polished" hand-in does not count extra
-
--   We have a tentative plan on our wikipages -\> lets have a look
-
-## BREAK 
+## BREAK
 
 ## Group practice
-
--   Gather in groups so that at least one person in the group has a laptop -\> connect to screen
-
--   Access the Jupyter-hub and open the first notebook
-
--   There are ... discussion points, discuss and answer
