@@ -7,6 +7,13 @@
     "text": "Plan for today Friday August 21st\n\nAbout the course and requirements\nMENTI to gather your thoughts and expectations\nGroup discussions to introduce the way we will work in TMA4269"
   },
   {
+    "objectID": "intro.html#but-first",
+    "href": "intro.html#but-first",
+    "title": "About the course: TMA4269 Fall 2026",
+    "section": "But first…",
+    "text": "But first…\n2-3 minutes to get to know the persons at your table (name and study program, perhaps country?)"
+  },
+  {
     "objectID": "intro.html#course-description",
     "href": "intro.html#course-description",
     "title": "About the course: TMA4269 Fall 2026",
@@ -32,7 +39,7 @@
     "href": "intro.html#portfolio-assessment",
     "title": "About the course: TMA4269 Fall 2026",
     "section": "Portfolio assessment",
-    "text": "Portfolio assessment\n\nIndividual letter grades (A-F) are set based on your portfolio (“mappe”)\nAll elements of the portfolio are completed in groups\nThe group work is done during class hours\n\nYou will at times be assigned some preparatory homework\nWe are not interested in polished project reports"
+    "text": "Portfolio assessment\n\nIndividual letter grades (A-F) are set based on your portfolio (“mappe”)\nAll elements of the portfolio are completed in groups\nThe group work is done mostly during class hours\n\nYou will at times be assigned some preparatory homework\nWe are not interested in polished project reports"
   },
   {
     "objectID": "intro.html#portfolio-assessment-1",
@@ -88,14 +95,14 @@
     "href": "intro.html#teaching-excellence-program-at-ntnu-toppundervisning",
     "title": "About the course: TMA4269 Fall 2026",
     "section": "Teaching Excellence Program at NTNU (Toppundervisning)",
-    "text": "Teaching Excellence Program at NTNU (Toppundervisning)\n\nWe are developing the course through the NTNU teaching excellence program\n“AI-assisted learning in statistics”\n\nFor several assignments / projects we expect you to use AI tools to get relevant Python code and suggestions for methods\n\nMenti: Who are you?"
+    "text": "Teaching Excellence Program at NTNU (Toppundervisning)\n\nWe are developing the course through the NTNU teaching excellence program\n“AI-assisted learning in statistics”\n\nFor several assignments / projects we expect you to use AI tools to get relevant Python code and suggestions for methods"
   },
   {
-    "objectID": "intro.html#portfolio-assessment-2",
-    "href": "intro.html#portfolio-assessment-2",
+    "objectID": "intro.html#menti-who-are-you",
+    "href": "intro.html#menti-who-are-you",
     "title": "About the course: TMA4269 Fall 2026",
-    "section": "Portfolio assessment",
-    "text": "Portfolio assessment\n\nIndividual letter grades (A-F) are set based on your portfolio (“mappe”)\nAll elements of the portfolio are completed in groups\nAll the work is done during class hours\nA “polished” hand-in does not count extra\nWe have a tentative plan on our wikipages -&gt; lets have a look"
+    "section": "Menti: Who are you?",
+    "text": "Menti: Who are you?"
   },
   {
     "objectID": "intro.html#break",
@@ -105,11 +112,25 @@
     "text": "BREAK"
   },
   {
-    "objectID": "intro.html#group-practice",
-    "href": "intro.html#group-practice",
+    "objectID": "intro.html#group-practice-1---ca-10-15-min",
+    "href": "intro.html#group-practice-1---ca-10-15-min",
     "title": "About the course: TMA4269 Fall 2026",
-    "section": "Group practice",
-    "text": "Group practice\n\nGather in groups so that at least one person in the group has a laptop -&gt; connect to screen\nAccess the Jupyter-hub and open the first notebook\nThere are … discussion points, discuss and answer"
+    "section": "Group practice (1 - ca 10-15 min)",
+    "text": "Group practice (1 - ca 10-15 min)\nAll groups are given a graph (a time series)\nTask one\nDiscuss: What do you notice?\nTask two\nBe creative: Draw something on the graph to make a story for a newspaper"
+  },
+  {
+    "objectID": "intro.html#group-practice-2---ca-5-min",
+    "href": "intro.html#group-practice-2---ca-5-min",
+    "title": "About the course: TMA4269 Fall 2026",
+    "section": "Group practice (2 - ca 5 min)",
+    "text": "Group practice (2 - ca 5 min)\nTask\nPresentation: Tell your story to the neighbor group."
+  },
+  {
+    "objectID": "intro.html#group-practice-3",
+    "href": "intro.html#group-practice-3",
+    "title": "About the course: TMA4269 Fall 2026",
+    "section": "Group practice (3)",
+    "text": "Group practice (3)\nAll groups are given a new version of the graph as presented by NRK 14.07.2026, and a reflection sheet."
   },
   {
     "objectID": "index.html",

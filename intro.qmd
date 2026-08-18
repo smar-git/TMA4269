@@ -6,11 +6,15 @@ editor: visual
 
 ## Plan for today Friday August 21st
 
--   About the course and requirements
+- About the course and requirements
 
--   MENTI to gather your thoughts and expectations
+- MENTI to gather your thoughts and expectations
 
--   Group discussions to introduce the way we will work in TMA4269
+- Group discussions to introduce the way we will work in TMA4269
+
+## But first...
+
+2-3 minutes to get to know the persons at your table (name and study program, perhaps country?)
 
 ## Course description
 
@@ -32,98 +36,97 @@ This is accomplished mainly through **examples and group work** and only a few l
 
 If you need more fundamental/theoretical knowledge you should rather consider
 
--   TMA4267 Linear statistical models (for multiple linear regression)
+- TMA4267 Linear statistical models (for multiple linear regression)
 
--   TMA4268 Statistical learning (for machine learning)
-
-## Portfolio assessment
-
--   Individual letter grades (A-F) are set based on your portfolio ("mappe")
-
--   All elements of the portfolio are completed in groups
-
--   The group work is done **during class hours**
-
-    -   You will at times be assigned some preparatory homework
-
-    -   We are not interested in polished project reports
+- TMA4268 Statistical learning (for machine learning)
 
 ## Portfolio assessment
 
--   The portfolio will consist of 3 types of mandatory activities:
+- Individual letter grades (A-F) are set based on your portfolio ("mappe")
 
-    -   8 smaller activities, participation (hand-in) counts 3 points each, but at most 20 points
+- All elements of the portfolio are completed in groups
 
-    -   Project 1: 2 hand-ins, at most 30 points
+- The group work is done mostly **during class hours**
 
-    -   Project 2: 3 hand-ins, at most 50 points
+  - You will at times be assigned some preparatory homework
 
--   Everything will be delivered in Canvas
+  - We are not interested in polished project reports
+
+## Portfolio assessment
+
+- The portfolio will consist of 3 types of mandatory activities:
+
+  - 8 smaller activities, participation (hand-in) counts 3 points each, but at most 20 points
+
+  - Project 1: 2 hand-ins, at most 30 points
+
+  - Project 2: 3 hand-ins, at most 50 points
+
+- Everything will be delivered in Canvas
 
 ## What the portfolio assessment implies
 
--   No exam!
+- No exam!
 
--   You have to **show up and participate**
+- You have to **show up and participate**
 
-    -   Wednesdays 10:15 - 12:00
+  - Wednesdays 10:15 - 12:00
 
-    -   Fridays 12:15 - 14:00
+  - Fridays 12:15 - 14:00
 
-## What the portfolio assessment implies{.smaller}
+## What the portfolio assessment implies {.smaller}
 
--   No exam!
+- No exam!
 
--   You have to **show up and participate**
+- You have to **show up and participate**
 
-    -   Wednesdays 10:15 - 12:00
+  - Wednesdays 10:15 - 12:00
 
-    -   Fridays 12:15 - 14:00
+  - Fridays 12:15 - 14:00
 
 <!-- -->
 
--   Sick? Travel? OK.
+- Sick? Travel? OK.
 
--   But we expect that you intend to participate in both sessions every week, and if you miss too many then you cannot get a grade
+- But we expect that you intend to participate in both sessions every week, and if you miss too many then you cannot get a grade
 
--   (and also, no group wants a group member who does not show up)
+- (and also, no group wants a group member who does not show up)
 
 ## Teachers and assistants
 
+- Sara Martino (teacher)
 
--   Sara Martino (teacher)
+- Thea Bjørnland (teacher)
 
--   Thea Bjørnland (teacher)
+- Fredrik M. Eriksen (teaching assistant)
 
--   Fredrik M. Eriksen (teaching assistant)
-
--   TBA (teaching assistant)
+- TBA (teaching assistant)
 
 ## Some context (1)
 
 This is the first time we:
 
--   run the course TMA4269 Data Science
+- run the course TMA4269 Data Science
 
--   use portfolio assessment (mappevurdering)
+- use portfolio assessment (mappevurdering)
 
--   built an entire course around applications and group discussions
+- built an entire course around applications and group discussions
 
--   use Canvas
+- use Canvas
 
 ## Some context (2)
 
--   The course was designed as a 'k-emne' for 'siving' students (complementary course for certain NTNU programs), which means:
+- The course was designed as a 'k-emne' for 'siving' students (complementary course for certain NTNU programs), which means:
 
-    -   Not a theoretical course
+  - Not a theoretical course
 
-    -   We focus on "apply, use, and discuss"
+  - We focus on "apply, use, and discuss"
 
 - The course is also open to other students
 
--   We only require that you have taken a basic statistics course (e.g. TMA4240/45)
+- We only require that you have taken a basic statistics course (e.g. TMA4240/45)
 
--   Make sure the course can be approved as part of the study plan in you program
+- Make sure the course can be approved as part of the study plan in you program
 
 ## Co-creation
 
@@ -141,28 +144,38 @@ This is the first time we:
 
 - "AI-assisted learning in statistics"
 
-    -   For several assignments / projects we expect you to use AI tools to get relevant Python code and suggestions for methods
+  - For several assignments / projects we expect you to use AI tools to get relevant Python code and suggestions for methods
 
-- Menti: Who are you?
 
-## Portfolio assessment
+## Menti: Who are you?
 
-- Individual letter grades (A-F) are set based on your portfolio ("mappe")
-
-- All elements of the portfolio are completed in groups
-
-- All the work is done during class hours
-
-- A "polished" hand-in does not count extra
-
-- We have a tentative plan on our wikipages -\> lets have a look
 
 ## BREAK
 
-## Group practice
+## Group practice (1 - ca 10-15 min)
 
-- Gather in groups so that at least one person in the group has a laptop -\> connect to screen
+All groups are given a graph (a time series)
 
-- Access the Jupyter-hub and open the first notebook
+**Task one**
 
-- There are ... discussion points, discuss and answer
+Discuss: What do you notice?
+
+**Task two**
+
+Be creative: Draw something on the graph to make a story for a newspaper
+
+
+## Group practice (2 - ca 5 min)
+
+
+**Task**
+
+Presentation: Tell your story to the neighbor group.
+
+## Group practice (3)
+
+All groups are given a new version of the graph as presented by NRK 14.07.2026, and a reflection sheet.
+
+
+
+
