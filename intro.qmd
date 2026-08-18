@@ -70,7 +70,7 @@ If you need more fundamental/theoretical knowledge you should rather consider
 
     -   Fridays 12:15 - 14:00
 
-## What the portfolio assessment implies
+## What the portfolio assessment implies{.smaller}
 
 -   No exam!
 

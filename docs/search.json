@@ -1,10 +1,115 @@
 [
   {
+    "objectID": "intro.html#plan-for-today-friday-august-21st",
+    "href": "intro.html#plan-for-today-friday-august-21st",
+    "title": "About the course: TMA4269 Fall 2026",
+    "section": "Plan for today Friday August 21st",
+    "text": "Plan for today Friday August 21st\n\nAbout the course and requirements\nMENTI to gather your thoughts and expectations\nGroup discussions to introduce the way we will work in TMA4269"
+  },
+  {
     "objectID": "intro.html#course-description",
     "href": "intro.html#course-description",
     "title": "About the course: TMA4269 Fall 2026",
     "section": "Course description",
     "text": "Course description\nData science is about extracting knowledge from data. This includes identifying patterns, making predictions, communicating results, and supporting decision-making.\nThis course provides a practical and example-based introduction to fundamental topics such as data visualisation, regression models, and machine learning."
+  },
+  {
+    "objectID": "intro.html#what-the-course-description-implies",
+    "href": "intro.html#what-the-course-description-implies",
+    "title": "About the course: TMA4269 Fall 2026",
+    "section": "What the course description implies",
+    "text": "What the course description implies\nYou will gain generic skills in handling, interpreting and discussing data, modelling, prediction etc etc.\nThis is accomplished mainly through examples and group work and only a few lectures."
+  },
+  {
+    "objectID": "intro.html#what-the-course-description-implies-1",
+    "href": "intro.html#what-the-course-description-implies-1",
+    "title": "About the course: TMA4269 Fall 2026",
+    "section": "What the course description implies",
+    "text": "What the course description implies\nYou will gain generic skills in handling, interpreting and discussing data, modelling, prediction etc etc.\nThis is accomplished mainly through examples and group work and only a few lectures.\nIf you need more fundamental/theoretical knowledge you should rather consider\n\nTMA4267 Linear statistical models (for multiple linear regression)\nTMA4268 Statistical learning (for machine learning)"
+  },
+  {
+    "objectID": "intro.html#portfolio-assessment",
+    "href": "intro.html#portfolio-assessment",
+    "title": "About the course: TMA4269 Fall 2026",
+    "section": "Portfolio assessment",
+    "text": "Portfolio assessment\n\nIndividual letter grades (A-F) are set based on your portfolio (“mappe”)\nAll elements of the portfolio are completed in groups\nThe group work is done during class hours\n\nYou will at times be assigned some preparatory homework\nWe are not interested in polished project reports"
+  },
+  {
+    "objectID": "intro.html#portfolio-assessment-1",
+    "href": "intro.html#portfolio-assessment-1",
+    "title": "About the course: TMA4269 Fall 2026",
+    "section": "Portfolio assessment",
+    "text": "Portfolio assessment\n\nThe portfolio will consist of 3 types of mandatory activities:\n\n8 smaller activities, participation (hand-in) counts 3 points each, but at most 20 points\nProject 1: 2 hand-ins, at most 30 points\nProject 2: 3 hand-ins, at most 50 points\n\nEverything will be delivered in Canvas"
+  },
+  {
+    "objectID": "intro.html#what-the-portfolio-assessment-implies",
+    "href": "intro.html#what-the-portfolio-assessment-implies",
+    "title": "About the course: TMA4269 Fall 2026",
+    "section": "What the portfolio assessment implies",
+    "text": "What the portfolio assessment implies\n\nNo exam!\nYou have to show up and participate\n\nWednesdays 10:15 - 12:00\nFridays 12:15 - 14:00"
+  },
+  {
+    "objectID": "intro.html#what-the-portfolio-assessment-implies-1",
+    "href": "intro.html#what-the-portfolio-assessment-implies-1",
+    "title": "About the course: TMA4269 Fall 2026",
+    "section": "What the portfolio assessment implies",
+    "text": "What the portfolio assessment implies\n\nNo exam!\nYou have to show up and participate\n\nWednesdays 10:15 - 12:00\nFridays 12:15 - 14:00\n\n\n\n\nSick? Travel? OK.\nBut we expect that you intend to participate in both sessions every week, and if you miss too many then you cannot get a grade\n(and also, no group wants a group member who does not show up)"
+  },
+  {
+    "objectID": "intro.html#teachers-and-assistants",
+    "href": "intro.html#teachers-and-assistants",
+    "title": "About the course: TMA4269 Fall 2026",
+    "section": "Teachers and assistants",
+    "text": "Teachers and assistants\n\nSara Martino (teacher)\nThea Bjørnland (teacher)\nFredrik M. Eriksen (teaching assistant)\nTBA (teaching assistant)"
+  },
+  {
+    "objectID": "intro.html#some-context-1",
+    "href": "intro.html#some-context-1",
+    "title": "About the course: TMA4269 Fall 2026",
+    "section": "Some context (1)",
+    "text": "Some context (1)\nThis is the first time we:\n\nrun the course TMA4269 Data Science\nuse portfolio assessment (mappevurdering)\nbuilt an entire course around applications and group discussions\nuse Canvas"
+  },
+  {
+    "objectID": "intro.html#some-context-2",
+    "href": "intro.html#some-context-2",
+    "title": "About the course: TMA4269 Fall 2026",
+    "section": "Some context (2)",
+    "text": "Some context (2)\n\nThe course was designed as a ‘k-emne’ for ‘siving’ students (complementary course for certain NTNU programs), which means:\n\nNot a theoretical course\nWe focus on “apply, use, and discuss”\n\nThe course is also open to other students\nWe only require that you have taken a basic statistics course (e.g. TMA4240/45)\nMake sure the course can be approved as part of the study plan in you program"
+  },
+  {
+    "objectID": "intro.html#co-creation",
+    "href": "intro.html#co-creation",
+    "title": "About the course: TMA4269 Fall 2026",
+    "section": "Co-creation",
+    "text": "Co-creation\n\nThe course has no strict curriculum\nAll learning activities and assessment types are new and being developed as we go\nYou will learn from us and we will learn from you\n\n–&gt; We all need to be a bit flexible"
+  },
+  {
+    "objectID": "intro.html#teaching-excellence-program-at-ntnu-toppundervisning",
+    "href": "intro.html#teaching-excellence-program-at-ntnu-toppundervisning",
+    "title": "About the course: TMA4269 Fall 2026",
+    "section": "Teaching Excellence Program at NTNU (Toppundervisning)",
+    "text": "Teaching Excellence Program at NTNU (Toppundervisning)\n\nWe are developing the course through the NTNU teaching excellence program\n“AI-assisted learning in statistics”\n\nFor several assignments / projects we expect you to use AI tools to get relevant Python code and suggestions for methods\n\nMenti: Who are you?"
+  },
+  {
+    "objectID": "intro.html#portfolio-assessment-2",
+    "href": "intro.html#portfolio-assessment-2",
+    "title": "About the course: TMA4269 Fall 2026",
+    "section": "Portfolio assessment",
+    "text": "Portfolio assessment\n\nIndividual letter grades (A-F) are set based on your portfolio (“mappe”)\nAll elements of the portfolio are completed in groups\nAll the work is done during class hours\nA “polished” hand-in does not count extra\nWe have a tentative plan on our wikipages -&gt; lets have a look"
+  },
+  {
+    "objectID": "intro.html#break",
+    "href": "intro.html#break",
+    "title": "About the course: TMA4269 Fall 2026",
+    "section": "BREAK",
+    "text": "BREAK"
+  },
+  {
+    "objectID": "intro.html#group-practice",
+    "href": "intro.html#group-practice",
+    "title": "About the course: TMA4269 Fall 2026",
+    "section": "Group practice",
+    "text": "Group practice\n\nGather in groups so that at least one person in the group has a laptop -&gt; connect to screen\nAccess the Jupyter-hub and open the first notebook\nThere are … discussion points, discuss and answer"
   },
   {
     "objectID": "index.html",
@@ -26,124 +131,5 @@
     "title": "Welcome to the course TMA4269 Data Science",
     "section": "Course description",
     "text": "Course description\n\nContent\nData science is about extracting knowledge from data. This includes identifying patterns, making predictions, communicating results, and supporting decision-making. This course provides a practical and example-based introduction to fundamental topics such as data visualisation, regression models, and machine learning. We will discuss the limitations of data analysis and modeling to avoid misinterpretation or misuse of model results.\n\n\nLearning outcomes\nThe student is familiar with the most common methods and algorithms for data visualisation, modeling, and prediction. The student can critically evaluate results from various data science processes. This includes understanding the limitations of models, as well as being able to discuss the implications of these with others.\n\n\nLearning and assessment activities\nFor this course your grade is set using portfolio assessment. You will attend and participate in mandatory activities, and complete (in groups) two projects. All activities and project work are intended to take place during the lecture times."
-  },
-  {
-    "objectID": "intro.html#some-context-1",
-    "href": "intro.html#some-context-1",
-    "title": "About the course: TMA4269 Fall 2026",
-    "section": "Some context (1)",
-    "text": "Some context (1)\nThis is the first time we:\n\nrun the course TMA4269 Data Science\nuse portfolio assessment (mappevurdering)\nbuilt an entire course around applications and group discussions\nuse Canvas"
-  },
-  {
-    "objectID": "intro.html#some-context-2",
-    "href": "intro.html#some-context-2",
-    "title": "About the course: TMA4269 Fall 2026",
-    "section": "Some context (2)",
-    "text": "Some context (2)\n\nThe course was designed as a ‘k-emne’ for ‘siving’ students (complementary course for certain NTNU programs), which means:\n\nNot a theoretical course\nWe focus on “apply, use, and discuss”\n\nThe course is also open to other students\nWe only require that you have taken a basic statistics course (e.g. TMA4240/45)\nMake sure the course can be approved as part of the study plan in you program"
-  },
-  {
-    "objectID": "intro.html#co-creation",
-    "href": "intro.html#co-creation",
-    "title": "About the course: TMA4269 Fall 2026",
-    "section": "Co-creation",
-    "text": "Co-creation\n\nThis course has no strict curriculum\nAll learning activities and assessment types are new and being developed as we go\nYou will learn from us and we will learn from you\n\n–&gt; We all need to be a bit flexible"
-  },
-  {
-    "objectID": "intro.html#teaching-excellence-program-at-ntnu-toppundervisning",
-    "href": "intro.html#teaching-excellence-program-at-ntnu-toppundervisning",
-    "title": "About the course: TMA4269 Fall 2026",
-    "section": "Teaching Excellence Program at NTNU (Toppundervisning)",
-    "text": "Teaching Excellence Program at NTNU (Toppundervisning)\n\nWe are developing the course through the NTNU teaching excellence program\n“AI-assisted learning in statistics”\n\nFor several assignments / projects we expect you to use AI tools to get relevant Python code and suggestions for methods"
-  },
-  {
-    "objectID": "intro.html#before-we-go-on-to-further-details",
-    "href": "intro.html#before-we-go-on-to-further-details",
-    "title": "About the course: TMA4269 Fall 2026",
-    "section": "Before we go on to further details",
-    "text": "Before we go on to further details\n\nMenti: Who are you?"
-  },
-  {
-    "objectID": "intro.html#portfolio-assessment",
-    "href": "intro.html#portfolio-assessment",
-    "title": "About the course: TMA4269 Fall 2026",
-    "section": "Portfolio assessment",
-    "text": "Portfolio assessment\n\nIndividual letter grades (A-F) are set based on your portfolio (“mappe”)\nAll elements of the portfolio are completed in groups\nThe group work is done during class hours\n\nYou will at times be assigned some preparatory homework\nWe are not interested in polished project reports"
-  },
-  {
-    "objectID": "intro.html#teachers-and-assistants",
-    "href": "intro.html#teachers-and-assistants",
-    "title": "About the course: TMA4269 Fall 2026",
-    "section": "Teachers and assistants",
-    "text": "Teachers and assistants\n\nSara Martino (teacher)\nThea Bjørnland (teacher)\nFredrik M. Eriksen (teaching assistant)\nTBA (teaching assistant)"
-  },
-  {
-    "objectID": "intro.html#break",
-    "href": "intro.html#break",
-    "title": "About the course: TMA4269 Fall 2026",
-    "section": "BREAK",
-    "text": "BREAK"
-  },
-  {
-    "objectID": "intro.html#group-practice",
-    "href": "intro.html#group-practice",
-    "title": "About the course: TMA4269 Fall 2026",
-    "section": "Group practice",
-    "text": "Group practice"
-  },
-  {
-    "objectID": "intro.html#plan-for-today-friday-august-21st",
-    "href": "intro.html#plan-for-today-friday-august-21st",
-    "title": "About the course: TMA4269 Fall 2026",
-    "section": "Plan for today Friday August 21st",
-    "text": "Plan for today Friday August 21st\n\nAbout the course and requirements\nMENTI to gather your thoughts and expectations\nGroup discussions to introduce the way we will work in TMA4269"
-  },
-  {
-    "objectID": "intro.html#what-the-course-description-implies",
-    "href": "intro.html#what-the-course-description-implies",
-    "title": "About the course: TMA4269 Fall 2026",
-    "section": "What the course description implies",
-    "text": "What the course description implies\nYou will gain generic skills in handling, interpreting and discussing data, modelling, prediction etc etc.\nThis is accomplished mainly through examples and group work and only a few lectures."
-  },
-  {
-    "objectID": "intro.html#what-the-course-description-implies-1",
-    "href": "intro.html#what-the-course-description-implies-1",
-    "title": "About the course: TMA4269 Fall 2026",
-    "section": "What the course description implies",
-    "text": "What the course description implies\nYou will gain generic skills in handling, interpreting and discussing data, modelling, prediction etc etc.\nThis is accomplished mainly through examples and group work and only a few lectures.\nIf you need more fundamental/theoretical knowledge you should rather consider\n\nTMA4267 Linear statistical models (for multiple linear regression)\nTMA4268 Statistical learning (for machine learning)"
-  },
-  {
-    "objectID": "intro.html#portfolio-assessment-1",
-    "href": "intro.html#portfolio-assessment-1",
-    "title": "About the course: TMA4269 Fall 2026",
-    "section": "Portfolio assessment",
-    "text": "Portfolio assessment\n\nThe portfolio will consist of 3 types of mandatory activities:\n\n8 smaller activities, participation (hand-in) counts 3 points each, but at most 20 points\nProject 1: 2 hand-ins, at most 30 points\nProject 2: 3 hand-ins, at most 50 points\n\nEverything will be delivered in Canvas"
-  },
-  {
-    "objectID": "intro.html#portfolio-assessment-2",
-    "href": "intro.html#portfolio-assessment-2",
-    "title": "About the course: TMA4269 Fall 2026",
-    "section": "Portfolio assessment",
-    "text": "Portfolio assessment\n\nIndividual letter grades (A-F) are set based on your portfolio (“mappe”)\nAll elements of the portfolio are completed in groups\nAll the work is done during class hours\nA “polished” hand-in does not count extra\nWe have a tentative plan on our wikipages -&gt; lets have a look"
-  },
-  {
-    "objectID": "intro.html#what-the-portfolio-assessment-implies",
-    "href": "intro.html#what-the-portfolio-assessment-implies",
-    "title": "About the course: TMA4269 Fall 2026",
-    "section": "What the portfolio assessment implies",
-    "text": "What the portfolio assessment implies\n\nNo exam!\nYou have to show up and participate\n\nWednesdays 10:15 - 12:00\nFridays 12:15 - 14:00"
-  },
-  {
-    "objectID": "intro.html#what-the-portfolio-assessment-implies-1",
-    "href": "intro.html#what-the-portfolio-assessment-implies-1",
-    "title": "About the course: TMA4269 Fall 2026",
-    "section": "What the portfolio assessment implies",
-    "text": "What the portfolio assessment implies\n\nNo exam!\nYou have to show up and participate\n\nWednesdays 10:15 - 12:00\nFridays 12:15 - 14:00\n\n\n\n\nSick? Travel? OK.\nBut we expect that you intend to participate in both sessions every week, and if you miss too many then you cannot get a grade\n(and also, no group wants a group member who does not show up)"
-  },
-  {
-    "objectID": "intro.html#menti",
-    "href": "intro.html#menti",
-    "title": "About the course: TMA4269 Fall 2026",
-    "section": "MENTI",
-    "text": "MENTI"
   }
 ]
