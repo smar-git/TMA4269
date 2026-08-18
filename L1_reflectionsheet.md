@@ -1,0 +1,75 @@
+# Group reflection
+
+You have now seen two visualizations of the same data. 
+Reflect on how the visualization affects your interpretation of the data.
+
+
+## 1) Visual choices
+
+How do choices such as **color, line style, labels, scale, and axes** affect the story you see in the graph?
+
+Are some elements more visually important than others? Why?
+
+
+____________________________________________________________________
+
+
+____________________________________________________________________
+
+
+____________________________________________________________________
+
+
+____________________________________________________________________
+
+
+____________________________________________________________________
+
+
+## 2) Reflections
+
+How does NRK's story compare to the story you constructed in your group?
+
+What would happen if you had fitted a regression line to the whole data set?
+
+What happens to deaths from cardiovascular disease in year 2035?
+
+Where and how could you have incorporated uncertainty in this figure? 
+
+____________________________________________________________________
+
+
+____________________________________________________________________
+
+
+____________________________________________________________________
+
+
+____________________________________________________________________
+
+
+____________________________________________________________________
+
+
+## 3) Questions for the data owner or graph maker
+
+What would you want to know before drawing conclusions from this graph?
+
+Write at least two questions you would ask the person who collected the data or made the visualization.
+
+__________________________________________________________________
+
+
+__________________________________________________________________
+
+
+__________________________________________________________________
+
+
+__________________________________________________________________
+
+
+____________________________________________________________________
+
+
+
