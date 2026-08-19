@@ -1,6 +1,9 @@
 ---
 title: "Data and Data Visualization"
-format: revealjs
+format: 
+  revealjs:
+    footer: "<a href='../index.html'>Back to Home</a>"
+slide-number: "c/t"
 editor: source
 ---
 
