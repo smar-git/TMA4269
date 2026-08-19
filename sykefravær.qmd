@@ -1,7 +1,6 @@
 ---
 title: "TMA4269: case 2"
 format: html
-editor: visual
 ---
 
 # Data science
@@ -10,7 +9,7 @@ editor: visual
 
 ### Læringsmål
 
--   Fremstilling (visualisering) av data; konsekvenser av ulike valg
+- Fremstilling (visualisering) av data; konsekvenser av ulike valg
 
 ### Undervisning
 
@@ -18,13 +17,13 @@ editor: visual
 
 ### Vurdering
 
--   ?
+- ?
 
 ## Case A.2: Sykefravær, kjønn og utdanning
 
 ### Forkunnskap / repetisjon
 
--   Ingen
+- Ingen
 
 ```{r}
 #| echo: false
@@ -68,7 +67,7 @@ Foreleser tar opp begge figurer og viser sitater fra VG. Foreleser viser også f
 
 Regn også ut: dersom vi har like mange personer i hver gruppe, hvor stor andel av sykemeldte kvinner utgjør de høyt utdannede kvinnene? Er det de som "bidrar mest til kjønnsforskjellen i sykefravær" (adressa)?
 
--   Absolutt differanse som plott nummer 3
+- Absolutt differanse som plott nummer 3
 
 Det er x1 og x2 personer i hver gruppe (høy og lav utdanning), hvor vil det gi størst effekt å få ned sykefravær til kvinner?
 

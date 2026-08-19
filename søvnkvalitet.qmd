@@ -1,7 +1,6 @@
 ---
 title: "test_TMA4269"
 format: html
-editor: visual
 ---
 
 # Data science
@@ -10,17 +9,17 @@ editor: visual
 
 ### Læringsmål
 
--   Visualisering, sammenligne grupper
+- Visualisering, sammenligne grupper
 
--   Observasjonelle og designede studier
+- Observasjonelle og designede studier
 
--   Korrelasjon (samvariasjon) mot kausalitet
+- Korrelasjon (samvariasjon) mot kausalitet
 
--   Representative utvalg
+- Representative utvalg
 
--   Signifikant effekt mot relevant effekt
+- Signifikant effekt mot relevant effekt
 
--   Falske funn (spurious correlations) som følge av å gjøre mange sammenligninger
+- Falske funn (spurious correlations) som følge av å gjøre mange sammenligninger
 
 ### Undervisning
 
@@ -30,17 +29,17 @@ editor: visual
 
 ### Vurdering
 
--   Poeng for deltakelse (inkl. en leveranse) i gruppediskusjoner (økt 1)
+- Poeng for deltakelse (inkl. en leveranse) i gruppediskusjoner (økt 1)
 
--   Quiz? Flervalgsoppgaver som er mulig å gjøre siste 15 min av økt 2, men åpen resten av uka for de som ikke har tid/mulighet?
+- Quiz? Flervalgsoppgaver som er mulig å gjøre siste 15 min av økt 2, men åpen resten av uka for de som ikke har tid/mulighet?
 
 ## Case A.1: Søvn og skjermbruk
 
 ### Forkunnskap / repetisjon
 
--   Beskrivende statistikk; gjennomsnitt, standardavvik, histogram, boksplott
+- Beskrivende statistikk; gjennomsnitt, standardavvik, histogram, boksplott
 
--   Sammenligning av to grupper med t-test. Signifikansnivå og p-verdi.
+- Sammenligning av to grupper med t-test. Signifikansnivå og p-verdi.
 
 ```{r}
 #| echo: false
@@ -91,11 +90,11 @@ I studien fant man en signifikant sammenheng mellom søvnkvalitet (sleepscore) o
 
 #### Diskuter i gruppe:
 
--   Hva var resultatet av studien?
+- Hva var resultatet av studien?
 
--   Basert på denne studien, kan du gi anbefalinger til en venn når det gjelder skjermbruk før leggetid?
+- Basert på denne studien, kan du gi anbefalinger til en venn når det gjelder skjermbruk før leggetid?
 
--   Er det noen tall eller annen informasjon dere savner? Hvilken?
+- Er det noen tall eller annen informasjon dere savner? Hvilken?
 
 pp
 
@@ -103,7 +102,7 @@ pp
 
 #### Oppgave i gruppe:
 
--   Ta utgangspunkt i Figur 1 som visualiserer sleepscore for alle 850 deltakere. Datasettet kan deles opp i subgrupper A og B, der gruppe A er de deltakerne som brukte skjerm på soverommet før innsovning ('i stor grad' eller 'i svært stor grad') og gruppe B er de deltakerne som ikke brukte skjerm ('i svært liten grad', 'i liten grad'). Hva slags visualisering (figurer) kan dere bruke for å illustrere forskjellen i 'sleepscore' mellom gruppene? Lag en skisse som leveres inn.
+- Ta utgangspunkt i Figur 1 som visualiserer sleepscore for alle 850 deltakere. Datasettet kan deles opp i subgrupper A og B, der gruppe A er de deltakerne som brukte skjerm på soverommet før innsovning ('i stor grad' eller 'i svært stor grad') og gruppe B er de deltakerne som ikke brukte skjerm ('i svært liten grad', 'i liten grad'). Hva slags visualisering (figurer) kan dere bruke for å illustrere forskjellen i 'sleepscore' mellom gruppene? Lag en skisse som leveres inn.
 
 ### Del 2
 
@@ -132,7 +131,7 @@ plt.close()
 
 #### Diskuter i gruppe:
 
--   Endrer denne informasjonen deres oppfatning om studien? Hvordan stemmer figuren med deres egen skisse?
+- Endrer denne informasjonen deres oppfatning om studien? Hvordan stemmer figuren med deres egen skisse?
 
 ### Del 3
 
@@ -150,11 +149,11 @@ Dersom vi gjennomfører en hypotetest med signifikansinvå 0.05, og nullhypotese
 
 #### Diskuter i gruppe:
 
--   Har dere endret syn på resultatet av studien (Del 1)?
+- Har dere endret syn på resultatet av studien (Del 1)?
 
--   Kan dere vurdere om det rapporterte funnet angående skjermbruk og søvnkvalitet er et falskt funn?
+- Kan dere vurdere om det rapporterte funnet angående skjermbruk og søvnkvalitet er et falskt funn?
 
--   Dere skal etablere en forskningsgruppe som jobber med søvnkvalitet, kan dere bruke resultatet av denne studien til å gjøre videre undersøkelser? Hva kan gjøres for å bekrefte/avkrefte resultatet fra studien?
+- Dere skal etablere en forskningsgruppe som jobber med søvnkvalitet, kan dere bruke resultatet av denne studien til å gjøre videre undersøkelser? Hva kan gjøres for å bekrefte/avkrefte resultatet fra studien?
 
 ## 
 
