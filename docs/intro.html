@@ -6,8 +6,8 @@
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dc55a5b9e770e841cd82e46aadbfb9b0.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.8.24">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.7.32">
 
   <title>TMA4269 – About the course: TMA4269 Fall 2026</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -28,7 +28,7 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="site_libs/revealjs/dist/theme/quarto-534cd8e3a96973385dffff3f4709048d.css">
+  <link rel="stylesheet" href="site_libs/revealjs/dist/theme/quarto-f563837468303362081e247dddd440d0.css">
   <link href="site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -179,13 +179,13 @@
 <section id="portfolio-assessment-1" class="slide level2">
 <h2>Portfolio assessment</h2>
 <ul>
-<li><p>The portfolio will consist of 3 types of mandatory activities:</p>
+<li><p>The portfolio will consist of 3 types of activities:</p>
 <ul>
-<li><p>8 smaller activities, participation (hand-in) counts 3 points each, but at most 20 points</p></li>
-<li><p>Project 1: 2 hand-ins, at most 30 points</p></li>
-<li><p>Project 2: 3 hand-ins, at most 50 points</p></li>
+<li><p>8 smaller activities, participation (hand-in) counts 5 points each, but at most 30 points</p></li>
+<li><p>Project 1: 2 hand-ins, at most 30 points (mandatory)</p></li>
+<li><p>Project 2: 3 hand-ins, at most 50 points (mandatory)</p></li>
 </ul></li>
-<li><p>Everything will be delivered in Canvas</p></li>
+<li><p>Everything will be delivered in Canvas <strong>during class hours</strong></p></li>
 </ul>
 </section>
 <section id="what-the-portfolio-assessment-implies" class="slide level2">
@@ -214,6 +214,14 @@
 <li><p>Sick? Travel? OK.</p></li>
 <li><p>But we expect that you intend to participate in both sessions every week, and if you miss too many then you cannot get a grade</p></li>
 <li><p>(and also, no group wants a group member who does not show up)</p></li>
+</ul>
+</section>
+<section id="groups-and-group-work" class="slide level2 smaller">
+<h2>Groups and group work</h2>
+<ul>
+<li><p>About 5 students per group</p></li>
+<li><p>Groups stay together for about two weeks, then rotate</p></li>
+<li><p>Groups hand in assignments and projects jointly through Canvas</p></li>
 </ul>
 </section>
 <section id="teachers-and-assistants" class="slide level2">
@@ -255,7 +263,7 @@
 <li><p>All learning activities and assessment types are new and being developed as we go</p></li>
 <li><p>You will learn from us and <strong>we will learn from you</strong></p>
 <ul>
-<li>–&gt; We all need to be a bit flexible</li>
+<li>–&gt; We all need to be a bit flexible and collaborate</li>
 </ul></li>
 </ul>
 </section>
@@ -285,11 +293,12 @@
 </section>
 <section id="group-practice-2---ca-5-min" class="slide level2">
 <h2>Group practice (2 - ca 5 min)</h2>
-<p><strong>Task</strong></p>
+<p><strong>Task three</strong></p>
 <p>Presentation: Tell your story to the neighbor group.</p>
 </section>
 <section id="group-practice-3" class="slide level2">
 <h2>Group practice (3)</h2>
+<p><strong>Task four</strong></p>
 <p>All groups are given a new version of the graph as presented by NRK 14.07.2026, and a reflection sheet.</p>
 
 
@@ -483,7 +492,7 @@
         margin: 0.1,
 
         math: {
-          mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@2.7.9/MathJax.js',
+          mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js',
           config: 'TeX-AMS_HTML-full',
           tex2jax: {
             inlineMath: [['\\(','\\)']],
@@ -557,14 +566,13 @@
           e.clearSelection();
         }
         const getTextToCopy = function(trigger) {
-          const outerScaffold = trigger.parentElement.cloneNode(true);
-          const codeEl = outerScaffold.querySelector('code');
-          for (const childEl of codeEl.children) {
-            if (isCodeAnnotation(childEl)) {
-              childEl.remove();
+            const codeEl = trigger.previousElementSibling.cloneNode(true);
+            for (const childEl of codeEl.children) {
+              if (isCodeAnnotation(childEl)) {
+                childEl.remove();
+              }
             }
-          }
-          return codeEl.innerText;
+            return codeEl.innerText;
         }
         const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
           text: getTextToCopy

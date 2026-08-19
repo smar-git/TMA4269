@@ -46,7 +46,7 @@
     "href": "intro.html#portfolio-assessment-1",
     "title": "About the course: TMA4269 Fall 2026",
     "section": "Portfolio assessment",
-    "text": "Portfolio assessment\n\nThe portfolio will consist of 3 types of mandatory activities:\n\n8 smaller activities, participation (hand-in) counts 3 points each, but at most 20 points\nProject 1: 2 hand-ins, at most 30 points\nProject 2: 3 hand-ins, at most 50 points\n\nEverything will be delivered in Canvas"
+    "text": "Portfolio assessment\n\nThe portfolio will consist of 3 types of activities:\n\n8 smaller activities, participation (hand-in) counts 5 points each, but at most 30 points\nProject 1: 2 hand-ins, at most 30 points (mandatory)\nProject 2: 3 hand-ins, at most 50 points (mandatory)\n\nEverything will be delivered in Canvas during class hours"
   },
   {
     "objectID": "intro.html#what-the-portfolio-assessment-implies",
@@ -88,7 +88,7 @@
     "href": "intro.html#co-creation",
     "title": "About the course: TMA4269 Fall 2026",
     "section": "Co-creation",
-    "text": "Co-creation\n\nThe course has no strict curriculum\nAll learning activities and assessment types are new and being developed as we go\nYou will learn from us and we will learn from you\n\n–&gt; We all need to be a bit flexible"
+    "text": "Co-creation\n\nThe course has no strict curriculum\nAll learning activities and assessment types are new and being developed as we go\nYou will learn from us and we will learn from you\n\n–&gt; We all need to be a bit flexible and collaborate"
   },
   {
     "objectID": "intro.html#teaching-excellence-program-at-ntnu-toppundervisning",
@@ -123,14 +123,14 @@
     "href": "intro.html#group-practice-2---ca-5-min",
     "title": "About the course: TMA4269 Fall 2026",
     "section": "Group practice (2 - ca 5 min)",
-    "text": "Group practice (2 - ca 5 min)\nTask\nPresentation: Tell your story to the neighbor group."
+    "text": "Group practice (2 - ca 5 min)\nTask three\nPresentation: Tell your story to the neighbor group."
   },
   {
     "objectID": "intro.html#group-practice-3",
     "href": "intro.html#group-practice-3",
     "title": "About the course: TMA4269 Fall 2026",
     "section": "Group practice (3)",
-    "text": "Group practice (3)\nAll groups are given a new version of the graph as presented by NRK 14.07.2026, and a reflection sheet."
+    "text": "Group practice (3)\nTask four\nAll groups are given a new version of the graph as presented by NRK 14.07.2026, and a reflection sheet."
   },
   {
     "objectID": "index.html",
@@ -152,5 +152,12 @@
     "title": "Welcome to the course TMA4269 Data Science",
     "section": "Course description",
     "text": "Course description\n\nContent\nData science is about extracting knowledge from data. This includes identifying patterns, making predictions, communicating results, and supporting decision-making. This course provides a practical and example-based introduction to fundamental topics such as data visualisation, regression models, and machine learning. We will discuss the limitations of data analysis and modeling to avoid misinterpretation or misuse of model results.\n\n\nLearning outcomes\nThe student is familiar with the most common methods and algorithms for data visualisation, modeling, and prediction. The student can critically evaluate results from various data science processes. This includes understanding the limitations of models, as well as being able to discuss the implications of these with others.\n\n\nLearning and assessment activities\nFor this course your grade is set using portfolio assessment. You will attend and participate in mandatory activities, and complete (in groups) two projects. All activities and project work are intended to take place during the lecture times."
+  },
+  {
+    "objectID": "intro.html#groups-and-group-work",
+    "href": "intro.html#groups-and-group-work",
+    "title": "About the course: TMA4269 Fall 2026",
+    "section": "Groups and group work",
+    "text": "Groups and group work\n\nAbout 5 students per group\nGroups stay together for about two weeks, then rotate\nGroups hand in assignments and projects jointly through Canvas"
   }
 ]
