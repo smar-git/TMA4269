@@ -42,6 +42,13 @@
     "text": "Assignement\n\nLog into Canvas\nFind the assignement Visualization Week 35\nYou’ll find two files:\n\nData: norway_seqs_df.parquet\nInstructions: visualization_week35.ipynb\n\nDownload both of them\nLog into the NTNU JupiterHub https://jupyter.ntnu.no/\nDrag the instruction file into the workspace. Here you find instruction about your tasks."
   },
   {
+    "objectID": "Data_visualization.html#for-next-time",
+    "href": "Data_visualization.html#for-next-time",
+    "title": "Data and Data Visualization",
+    "section": "For next time",
+    "text": "For next time"
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Welcome to the course TMA4269 Data Science",
