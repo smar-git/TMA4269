@@ -4,6 +4,7 @@ project:
   render:
   - index.qmd
   - intro.qmd
+  - Data_visualization.qmd
   
 website:
   title: TMA4269
@@ -20,11 +21,10 @@ website:
       menu:
       - text: Slides Intro
         href: intro.html
+      - text: Slides Visualization
+        href: Data_visualization.html
   
-    - text: Practicals
-      menu:
-      - text: Practical 1 - Fit LMM
-       
+
 format:
   html:
     theme: flatly

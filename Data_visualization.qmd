@@ -1,0 +1,40 @@
+---
+title: "Data and Data Visualization"
+format: revealjs
+editor: source
+---
+
+## Plan for today Wednesday August 26th 
+
+ - What is data?
+ - How and why do we talk about data visualization?
+ 
+ 
+ - Create Group on Canvas
+ - Getting to know a dataset 
+ 
+ 
+
+## Create Groups in Canvas
+
+On your desk you will find a sheet with a number, **this is your group number for the next two weeks** (until September 4th)
+
+- Log into Canvas
+- Click on **People** on the right side of the page
+- Click on **Group** 
+- Scroll to the group with the number on your desk and enroll yourself in the group
+
+**NOTE** Remember your Group number for next week, you will have to enroll again!!!
+
+
+## Data Assignment  - Nofence
+
+The world's first virtual fencing system
+
+
+![](Figures/nofence1.png)
+
+
+
+
+

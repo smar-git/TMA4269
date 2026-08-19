@@ -1,5 +1,47 @@
 [
   {
+    "objectID": "Data_visualization.html#plan-for-today-wednesday-august-26th",
+    "href": "Data_visualization.html#plan-for-today-wednesday-august-26th",
+    "title": "Data and Data Visualization",
+    "section": "Plan for today Wednesday August 26th",
+    "text": "Plan for today Wednesday August 26th\n\nWhat is data?\nHow and why do we talk about data visualization?\nCreate Group on Canvas\nGetting to know a dataset"
+  },
+  {
+    "objectID": "Data_visualization.html#create-groups-in-canvas",
+    "href": "Data_visualization.html#create-groups-in-canvas",
+    "title": "Data and Data Visualization",
+    "section": "Create Groups in Canvas",
+    "text": "Create Groups in Canvas\nOn your desk you will find a sheet with a number, this is your group number for the next two weeks (until September 4th)\n\nLog into Canvas\nClick on People on the right side of the page\nClick on Group\nScroll to the group with the number on your desk and enroll yourself in the group\n\nNOTE Remember your Group number for next week, you will have to enroll again!!!"
+  },
+  {
+    "objectID": "Data_visualization.html#data-assignment---nofence",
+    "href": "Data_visualization.html#data-assignment---nofence",
+    "title": "Data and Data Visualization",
+    "section": "Data Assignment - Nofence",
+    "text": "Data Assignment - Nofence\nThe world’s first virtual fencing system"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Welcome to the course TMA4269 Data Science",
+    "section": "",
+    "text": "The course TMA4269 Data Science is developed by the Department of Mathematical Sciences at NTNU, and intended as a ‘k-emne’ (complementary course) for 5-year integrated master of technology students (Siving). Other students are also welcome to the course. The course is given for the first time in the fall semester of 2026. Teachers are Sara Martino and Thea Bjørnland.\nThis page presents learning materials etc. Other details (schedule, messages etc) are posted at the course wikipages."
+  },
+  {
+    "objectID": "index.html#general-information",
+    "href": "index.html#general-information",
+    "title": "Welcome to the course TMA4269 Data Science",
+    "section": "",
+    "text": "The course TMA4269 Data Science is developed by the Department of Mathematical Sciences at NTNU, and intended as a ‘k-emne’ (complementary course) for 5-year integrated master of technology students (Siving). Other students are also welcome to the course. The course is given for the first time in the fall semester of 2026. Teachers are Sara Martino and Thea Bjørnland.\nThis page presents learning materials etc. Other details (schedule, messages etc) are posted at the course wikipages."
+  },
+  {
+    "objectID": "index.html#course-description",
+    "href": "index.html#course-description",
+    "title": "Welcome to the course TMA4269 Data Science",
+    "section": "Course description",
+    "text": "Course description\n\nContent\nData science is about extracting knowledge from data. This includes identifying patterns, making predictions, communicating results, and supporting decision-making. This course provides a practical and example-based introduction to fundamental topics such as data visualisation, regression models, and machine learning. We will discuss the limitations of data analysis and modeling to avoid misinterpretation or misuse of model results.\n\n\nLearning outcomes\nThe student is familiar with the most common methods and algorithms for data visualisation, modeling, and prediction. The student can critically evaluate results from various data science processes. This includes understanding the limitations of models, as well as being able to discuss the implications of these with others.\n\n\nLearning and assessment activities\nFor this course your grade is set using portfolio assessment. You will attend and participate in mandatory activities, and complete (in groups) two projects. All activities and project work are intended to take place during the lecture times."
+  },
+  {
     "objectID": "intro.html#plan-for-today-friday-august-21st",
     "href": "intro.html#plan-for-today-friday-august-21st",
     "title": "About the course: TMA4269 Fall 2026",
@@ -61,6 +103,13 @@
     "title": "About the course: TMA4269 Fall 2026",
     "section": "What the portfolio assessment implies",
     "text": "What the portfolio assessment implies\n\nNo exam!\nYou have to show up and participate\n\nWednesdays 10:15 - 12:00\nFridays 12:15 - 14:00\n\n\n\n\nSick? Travel? OK.\nBut we expect that you intend to participate in both sessions every week, and if you miss too many then you cannot get a grade\n(and also, no group wants a group member who does not show up)"
+  },
+  {
+    "objectID": "intro.html#groups-and-group-work",
+    "href": "intro.html#groups-and-group-work",
+    "title": "About the course: TMA4269 Fall 2026",
+    "section": "Groups and group work",
+    "text": "Groups and group work\n\nAbout 5 students per group\nGroups stay together for about two weeks, then rotate\nGroups hand in assignments and projects jointly through Canvas"
   },
   {
     "objectID": "intro.html#teachers-and-assistants",
@@ -131,33 +180,5 @@
     "title": "About the course: TMA4269 Fall 2026",
     "section": "Group practice (3)",
     "text": "Group practice (3)\nTask four\nAll groups are given a new version of the graph as presented by NRK 14.07.2026, and a reflection sheet."
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Welcome to the course TMA4269 Data Science",
-    "section": "",
-    "text": "The course TMA4269 Data Science is developed by the Department of Mathematical Sciences at NTNU, and intended as a ‘k-emne’ (complementary course) for 5-year integrated master of technology students (Siving). Other students are also welcome to the course. The course is given for the first time in the fall semester of 2026. Teachers are Sara Martino and Thea Bjørnland.\nThis page presents learning materials etc. Other details (schedule, messages etc) are posted at the course wikipages."
-  },
-  {
-    "objectID": "index.html#general-information",
-    "href": "index.html#general-information",
-    "title": "Welcome to the course TMA4269 Data Science",
-    "section": "",
-    "text": "The course TMA4269 Data Science is developed by the Department of Mathematical Sciences at NTNU, and intended as a ‘k-emne’ (complementary course) for 5-year integrated master of technology students (Siving). Other students are also welcome to the course. The course is given for the first time in the fall semester of 2026. Teachers are Sara Martino and Thea Bjørnland.\nThis page presents learning materials etc. Other details (schedule, messages etc) are posted at the course wikipages."
-  },
-  {
-    "objectID": "index.html#course-description",
-    "href": "index.html#course-description",
-    "title": "Welcome to the course TMA4269 Data Science",
-    "section": "Course description",
-    "text": "Course description\n\nContent\nData science is about extracting knowledge from data. This includes identifying patterns, making predictions, communicating results, and supporting decision-making. This course provides a practical and example-based introduction to fundamental topics such as data visualisation, regression models, and machine learning. We will discuss the limitations of data analysis and modeling to avoid misinterpretation or misuse of model results.\n\n\nLearning outcomes\nThe student is familiar with the most common methods and algorithms for data visualisation, modeling, and prediction. The student can critically evaluate results from various data science processes. This includes understanding the limitations of models, as well as being able to discuss the implications of these with others.\n\n\nLearning and assessment activities\nFor this course your grade is set using portfolio assessment. You will attend and participate in mandatory activities, and complete (in groups) two projects. All activities and project work are intended to take place during the lecture times."
-  },
-  {
-    "objectID": "intro.html#groups-and-group-work",
-    "href": "intro.html#groups-and-group-work",
-    "title": "About the course: TMA4269 Fall 2026",
-    "section": "Groups and group work",
-    "text": "Groups and group work\n\nAbout 5 students per group\nGroups stay together for about two weeks, then rotate\nGroups hand in assignments and projects jointly through Canvas"
   }
 ]

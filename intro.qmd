@@ -6,11 +6,11 @@ editor: visual
 
 ## Plan for today Friday August 21st
 
--   About the course and requirements
+- About the course and requirements
 
--   MENTI to gather your thoughts and expectations
+- MENTI to gather your thoughts and expectations
 
--   Group discussions to introduce the way we will work in TMA4269
+- Group discussions to introduce the way we will work in TMA4269
 
 ## But first...
 
@@ -36,123 +36,123 @@ This is accomplished mainly through **examples and group work** and only a few l
 
 If you need more fundamental/theoretical knowledge you should rather consider
 
--   TMA4267 Linear statistical models (for multiple linear regression)
+- TMA4267 Linear statistical models (for multiple linear regression)
 
--   TMA4268 Statistical learning (for machine learning)
-
-## Portfolio assessment
-
--   Individual letter grades (A-F) are set based on your portfolio ("mappe")
-
--   All elements of the portfolio are completed in groups
-
--   The group work is done mostly **during class hours**
-
-    -   You will at times be assigned some preparatory homework
-
-    -   We are not interested in polished project reports
+- TMA4268 Statistical learning (for machine learning)
 
 ## Portfolio assessment
 
--   The portfolio will consist of 3 types of activities:
+- Individual letter grades (A-F) are set based on your portfolio ("mappe")
 
-    -   8 smaller activities, participation (hand-in) counts 5 points each, but at most 30 points
+- All elements of the portfolio are completed in groups
 
-    -   Project 1: 2 hand-ins, at most 30 points (mandatory)
+- The group work is done mostly **during class hours**
 
-    -   Project 2: 3 hand-ins, at most 50 points (mandatory)
+  - You will at times be assigned some preparatory homework
 
--   Everything will be delivered in Canvas **during class hours**
+  - We are not interested in polished project reports
+
+## Portfolio assessment
+
+- The portfolio will consist of 3 types of activities:
+
+  - 8 smaller activities, participation (hand-in) counts 5 points each, but at most 30 points
+
+  - Project 1: 2 hand-ins, at most 30 points (mandatory)
+
+  - Project 2: 3 hand-ins, at most 50 points (mandatory)
+
+- Everything will be delivered in Canvas **during class hours**
 
 ## What the portfolio assessment implies
 
--   No exam!
+- No exam!
 
--   You have to **show up and participate**
+- You have to **show up and participate**
 
-    -   Wednesdays 10:15 - 12:00
+  - Wednesdays 10:15 - 12:00
 
-    -   Fridays 12:15 - 14:00
+  - Fridays 12:15 - 14:00
 
 ## What the portfolio assessment implies {.smaller}
 
--   No exam!
+- No exam!
 
--   You have to **show up and participate**
+- You have to **show up and participate**
 
-    -   Wednesdays 10:15 - 12:00
+  - Wednesdays 10:15 - 12:00
 
-    -   Fridays 12:15 - 14:00
+  - Fridays 12:15 - 14:00
 
 <!-- -->
 
--   Sick? Travel? OK.
+- Sick? Travel? OK.
 
--   But we expect that you intend to participate in both sessions every week, and if you miss too many then you cannot get a grade
+- But we expect that you intend to participate in both sessions every week, and if you miss too many then you cannot get a grade
 
--   (and also, no group wants a group member who does not show up)
+- (and also, no group wants a group member who does not show up)
 
 ## Groups and group work {.smaller}
 
--   About 5 students per group
+- About 5 students per group
 
--   Groups stay together for about two weeks, then rotate
+- Groups stay together for about two weeks, then rotate
 
--   Groups hand in assignments and projects jointly through Canvas
+- Groups hand in assignments and projects jointly through Canvas
 
 ## Teachers and assistants
 
--   Sara Martino (teacher)
+- Sara Martino (teacher)
 
--   Thea Bjørnland (teacher)
+- Thea Bjørnland (teacher)
 
--   Fredrik M. Eriksen (teaching assistant)
+- Fredrik M. Eriksen (teaching assistant)
 
--   TBA (teaching assistant)
+- TBA (teaching assistant)
 
 ## Some context (1)
 
 This is the first time we:
 
--   run the course TMA4269 Data Science
+- run the course TMA4269 Data Science
 
--   use portfolio assessment (mappevurdering)
+- use portfolio assessment (mappevurdering)
 
--   built an entire course around applications and group discussions
+- built an entire course around applications and group discussions
 
--   use Canvas
+- use Canvas
 
 ## Some context (2)
 
--   The course was designed as a 'k-emne' for 'siving' students (complementary course for certain NTNU programs), which means:
+- The course was designed as a 'k-emne' for 'siving' students (complementary course for certain NTNU programs), which means:
 
-    -   Not a theoretical course
+  - Not a theoretical course
 
-    -   We focus on "apply, use, and discuss"
+  - We focus on "apply, use, and discuss"
 
--   The course is also open to other students
+- The course is also open to other students
 
--   We only require that you have taken a basic statistics course (e.g. TMA4240/45)
+- We only require that you have taken a basic statistics course (e.g. TMA4240/45)
 
--   Make sure the course can be approved as part of the study plan in you program
+- Make sure the course can be approved as part of the study plan in you program
 
 ## Co-creation
 
--   The course has no strict curriculum
+- The course has no strict curriculum
 
--   All learning activities and assessment types are new and being developed as we go
+- All learning activities and assessment types are new and being developed as we go
 
--   You will learn from us and **we will learn from you**
+- You will learn from us and **we will learn from you**
 
-    -   --\> We all need to be a bit flexible and collaborate
+  - --\> We all need to be a bit flexible and collaborate
 
 ## Teaching Excellence Program at NTNU (Toppundervisning)
 
--   We are developing the course through the NTNU teaching excellence program
+- We are developing the course through the NTNU teaching excellence program
 
--   "AI-assisted learning in statistics"
+- "AI-assisted learning in statistics"
 
-    -   For several assignments / projects we expect you to use AI tools to get relevant Python code and suggestions for methods
+  - For several assignments / projects we expect you to use AI tools to get relevant Python code and suggestions for methods
 
 ## Menti: Who are you?
 
