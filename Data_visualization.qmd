@@ -14,6 +14,13 @@ editor: source
  - Getting to know a dataset 
  
  
+## But first...
+
+- 2-3 minutes to get to know the persons at your table
+- Decide who will do the coding and submission of the assignment
+
+
+ 
 
 ## Create Groups in Canvas
 
@@ -27,12 +34,40 @@ On your desk you will find a sheet with a number, **this is your group number fo
 **NOTE** Remember your Group number for next week, you will have to enroll again!!!
 
 
-## Data Assignment  - Nofence
+## Our First data Assignment
 
 The world's first virtual fencing system
 
 
 ![](Figures/nofence1.png)
+
+## How Nofence works{.smaller}
+
+![](Figures/nofence2.png)
+
+You can learn more about this company from their  website [https://www.nofence.com/](https://www.nofence.com/)
+
+
+## Assignement
+
+
+- Log into Canvas 
+
+- Find the assignement **Visualization Week 35**
+
+- You'll find two files:
+
+  1. Data: `norway_seqs_df.parquet`
+  2. Instructions: `visualization_week35.ipynb`
+  
+- Download both of them
+
+- Log into the NTNU JupiterHub [https://jupyter.ntnu.no/](https://jupyter.ntnu.no/)
+  
+- Drag the instruction file into   the workspace. Here you find instruction about your tasks.
+
+
+
 
 
 

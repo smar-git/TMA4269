@@ -14,11 +14,25 @@
     "text": "Create Groups in Canvas\nOn your desk you will find a sheet with a number, this is your group number for the next two weeks (until September 4th)\n\nLog into Canvas\nClick on People on the right side of the page\nClick on Group\nScroll to the group with the number on your desk and enroll yourself in the group\n\nNOTE Remember your Group number for next week, you will have to enroll again!!!"
   },
   {
-    "objectID": "Data_visualization.html#data-assignment---nofence",
-    "href": "Data_visualization.html#data-assignment---nofence",
+    "objectID": "Data_visualization.html#our-first-data-assignment",
+    "href": "Data_visualization.html#our-first-data-assignment",
     "title": "Data and Data Visualization",
-    "section": "Data Assignment - Nofence",
-    "text": "Data Assignment - Nofence\nThe world’s first virtual fencing system"
+    "section": "Our First data Assignment",
+    "text": "Our First data Assignment\nThe world’s first virtual fencing system"
+  },
+  {
+    "objectID": "Data_visualization.html#how-nofence-works",
+    "href": "Data_visualization.html#how-nofence-works",
+    "title": "Data and Data Visualization",
+    "section": "How Nofence works",
+    "text": "How Nofence works\n\nYou can learn more about this company from their website https://www.nofence.com/"
+  },
+  {
+    "objectID": "Data_visualization.html#assignement",
+    "href": "Data_visualization.html#assignement",
+    "title": "Data and Data Visualization",
+    "section": "Assignement",
+    "text": "Assignement\n\nLog into Canvas\nFind the assignement Visualization Week 35\nYou’ll find two files:\n\nData: norway_seqs_df.parquet\nInstructions: visualization_week35.ipynb\n\nDownload both of them\nLog into the NTNU JupiterHub https://jupyter.ntnu.no/\nDrag the instruction file into the workspace. Here you find instruction about your tasks."
   },
   {
     "objectID": "index.html",
@@ -180,5 +194,12 @@
     "title": "About the course: TMA4269 Fall 2026",
     "section": "Group practice (3)",
     "text": "Group practice (3)\nTask four\nAll groups are given a new version of the graph as presented by NRK 14.07.2026, and a reflection sheet."
+  },
+  {
+    "objectID": "Data_visualization.html#but-first",
+    "href": "Data_visualization.html#but-first",
+    "title": "Data and Data Visualization",
+    "section": "But first…",
+    "text": "But first…\n\n2-3 minutes to get to know the persons at your table\nDecide who will do the coding and submission of the assignment"
   }
 ]
