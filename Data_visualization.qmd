@@ -23,7 +23,121 @@ editor: source
 - Decide who will do the coding and submission of the assignment
 
 
- 
+## What is data? 
+
+- Menti
+
+<div style="font-size: 0.5em; ">
+Note: ...although the word "data" is plural, "is" sounds better..
+</div>
+
+
+## What is data?
+
+<div style="display: flex; justify-content: center; align-items: center; height: 30vh; font-size: 1.5em; font-weight: bold;">
+
+“All is data”
+
+</div>
+
+everything happening in  counts as data, including interviews, observations, documents, and background context.
+
+<div style="font-size: 0.5em; text-align: center;">
+Glaser, Barney G. "All Is Data." Grounded Theory Review, vol. 6, no. 2, 2007, pp. 1–22.
+</div>
+
+## What is data?
+
+<div style="display: flex; justify-content: center; align-items: center;  font-size: 1.5em;">
+
+"information, especially facts or numbers, collected to be examined and considered and used to help decision-making, or information in an electronic form that can be stored and used by a computer" 
+</div>
+
+<div style="font-size: 0.5em; text-align: center;">
+Cambridge dictionary
+</div>
+
+
+## Data came in different type 
+
+Some terminology
+
+::: {.columns}
+
+::: {.column width="40%"}
+
+
+![](CV_pictures/qualitative.jpg)
+:::
+
+::: {.column width="60%"}
+
+
+- Profile statement → _Qualitative_
+- Profile photo  → _Image_
+:::
+
+:::
+
+
+
+
+
+
+## Data came in different type 
+
+Some terminology
+
+::: {.columns}
+
+::: {.column width="40%"}
+
+
+![](CV_pictures/quantitative.jpg)
+:::
+
+::: {.column width="60%"}
+
+
+**Quantitative**:  
+
+
+- Age, salary, years of experience → _quantitative / continuous_
+- Number of language spoken → _quantitative / discrete_
+
+:::
+
+:::
+
+
+
+
+
+
+## Data came in different type 
+
+Some terminology
+
+::: {.columns}
+
+::: {.column width="40%"}
+
+
+![](CV_pictures/categorical.png)
+:::
+
+::: {.column width="60%"}
+
+- Location, nationality, driving licence → nominal
+- Skill levels, language proficiency → ordinal
+:::
+
+:::
+
+
+
+
+
 
 ## Create Groups in Canvas
 
