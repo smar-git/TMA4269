@@ -128,6 +128,8 @@ Some terminology
 
 ::: {.column width="60%"}
 
+**Categorical**:  
+
 - Location, nationality, driving licence → nominal
 - Skill levels, language proficiency → ordinal
 :::
@@ -154,6 +156,8 @@ Some terminology
 
 ::: {.column width="60%"}
 
+**Space and time**:  
+
 - year of graduation, day of birth → time
 - city → space
 :::
@@ -171,12 +175,12 @@ A visualization turns data into something we can _see_, _compare_, and _reason a
 
 **Why do we visualize?**
 
-- 🔎 **Find patterns and explore the data** — trends, clusters, relationships
-- ⚖️ **Compare** — groups, categories, values
-- 📈 **See change** — especially over time or space
-- 🚨 **Spot unusual values** — outliers and anomalies
-- 🧩 **Understand complexity** — make large datasets easier to explore
-- 💬 **Communicate** — explain findings to other people
+- **Find patterns and explore the data** — trends, clusters, relationships
+-  **Compare** — groups, categories, values
+- **See change** — especially over time or space
+- **Spot unusual values** — outliers and anomalies
+- **Understand complexity** — make large datasets easier to explore
+- **Communicate** — explain findings to other people
 
 
 ## What makes good visualization?{.smaller}
@@ -250,7 +254,150 @@ Some good principles (among many others!)
 
 
 
-## Some bad examples ..
+## Example 1
+
+![](bad_graphs/orig1.png)
+
+- what is the meaning of the different colours?
+- how many more like does Corbyn gets?
+
+
+<div style="font-size: 0.5em; text-align: center;">
+Examples from "Mistakes we have drawn a few. Learning from our errors in data visualization" The Economist March 27, 2019
+</div>
+
+::: {.notes}
+
+article at:
+
+https://www.scribd.com/document/841286524/Mistakes-we-ve-drawn-a-few-Learning-from-our-errors-in-data-by-Sarah-Leo-The-Economist
+
+better figures from
+
+https://marievozanne.github.io/Misleading-and-Confusing-Charts---Exercises.pdf
+
+:::
+## Example 1
+
+::: {.columns}
+
+::: {.column}
+
+![](bad_graphs/orig1.png){width="100%"}
+
+:::
+
+::: {.column}
+
+![](bad_graphs/improve1.png){width="100%"}
+
+:::
+
+:::
+
+::: {.notes}
+The improved graph is cleaner (less colours) and makes the scale clear
+
+:::
+
+
+## Example 2
+
+![](bad_graphs/orig2.png){width="100%"}
+
+
+
+
+- is people's opinion really so erratic?
+- can we better highlight trends?
+
+
+## Example 2
+
+::: {.columns}
+
+::: {.column}
+
+![](bad_graphs/orig2.png){width="100%"}
+
+:::
+
+::: {.column}
+
+![](bad_graphs/improve2.png){width="100%"}
+
+:::
+
+:::
+
+::: {.notes}
+The improved graph has original data as points and a fitted model to show the trends. Note also the larger scale.
+
+Note: here we have the output of a statistical model show in the plot
+
+Recommended when one does not have 0 as baseline. From the paper: 
+
+
+
+:::
+
+
+
+
+
+
+
+## Example 3
+
+![](bad_graphs/orig3.png){width="100%"}
+
+
+
+
+- what i the difference between light and dark blue countries?
+
+
+## Example 3
+
+::: {.columns}
+
+::: {.column}
+
+![](bad_graphs/orig3.png){width="100%"}
+
+:::
+
+::: {.column}
+
+![](bad_graphs/improve3.png){width="100%"}
+
+:::
+
+:::
+
+::: {.notes}
+the dark blue ones are those that are labelled. the new graph makes this easier to read
+
+
+:::
+
+
+
+
+
+
+
+
+## Example 4
+
+![](bad_graphs/example5.png){fig-align="center"}
+
+
+
+
+- How long is 2020? how about 2021?
+
+
 
 
 

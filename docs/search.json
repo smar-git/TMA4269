@@ -53,21 +53,21 @@
     "href": "Data_visualization.html#data-came-in-different-type-2",
     "title": "Data and Data Visualization",
     "section": "Data came in different type",
-    "text": "Data came in different type\nSome terminology\n\n\n\n\n\nLocation, nationality, driving licence → nominal\nSkill levels, language proficiency → ordinal"
+    "text": "Data came in different type\nSome terminology\n\n\n\n\nCategorical:\n\nLocation, nationality, driving licence → nominal\nSkill levels, language proficiency → ordinal"
   },
   {
     "objectID": "Data_visualization.html#data-came-in-different-type-3",
     "href": "Data_visualization.html#data-came-in-different-type-3",
     "title": "Data and Data Visualization",
     "section": "Data came in different type",
-    "text": "Data came in different type\nSome terminology\n\n\n\n\n\nyear of graduation, day of birth → time\ncity → space"
+    "text": "Data came in different type\nSome terminology\n\n\n\n\nSpace and time:\n\nyear of graduation, day of birth → time\ncity → space"
   },
   {
     "objectID": "Data_visualization.html#why-data-visualization",
     "href": "Data_visualization.html#why-data-visualization",
     "title": "Data and Data Visualization",
     "section": "Why data visualization?",
-    "text": "Why data visualization?\nA visualization turns data into something we can see, compare, and reason about.\n\nWhy do we visualize?\n\n🔎 Find patterns and explore the data — trends, clusters, relationships\n⚖️ Compare — groups, categories, values\n📈 See change — especially over time or space\n🚨 Spot unusual values — outliers and anomalies\n🧩 Understand complexity — make large datasets easier to explore\n💬 Communicate — explain findings to other people"
+    "text": "Why data visualization?\nA visualization turns data into something we can see, compare, and reason about.\n\nWhy do we visualize?\n\nFind patterns and explore the data — trends, clusters, relationships\nCompare — groups, categories, values\nSee change — especially over time or space\nSpot unusual values — outliers and anomalies\nUnderstand complexity — make large datasets easier to explore\nCommunicate — explain findings to other people"
   },
   {
     "objectID": "Data_visualization.html#what-makes-good-visualization",
@@ -98,11 +98,53 @@
     "text": "What makes good visualization?\nSome good principles (among many others!)\n\nStart with a question What do I want to communicate?\nChoose the right visual form Match the chart to the question.\nBe honest Don’t distort the message\nRemove the unnecessary\n\nAvoid decoration that doesn’t communicate information."
   },
   {
-    "objectID": "Data_visualization.html#some-bad-examples-..",
-    "href": "Data_visualization.html#some-bad-examples-..",
+    "objectID": "Data_visualization.html#example-1",
+    "href": "Data_visualization.html#example-1",
     "title": "Data and Data Visualization",
-    "section": "Some bad examples ..",
-    "text": "Some bad examples .."
+    "section": "Example 1",
+    "text": "Example 1\n\n\nwhat is the meaning of the different colours?\nhow many more like does Corbyn gets?\n\n\nExamples from “Mistakes we have drawn a few. Learning from our errors in data visualization” The Economist March 27, 2019\n\n\narticle at:\nhttps://www.scribd.com/document/841286524/Mistakes-we-ve-drawn-a-few-Learning-from-our-errors-in-data-by-Sarah-Leo-The-Economist\nbetter figures from\nhttps://marievozanne.github.io/Misleading-and-Confusing-Charts—Exercises.pdf"
+  },
+  {
+    "objectID": "Data_visualization.html#example-1-1",
+    "href": "Data_visualization.html#example-1-1",
+    "title": "Data and Data Visualization",
+    "section": "Example 1",
+    "text": "Example 1\n\n\n\n\n\n\n\nThe improved graph is cleaner (less colours) and makes the scale clear"
+  },
+  {
+    "objectID": "Data_visualization.html#example-2",
+    "href": "Data_visualization.html#example-2",
+    "title": "Data and Data Visualization",
+    "section": "Example 2",
+    "text": "Example 2\n\n\nis people’s opinion really so erratic?\ncan we better highlight trends?"
+  },
+  {
+    "objectID": "Data_visualization.html#example-2-1",
+    "href": "Data_visualization.html#example-2-1",
+    "title": "Data and Data Visualization",
+    "section": "Example 2",
+    "text": "Example 2\n\n\n\n\n\n\n\nThe improved graph has original data as points and a fitted model to show the trends. Note also the larger scale.\nNote: here we have the output of a statistical model show in the plot\nRecommended when one does not have 0 as baseline. From the paper:"
+  },
+  {
+    "objectID": "Data_visualization.html#example-3",
+    "href": "Data_visualization.html#example-3",
+    "title": "Data and Data Visualization",
+    "section": "Example 3",
+    "text": "Example 3\n\n\nwhat i the difference between light and dark blue countries?"
+  },
+  {
+    "objectID": "Data_visualization.html#example-3-1",
+    "href": "Data_visualization.html#example-3-1",
+    "title": "Data and Data Visualization",
+    "section": "Example 3",
+    "text": "Example 3\n\n\n\n\n\n\n\nthe dark blue ones are those that are labelled. the new graph makes this easier to read"
+  },
+  {
+    "objectID": "Data_visualization.html#example-4",
+    "href": "Data_visualization.html#example-4",
+    "title": "Data and Data Visualization",
+    "section": "Example 4",
+    "text": "Example 4\n\n\nHow long is 2020? how about 2021?"
   },
   {
     "objectID": "Data_visualization.html#create-groups-in-canvas",

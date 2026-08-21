@@ -210,6 +210,7 @@
 <div class="column" style="width:40%;">
 <p><img data-src="CV_pictures/categorical.png"></p>
 </div><div class="column" style="width:60%;">
+<p><strong>Categorical</strong>:</p>
 <ul>
 <li>Location, nationality, driving licence → nominal</li>
 <li>Skill levels, language proficiency → ordinal</li>
@@ -223,6 +224,7 @@
 <div class="column" style="width:40%;">
 <p><img data-src="CV_pictures/time_space.jpg"></p>
 </div><div class="column" style="width:60%;">
+<p><strong>Space and time</strong>:</p>
 <ul>
 <li>year of graduation, day of birth → time</li>
 <li>city → space</li>
@@ -235,12 +237,12 @@
 <div class="fragment">
 <p><strong>Why do we visualize?</strong></p>
 <ul>
-<li>🔎 <strong>Find patterns and explore the data</strong> — trends, clusters, relationships</li>
-<li>⚖️ <strong>Compare</strong> — groups, categories, values</li>
-<li>📈 <strong>See change</strong> — especially over time or space</li>
-<li>🚨 <strong>Spot unusual values</strong> — outliers and anomalies</li>
-<li>🧩 <strong>Understand complexity</strong> — make large datasets easier to explore</li>
-<li>💬 <strong>Communicate</strong> — explain findings to other people</li>
+<li><strong>Find patterns and explore the data</strong> — trends, clusters, relationships</li>
+<li><strong>Compare</strong> — groups, categories, values</li>
+<li><strong>See change</strong> — especially over time or space</li>
+<li><strong>Spot unusual values</strong> — outliers and anomalies</li>
+<li><strong>Understand complexity</strong> — make large datasets easier to explore</li>
+<li><strong>Communicate</strong> — explain findings to other people</li>
 </ul>
 </div>
 </section>
@@ -293,8 +295,122 @@
 </ul></li>
 </ol>
 </section>
-<section id="some-bad-examples-.." class="slide level2">
-<h2>Some bad examples ..</h2>
+<section id="example-1" class="slide level2">
+<h2>Example 1</h2>
+
+<img data-src="bad_graphs/orig1.png" class="r-stretch"><ul>
+<li>what is the meaning of the different colours?</li>
+<li>how many more like does Corbyn gets?</li>
+</ul>
+<div style="font-size: 0.5em; text-align: center;">
+<p>Examples from “Mistakes we have drawn a few. Learning from our errors in data visualization” The Economist March 27, 2019</p>
+</div>
+<aside class="notes">
+<p>article at:</p>
+<p>https://www.scribd.com/document/841286524/Mistakes-we-ve-drawn-a-few-Learning-from-our-errors-in-data-by-Sarah-Leo-The-Economist</p>
+<p>better figures from</p>
+<p>https://marievozanne.github.io/Misleading-and-Confusing-Charts—Exercises.pdf</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="example-1-1" class="slide level2">
+<h2>Example 1</h2>
+<div class="columns">
+<div class="column">
+<p><img data-src="bad_graphs/orig1.png" style="width:100.0%"></p>
+</div><div class="column">
+<p><img data-src="bad_graphs/improve1.png" style="width:100.0%"></p>
+</div></div>
+<aside class="notes">
+<p>The improved graph is cleaner (less colours) and makes the scale clear</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="example-2" class="slide level2">
+<h2>Example 2</h2>
+
+<img data-src="bad_graphs/orig2.png" style="width:100.0%" class="r-stretch"><ul>
+<li>is people’s opinion really so erratic?</li>
+<li>can we better highlight trends?</li>
+</ul>
+</section>
+<section id="example-2-1" class="slide level2">
+<h2>Example 2</h2>
+<div class="columns">
+<div class="column">
+<p><img data-src="bad_graphs/orig2.png" style="width:100.0%"></p>
+</div><div class="column">
+<p><img data-src="bad_graphs/improve2.png" style="width:100.0%"></p>
+</div></div>
+<aside class="notes">
+<p>The improved graph has original data as points and a fitted model to show the trends. Note also the larger scale.</p>
+<p>Note: here we have the output of a statistical model show in the plot</p>
+<p>Recommended when one does not have 0 as baseline. From the paper:</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="example-3" class="slide level2">
+<h2>Example 3</h2>
+
+<img data-src="bad_graphs/orig3.png" style="width:100.0%" class="r-stretch"><ul>
+<li>what i the difference between light and dark blue countries?</li>
+</ul>
+</section>
+<section id="example-3-1" class="slide level2">
+<h2>Example 3</h2>
+<div class="columns">
+<div class="column">
+<p><img data-src="bad_graphs/orig3.png" style="width:100.0%"></p>
+</div><div class="column">
+<p><img data-src="bad_graphs/improve3.png" style="width:100.0%"></p>
+</div></div>
+<aside class="notes">
+<p>the dark blue ones are those that are labelled. the new graph makes this easier to read</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="example-4" class="slide level2">
+<h2>Example 4</h2>
+
+<img data-src="bad_graphs/example5.png" class="quarto-figure quarto-figure-center r-stretch"><ul>
+<li>How long is 2020? how about 2021?</li>
+</ul>
 </section>
 <section id="create-groups-in-canvas" class="slide level2">
 <h2>Create Groups in Canvas</h2>
