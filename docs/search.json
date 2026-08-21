@@ -221,7 +221,7 @@
     "href": "intro.html#what-the-portfolio-assessment-implies-1",
     "title": "About the course: TMA4269 Fall 2026",
     "section": "What the portfolio assessment implies",
-    "text": "What the portfolio assessment implies\n\nNo exam!\nYou have to show up and participate\n\nWednesdays 10:15 - 12:00\nFridays 12:15 - 14:00\n\n\n\n\nSick? Travel? OK.\nBut we expect that you intend to participate in both sessions every week, and if you miss too many then you cannot get a grade\n(and also, no group wants a group member who does not show up)"
+    "text": "What the portfolio assessment implies\n\nSick? Travel? OK.\nBut if you miss to many sessions then you cannot get a grade\nAnd also, no group wants a group member who does not show up"
   },
   {
     "objectID": "intro.html#groups-and-group-work",
@@ -235,7 +235,7 @@
     "href": "intro.html#teachers-and-assistants",
     "title": "About the course: TMA4269 Fall 2026",
     "section": "Teachers and assistants",
-    "text": "Teachers and assistants\n\nSara Martino (teacher)\nThea Bjørnland (teacher)\nFredrik M. Eriksen (teaching assistant)\nTBA (teaching assistant)"
+    "text": "Teachers and assistants\n\nSara Martino (teacher)\nThea Bjørnland (teacher)\nFredrik M. Eriksen (teaching assistant)\nErin A. D. Bråten (teaching assistant)"
   },
   {
     "objectID": "intro.html#some-context-1",
@@ -284,7 +284,7 @@
     "href": "intro.html#group-practice-1---ca-10-15-min",
     "title": "About the course: TMA4269 Fall 2026",
     "section": "Group practice (1 - ca 10-15 min)",
-    "text": "Group practice (1 - ca 10-15 min)\nAll groups are given a graph (a time series)\nTask one\nDiscuss: What do you notice?\nTask two\nBe creative: Draw something on the graph to make a story for a newspaper"
+    "text": "Group practice (1 - ca 10-15 min)\nAll groups are given a graph (a time series)\nTask one\nDiscuss: What do you notice? Make sure everyone at the table gives their opinion, and aim for different angles\nTask two\nBe creative: Draw something on the graph to make a story for a newspaper"
   },
   {
     "objectID": "intro.html#group-practice-2---ca-5-min",
@@ -305,6 +305,6 @@
     "href": "intro.html#for-next-time",
     "title": "About the course: TMA4269 Fall 2026",
     "section": "For next time",
-    "text": "For next time\nPlease answer the survey sent to you by e-mail: https://nettskjema.no/a/642791 We need to know how many will actually take the course.\nCheck that you can log into Canvas and that you see the course page.\nCheck that you can log into NTNUs JupyterHub: https://jupyter.ntnu.no"
+    "text": "For next time\nPlease answer the survey sent to you by e-mail: nettskjema For room reasons we need to know how many will actually take the course.\nCheck that you can log into Canvas and that you see the course page.\nCheck that you can log into NTNUs JupyterHub: https://jupyter.ntnu.no\nWednesday we meet in R2 for a first go at visualization. Bring laptop."
   }
 ]
