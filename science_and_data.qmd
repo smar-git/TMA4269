@@ -1,0 +1,11 @@
+---
+title: "Science and Data"
+format: revealjs
+editor: visual
+---
+
+## Plan for today
+
+-   Some lecturing, some group work and discussions
+
+-   We are building up to next weeks discussion of a scientific paper
