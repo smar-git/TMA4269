@@ -151,29 +151,37 @@ This is the first time we:
 
 ## BREAK
 
-## Group practice (1 - ca 10-15 min)
-
+## Group practice (1)
 All groups are given a graph (a time series)
 
-**Task one**
+**Individual 2 min**
 
-Discuss: What do you notice? Make sure everyone at the table gives their opinion, and aim for different angles
+Write down on a post-it: What do you notice?
 
-**Task two**
 
-Be creative: Draw something on the graph to make a story for a newspaper
+## Group practice  (2)
 
-## Group practice (2 - ca 5 min)
+**Discuss together 5 min**
 
-**Task three**
-
-Presentation: Tell your story to the neighbor group.
+What did you notice? Make sure everyone at the table gives their opinion, and aim for different angles
 
 ## Group practice (3)
 
+**Be creative 5 min**
+
+Draw something on the graph to make a story for a newspaper
+
+## Group practice (4)
+
+**Presentation 5 min**
+
+Tell your story to the neighbor group.
+
+## Group practice (5)
+
 ::::: columns
 ::: column
-**Task four:** All groups are given a new version of the graph as presented by NRK 14.07.2026, and a reflection sheet.
+All groups are given a new version of the graph as presented by NRK 14.07.2026, and a reflection sheet.
 :::
 
 ::: column
@@ -185,9 +193,9 @@ Presentation: Tell your story to the neighbor group.
 
 ## For next time
 
-Please answer the survey sent to you by e-mail: [nettskjema](https://nettskjema.no/a/642791) For room reasons we need to know how many will actually take the course.
+Please answer the survey sent to you by e-mail: [nettskjema](https://nettskjema.no/a/642791) (For room reasons we need to know how many will actually take the course.)
 
-Check that you can log into Canvas and that you see the course page.
+Check that you can log into Canvas and that you see the course page there.
 
 Check that you can log into NTNUs JupyterHub: https://jupyter.ntnu.no
 
