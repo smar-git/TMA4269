@@ -56,6 +56,55 @@
     "text": "Data came in different type\nSome terminology\n\n\n\n\n\nLocation, nationality, driving licence → nominal\nSkill levels, language proficiency → ordinal"
   },
   {
+    "objectID": "Data_visualization.html#data-came-in-different-type-3",
+    "href": "Data_visualization.html#data-came-in-different-type-3",
+    "title": "Data and Data Visualization",
+    "section": "Data came in different type",
+    "text": "Data came in different type\nSome terminology\n\n\n\n\n\nyear of graduation, day of birth → time\ncity → space"
+  },
+  {
+    "objectID": "Data_visualization.html#why-data-visualization",
+    "href": "Data_visualization.html#why-data-visualization",
+    "title": "Data and Data Visualization",
+    "section": "Why data visualization?",
+    "text": "Why data visualization?\nA visualization turns data into something we can see, compare, and reason about.\n\nWhy do we visualize?\n\n🔎 Find patterns and explore the data — trends, clusters, relationships\n⚖️ Compare — groups, categories, values\n📈 See change — especially over time or space\n🚨 Spot unusual values — outliers and anomalies\n🧩 Understand complexity — make large datasets easier to explore\n💬 Communicate — explain findings to other people"
+  },
+  {
+    "objectID": "Data_visualization.html#what-makes-good-visualization",
+    "href": "Data_visualization.html#what-makes-good-visualization",
+    "title": "Data and Data Visualization",
+    "section": "What makes good visualization?",
+    "text": "What makes good visualization?\nSome good principles (among many others!)\n\nStart with a question What do I want to communicate?"
+  },
+  {
+    "objectID": "Data_visualization.html#what-makes-good-visualization-1",
+    "href": "Data_visualization.html#what-makes-good-visualization-1",
+    "title": "Data and Data Visualization",
+    "section": "What makes good visualization?",
+    "text": "What makes good visualization?\nSome good principles (among many others!)\n\nStart with a question What do I want to communicate?\nChoose the right visual form Match the chart to the question.\n\nChange over time → line plot\nDistribution → histogram\nRelationship between two variables → scatter plot\nLocation → map"
+  },
+  {
+    "objectID": "Data_visualization.html#what-makes-good-visualization-2",
+    "href": "Data_visualization.html#what-makes-good-visualization-2",
+    "title": "Data and Data Visualization",
+    "section": "What makes good visualization?",
+    "text": "What makes good visualization?\nSome good principles (among many others!)\n\nStart with a question What do I want to communicate?\nChoose the right visual form Match the chart to the question.\nBe honest Don’t distort the message\n\nmisleading axes\ninappropriate scales\ncherry-picked data\nunnecessary 3D effects"
+  },
+  {
+    "objectID": "Data_visualization.html#what-makes-good-visualization-3",
+    "href": "Data_visualization.html#what-makes-good-visualization-3",
+    "title": "Data and Data Visualization",
+    "section": "What makes good visualization?",
+    "text": "What makes good visualization?\nSome good principles (among many others!)\n\nStart with a question What do I want to communicate?\nChoose the right visual form Match the chart to the question.\nBe honest Don’t distort the message\nRemove the unnecessary\n\nAvoid decoration that doesn’t communicate information."
+  },
+  {
+    "objectID": "Data_visualization.html#some-bad-examples-..",
+    "href": "Data_visualization.html#some-bad-examples-..",
+    "title": "Data and Data Visualization",
+    "section": "Some bad examples ..",
+    "text": "Some bad examples .."
+  },
+  {
     "objectID": "Data_visualization.html#create-groups-in-canvas",
     "href": "Data_visualization.html#create-groups-in-canvas",
     "title": "Data and Data Visualization",
