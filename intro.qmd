@@ -2,7 +2,7 @@
 title: "About the course: TMA4269 Fall 2026"
 format: 
   revealjs:
-    footer: "<a href='../index.html'>Back to Home</a>"
+    footer: "<a href='/index.html'>Back to Home</a>"
 slide-number: "c/t"
 editor: visual
 ---

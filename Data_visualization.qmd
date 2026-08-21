@@ -2,7 +2,7 @@
 title: "Data and Data Visualization"
 format: 
   revealjs:
-    footer: "<a href='../index.html'>Back to Home</a>"
+    footer: "<a href='/index.html'>Back to Home</a>"
 slide-number: "c/t"
 editor: source
 ---
@@ -136,6 +136,121 @@ Some terminology
 
 
 
+
+
+
+
+## Data came in different type 
+
+Some terminology
+
+::: {.columns}
+
+::: {.column width="40%"}
+
+
+![](CV_pictures/time_space.jpg)
+:::
+
+::: {.column width="60%"}
+
+- year of graduation, day of birth → time
+- city → space
+:::
+
+:::
+
+
+
+## Why data visualization?{.smaller}
+
+A visualization turns data into something we can _see_, _compare_, and _reason about_.
+
+. . .
+
+
+**Why do we visualize?**
+
+- 🔎 **Find patterns and explore the data** — trends, clusters, relationships
+- ⚖️ **Compare** — groups, categories, values
+- 📈 **See change** — especially over time or space
+- 🚨 **Spot unusual values** — outliers and anomalies
+- 🧩 **Understand complexity** — make large datasets easier to explore
+- 💬 **Communicate** — explain findings to other people
+
+
+## What makes good visualization?{.smaller}
+
+Some good principles (among many others!)
+
+
+1. **Start with a question**  What do I want to communicate?
+
+
+
+
+## What makes good visualization?{.smaller}
+
+Some good principles (among many others!)
+
+
+1. **Start with a question**  What do I want to communicate?
+
+2. **Choose the right visual form**  Match the chart to the question.
+
+    - Change over time → line plot
+    - Distribution → histogram
+    - Relationship between two variables → scatter plot
+    - Location → map
+
+
+
+
+
+## What makes good visualization?{.smaller}
+
+Some good principles (among many others!)
+
+
+1. **Start with a question**  What do I want to communicate?
+
+2. **Choose the right visual form**  Match the chart to the question.
+
+   
+
+3. **Be honest**  Don't distort the message 
+
+    - misleading axes
+    - inappropriate scales
+    - cherry-picked data
+    - unnecessary 3D effects
+
+
+
+
+## What makes good visualization?{.smaller}
+
+Some good principles (among many others!)
+
+
+1. **Start with a question**  What do I want to communicate?
+
+2. **Choose the right visual form**  Match the chart to the question.
+
+ 
+
+3. **Be honest**  Don't distort the message 
+
+ 
+4. **Remove the unnecessary**
+
+    - Avoid decoration that doesn't communicate information.
+
+
+
+
+
+## Some bad examples ..
 
 
 
