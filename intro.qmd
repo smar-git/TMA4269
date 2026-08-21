@@ -181,6 +181,22 @@ Presentation: Tell your story to the neighbor group.
 
 ## Group practice (3)
 
-**Task four**
+::::: columns
+::: column
+**Task four:** All groups are given a new version of the graph as presented by NRK 14.07.2026, and a reflection sheet.
+:::
 
-All groups are given a new version of the graph as presented by NRK 14.07.2026, and a reflection sheet.
+::: column
+![](images/clipboard-2215217080.png){width="500"}
+:::
+:::::
+
+[Read the NRK article here](https://www.nrk.no/buskerud/koronaforskere-ut-mot-fhi_-_-vi-har-forsokt-a-advare-1.17940542)
+
+## For next time
+
+Please answer the survey sent to you by e-mail: https://nettskjema.no/a/642791 We need to know how many will actually take the course.
+
+Check that you can log into Canvas and that you see the course page.
+
+Check that you can log into NTNUs JupyterHub: https://jupyter.ntnu.no

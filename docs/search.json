@@ -249,6 +249,45 @@
     "href": "intro.html#group-practice-3",
     "title": "About the course: TMA4269 Fall 2026",
     "section": "Group practice (3)",
+<<<<<<< Updated upstream
     "text": "Group practice (3)\nTask four\nAll groups are given a new version of the graph as presented by NRK 14.07.2026, and a reflection sheet."
+=======
+    "text": "Group practice (3)\n\n\nTask four: All groups are given a new version of the graph as presented by NRK 14.07.2026, and a reflection sheet.\n\n\n\nRead the NRK article here"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Welcome to the course TMA4269 Data Science",
+    "section": "",
+    "text": "The course TMA4269 Data Science is developed by the Department of Mathematical Sciences at NTNU, and intended as a ‘k-emne’ (complementary course) for 5-year integrated master of technology students (Siving). Other students are also welcome to the course. The course is given for the first time in the fall semester of 2026. Teachers are Sara Martino and Thea Bjørnland.\nThis page presents learning materials etc. Other details (schedule, messages etc) are posted at the course wikipages."
+  },
+  {
+    "objectID": "index.html#general-information",
+    "href": "index.html#general-information",
+    "title": "Welcome to the course TMA4269 Data Science",
+    "section": "",
+    "text": "The course TMA4269 Data Science is developed by the Department of Mathematical Sciences at NTNU, and intended as a ‘k-emne’ (complementary course) for 5-year integrated master of technology students (Siving). Other students are also welcome to the course. The course is given for the first time in the fall semester of 2026. Teachers are Sara Martino and Thea Bjørnland.\nThis page presents learning materials etc. Other details (schedule, messages etc) are posted at the course wikipages."
+  },
+  {
+    "objectID": "index.html#course-description",
+    "href": "index.html#course-description",
+    "title": "Welcome to the course TMA4269 Data Science",
+    "section": "Course description",
+    "text": "Course description\n\nContent\nData science is about extracting knowledge from data. This includes identifying patterns, making predictions, communicating results, and supporting decision-making. This course provides a practical and example-based introduction to fundamental topics such as data visualisation, regression models, and machine learning. We will discuss the limitations of data analysis and modeling to avoid misinterpretation or misuse of model results.\n\n\nLearning outcomes\nThe student is familiar with the most common methods and algorithms for data visualisation, modeling, and prediction. The student can critically evaluate results from various data science processes. This includes understanding the limitations of models, as well as being able to discuss the implications of these with others.\n\n\nLearning and assessment activities\nFor this course your grade is set using portfolio assessment. You will attend and participate in mandatory activities, and complete (in groups) two projects. All activities and project work are intended to take place during the lecture times."
+  },
+  {
+    "objectID": "intro.html#groups-and-group-work",
+    "href": "intro.html#groups-and-group-work",
+    "title": "About the course: TMA4269 Fall 2026",
+    "section": "Groups and group work",
+    "text": "Groups and group work\n\nAbout 5 students per group\nGroups stay together for about two weeks, then rotate\nGroups hand in assignments and projects jointly through Canvas"
+  },
+  {
+    "objectID": "intro.html#for-next-time",
+    "href": "intro.html#for-next-time",
+    "title": "About the course: TMA4269 Fall 2026",
+    "section": "For next time",
+    "text": "For next time\nPlease answer the survey sent to you by e-mail: https://nettskjema.no/a/642791 We need to know how many will actually take the course.\nCheck that you can log into Canvas and that you see the course page.\nCheck that you can log into NTNUs JupyterHub: https://jupyter.ntnu.no"
+>>>>>>> Stashed changes
   }
 ]

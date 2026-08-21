@@ -1,0 +1,25 @@
+---
+title: "Telling stories with data"
+format: revealjs
+editor: visual
+---
+
+## Plan for today 
+
+-   First assignment (5 points)
+
+-   Topic: Telling stories with data
+
+## Recall from last week
+
+(picture of graph) + make comments
+(tabloid, crude? brings out this "bump" in the graph to be striking!)
+(when we just saw the data is was not so obvious, and we are wondering why the graph starts in 2010?)
+(Note: there is nothing wrong here, it is just a clear example that shows that how we present data can have a strong influence on the reader)
+
+
+
+## Criticism easy, but lets look at it differently
+In Norway, one of the most equal countries in the word. Should there really be such a large difference? Should we not aim for a rate ratio of 1? 
+
+
