@@ -263,7 +263,7 @@
     "href": "intro.html#what-the-portfolio-assessment-implies-1",
     "title": "About the course: TMA4269 Fall 2026",
     "section": "What the portfolio assessment implies",
-    "text": "What the portfolio assessment implies\n\nNo exam!\nYou have to show up and participate\n\nWednesdays 10:15 - 12:00\nFridays 12:15 - 14:00\n\n\n\n\nSick? Travel? OK.\nBut we expect that you intend to participate in both sessions every week, and if you miss too many then you cannot get a grade\n(and also, no group wants a group member who does not show up)"
+    "text": "What the portfolio assessment implies\n\nSick? Travel? OK.\nBut if you miss to many sessions then you cannot get a grade\nAnd also, no group wants a group member who does not show up"
   },
   {
     "objectID": "intro.html#groups-and-group-work",
@@ -277,7 +277,7 @@
     "href": "intro.html#teachers-and-assistants",
     "title": "About the course: TMA4269 Fall 2026",
     "section": "Teachers and assistants",
-    "text": "Teachers and assistants\n\nSara Martino (teacher)\nThea Bjørnland (teacher)\nFredrik M. Eriksen (teaching assistant)\nTBA (teaching assistant)"
+    "text": "Teachers and assistants\n\nSara Martino (teacher)\nThea Bjørnland (teacher)\nFredrik M. Eriksen (teaching assistant)\nErin A. D. Bråten (teaching assistant)"
   },
   {
     "objectID": "intro.html#some-context-1",
@@ -322,31 +322,45 @@
     "text": "BREAK"
   },
   {
-    "objectID": "intro.html#group-practice-1---ca-10-15-min",
-    "href": "intro.html#group-practice-1---ca-10-15-min",
+    "objectID": "intro.html#group-practice-1",
+    "href": "intro.html#group-practice-1",
     "title": "About the course: TMA4269 Fall 2026",
-    "section": "Group practice (1 - ca 10-15 min)",
-    "text": "Group practice (1 - ca 10-15 min)\nAll groups are given a graph (a time series)\nTask one\nDiscuss: What do you notice?\nTask two\nBe creative: Draw something on the graph to make a story for a newspaper"
+    "section": "Group practice (1)",
+    "text": "Group practice (1)\nAll groups are given a graph (a time series)\nIndividual 2 min\nWrite down on a post-it: What do you notice?"
   },
   {
-    "objectID": "intro.html#group-practice-2---ca-5-min",
-    "href": "intro.html#group-practice-2---ca-5-min",
+    "objectID": "intro.html#group-practice-2",
+    "href": "intro.html#group-practice-2",
     "title": "About the course: TMA4269 Fall 2026",
-    "section": "Group practice (2 - ca 5 min)",
-    "text": "Group practice (2 - ca 5 min)\nTask three\nPresentation: Tell your story to the neighbor group."
+    "section": "Group practice (2)",
+    "text": "Group practice (2)\nDiscuss together 5 min\nWhat did you notice? Make sure everyone at the table gives their opinion, and aim for different angles"
   },
   {
     "objectID": "intro.html#group-practice-3",
     "href": "intro.html#group-practice-3",
     "title": "About the course: TMA4269 Fall 2026",
     "section": "Group practice (3)",
-    "text": "Group practice (3)\n\n\nTask four: All groups are given a new version of the graph as presented by NRK 14.07.2026, and a reflection sheet.\n\n\n\nRead the NRK article here"
+    "text": "Group practice (3)\nBe creative 5 min\nDraw something on the graph to make a story for a newspaper"
+  },
+  {
+    "objectID": "intro.html#group-practice-4",
+    "href": "intro.html#group-practice-4",
+    "title": "About the course: TMA4269 Fall 2026",
+    "section": "Group practice (4)",
+    "text": "Group practice (4)\nPresentation 5 min\nTell your story to the neighbor group."
+  },
+  {
+    "objectID": "intro.html#group-practice-5",
+    "href": "intro.html#group-practice-5",
+    "title": "About the course: TMA4269 Fall 2026",
+    "section": "Group practice (5)",
+    "text": "Group practice (5)\n\n\nAll groups are given a new version of the graph as presented by NRK 14.07.2026, and a reflection sheet.\n\n\n\nRead the NRK article here"
   },
   {
     "objectID": "intro.html#for-next-time",
     "href": "intro.html#for-next-time",
     "title": "About the course: TMA4269 Fall 2026",
     "section": "For next time",
-    "text": "For next time\nPlease answer the survey sent to you by e-mail: https://nettskjema.no/a/642791 We need to know how many will actually take the course.\nCheck that you can log into Canvas and that you see the course page.\nCheck that you can log into NTNUs JupyterHub: https://jupyter.ntnu.no"
+    "text": "For next time\nPlease answer the survey sent to you by e-mail: nettskjema (For room reasons we need to know how many will actually take the course.)\nCheck that you can log into Canvas and that you see the course page there.\nCheck that you can log into NTNUs JupyterHub: https://jupyter.ntnu.no\nWednesday we meet in R2 for a first go at visualization. Bring laptop."
   }
 ]
