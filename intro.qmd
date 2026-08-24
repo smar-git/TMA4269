@@ -77,6 +77,10 @@ If you need more fundamental/theoretical knowledge you should rather consider
 
     -   Fridays 12:15 - 14:00
 
+-   Tentative weeks for projects:
+
+    -   39, 40, 45, 46, 47
+
 ## What the portfolio assessment implies
 
 -   Sick? Travel? OK.
@@ -152,14 +156,14 @@ This is the first time we:
 ## BREAK
 
 ## Group practice (1)
+
 All groups are given a graph (a time series)
 
 **Individual 2 min**
 
 Write down on a post-it: What do you notice?
 
-
-## Group practice  (2)
+## Group practice (2)
 
 **Discuss together 5 min**
 
