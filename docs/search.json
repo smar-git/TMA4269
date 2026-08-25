@@ -11,7 +11,7 @@
     "href": "Data_visualization.html#but-first",
     "title": "Data and Data Visualization",
     "section": "But first…",
-    "text": "But first…\n\n2-3 minutes to get to know the persons at your table\nAsk each other:\n\nHow comfortable are you with Python?\nAre you familiar with AI chat? Have you used AI to generate code?\nWho, i the group, will do the coding and submission of the assignment?"
+    "text": "But first…\n\n2-3 minutes to get to know the persons at your table\nAsk each other:\n\nHow comfortable are you with Python?\nAre you familiar with AI chat? Have you used AI to generate code?\nWho, i the group, will do the coding and submission of the test assignment?"
   },
   {
     "objectID": "Data_visualization.html#what-is-data",
@@ -179,7 +179,7 @@
     "href": "Data_visualization.html#for-next-time",
     "title": "Data and Data Visualization",
     "section": "For next time",
-    "text": "For next time"
+    "text": "For next time\n\n\n\n\n\n\n\n\n\nWeek\nDate\nPlanned Activity\nDelivery\n\n\n\n\n35\nWed 26.08\nVisualization/Python\nYes (does not count)\n\n\n\nFri 28.08\nTelling stories\nYes (5 points)\n\n\n36\nWed 02.09\nVisualization/Python\nYes (5 points)\n\n\n\nFri 04.09\nScience and Data\nNo\n\n\n37\nWed 09.09\nScience and Data\nYes (5 points)\n\n\n\nFri 11.09\nRegression\nNo\n\n\n38\nWed 16.09\nRegression\nWed or Fri\n\n\n\nFri 18.09\nRegression\nWed or Fri"
   },
   {
     "objectID": "index.html",
@@ -382,7 +382,7 @@
     "href": "Data_visualization.html#portfolio-assessment-1",
     "title": "Data and Data Visualization",
     "section": "Portfolio assessment",
-    "text": "Portfolio assessment\n\nThe portfolio will consist of 3 types of activities:8 smaller activities, participation (hand-in) counts 5 points each, but at most 30 points\n\nProject 1: 2 hand-ins, at most 30 points (mandatory)\nProject 2: 3 hand-ins, at most 50 points (mandatory)\n\nEverything will be delivered in Canvas during class hours"
+    "text": "Portfolio assessment\n\nThe portfolio will consist of 3 types of activities:8 smaller activities, participation (hand-in) counts 5 points each, but at most 30 points\n\nProject 1: 2 hand-ins, at most 30 points (mandatory)\nProject 2: 3 hand-ins, at most 40 points (mandatory)\n\nEverything will be delivered in Canvas during class hours"
   },
   {
     "objectID": "Data_visualization.html#what-the-course-description-implies-1",
@@ -417,7 +417,7 @@
     "href": "Data_visualization.html#tentative-calendar-for-assessmentsprojects",
     "title": "Data and Data Visualization",
     "section": "Tentative calendar for assessments/projects",
-    "text": "Tentative calendar for assessments/projects\n\n\n\n\n\n\n\n\n\nWeek\nDate\nPlanned Activity\nDelivery\n\n\n\n\n35\nWed 26.08\nVisualization/Python\nYes (does not count)\n\n\n\nFri 28.08\n\nNo\n\n\n36\nWed 02.09\n\n\n\n\n\nFri 04.09\n\n\n\n\n37\nWed 09.09\n\n\n\n\n\nFri 11.09\n\n\n\n\n38\nWed 16.09\n\n\n\n\n\nFri 18.09"
+    "text": "Tentative calendar for assessments/projects\n\n\n\n\n\n\n\n\n\nWeek\nDate\nPlanned Activity\nDelivery\n\n\n\n\n35\nWed 26.08\nVisualization/Python\nYes (does not count)\n\n\n\nFri 28.08\nTelling stories\nYes (5 points)\n\n\n36\nWed 02.09\nVisualization/Python\nYes (5 points)\n\n\n\nFri 04.09\nScience and Data\nNo\n\n\n37\nWed 09.09\nScience and Data\nYes (5 points)\n\n\n\nFri 11.09\nRegression\nNo\n\n\n38\nWed 16.09\nRegression\nWed or Fri\n\n\n\nFri 18.09\nRegression\nWed or Fri"
   },
   {
     "objectID": "Data_visualization.html#reference-group",
@@ -431,6 +431,13 @@
     "href": "Data_visualization.html#what-to-deliver",
     "title": "Data and Data Visualization",
     "section": "What to deliver",
-    "text": "What to deliver\nIn Canvas you should deliver:\n\nA file (word or any other format) with the questions you want to ask to the owner of the data\nThe visualization_week35.ipynb with the code you produced\nA html file with the plots you have created ## For next time"
+    "text": "What to deliver\nIn Canvas you should deliver:\n\nA file (word or any other format) with the questions you want to ask to the owner of the data\nThe visualization_week35.ipynb with the code you produced\nA html file with the plots you have created"
+  },
+  {
+    "objectID": "Data_visualization.html#some-tips",
+    "href": "Data_visualization.html#some-tips",
+    "title": "Data and Data Visualization",
+    "section": "Some tips",
+    "text": "Some tips\n\nWe want you to familiarize with this dataset through table and plots\nUse any AI chat you want to help with coding\nFor each plot/table you create discuss in group:\n\nWhat does the plot reveal about the data?\nCan you improve the plot? how?"
   }
 ]
