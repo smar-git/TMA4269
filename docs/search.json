@@ -4,14 +4,14 @@
     "href": "Data_visualization.html#plan-for-today-wednesday-august-26th",
     "title": "Data and Data Visualization",
     "section": "Plan for today Wednesday August 26th",
-    "text": "Plan for today Wednesday August 26th\n\nWhat is data?\nHow and why do we talk about data visualization?\nCreate Group on Canvas\nGetting to know a dataset"
+    "text": "Plan for today Wednesday August 26th\n\nAbout the course and requirements (some repetition)\nReference Group  \nWhat is data?\nHow and why do we talk about data visualization?\nCreate Group on Canvas\nGetting to know a dataset"
   },
   {
     "objectID": "Data_visualization.html#but-first",
     "href": "Data_visualization.html#but-first",
     "title": "Data and Data Visualization",
     "section": "But first…",
-    "text": "But first…\n\n2-3 minutes to get to know the persons at your table\nDecide who will do the coding and submission of the assignment"
+    "text": "But first…\n\n2-3 minutes to get to know the persons at your table\nAsk each other:\n\nHow comfortable are you with Python?\nAre you familiar with AI chat? Have you used AI to generate code?\nWho, i the group, will do the coding and submission of the assignment?"
   },
   {
     "objectID": "Data_visualization.html#what-is-data",
@@ -362,5 +362,75 @@
     "title": "About the course: TMA4269 Fall 2026",
     "section": "For next time",
     "text": "For next time\nPlease answer the survey sent to you by e-mail: nettskjema (For room reasons we need to know how many will actually take the course.)\nCheck that you can log into Canvas and that you see the course page there.\nCheck that you can log into NTNUs JupyterHub: https://jupyter.ntnu.no\nWednesday we meet in R2 for a first go at visualization. Bring laptop."
+  },
+  {
+    "objectID": "Data_visualization.html#what-the-course-description-implies",
+    "href": "Data_visualization.html#what-the-course-description-implies",
+    "title": "Data and Data Visualization",
+    "section": "What the course description implies",
+    "text": "What the course description implies\nYou will gain generic skills in handling, interpreting and discussing data, modelling, prediction etc etc.\nThis is accomplished mainly through examples and group work and only a few lectures.\nIf you need more fundamental/theoretical knowledge you should rather consider\n\nTMA4267 Linear statistical models (for multiple linear regression)\nTMA4268 Statistical learning (for machine learning)"
+  },
+  {
+    "objectID": "Data_visualization.html#portfolio-assessment",
+    "href": "Data_visualization.html#portfolio-assessment",
+    "title": "Data and Data Visualization",
+    "section": "Portfolio assessment",
+    "text": "Portfolio assessment\n\nIndividual letter grades (A-F) are set based on your portfolio (“mappe”)\nAll elements of the portfolio are completed in groups\nThe group work is done mostly during class hours\n\nYou will at times be assigned some preparatory homework\nWe are not interested in polished project reports"
+  },
+  {
+    "objectID": "Data_visualization.html#portfolio-assessment-1",
+    "href": "Data_visualization.html#portfolio-assessment-1",
+    "title": "Data and Data Visualization",
+    "section": "Portfolio assessment",
+    "text": "Portfolio assessment\n\nThe portfolio will consist of 3 types of activities:8 smaller activities, participation (hand-in) counts 5 points each, but at most 30 points\n\nProject 1: 2 hand-ins, at most 30 points (mandatory)\nProject 2: 3 hand-ins, at most 50 points (mandatory)\n\nEverything will be delivered in Canvas during class hours"
+  },
+  {
+    "objectID": "Data_visualization.html#what-the-course-description-implies-1",
+    "href": "Data_visualization.html#what-the-course-description-implies-1",
+    "title": "Data and Data Visualization",
+    "section": "What the course description implies",
+    "text": "What the course description implies\nYou will gain generic skills in handling, interpreting and discussing data, modelling, prediction etc etc.\nThis is accomplished mainly through examples and group work and only a few lectures.\nIf you need more fundamental/theoretical knowledge you should rather consider\n\nTMA4267 Linear statistical models (for multiple linear regression)\nTMA4268 Statistical learning (for machine learning)"
+  },
+  {
+    "objectID": "Data_visualization.html#portfolio-assessment-2",
+    "href": "Data_visualization.html#portfolio-assessment-2",
+    "title": "Data and Data Visualization",
+    "section": "Portfolio assessment",
+    "text": "Portfolio assessment\n\nIndividual letter grades (A-F) are set based on your portfolio (“mappe”)\nAll elements of the portfolio are completed in groups\nThe group work is done mostly during class hours\n\nYou will at times be assigned some preparatory homework\nWe are not interested in polished project reports"
+  },
+  {
+    "objectID": "Data_visualization.html#portfolio-assessment-3",
+    "href": "Data_visualization.html#portfolio-assessment-3",
+    "title": "Data and Data Visualization",
+    "section": "Portfolio assessment",
+    "text": "Portfolio assessment\n\nThe portfolio will consist of 3 types of activities:\n\n8 smaller activities, participation (hand-in) counts 5 points each, but at most 30 points\nProject 1: 2 hand-ins, at most 30 points (mandatory)\nProject 2: 3 hand-ins, at most 50 points (mandatory)\n\nEverything will be delivered in Canvas during class hours\nNo exam!\nYou have to show up and participate"
+  },
+  {
+    "objectID": "Data_visualization.html#groups-and-group-work",
+    "href": "Data_visualization.html#groups-and-group-work",
+    "title": "Data and Data Visualization",
+    "section": "Groups and group work",
+    "text": "Groups and group work\n\nAbout 5 students per group\nGroups stay together for about two weeks, then rotate\nGroups hand in assignments and projects jointly through Canvas"
+  },
+  {
+    "objectID": "Data_visualization.html#tentative-calendar-for-assessmentsprojects",
+    "href": "Data_visualization.html#tentative-calendar-for-assessmentsprojects",
+    "title": "Data and Data Visualization",
+    "section": "Tentative calendar for assessments/projects",
+    "text": "Tentative calendar for assessments/projects\n\n\n\n\n\n\n\n\n\nWeek\nDate\nPlanned Activity\nDelivery\n\n\n\n\n35\nWed 26.08\nVisualization/Python\nYes (does not count)\n\n\n\nFri 28.08\n\nNo\n\n\n36\nWed 02.09\n\n\n\n\n\nFri 04.09\n\n\n\n\n37\nWed 09.09\n\n\n\n\n\nFri 11.09\n\n\n\n\n38\nWed 16.09\n\n\n\n\n\nFri 18.09"
+  },
+  {
+    "objectID": "Data_visualization.html#reference-group",
+    "href": "Data_visualization.html#reference-group",
+    "title": "Data and Data Visualization",
+    "section": "Reference Group",
+    "text": "Reference Group\n\nWe need (at least) two students to be in the reference group\nWhat is the role of the reference group?\n\nCommunication between the class and the teachers\nThree meetings a semester\nWrite a short report at the end of the semester\nPossibility to discuss the course development"
+  },
+  {
+    "objectID": "Data_visualization.html#what-to-deliver",
+    "href": "Data_visualization.html#what-to-deliver",
+    "title": "Data and Data Visualization",
+    "section": "What to deliver",
+    "text": "What to deliver\nIn Canvas you should deliver:\n\nA file (word or any other format) with the questions you want to ask to the owner of the data\nThe visualization_week35.ipynb with the code you produced\nA html file with the plots you have created ## For next time"
   }
 ]
