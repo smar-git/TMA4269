@@ -9,6 +9,10 @@ editor: source
 
 ## Plan for today Wednesday August 26th 
 
+ - About the course and requirements (some repetition) 
+ - Reference Group
+ <br>
+ <br>
  - What is data?
  - How and why do we talk about data visualization?
  
@@ -20,8 +24,88 @@ editor: source
 ## But first...
 
 - 2-3 minutes to get to know the persons at your table
-- Decide who will do the coding and submission of the assignment
+- Ask each other:
 
+  - How comfortable are you with Python?
+  - Are you familiar with AI chat? Have you used AI to generate code?
+  - Who, i the group, will do the coding and submission of the test assignment?
+
+
+## What the course description implies
+
+You will gain generic **skills** in handling, interpreting and discussing data, modelling, prediction etc etc.
+
+This is accomplished mainly through **examples and group work** and only a few lectures.
+
+If you need more fundamental/theoretical knowledge you should rather consider
+
+- TMA4267 Linear statistical models (for multiple linear regression)
+
+- TMA4268 Statistical learning (for machine learning)
+
+## Portfolio assessment
+
+- Individual letter grades (A-F) are set based on your portfolio ("mappe")
+
+- All elements of the portfolio are completed in groups
+
+- The group work is done mostly **during class hours**
+
+  - You will at times be assigned some preparatory homework
+
+  - We are not interested in polished project reports
+
+## Portfolio assessment
+
+- The portfolio will consist of 3 types of activities:8 smaller activities, participation (hand-in) counts 5 points each, but at most 30 points
+
+  - Project 1: 2 hand-ins, at most 30 points (mandatory)
+
+  - Project 2: 3 hand-ins, at most 40 points (mandatory)
+
+- Everything will be delivered in Canvas **during class hours**
+
+
+
+
+
+
+## Groups and group work
+
+- About 5 students per group
+
+- Groups stay together for about two weeks, then rotate
+
+- Groups hand in assignments and projects jointly through Canvas
+
+## Tentative calendar for assessments/projects{.smaller}
+
+
+| Week | Date |Planned Activity | Delivery |
+|---------|:-----|------:|:------:|
+| 35      | Wed 26.08   |  Visualization/Python |  Yes (does not count)   |
+|         | Fri 28.08   |  Telling stories    |  Yes (5 points)          |
+| 36      | Wed 02.09   |  Visualization/Python|    Yes (5 points)     |
+|         | Fri 04.09   | Science and Data         |        No                |
+| 37      | Wed 09.09   | Science and Data  |      Yes (5 points)   |
+|         | Fri 11.09   |  Regression           |    No                    |
+| 38      | Wed 16.09        | Regression |     Wed or Fri    |
+|         | Fri 18.09        |Regression  |     Wed or Fri      |
+
+
+
+
+
+## Reference Group
+
+- We need (at least) two students to be in the reference group
+
+- What is the role of the reference group?
+  
+  - Communication between the class and the teachers
+  - Three meetings a semester
+  - Write a short report at the end of the semester
+  - Possibility to discuss the course development
 
 ## What is data? 
 
@@ -426,6 +510,29 @@ The world's first virtual fencing system
 
 You can learn more about this company from their  website [https://www.nofence.com/](https://www.nofence.com/)
 
+## Some more info
+
+Two type of messages are reported
+
+- **Poll messages**
+    - sent every 15 minutes
+    - only sent if the collar has  mobile coverage otherwise lost
+- **Seq messages**
+    - sent every 30 minutes
+    - stored in the collar
+
+
+## Some more info
+
+
+- **Seq messages**
+    - sent every 30 minutes
+    - stored in the collar
+
+
+- In the status messages, we can also find the battery charge level and calculate battery consumption. You must also take into account the charging provided by the solar panel.
+
+
 
 ## Assignement
 
@@ -446,7 +553,37 @@ You can learn more about this company from their  website [https://www.nofence.c
 - Drag the instruction file into   the workspace. Here you find instruction about your tasks.
 
 
-## For next time
+## Some tips
+
+- We want you to familiarize with this dataset through table and plots
+- Use any AI chat you want to help with coding
+- For each plot/table you create discuss in group: 
+  - What does the plot reveal about the data?
+  - Can you improve the plot? how?
+  
+
+
+## What to deliver
+
+In Canvas you should deliver:
+
+1. A file (word or any other format) with the questions you want to ask to the owner of the data
+2. The `visualization_week35.ipynb` with the code you produced
+3. A `html` file with the plots you have created
+
+
+## For next time{.smaller}
+
+| Week | Date |Planned Activity | Delivery |
+|---------|:-----|------:|:------:|
+| 35      | Wed 26.08   |  Visualization/Python |  Yes (does not count)   |
+|         | Fri 28.08   |  Telling stories    |  Yes (5 points)          |
+| 36      | Wed 02.09   |  Visualization/Python|    Yes (5 points)     |
+|         | Fri 04.09   | Science and Data         |        No                |
+| 37      | Wed 09.09   | Science and Data  |      Yes (5 points)   |
+|         | Fri 11.09   |  Regression           |    No                    |
+| 38      | Wed 16.09        | Regression |     Wed or Fri    |
+|         | Fri 18.09        |Regression  |     Wed or Fri      |
 
 
 
