@@ -439,5 +439,19 @@
     "title": "Data and Data Visualization",
     "section": "Some tips",
     "text": "Some tips\n\nWe want you to familiarize with this dataset through table and plots\nUse any AI chat you want to help with coding\nFor each plot/table you create discuss in group:\n\nWhat does the plot reveal about the data?\nCan you improve the plot? how?"
+  },
+  {
+    "objectID": "Data_visualization.html#some-more-info",
+    "href": "Data_visualization.html#some-more-info",
+    "title": "Data and Data Visualization",
+    "section": "Some more info",
+    "text": "Some more info\nTwo type of messages are reported\n\nPoll messages\n\nsent every 15 minutes\nonly sent if the collar has mobile coverage otherwise lost\n\nSeq messages\n\nsent every 30 minutes\nstored in the collar"
+  },
+  {
+    "objectID": "Data_visualization.html#some-more-info-1",
+    "href": "Data_visualization.html#some-more-info-1",
+    "title": "Data and Data Visualization",
+    "section": "Some more info",
+    "text": "Some more info\n\nSeq messages\n\nsent every 30 minutes\nstored in the collar\n\nIn the status messages, we can also find the battery charge level and calculate battery consumption. You must also take into account the charging provided by the solar panel."
   }
 ]

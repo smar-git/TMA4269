@@ -510,6 +510,27 @@ The world's first virtual fencing system
 
 You can learn more about this company from their  website [https://www.nofence.com/](https://www.nofence.com/)
 
+## Some more info
+
+Two type of messages are reported
+
+- **Poll messages**
+    - sent every 15 minutes
+    - only sent if the collar has  mobile coverage otherwise lost
+- **Seq messages**
+    - sent every 30 minutes
+    - stored in the collar
+
+
+## Some more info
+
+
+- **Seq messages**
+    - sent every 30 minutes
+    - stored in the collar
+
+
+- In the status messages, we can also find the battery charge level and calculate battery consumption. You must also take into account the charging provided by the solar panel.
 
 
 
