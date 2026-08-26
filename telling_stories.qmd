@@ -4,22 +4,33 @@ format: revealjs
 editor: visual
 ---
 
-## Plan for today 
+## Plan for today
 
+-   Sit in the same groups as Wednesday
+-   What we learnt Wednesday
 -   First assignment (5 points)
 
--   Topic: Telling stories with data
+## Time table {.smaller}
+
+| Week | Date          |         Planned Activity |         Delivery         |
+|------|:--------------|-------------------------:|:------------------------:|
+| 35   | ~~Wed 26.08~~ | ~~Visualization/Python~~ | ~~Yes (does not count)~~ |
+|      | Fri 28.08     |          Telling stories |      Yes (5 points)      |
+| 36   | Wed 02.09     |     Visualization/Python |      Yes (5 points)      |
+|      | Fri 04.09     |         Science and Data |            No            |
+| 37   | Wed 09.09     |         Science and Data |      Yes (5 points)      |
+|      | Fri 11.09     |               Regression |            No            |
+| 38   | Wed 16.09     |               Regression |        Wed or Fri        |
+|      | Fri 18.09     |               Regression |        Wed or Fri        |
+| *39* | *Wed 23.09*   |              *Project 1* |           *-*            |
+|      | *Fri 25.09*   |              *Project 1* |     *First Hand-in*      |
+| *40* | *Wed 30.09*   |              *Project 1* |           *-*            |
+|      | *Fri 02.10*   |              *Project 1* |     *Second Hand-in*     |
 
 ## Recall from last week
 
-(picture of graph) + make comments
-(tabloid, crude? brings out this "bump" in the graph to be striking!)
-(when we just saw the data is was not so obvious, and we are wondering why the graph starts in 2010?)
-(Note: there is nothing wrong here, it is just a clear example that shows that how we present data can have a strong influence on the reader)
-
-
+(picture of graph) + make comments (tabloid, crude? brings out this "bump" in the graph to be striking!) (when we just saw the data is was not so obvious, and we are wondering why the graph starts in 2010?) (Note: there is nothing wrong here, it is just a clear example that shows that how we present data can have a strong influence on the reader)
 
 ## Criticism easy, but lets look at it differently
-In Norway, one of the most equal countries in the word. Should there really be such a large difference? Should we not aim for a rate ratio of 1? 
 
-
+In Norway, one of the most equal countries in the word. Should there really be such a large difference? Should we not aim for a rate ratio of 1?
