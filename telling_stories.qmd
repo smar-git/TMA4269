@@ -15,7 +15,7 @@ editor: visual
 | Week | Date          |         Planned Activity |         Delivery         |
 |------|:--------------|-------------------------:|:------------------------:|
 | 35   | ~~Wed 26.08~~ | ~~Visualization/Python~~ | ~~Yes (does not count)~~ |
-|      | Fri 28.08     |          Telling stories |      Yes (5 points)      |
+|      | **Fri 28.08** |      **Telling stories** |    **Yes (5 points)**    |
 | 36   | Wed 02.09     |     Visualization/Python |      Yes (5 points)      |
 |      | Fri 04.09     |         Science and Data |            No            |
 | 37   | Wed 09.09     |         Science and Data |      Yes (5 points)      |
@@ -26,6 +26,130 @@ editor: visual
 |      | *Fri 25.09*   |              *Project 1* |     *First Hand-in*      |
 | *40* | *Wed 30.09*   |              *Project 1* |           *-*            |
 |      | *Fri 02.10*   |              *Project 1* |     *Second Hand-in*     |
+
+## What WE learnt on Wednesday
+
+- Canvas deliveries take time (we set 15 mins for this today)
+
+- You are not AI experts (yet)
+    - You get code for plotting but did not necessarily push the AI for improvements or alternatives
+    
+- You are sometimes happy just doing the instructions
+    - But doing the instructions give little insight
+    - You should continuously strive for new angles, better plots etc etc
+
+## What YOU (perhaps) learnt on Wednesday
+
+- Canvas deliveries take time (we set 15 mins for this today)
+
+- Getting to know a data set takes time, it is confusing, there is no right answer but some data summaries are more useful than others
+
+
+## Next Wednesday
+
+- We present answers from Ole Bernhard at Nofence
+- We give a task related to visualization of the Nofence data
+
+
+## Today: Soft skills (no coding / PC / AI)
+
+Data Literacy
+
+Data literacy is the ability to read, write, and communicate data in context and with meaning. 
+
+Data literacy can be broken into three main components: 
+
+Reading data: making sense of quantitative and qualitative information
+
+Working with data: collecting and organizing data for analysis
+
+Communicating findings: presenting and applying the information usefully 
+
+
+## Today: Soft skills (no coding / PC / AI)
+
+The Five C's: Soft Skills That Every Data Analytics Professional Should Have
+
+1. Communication
+
+Good communication skills are essential to allow oneself and others to understand information accurately and quickly. 
+
+Listening skills are important because one has to pay close attention to what others - especially data and insight consumers - are saying to understand their insight requirements and decision needs, [...] avoid misunderstandings and build mutual trust with data analytics professionals.
+
+
+## Today: Soft skills (no coding / PC / AI)
+
+The Five C's: Soft Skills That Every Data Analytics Professional Should Have
+
+2. Collaboration
+
+Collaboration skills enable the data analytics professional to successfully work toward realizing the common goal with other teams. 
+
+Collaboration can be further improved by instilling these characteristics: open-mindedness, such as being open to appreciating and accepting novel ideas, along with respecting other team members, valuing their opinions and asking for their ideas and views on various issues and problems.
+
+
+## Today: Soft skills (no coding / PC / AI)
+
+The Five C's: Soft Skills That Every Data Analytics Professional Should Have
+
+
+3. Critical Thinking
+
+Critical thinking is the ability to think rationally and logically and solve problems in a consistent and systematic manner. 
+
+At its core, data analytics involves obtaining insights that are used to make decisions by asking questions. 
+
+Critical thinking skills in data analytics involve questioning the hypothesis, identifying biases associated with framing the questions, validating the assumptions, selecting the appropriate models, critiquing the accuracy of the analysis and results, deriving and communicating actionable insights and assessing the ethical aspects of using insights for decision making.
+
+
+## Today: Soft skills (no coding / PC / AI)
+
+The Five C's: Soft Skills That Every Data Analytics Professional Should Have
+
+4. Curiosity
+
+Data analytics projects are fraught with uncertainties, ambiguities and numerous challenges such as unclear decision objectives, time and resource constraints, lack of expertise, poor quality data and ethical and privacy issues. 
+
+The business and data analytics fields are constantly evolving, and curiosity enables analytics professionals to continuously learn and expand their knowledge and diversify their techniques. 
+
+Curiosity in data analytics projects also enhances a person’s ability to quickly overcome obstacles by asking powerful questions that are open-ended, creating possibilities and encouraging deeper understanding and discovery.
+
+
+## Today: Soft skills (no coding / PC / AI)
+
+The Five C's: Soft Skills That Every Data Analytics Professional Should Have
+
+5. Creativity
+
+A successful analytics professional will continuously strive to generate new insights that are always timely, accurate and relevant to the business. 
+
+As there will often be multiple approaches to solving user requirements and needs, being creative allows analytics professionals to consider and explore divergent possibilities and perspectives before converging on a specific analytics solution. 
+Overall, creativity and experimentation with data analytics is a vehicle for business innovation.
+
+## Telling stories with data
+
+** Data is not the same as reality **
+
+- With data science, we try to understand and describe "reality"
+    - Battery charge of cow collars
+    - Heart disease and the corona virus
+    
+- But in order to do data science many human choices have to made
+    - What to measure?
+    - How do define something?
+    - Who and what to include?
+    - When to measure and include?
+    - What not to record?
+    - What can we afford?
+    - How to analyse?
+    - How to interpret?
+    - How to present?
+    - What to compare to?
+
+## Telling stories with data
+
+** A statistical statement does not have to be false to be misleading ** 
+
 
 ## Recall from last week
 
