@@ -50,7 +50,7 @@ We plan 15 mins for this today
 
 <br> <br>
 
-You are not AI /promt experts (yet)
+You are not AI/prompt experts (yet)
 
 ## What YOU (perhaps) learnt on Wednesday
 
@@ -60,7 +60,7 @@ You are not AI /promt experts (yet)
 
 -   There is no right answer, but some data summaries are more useful than others
 
--   A good visualisation is rarely the first one, you need to keep asking questions to the data
+-   A good visualization is rarely the first one, you need to keep asking questions to the data
 
 ## Next Wednesday
 
@@ -83,7 +83,7 @@ It’s understanding what data means, how it’s created and how to use it so yo
 
 **The Five C's: Soft Skills That Every Data Analytics Professional Should Have**
 
-Data analytics projects are fraught with uncertainties, ambiguities and numerous challenges such as unclear decision objectives, time and resource constraints, lack of expertise, poor quality data and ethical and privacy issues.
+Data analytics projects are full of uncertainties, ambiguities and numerous challenges such as unclear decision objectives, time and resource constraints, lack of expertise, poor quality data and ethical and privacy issues.
 
 <br><br><br>
 
@@ -208,7 +208,7 @@ Discuss the VG article (header and visualization). Why do you think this story w
 :::
 
 ::: {.column width="70%"}
--   Reality: What is is we are trying to describe?
+-   Reality: What is it we are trying to describe?
 
 -   Measurements: What measurements are done and who are included? Who and what is not included?
 
