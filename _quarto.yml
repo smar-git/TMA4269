@@ -5,6 +5,7 @@ project:
   - index.qmd
   - intro.qmd
   - Data_visualization.qmd
+  - telling_stories.qmd
   
 website:
   title: TMA4269
@@ -23,6 +24,8 @@ website:
         href: intro.html
       - text: Slides Visualization
         href: Data_visualization.html
+      - text: Slides Telling Stories
+        href: telling_stories.html
   
 
 format:

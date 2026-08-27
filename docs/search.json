@@ -1,206 +1,171 @@
 [
   {
-    "objectID": "Data_visualization.html#plan-for-today-wednesday-august-26th",
-    "href": "Data_visualization.html#plan-for-today-wednesday-august-26th",
-    "title": "Data and Data Visualization",
-    "section": "Plan for today Wednesday August 26th",
-    "text": "Plan for today Wednesday August 26th\n\nAbout the course and requirements (some repetition)\nReference Group  \nWhat is data?\nHow and why do we talk about data visualization?\nCreate Group on Canvas\nGetting to know a dataset"
+    "objectID": "telling_stories.html#first-create-groups-in-canvas",
+    "href": "telling_stories.html#first-create-groups-in-canvas",
+    "title": "Telling stories with data",
+    "section": "First: Create Groups in Canvas",
+    "text": "First: Create Groups in Canvas\nFind the desk with your group number this is the same group number as last and next Wednesday\n\nLog into Canvas\nClick on People on the right side of the page\nClick on Group\nScroll to the group with the number on your desk and enroll yourself in the group (Telling stories Week 35)\n\nNOTE Remember your Group number for next week, you will have to enroll again!!!"
   },
   {
-    "objectID": "Data_visualization.html#but-first",
-    "href": "Data_visualization.html#but-first",
-    "title": "Data and Data Visualization",
-    "section": "But first…",
-    "text": "But first…\n\n2-3 minutes to get to know the persons at your table\nAsk each other:\n\nHow comfortable are you with Python?\nAre you familiar with AI chat? Have you used AI to generate code?\nWho, i the group, will do the coding and submission of the test assignment?"
+    "objectID": "telling_stories.html#time-table",
+    "href": "telling_stories.html#time-table",
+    "title": "Telling stories with data",
+    "section": "Time table",
+    "text": "Time table\n\n\n\n\n\n\n\n\n\nWeek\nDate\nPlanned Activity\nDelivery\n\n\n\n\n35\nWed 26.08\nVisualization/Python\nYes (does not count)\n\n\n\nFri 28.08\nTelling stories\nYes (5 points)\n\n\n36\nWed 02.09\nVisualization/Python\nYes (5 points)\n\n\n\nFri 04.09\nScience and Data\nNo\n\n\n37\nWed 09.09\nScience and Data\nYes (5 points)\n\n\n\nFri 11.09\nRegression\nNo\n\n\n38\nWed 16.09\nRegression\nWed or Fri\n\n\n\nFri 18.09\nRegression\nWed or Fri\n\n\n39\nWed 23.09\nProject 1\n-\n\n\n\nFri 25.09\nProject 1\nFirst Hand-in\n\n\n40\nWed 30.09\nProject 1\n-\n\n\n\nFri 02.10\nProject 1\nSecond Hand-in"
   },
   {
-    "objectID": "Data_visualization.html#what-is-data",
-    "href": "Data_visualization.html#what-is-data",
-    "title": "Data and Data Visualization",
-    "section": "What is data?",
-    "text": "What is data?\n\nMenti\n\n\nNote: …although the word “data” is plural, “is” sounds better.."
+    "objectID": "telling_stories.html#reference-group",
+    "href": "telling_stories.html#reference-group",
+    "title": "Telling stories with data",
+    "section": "Reference group",
+    "text": "Reference group\nPlease join the reference group!"
   },
   {
-    "objectID": "Data_visualization.html#what-is-data-1",
-    "href": "Data_visualization.html#what-is-data-1",
-    "title": "Data and Data Visualization",
-    "section": "What is data?",
-    "text": "What is data?\n\n“All is data”\n\neverything happening in counts as data, including interviews, observations, documents, and background context.\n\nGlaser, Barney G. “All Is Data.” Grounded Theory Review, vol. 6, no. 2, 2007, pp. 1–22."
+    "objectID": "telling_stories.html#what-we-learnt-on-wednesday",
+    "href": "telling_stories.html#what-we-learnt-on-wednesday",
+    "title": "Telling stories with data",
+    "section": "What WE learnt on Wednesday",
+    "text": "What WE learnt on Wednesday\n \nCanvas deliveries take time\nWe plan 15 mins for this today"
   },
   {
-    "objectID": "Data_visualization.html#what-is-data-2",
-    "href": "Data_visualization.html#what-is-data-2",
-    "title": "Data and Data Visualization",
-    "section": "What is data?",
-    "text": "What is data?\n\n“information, especially facts or numbers, collected to be examined and considered and used to help decision-making, or information in an electronic form that can be stored and used by a computer”\n\n\nCambridge dictionary"
+    "objectID": "telling_stories.html#what-we-learnt-on-wednesday-1",
+    "href": "telling_stories.html#what-we-learnt-on-wednesday-1",
+    "title": "Telling stories with data",
+    "section": "What WE learnt on Wednesday",
+    "text": "What WE learnt on Wednesday\n \nYou are not AI /promt experts (yet)"
   },
   {
-    "objectID": "Data_visualization.html#data-came-in-different-type",
-    "href": "Data_visualization.html#data-came-in-different-type",
-    "title": "Data and Data Visualization",
-    "section": "Data came in different type",
-    "text": "Data came in different type\nSome terminology\n\n\n\n\n\nProfile statement → Qualitative\nProfile photo → Image"
+    "objectID": "telling_stories.html#what-you-perhaps-learnt-on-wednesday",
+    "href": "telling_stories.html#what-you-perhaps-learnt-on-wednesday",
+    "title": "Telling stories with data",
+    "section": "What YOU (perhaps) learnt on Wednesday",
+    "text": "What YOU (perhaps) learnt on Wednesday\n\nCanvas deliveries take time (we set 15 mins for this today)\nGetting to know a data set takes time and can be confusing\nThere is no right answer, but some data summaries are more useful than others\nA good visualisation is rarely the first one, you need to keep asking questions to the data"
   },
   {
-    "objectID": "Data_visualization.html#data-came-in-different-type-1",
-    "href": "Data_visualization.html#data-came-in-different-type-1",
-    "title": "Data and Data Visualization",
-    "section": "Data came in different type",
-    "text": "Data came in different type\nSome terminology\n\n\n\n\nQuantitative:\n\nAge, salary, years of experience → quantitative / continuous\nNumber of language spoken → quantitative / discrete"
+    "objectID": "telling_stories.html#next-wednesday",
+    "href": "telling_stories.html#next-wednesday",
+    "title": "Telling stories with data",
+    "section": "Next Wednesday",
+    "text": "Next Wednesday\n\nWe present answers from Ole Bernhard at Nofence\nWe give a task related to visualization of the Nofence data (with prize!)"
   },
   {
-    "objectID": "Data_visualization.html#data-came-in-different-type-2",
-    "href": "Data_visualization.html#data-came-in-different-type-2",
-    "title": "Data and Data Visualization",
-    "section": "Data came in different type",
-    "text": "Data came in different type\nSome terminology\n\n\n\n\nCategorical:\n\nLocation, nationality, driving licence → nominal\nSkill levels, language proficiency → ordinal"
+    "objectID": "telling_stories.html#soft-skills",
+    "href": "telling_stories.html#soft-skills",
+    "title": "Telling stories with data",
+    "section": "Soft skills",
+    "text": "Soft skills\nData Literacy\nData literacy is the ability to read, work with, analyze and communicate data effectively.\nIt’s understanding what data means, how it’s created and how to use it so you can ask the right questions, interpret data correctly and make informed, evidence-based decisions.\n Source: Databricks"
   },
   {
-    "objectID": "Data_visualization.html#data-came-in-different-type-3",
-    "href": "Data_visualization.html#data-came-in-different-type-3",
-    "title": "Data and Data Visualization",
-    "section": "Data came in different type",
-    "text": "Data came in different type\nSome terminology\n\n\n\n\nSpace and time:\n\nyear of graduation, day of birth → time\ncity → space"
+    "objectID": "telling_stories.html#soft-skills-1",
+    "href": "telling_stories.html#soft-skills-1",
+    "title": "Telling stories with data",
+    "section": "Soft skills",
+    "text": "Soft skills\n\nThe Five C’s: Soft Skills That Every Data Analytics Professional Should Have\nData analytics projects are fraught with uncertainties, ambiguities and numerous challenges such as unclear decision objectives, time and resource constraints, lack of expertise, poor quality data and ethical and privacy issues.\n\nSource: Forbes Technology council"
   },
   {
-    "objectID": "Data_visualization.html#why-data-visualization",
-    "href": "Data_visualization.html#why-data-visualization",
-    "title": "Data and Data Visualization",
-    "section": "Why data visualization?",
-    "text": "Why data visualization?\nA visualization turns data into something we can see, compare, and reason about.\n\nWhy do we visualize?\n\nFind patterns and explore the data — trends, clusters, relationships\nCompare — groups, categories, values\nSee change — especially over time or space\nSpot unusual values — outliers and anomalies\nUnderstand complexity — make large datasets easier to explore\nCommunicate — explain findings to other people"
+    "objectID": "telling_stories.html#soft-skills-2",
+    "href": "telling_stories.html#soft-skills-2",
+    "title": "Telling stories with data",
+    "section": "Soft skills",
+    "text": "Soft skills\n\nCommunication\n\nUnderstand information accurately and quickly.\nUnderstand others’ insight requirements and decision needs\nAvoid misunderstandings"
   },
   {
-    "objectID": "Data_visualization.html#what-makes-good-visualization",
-    "href": "Data_visualization.html#what-makes-good-visualization",
-    "title": "Data and Data Visualization",
-    "section": "What makes good visualization?",
-    "text": "What makes good visualization?\nSome good principles (among many others!)\n\nStart with a question What do I want to communicate?"
+    "objectID": "telling_stories.html#soft-skills-3",
+    "href": "telling_stories.html#soft-skills-3",
+    "title": "Telling stories with data",
+    "section": "Soft skills",
+    "text": "Soft skills\n\nCommunication\nCollaboration\n\nSuccessfully work toward realizing a common goal\nOpen-mindedness and respect"
   },
   {
-    "objectID": "Data_visualization.html#what-makes-good-visualization-1",
-    "href": "Data_visualization.html#what-makes-good-visualization-1",
-    "title": "Data and Data Visualization",
-    "section": "What makes good visualization?",
-    "text": "What makes good visualization?\nSome good principles (among many others!)\n\nStart with a question What do I want to communicate?\nChoose the right visual form Match the chart to the question.\n\nChange over time → line plot\nDistribution → histogram\nRelationship between two variables → scatter plot\nLocation → map"
+    "objectID": "telling_stories.html#soft-skills-4",
+    "href": "telling_stories.html#soft-skills-4",
+    "title": "Telling stories with data",
+    "section": "Soft skills",
+    "text": "Soft skills\n\nCommunication\nCollaboration\nCritical Thinking Think rationally and logically and solve problems in a consistent and systematic manner.\n\nQuestion the hypothesis\nIdentify biases\nValidate assumptions\nSelect appropriate models\nCritique the accuracy of the analysis and results"
   },
   {
-    "objectID": "Data_visualization.html#what-makes-good-visualization-2",
-    "href": "Data_visualization.html#what-makes-good-visualization-2",
-    "title": "Data and Data Visualization",
-    "section": "What makes good visualization?",
-    "text": "What makes good visualization?\nSome good principles (among many others!)\n\nStart with a question What do I want to communicate?\nChoose the right visual form Match the chart to the question.\nBe honest Don’t distort the message\n\nmisleading axes\ninappropriate scales\ncherry-picked data\nunnecessary 3D effects"
+    "objectID": "telling_stories.html#soft-skills-5",
+    "href": "telling_stories.html#soft-skills-5",
+    "title": "Telling stories with data",
+    "section": "Soft skills",
+    "text": "Soft skills\n\nCommunication\nCollaboration\nCritical Thinking\nCuriosity Think rationally and logically and solve problems in a consistent and systematic manner.\n\nContinuously learn and expand knowledge\nOvercome obstacles by asking useful questions"
   },
   {
-    "objectID": "Data_visualization.html#what-makes-good-visualization-3",
-    "href": "Data_visualization.html#what-makes-good-visualization-3",
-    "title": "Data and Data Visualization",
-    "section": "What makes good visualization?",
-    "text": "What makes good visualization?\nSome good principles (among many others!)\n\nStart with a question What do I want to communicate?\nChoose the right visual form Match the chart to the question.\nBe honest Don’t distort the message\nRemove the unnecessary\n\nAvoid decoration that doesn’t communicate information."
+    "objectID": "telling_stories.html#soft-skills-6",
+    "href": "telling_stories.html#soft-skills-6",
+    "title": "Telling stories with data",
+    "section": "Soft skills",
+    "text": "Soft skills\n\nCommunication\nCollaboration\nCritical Thinking\nCuriosity\nCreativity Think rationally and logically and solve problems in a consistent and systematic manner.\n\nContinuously strive to generate new insights that are timely, accurate and relevant.\nConsider and explore divergent possibilities and perspectives"
   },
   {
-    "objectID": "Data_visualization.html#example-1",
-    "href": "Data_visualization.html#example-1",
-    "title": "Data and Data Visualization",
-    "section": "Example 1",
-    "text": "Example 1\n\n\nwhat is the meaning of the different colours?\nhow many more like does Corbyn gets?\n\n\nExamples from “Mistakes we have drawn a few. Learning from our errors in data visualization” The Economist March 27, 2019\n\n\narticle at:\nhttps://www.scribd.com/document/841286524/Mistakes-we-ve-drawn-a-few-Learning-from-our-errors-in-data-by-Sarah-Leo-The-Economist\nbetter figures from\nhttps://marievozanne.github.io/Misleading-and-Confusing-Charts—Exercises.pdf"
+    "objectID": "telling_stories.html#telling-stories-with-data",
+    "href": "telling_stories.html#telling-stories-with-data",
+    "title": "Telling stories with data",
+    "section": "Telling stories with data",
+    "text": "Telling stories with data"
   },
   {
-    "objectID": "Data_visualization.html#example-1-1",
-    "href": "Data_visualization.html#example-1-1",
-    "title": "Data and Data Visualization",
-    "section": "Example 1",
-    "text": "Example 1\n\n\n\n\n\n\n\nThe improved graph is cleaner (less colours) and makes the scale clear"
+    "objectID": "telling_stories.html#telling-stories-with-data-1",
+    "href": "telling_stories.html#telling-stories-with-data-1",
+    "title": "Telling stories with data",
+    "section": "Telling stories with data",
+    "text": "Telling stories with data\n\n“Pairing reliable data with a coherent narrative and a clear visualization will create those “aha” moments that engage the audience.”\n\nSource: The Data Literacy Project"
   },
   {
-    "objectID": "Data_visualization.html#example-2",
-    "href": "Data_visualization.html#example-2",
-    "title": "Data and Data Visualization",
-    "section": "Example 2",
-    "text": "Example 2\n\n\nis people’s opinion really so erratic?\ncan we better highlight trends?"
+    "objectID": "telling_stories.html#today-case-study",
+    "href": "telling_stories.html#today-case-study",
+    "title": "Telling stories with data",
+    "section": "Today: case study",
+    "text": "Today: case study\nAugust 2025: Norwegian newspaper VG presents a story with the headline:\n“Young women with a master’s degree are on sick leave far more than men”"
   },
   {
-    "objectID": "Data_visualization.html#example-2-1",
-    "href": "Data_visualization.html#example-2-1",
-    "title": "Data and Data Visualization",
-    "section": "Example 2",
-    "text": "Example 2\n\n\n\n\n\n\n\nThe improved graph has original data as points and a fitted model to show the trends. Note also the larger scale.\nNote: here we have the output of a statistical model show in the plot\nRecommended when one does not have 0 as baseline. From the paper:"
+    "objectID": "telling_stories.html#today-case-study-1",
+    "href": "telling_stories.html#today-case-study-1",
+    "title": "Telling stories with data",
+    "section": "Today: case study",
+    "text": "Today: case study\nE24: “The good girls are tired now”"
   },
   {
-    "objectID": "Data_visualization.html#example-3",
-    "href": "Data_visualization.html#example-3",
-    "title": "Data and Data Visualization",
-    "section": "Example 3",
-    "text": "Example 3\n\n\nwhat i the difference between light and dark blue countries?"
+    "objectID": "telling_stories.html#today-case-study-2",
+    "href": "telling_stories.html#today-case-study-2",
+    "title": "Telling stories with data",
+    "section": "Today: case study",
+    "text": "Today: case study\nVG (again): “Today’s working life is made for a man in the 1970s”"
   },
   {
-    "objectID": "Data_visualization.html#example-3-1",
-    "href": "Data_visualization.html#example-3-1",
-    "title": "Data and Data Visualization",
-    "section": "Example 3",
-    "text": "Example 3\n\n\n\n\n\n\n\nthe dark blue ones are those that are labelled. the new graph makes this easier to read"
+    "objectID": "telling_stories.html#today-case-study-3",
+    "href": "telling_stories.html#today-case-study-3",
+    "title": "Telling stories with data",
+    "section": "Today: case study",
+    "text": "Today: case study\nAdressa: “Young women struggle to balance work and family: - Say no to things that do not give you energy”"
   },
   {
-    "objectID": "Data_visualization.html#example-4",
-    "href": "Data_visualization.html#example-4",
-    "title": "Data and Data Visualization",
-    "section": "Example 4",
-    "text": "Example 4\n\n\nHow long is 2020? how about 2021?"
+    "objectID": "telling_stories.html#today-case-study-4",
+    "href": "telling_stories.html#today-case-study-4",
+    "title": "Telling stories with data",
+    "section": "Today: case study",
+    "text": "Today: case study\nNorwegian Women’s Public Health Association: “Women with a masters’ degree also have bodies”"
   },
   {
-    "objectID": "Data_visualization.html#create-groups-in-canvas",
-    "href": "Data_visualization.html#create-groups-in-canvas",
-    "title": "Data and Data Visualization",
-    "section": "Create Groups in Canvas",
-    "text": "Create Groups in Canvas\nOn your desk you will find a sheet with a number, this is your group number for the next two weeks (until September 4th)\n\nLog into Canvas\nClick on People on the right side of the page\nClick on Group\nScroll to the group with the number on your desk and enroll yourself in the group\n\nNOTE Remember your Group number for next week, you will have to enroll again!!!"
+    "objectID": "telling_stories.html#today-case-study-5",
+    "href": "telling_stories.html#today-case-study-5",
+    "title": "Telling stories with data",
+    "section": "Today: case study",
+    "text": "Today: case study\nPart 0:\nOpen a document (word or what you prefer) for writing down the groups’ reflections. Headlines should be Part 1, Part 2, Part 3, Part 4.\nWe do Parts 1 and 2 first, then 3 and 4."
   },
   {
-    "objectID": "Data_visualization.html#our-first-data-assignment",
-    "href": "Data_visualization.html#our-first-data-assignment",
-    "title": "Data and Data Visualization",
-    "section": "Our First data Assignment",
-    "text": "Our First data Assignment\nThe world’s first virtual fencing system"
+    "objectID": "telling_stories.html#today-case-study-6",
+    "href": "telling_stories.html#today-case-study-6",
+    "title": "Telling stories with data",
+    "section": "Today: case study",
+    "text": "Today: case study\nPart 1: Use the statement from the Data Literacy Project:\n“Pairing reliable data with a coherent narrative and a clear visualization will create those “aha” moments that engage the audience.”\nDiscuss the VG article (header and visualization). Why do you think this story was successful? How do you interpret the numbers in the figure?\nPart 2: Consider all the elements of this figure in relation to the VG article.\n\n\n\n\n\nReality: What is is we are trying to describe?\nMeasurements: What measurements are done and who are included? Who and what is not included?\nData: What is the raw data?\nAnalysis: What analysis was done with the raw data?\nStory: What is the final story?\n\n\n\n\nNote: The data are from SSB (Statistics Norway), first quarter 2025."
   },
   {
-    "objectID": "Data_visualization.html#how-nofence-works",
-    "href": "Data_visualization.html#how-nofence-works",
-    "title": "Data and Data Visualization",
-    "section": "How Nofence works",
-    "text": "How Nofence works\n\nYou can learn more about this company from their website https://www.nofence.com/"
-  },
-  {
-    "objectID": "Data_visualization.html#assignement",
-    "href": "Data_visualization.html#assignement",
-    "title": "Data and Data Visualization",
-    "section": "Assignement",
-    "text": "Assignement\n\nLog into Canvas\nFind the assignement Visualization Week 35\nYou’ll find two files:\n\nData: norway_seqs_df.parquet\nInstructions: visualization_week35.ipynb\n\nDownload both of them\nLog into the NTNU JupiterHub https://jupyter.ntnu.no/\nDrag the instruction file into the workspace. Here you find instruction about your tasks."
-  },
-  {
-    "objectID": "Data_visualization.html#for-next-time",
-    "href": "Data_visualization.html#for-next-time",
-    "title": "Data and Data Visualization",
-    "section": "For next time",
-    "text": "For next time\n\n\n\n\n\n\n\n\n\nWeek\nDate\nPlanned Activity\nDelivery\n\n\n\n\n35\nWed 26.08\nVisualization/Python\nYes (does not count)\n\n\n\nFri 28.08\nTelling stories\nYes (5 points)\n\n\n36\nWed 02.09\nVisualization/Python\nYes (5 points)\n\n\n\nFri 04.09\nScience and Data\nNo\n\n\n37\nWed 09.09\nScience and Data\nYes (5 points)\n\n\n\nFri 11.09\nRegression\nNo\n\n\n38\nWed 16.09\nRegression\nWed or Fri\n\n\n\nFri 18.09\nRegression\nWed or Fri"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Welcome to the course TMA4269 Data Science",
-    "section": "",
-    "text": "The course TMA4269 Data Science is developed by the Department of Mathematical Sciences at NTNU, and intended as a ‘k-emne’ (complementary course) for 5-year integrated master of technology students (Siving). Other students are also welcome to the course. The course is given for the first time in the fall semester of 2026. Teachers are Sara Martino and Thea Bjørnland.\nThis page presents learning materials etc. Other details (schedule, messages etc) are posted at the course wikipages."
-  },
-  {
-    "objectID": "index.html#general-information",
-    "href": "index.html#general-information",
-    "title": "Welcome to the course TMA4269 Data Science",
-    "section": "",
-    "text": "The course TMA4269 Data Science is developed by the Department of Mathematical Sciences at NTNU, and intended as a ‘k-emne’ (complementary course) for 5-year integrated master of technology students (Siving). Other students are also welcome to the course. The course is given for the first time in the fall semester of 2026. Teachers are Sara Martino and Thea Bjørnland.\nThis page presents learning materials etc. Other details (schedule, messages etc) are posted at the course wikipages."
-  },
-  {
-    "objectID": "index.html#course-description",
-    "href": "index.html#course-description",
-    "title": "Welcome to the course TMA4269 Data Science",
-    "section": "Course description",
-    "text": "Course description\n\nContent\nData science is about extracting knowledge from data. This includes identifying patterns, making predictions, communicating results, and supporting decision-making. This course provides a practical and example-based introduction to fundamental topics such as data visualisation, regression models, and machine learning. We will discuss the limitations of data analysis and modeling to avoid misinterpretation or misuse of model results.\n\n\nLearning outcomes\nThe student is familiar with the most common methods and algorithms for data visualisation, modeling, and prediction. The student can critically evaluate results from various data science processes. This includes understanding the limitations of models, as well as being able to discuss the implications of these with others.\n\n\nLearning and assessment activities\nFor this course your grade is set using portfolio assessment. You will attend and participate in mandatory activities, and complete (in groups) two projects. All activities and project work are intended to take place during the lecture times."
+    "objectID": "telling_stories.html#today-case-study-7",
+    "href": "telling_stories.html#today-case-study-7",
+    "title": "Telling stories with data",
+    "section": "Today: case study",
+    "text": "Today: case study\nPart 3:\nThe table gives the raw data from SSB (statistics Norway).\nConsider “the story” (the headline + visualization) in relation to the data.\nWould you say that “they story” is a good representation of reality? Why or why not?\nIs “the story” relevant for decision makers?\nIf you were the decision maker, which group(s) would you be worried about?\n \nPart 4:\nCan statistics and data science be neutral? Why / why not?\nWhat other than neutrality should we strive for?"
   },
   {
     "objectID": "intro.html#plan-for-today-friday-august-21st",
@@ -364,6 +329,41 @@
     "text": "For next time\nPlease answer the survey sent to you by e-mail: nettskjema (For room reasons we need to know how many will actually take the course.)\nCheck that you can log into Canvas and that you see the course page there.\nCheck that you can log into NTNUs JupyterHub: https://jupyter.ntnu.no\nWednesday we meet in R2 for a first go at visualization. Bring laptop."
   },
   {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Welcome to the course TMA4269 Data Science",
+    "section": "",
+    "text": "The course TMA4269 Data Science is developed by the Department of Mathematical Sciences at NTNU, and intended as a ‘k-emne’ (complementary course) for 5-year integrated master of technology students (Siving). Other students are also welcome to the course. The course is given for the first time in the fall semester of 2026. Teachers are Sara Martino and Thea Bjørnland.\nThis page presents learning materials etc. Other details (schedule, messages etc) are posted at the course wikipages."
+  },
+  {
+    "objectID": "index.html#general-information",
+    "href": "index.html#general-information",
+    "title": "Welcome to the course TMA4269 Data Science",
+    "section": "",
+    "text": "The course TMA4269 Data Science is developed by the Department of Mathematical Sciences at NTNU, and intended as a ‘k-emne’ (complementary course) for 5-year integrated master of technology students (Siving). Other students are also welcome to the course. The course is given for the first time in the fall semester of 2026. Teachers are Sara Martino and Thea Bjørnland.\nThis page presents learning materials etc. Other details (schedule, messages etc) are posted at the course wikipages."
+  },
+  {
+    "objectID": "index.html#course-description",
+    "href": "index.html#course-description",
+    "title": "Welcome to the course TMA4269 Data Science",
+    "section": "Course description",
+    "text": "Course description\n\nContent\nData science is about extracting knowledge from data. This includes identifying patterns, making predictions, communicating results, and supporting decision-making. This course provides a practical and example-based introduction to fundamental topics such as data visualisation, regression models, and machine learning. We will discuss the limitations of data analysis and modeling to avoid misinterpretation or misuse of model results.\n\n\nLearning outcomes\nThe student is familiar with the most common methods and algorithms for data visualisation, modeling, and prediction. The student can critically evaluate results from various data science processes. This includes understanding the limitations of models, as well as being able to discuss the implications of these with others.\n\n\nLearning and assessment activities\nFor this course your grade is set using portfolio assessment. You will attend and participate in mandatory activities, and complete (in groups) two projects. All activities and project work are intended to take place during the lecture times."
+  },
+  {
+    "objectID": "Data_visualization.html#plan-for-today-wednesday-august-26th",
+    "href": "Data_visualization.html#plan-for-today-wednesday-august-26th",
+    "title": "Data and Data Visualization",
+    "section": "Plan for today Wednesday August 26th",
+    "text": "Plan for today Wednesday August 26th\n\nAbout the course and requirements (some repetition)\nReference Group  \nWhat is data?\nHow and why do we talk about data visualization?\nCreate Group on Canvas\nGetting to know a dataset"
+  },
+  {
+    "objectID": "Data_visualization.html#but-first",
+    "href": "Data_visualization.html#but-first",
+    "title": "Data and Data Visualization",
+    "section": "But first…",
+    "text": "But first…\n\n2-3 minutes to get to know the persons at your table\nAsk each other:\n\nHow comfortable are you with Python?\nAre you familiar with AI chat? Have you used AI to generate code?\nWho, i the group, will do the coding and submission of the test assignment?"
+  },
+  {
     "objectID": "Data_visualization.html#what-the-course-description-implies",
     "href": "Data_visualization.html#what-the-course-description-implies",
     "title": "Data and Data Visualization",
@@ -383,27 +383,6 @@
     "title": "Data and Data Visualization",
     "section": "Portfolio assessment",
     "text": "Portfolio assessment\n\nThe portfolio will consist of 3 types of activities:8 smaller activities, participation (hand-in) counts 5 points each, but at most 30 points\n\nProject 1: 2 hand-ins, at most 30 points (mandatory)\nProject 2: 3 hand-ins, at most 40 points (mandatory)\n\nEverything will be delivered in Canvas during class hours"
-  },
-  {
-    "objectID": "Data_visualization.html#what-the-course-description-implies-1",
-    "href": "Data_visualization.html#what-the-course-description-implies-1",
-    "title": "Data and Data Visualization",
-    "section": "What the course description implies",
-    "text": "What the course description implies\nYou will gain generic skills in handling, interpreting and discussing data, modelling, prediction etc etc.\nThis is accomplished mainly through examples and group work and only a few lectures.\nIf you need more fundamental/theoretical knowledge you should rather consider\n\nTMA4267 Linear statistical models (for multiple linear regression)\nTMA4268 Statistical learning (for machine learning)"
-  },
-  {
-    "objectID": "Data_visualization.html#portfolio-assessment-2",
-    "href": "Data_visualization.html#portfolio-assessment-2",
-    "title": "Data and Data Visualization",
-    "section": "Portfolio assessment",
-    "text": "Portfolio assessment\n\nIndividual letter grades (A-F) are set based on your portfolio (“mappe”)\nAll elements of the portfolio are completed in groups\nThe group work is done mostly during class hours\n\nYou will at times be assigned some preparatory homework\nWe are not interested in polished project reports"
-  },
-  {
-    "objectID": "Data_visualization.html#portfolio-assessment-3",
-    "href": "Data_visualization.html#portfolio-assessment-3",
-    "title": "Data and Data Visualization",
-    "section": "Portfolio assessment",
-    "text": "Portfolio assessment\n\nThe portfolio will consist of 3 types of activities:\n\n8 smaller activities, participation (hand-in) counts 5 points each, but at most 30 points\nProject 1: 2 hand-ins, at most 30 points (mandatory)\nProject 2: 3 hand-ins, at most 50 points (mandatory)\n\nEverything will be delivered in Canvas during class hours\nNo exam!\nYou have to show up and participate"
   },
   {
     "objectID": "Data_visualization.html#groups-and-group-work",
@@ -427,18 +406,158 @@
     "text": "Reference Group\n\nWe need (at least) two students to be in the reference group\nWhat is the role of the reference group?\n\nCommunication between the class and the teachers\nThree meetings a semester\nWrite a short report at the end of the semester\nPossibility to discuss the course development"
   },
   {
-    "objectID": "Data_visualization.html#what-to-deliver",
-    "href": "Data_visualization.html#what-to-deliver",
+    "objectID": "Data_visualization.html#what-is-data",
+    "href": "Data_visualization.html#what-is-data",
     "title": "Data and Data Visualization",
-    "section": "What to deliver",
-    "text": "What to deliver\nIn Canvas you should deliver:\n\nA file (word or any other format) with the questions you want to ask to the owner of the data\nThe visualization_week35.ipynb with the code you produced\nA html file with the plots you have created"
+    "section": "What is data?",
+    "text": "What is data?\n\nMenti\n\n\nNote: …although the word “data” is plural, “is” sounds better.."
   },
   {
-    "objectID": "Data_visualization.html#some-tips",
-    "href": "Data_visualization.html#some-tips",
+    "objectID": "Data_visualization.html#what-is-data-1",
+    "href": "Data_visualization.html#what-is-data-1",
     "title": "Data and Data Visualization",
-    "section": "Some tips",
-    "text": "Some tips\n\nWe want you to familiarize with this dataset through table and plots\nUse any AI chat you want to help with coding\nFor each plot/table you create discuss in group:\n\nWhat does the plot reveal about the data?\nCan you improve the plot? how?"
+    "section": "What is data?",
+    "text": "What is data?\n\n“All is data”\n\neverything happening in counts as data, including interviews, observations, documents, and background context.\n\nGlaser, Barney G. “All Is Data.” Grounded Theory Review, vol. 6, no. 2, 2007, pp. 1–22."
+  },
+  {
+    "objectID": "Data_visualization.html#what-is-data-2",
+    "href": "Data_visualization.html#what-is-data-2",
+    "title": "Data and Data Visualization",
+    "section": "What is data?",
+    "text": "What is data?\n\n“information, especially facts or numbers, collected to be examined and considered and used to help decision-making, or information in an electronic form that can be stored and used by a computer”\n\n\nCambridge dictionary"
+  },
+  {
+    "objectID": "Data_visualization.html#data-came-in-different-type",
+    "href": "Data_visualization.html#data-came-in-different-type",
+    "title": "Data and Data Visualization",
+    "section": "Data came in different type",
+    "text": "Data came in different type\nSome terminology\n\n\n\n\n\nProfile statement → Qualitative\nProfile photo → Image"
+  },
+  {
+    "objectID": "Data_visualization.html#data-came-in-different-type-1",
+    "href": "Data_visualization.html#data-came-in-different-type-1",
+    "title": "Data and Data Visualization",
+    "section": "Data came in different type",
+    "text": "Data came in different type\nSome terminology\n\n\n\n\nQuantitative:\n\nAge, salary, years of experience → quantitative / continuous\nNumber of language spoken → quantitative / discrete"
+  },
+  {
+    "objectID": "Data_visualization.html#data-came-in-different-type-2",
+    "href": "Data_visualization.html#data-came-in-different-type-2",
+    "title": "Data and Data Visualization",
+    "section": "Data came in different type",
+    "text": "Data came in different type\nSome terminology\n\n\n\n\nCategorical:\n\nLocation, nationality, driving licence → nominal\nSkill levels, language proficiency → ordinal"
+  },
+  {
+    "objectID": "Data_visualization.html#data-came-in-different-type-3",
+    "href": "Data_visualization.html#data-came-in-different-type-3",
+    "title": "Data and Data Visualization",
+    "section": "Data came in different type",
+    "text": "Data came in different type\nSome terminology\n\n\n\n\nSpace and time:\n\nyear of graduation, day of birth → time\ncity → space"
+  },
+  {
+    "objectID": "Data_visualization.html#why-data-visualization",
+    "href": "Data_visualization.html#why-data-visualization",
+    "title": "Data and Data Visualization",
+    "section": "Why data visualization?",
+    "text": "Why data visualization?\nA visualization turns data into something we can see, compare, and reason about.\n\nWhy do we visualize?\n\nFind patterns and explore the data — trends, clusters, relationships\nCompare — groups, categories, values\nSee change — especially over time or space\nSpot unusual values — outliers and anomalies\nUnderstand complexity — make large datasets easier to explore\nCommunicate — explain findings to other people"
+  },
+  {
+    "objectID": "Data_visualization.html#what-makes-good-visualization",
+    "href": "Data_visualization.html#what-makes-good-visualization",
+    "title": "Data and Data Visualization",
+    "section": "What makes good visualization?",
+    "text": "What makes good visualization?\nSome good principles (among many others!)\n\nStart with a question What do I want to communicate?"
+  },
+  {
+    "objectID": "Data_visualization.html#what-makes-good-visualization-1",
+    "href": "Data_visualization.html#what-makes-good-visualization-1",
+    "title": "Data and Data Visualization",
+    "section": "What makes good visualization?",
+    "text": "What makes good visualization?\nSome good principles (among many others!)\n\nStart with a question What do I want to communicate?\nChoose the right visual form Match the chart to the question.\n\nChange over time → line plot\nDistribution → histogram\nRelationship between two variables → scatter plot\nLocation → map"
+  },
+  {
+    "objectID": "Data_visualization.html#what-makes-good-visualization-2",
+    "href": "Data_visualization.html#what-makes-good-visualization-2",
+    "title": "Data and Data Visualization",
+    "section": "What makes good visualization?",
+    "text": "What makes good visualization?\nSome good principles (among many others!)\n\nStart with a question What do I want to communicate?\nChoose the right visual form Match the chart to the question.\nBe honest Don’t distort the message\n\nmisleading axes\ninappropriate scales\ncherry-picked data\nunnecessary 3D effects"
+  },
+  {
+    "objectID": "Data_visualization.html#what-makes-good-visualization-3",
+    "href": "Data_visualization.html#what-makes-good-visualization-3",
+    "title": "Data and Data Visualization",
+    "section": "What makes good visualization?",
+    "text": "What makes good visualization?\nSome good principles (among many others!)\n\nStart with a question What do I want to communicate?\nChoose the right visual form Match the chart to the question.\nBe honest Don’t distort the message\nRemove the unnecessary\n\nAvoid decoration that doesn’t communicate information."
+  },
+  {
+    "objectID": "Data_visualization.html#example-1",
+    "href": "Data_visualization.html#example-1",
+    "title": "Data and Data Visualization",
+    "section": "Example 1",
+    "text": "Example 1\n\n\nwhat is the meaning of the different colours?\nhow many more like does Corbyn gets?\n\n\nExamples from “Mistakes we have drawn a few. Learning from our errors in data visualization” The Economist March 27, 2019\n\n\narticle at:\nhttps://www.scribd.com/document/841286524/Mistakes-we-ve-drawn-a-few-Learning-from-our-errors-in-data-by-Sarah-Leo-The-Economist\nbetter figures from\nhttps://marievozanne.github.io/Misleading-and-Confusing-Charts—Exercises.pdf"
+  },
+  {
+    "objectID": "Data_visualization.html#example-1-1",
+    "href": "Data_visualization.html#example-1-1",
+    "title": "Data and Data Visualization",
+    "section": "Example 1",
+    "text": "Example 1\n\n\n\n\n\n\n\nThe improved graph is cleaner (less colours) and makes the scale clear"
+  },
+  {
+    "objectID": "Data_visualization.html#example-2",
+    "href": "Data_visualization.html#example-2",
+    "title": "Data and Data Visualization",
+    "section": "Example 2",
+    "text": "Example 2\n\n\nis people’s opinion really so erratic?\ncan we better highlight trends?"
+  },
+  {
+    "objectID": "Data_visualization.html#example-2-1",
+    "href": "Data_visualization.html#example-2-1",
+    "title": "Data and Data Visualization",
+    "section": "Example 2",
+    "text": "Example 2\n\n\n\n\n\n\n\nThe improved graph has original data as points and a fitted model to show the trends. Note also the larger scale.\nNote: here we have the output of a statistical model show in the plot\nRecommended when one does not have 0 as baseline. From the paper:"
+  },
+  {
+    "objectID": "Data_visualization.html#example-3",
+    "href": "Data_visualization.html#example-3",
+    "title": "Data and Data Visualization",
+    "section": "Example 3",
+    "text": "Example 3\n\n\nwhat i the difference between light and dark blue countries?"
+  },
+  {
+    "objectID": "Data_visualization.html#example-3-1",
+    "href": "Data_visualization.html#example-3-1",
+    "title": "Data and Data Visualization",
+    "section": "Example 3",
+    "text": "Example 3\n\n\n\n\n\n\n\nthe dark blue ones are those that are labelled. the new graph makes this easier to read"
+  },
+  {
+    "objectID": "Data_visualization.html#example-4",
+    "href": "Data_visualization.html#example-4",
+    "title": "Data and Data Visualization",
+    "section": "Example 4",
+    "text": "Example 4\n\n\nHow long is 2020? how about 2021?"
+  },
+  {
+    "objectID": "Data_visualization.html#create-groups-in-canvas",
+    "href": "Data_visualization.html#create-groups-in-canvas",
+    "title": "Data and Data Visualization",
+    "section": "Create Groups in Canvas",
+    "text": "Create Groups in Canvas\nOn your desk you will find a sheet with a number, this is your group number for the next two weeks (until September 4th)\n\nLog into Canvas\nClick on People on the right side of the page\nClick on Group\nScroll to the group with the number on your desk and enroll yourself in the group\n\nNOTE Remember your Group number for next week, you will have to enroll again!!!"
+  },
+  {
+    "objectID": "Data_visualization.html#our-first-data-assignment",
+    "href": "Data_visualization.html#our-first-data-assignment",
+    "title": "Data and Data Visualization",
+    "section": "Our First data Assignment",
+    "text": "Our First data Assignment\nThe world’s first virtual fencing system"
+  },
+  {
+    "objectID": "Data_visualization.html#how-nofence-works",
+    "href": "Data_visualization.html#how-nofence-works",
+    "title": "Data and Data Visualization",
+    "section": "How Nofence works",
+    "text": "How Nofence works\n\nYou can learn more about this company from their website https://www.nofence.com/"
   },
   {
     "objectID": "Data_visualization.html#some-more-info",
@@ -453,5 +572,33 @@
     "title": "Data and Data Visualization",
     "section": "Some more info",
     "text": "Some more info\n\nSeq messages\n\nsent every 30 minutes\nstored in the collar\n\nIn the status messages, we can also find the battery charge level and calculate battery consumption. You must also take into account the charging provided by the solar panel."
+  },
+  {
+    "objectID": "Data_visualization.html#assignement",
+    "href": "Data_visualization.html#assignement",
+    "title": "Data and Data Visualization",
+    "section": "Assignement",
+    "text": "Assignement\n\nLog into Canvas\nFind the assignement Visualization Week 35\nYou’ll find two files:\n\nData: norway_seqs_df.parquet\nInstructions: visualization_week35.ipynb\n\nDownload both of them\nLog into the NTNU JupiterHub https://jupyter.ntnu.no/\nDrag the instruction file into the workspace. Here you find instruction about your tasks."
+  },
+  {
+    "objectID": "Data_visualization.html#some-tips",
+    "href": "Data_visualization.html#some-tips",
+    "title": "Data and Data Visualization",
+    "section": "Some tips",
+    "text": "Some tips\n\nWe want you to familiarize with this dataset through table and plots\nUse any AI chat you want to help with coding\nFor each plot/table you create discuss in group:\n\nWhat does the plot reveal about the data?\nCan you improve the plot? how?"
+  },
+  {
+    "objectID": "Data_visualization.html#what-to-deliver",
+    "href": "Data_visualization.html#what-to-deliver",
+    "title": "Data and Data Visualization",
+    "section": "What to deliver",
+    "text": "What to deliver\nIn Canvas you should deliver:\n\nA file (word or any other format) with the questions you want to ask to the owner of the data\nThe visualization_week35.ipynb with the code you produced\nA html file with the plots you have created"
+  },
+  {
+    "objectID": "Data_visualization.html#for-next-time",
+    "href": "Data_visualization.html#for-next-time",
+    "title": "Data and Data Visualization",
+    "section": "For next time",
+    "text": "For next time\n\n\n\n\n\n\n\n\n\nWeek\nDate\nPlanned Activity\nDelivery\n\n\n\n\n35\nWed 26.08\nVisualization/Python\nYes (does not count)\n\n\n\nFri 28.08\nTelling stories\nYes (5 points)\n\n\n36\nWed 02.09\nVisualization/Python\nYes (5 points)\n\n\n\nFri 04.09\nScience and Data\nNo\n\n\n37\nWed 09.09\nScience and Data\nYes (5 points)\n\n\n\nFri 11.09\nRegression\nNo\n\n\n38\nWed 16.09\nRegression\nWed or Fri\n\n\n\nFri 18.09\nRegression\nWed or Fri"
   }
 ]
