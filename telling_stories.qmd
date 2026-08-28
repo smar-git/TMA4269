@@ -6,14 +6,14 @@ editor: visual
 
 ## First: Create Groups in Canvas
 
-Find the desk with your group number **this is the same group number as last and next Wednesday**
+Find the desk with your group number: **this is the same group number as last and next Wednesday**
 
 -   Log into Canvas
 -   Click on **People** on the right side of the page
 -   Click on **Group**
 -   Scroll to the group with the number on your desk and enroll yourself in the group (Telling stories Week 35)
 
-**NOTE** Remember your Group number for next week, you will have to enroll again!!!
+**NOTE** Remember your Group number for next week, you will have to enroll again!
 
 ## Time table {.smaller}
 
@@ -32,11 +32,9 @@ Find the desk with your group number **this is the same group number as last and
 | *40* | *Wed 30.09*   |              *Project 1* |           *-*            |
 |      | *Fri 02.10*   |              *Project 1* |     *Second Hand-in*     |
 
-
 ## Reference group
 
 Please join the reference group!
-
 
 ## What WE learnt on Wednesday
 
@@ -44,7 +42,7 @@ Please join the reference group!
 
 Canvas deliveries take time
 
-We plan 15 mins for this today
+We give you a 15 minutes heads up today
 
 ## What WE learnt on Wednesday
 
@@ -54,7 +52,7 @@ You are not AI/prompt experts (yet)
 
 ## What YOU (perhaps) learnt on Wednesday
 
--   Canvas deliveries take time (we set 15 mins for this today)
+-   Canvas deliveries take time
 
 -   Getting to know a data set takes time and can be confusing
 
@@ -79,11 +77,19 @@ It’s understanding what data means, how it’s created and how to use it so yo
 
 ## Soft skills
 
-<br>
-
 **The Five C's: Soft Skills That Every Data Analytics Professional Should Have**
 
-Data analytics projects are full of uncertainties, ambiguities and numerous challenges such as unclear decision objectives, time and resource constraints, lack of expertise, poor quality data and ethical and privacy issues.
+Data analytics projects are full of uncertainties, ambiguities and numerous challenges such as:
+
+-   unclear decision objectives
+
+-   time and resource constraints
+
+-   lack of expertise
+
+-   poor quality data
+
+-   ethical and privacy issues.
 
 <br><br><br>
 
@@ -133,8 +139,6 @@ Data analytics projects are full of uncertainties, ambiguities and numerous chal
     -   Continuously strive to generate new insights that are timely, accurate and relevant.
     -   Consider and explore divergent possibilities and perspectives
 
-
-
 ## Telling stories with data
 
 ![](images/clipboard-2481836390.png){width="390"}
@@ -151,9 +155,9 @@ Data analytics projects are full of uncertainties, ambiguities and numerous chal
 
 ## Today: case study
 
-August 2025: Norwegian newspaper VG presents a story with the headline:
+August 2025: Norwegian newspaper VG presents a story with the headline: "Young women with a master's degree are on sick leave far more than men".
 
-"Young women with a master's degree are on sick leave far more than men"
+They show that: "The higher the level of education, the greater the gender difference in sick leave"
 
 ![](images/clipboard-3044748816.png){width="770"}
 
@@ -187,9 +191,11 @@ Norwegian Women's Public Health Association: "Women with a masters' degree also 
 
 Open a document (word or what you prefer) for writing down the groups' reflections. Headlines should be Part 1, Part 2, Part 3, Part 4.
 
-We do Parts 1 and 2 first, then 3 and 4. 
+We do Parts 1 and 2 first, then 3 and 4.
 
 <br>
+
+![](images/clipboard-3044748816.png){width="770"}
 
 ## Today: case study {.smaller}
 
@@ -197,17 +203,16 @@ We do Parts 1 and 2 first, then 3 and 4.
 
 *"Pairing **reliable data** with a **coherent narrative** and a **clear visualization** will create those “aha” moments that engage the audience."*
 
-Discuss the VG article (header and visualization). Why do you think this story was successful? How do you interpret the numbers in the figure?
+Discuss the VG article (header and visualization) \[*2 min first thoughts on post-its!*\]. Why do you think this story was successful? How do you interpret the numbers in the figure?
 
-**Part 2:**  Consider all the elements of this figure in relation to the VG article.
+**Part 2:** Consider all the elements of this figure in relation to the VG article.
 
 ::::: columns
-::: {.column width="30%"}
+::: {.column width="34%"}
 ![](images/clipboard-2481836390.png)
-
 :::
 
-::: {.column width="70%"}
+::: {.column width="65%"}
 -   Reality: What is it we are trying to describe?
 
 -   Measurements: What measurements are done and who are included? Who and what is not included?
@@ -217,7 +222,6 @@ Discuss the VG article (header and visualization). Why do you think this story w
 -   Analysis: What analysis was done with the raw data?
 
 -   Story: What is the final story?
-
 :::
 :::::
 
