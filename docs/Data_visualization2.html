@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html lang="en"><head>
-<script src="Data_visualization2_files/libs/clipboard/clipboard.min.js"></script>
-<script src="Data_visualization2_files/libs/quarto-html/tabby.min.js"></script>
-<script src="Data_visualization2_files/libs/quarto-html/popper.min.js"></script>
-<script src="Data_visualization2_files/libs/quarto-html/tippy.umd.min.js"></script>
-<link href="Data_visualization2_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="Data_visualization2_files/libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="Data_visualization2_files/libs/quarto-html/quarto-syntax-highlighting-dc55a5b9e770e841cd82e46aadbfb9b0.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-html/tabby.min.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dc55a5b9e770e841cd82e46aadbfb9b0.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.8.24">
 
-  <title>Data and Data Visualization 2</title>
+  <title>TMA4269 – Data and Data Visualization 2</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
-  <link rel="stylesheet" href="Data_visualization2_files/libs/revealjs/dist/reset.css">
-  <link rel="stylesheet" href="Data_visualization2_files/libs/revealjs/dist/reveal.css">
+  <link rel="stylesheet" href="site_libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="site_libs/revealjs/dist/reveal.css">
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
@@ -28,11 +28,11 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="Data_visualization2_files/libs/revealjs/dist/theme/quarto-534cd8e3a96973385dffff3f4709048d.css">
-  <link href="Data_visualization2_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
-  <link href="Data_visualization2_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
-  <link href="Data_visualization2_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
-  <link href="Data_visualization2_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <link rel="stylesheet" href="site_libs/revealjs/dist/theme/quarto-534cd8e3a96973385dffff3f4709048d.css">
+  <link href="site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="site_libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
   <style type="text/css">
     .reveal div.sourceCode {
       margin: 0;
@@ -131,6 +131,17 @@
 <div class="quarto-title-authors">
 </div>
 
+</section>
+<section id="first-create-groups-in-canvas" class="slide level2">
+<h2>First: Create Groups in Canvas</h2>
+<p>Find the desk with your group number: <strong>this is the same group number as last Friday next Wednesday</strong></p>
+<ul>
+<li>Log into Canvas</li>
+<li>Click on <strong>People</strong> on the right side of the page</li>
+<li>Click on <strong>Group</strong></li>
+<li>Scroll to the group with the number on your desk and enroll yourself in the group (Visualization Week 36)</li>
+</ul>
+<p><strong>NOTE</strong> Remember your Group number for next week, you will have to enroll again!</p>
 </section>
 <section id="plan-for-today" class="slide level2">
 <h2>Plan for today</h2>
@@ -237,7 +248,47 @@
 </tbody>
 </table>
 </section>
-<section id="assignement-2" class="slide level2">
+<section id="answers-to-your-questions-i" class="slide level2 smaller">
+<h2>Answers to your questions I</h2>
+<ul>
+<li><p><strong>More info about the cows</strong> - We do not know where the cows are..somewhere in Norway. For this reason it is not possible to get weather data.</p></li>
+<li><p><strong>Battery voltage</strong> - <code>battery_voltage</code> is the voltage between the terminals of the battery. It is a function of the battery’s charge (decreases with decreasing charge). The unit associated with the data is cV: 340 cV empty battery, 420 cV full battery.</p></li>
+<li><p><strong>Solar charge</strong> - unit “milliampere-hours” (if divided by 226 it you get it in cV). solar_charge indicates how much the solar panel has charged the battery in the last 30 minutes. For battery_voltage above 410 cV, charging from is turned off. For battery_voltage below 405 cV, charging is turned on again.</p></li>
+</ul>
+</section>
+<section id="answers-to-your-questions-ii" class="slide level2 smaller">
+<h2>Answers to your questions II</h2>
+<ul>
+<li><p><strong>Step count</strong> - Just a measure of how active the cows are. It should not be interpreted as an actual pedometer, and increases with other types of activity as well, as long as the animal moves its head violently enough.</p></li>
+<li><p><strong>Time</strong></p>
+<ul>
+<li><code>time</code> <span class="math inline">\(\rightarrow\)</span> time when the message was stored on the collar</li>
+<li><code>server_time</code> time when the message was received by the server.</li>
+</ul></li>
+</ul>
+<p>The time intervals between seq messages will be longer than 30 minutes if the cloven does not have good enough mobile coverage to send - in which case the messages are sent only when the animal moves into an area with good enough coverage</p>
+<ul>
+<li><strong>Firmware update</strong> - Happens regularly, not so important.</li>
+</ul>
+</section>
+<section id="data-for-today" class="slide level2">
+<h2>Data for today</h2>
+<ul>
+<li><p><strong>Seq-messages</strong> sent every 30 minuts, stored in the collar if not network coverage (this is the data you got last week)</p></li>
+<li><p><strong>Poll-messages</strong> sent every 15 minutes contains also position. Not stored in there is no network coverage (New data)</p></li>
+<li><p><strong>Pasture</strong> coordinates for the pasture limits (New data)</p></li>
+</ul>
+<p><strong>NOTE</strong> you can consider the new data or only the ones you got last week, that is up to you!</p>
+</section>
+<section id="some-advises" class="slide level2">
+<h2>Some advises</h2>
+<ul>
+<li>Keep track of time so that you manage to deliver!!</li>
+<li><strong>USE AI</strong>, even if you are a Python expert!</li>
+<li>We encourage you to use the first 20 minutes to try coding (with AI) individually and THEN discuss in group!</li>
+</ul>
+</section>
+<section id="assignement-2" class="slide level2 smaller">
 <h2>Assignement 2</h2>
 <p><strong>Goal</strong> Create 1 (or 2) plots that you give to the data owner showing some characteristics of the data.</p>
 <p>Think about:</p>
@@ -250,39 +301,32 @@
 <p><strong>Deliverables</strong></p>
 <ol type="1">
 <li>The plot you created</li>
-<li>Some sentences where you tell us why your plot should win</li>
+<li>Some sentences where you discuss your plot in relation to the points above and why you have made your choices.</li>
 </ol>
-</section>
-<section id="some-advises" class="slide level2">
-<h2>Some advises</h2>
-<ul>
-<li>Keep track of time so that you manage to deliver!!</li>
-<li>USE AI, even if you are a Python expert!</li>
-<li>Maybe you can work in parallel and then agree on the final product.</li>
-</ul>
+
 
 </section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
 <div class="footer footer-default">
-<p><a href="/index.html">Back to Home</a></p>
+<p><a href="./index.html">Back to Home</a></p>
 </div>
 </div></div>
 
   <script>window.backupDefine = window.define; window.define = undefined;</script>
-  <script src="Data_visualization2_files/libs/revealjs/dist/reveal.js"></script>
+  <script src="site_libs/revealjs/dist/reveal.js"></script>
   <!-- reveal.js plugins -->
-  <script src="Data_visualization2_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
-  <script src="Data_visualization2_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
-  <script src="Data_visualization2_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
-  <script src="Data_visualization2_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
-  <script src="Data_visualization2_files/libs/revealjs/plugin/quarto-support/support.js"></script>
+  <script src="site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="site_libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="site_libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="site_libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="site_libs/revealjs/plugin/quarto-support/support.js"></script>
   
 
-  <script src="Data_visualization2_files/libs/revealjs/plugin/notes/notes.js"></script>
-  <script src="Data_visualization2_files/libs/revealjs/plugin/search/search.js"></script>
-  <script src="Data_visualization2_files/libs/revealjs/plugin/zoom/zoom.js"></script>
-  <script src="Data_visualization2_files/libs/revealjs/plugin/math/math.js"></script>
+  <script src="site_libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="site_libs/revealjs/plugin/search/search.js"></script>
+  <script src="site_libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="site_libs/revealjs/plugin/math/math.js"></script>
   <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
 
   <script>
