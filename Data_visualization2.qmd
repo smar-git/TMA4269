@@ -7,6 +7,21 @@ slide-number: "c/t"
 editor: source
 ---
 
+
+
+## First: Create Groups in Canvas
+
+Find the desk with your group number: **this is the same group number as last Friday next Wednesday**
+
+-   Log into Canvas
+-   Click on **People** on the right side of the page
+-   Click on **Group**
+-   Scroll to the group with the number on your desk and enroll yourself in the group (Visualization Week 36)
+
+**NOTE** Remember your Group number for next week, you will have to enroll again!
+
+
+
 ## Plan for today
 
 - **Assignement 2 - Data and data visualization.**
@@ -34,7 +49,46 @@ editor: source
 |      | *Fri 02.10*   |              *Project 1* |     *Second Hand-in*     |
 
 
-## Assignement 2
+## Answers to your questions I{.smaller}
+
+- **More info about the cows** -  We do not know where the cows are..somewhere in Norway. For this reason it is not possible to get weather data.
+  
+- **Battery voltage** - `battery_voltage` is the voltage between the terminals of the battery. It is a function of the battery's charge (decreases with decreasing charge). The unit associated with the data is cV:   340 cV empty battery,   420 cV full battery.
+
+- **Solar charge** -  unit "milliampere-hours" (if divided by  226 it you get it in cV). solar_charge indicates how much the solar panel has charged the battery in the last 30 minutes. For battery_voltage above  410 cV, charging from is turned off. For battery_voltage  below 405 cV, charging is turned on again.
+
+## Answers to your questions II{.smaller}
+
+- **Step count** - Just a measure of how active the cows are. It should not be interpreted as an actual pedometer, and increases with other types of activity as well, as long as the animal moves its head violently enough.
+
+- **Time** 
+  - `time` $\rightarrow$ time when the message was stored on the collar
+  - `server_time`  time when the message was received by the server.
+  
+The time intervals between seq messages will be longer than 30 minutes if the cloven does not have good enough mobile coverage to send - in which case the messages are sent only when the animal moves into an area with good enough coverage    
+
+- **Firmware update** - Happens regularly, not so important.
+
+## Data for today
+
+- **Seq-messages** sent every 30 minuts, stored in the collar if not network coverage  (this is the data you got last week)
+
+- **Poll-messages** sent every 15 minutes contains also position. Not stored in there is no network coverage (New data)
+
+- **Pasture** coordinates for the pasture limits (New data)
+
+
+**NOTE** you can consider the new data or only the ones you got last week, that is up to you!
+
+## Some advises
+
+- Keep track of time so that you manage to deliver!!
+- **USE AI**, even if you are a Python expert!
+- We encourage you to use the first 20 minutes to try coding (with AI) individually and THEN discuss in group!
+
+
+
+## Assignement 2{.smaller}
 
 **Goal** Create 1 (or 2) plots that you give to the data owner showing some characteristics of the data.
 
@@ -48,11 +102,5 @@ Think about:
 **Deliverables**
 
   1. The plot you created
-  2. Some sentences where you tell us why your plot should win
+  2. Some sentences where you discuss your plot in relation to the points above and why you have made your choices.
   
-## Some advises
-
-- Keep track of time so that you manage to deliver!!
-- USE AI, even if you are a Python expert!
-- Maybe you can work in parallel and then agree on the final product.
-

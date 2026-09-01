@@ -1,353 +1,59 @@
 [
   {
-    "objectID": "telling_stories.html#first-create-groups-in-canvas",
-    "href": "telling_stories.html#first-create-groups-in-canvas",
-    "title": "Telling stories with data",
+    "objectID": "Data_visualization2.html#first-create-groups-in-canvas",
+    "href": "Data_visualization2.html#first-create-groups-in-canvas",
+    "title": "Data and Data Visualization 2",
     "section": "First: Create Groups in Canvas",
-    "text": "First: Create Groups in Canvas\nFind the desk with your group number: this is the same group number as last and next Wednesday\n\nLog into Canvas\nClick on People on the right side of the page\nClick on Group\nScroll to the group with the number on your desk and enroll yourself in the group (Telling stories Week 35)\n\nNOTE Remember your Group number for next week, you will have to enroll again!"
+    "text": "First: Create Groups in Canvas\nFind the desk with your group number: this is the same group number as last Friday next Wednesday\n\nLog into Canvas\nClick on People on the right side of the page\nClick on Group\nScroll to the group with the number on your desk and enroll yourself in the group (Visualization Week 36)\n\nNOTE Remember your Group number for next week, you will have to enroll again!"
   },
   {
-    "objectID": "telling_stories.html#time-table",
-    "href": "telling_stories.html#time-table",
-    "title": "Telling stories with data",
+    "objectID": "Data_visualization2.html#plan-for-today",
+    "href": "Data_visualization2.html#plan-for-today",
+    "title": "Data and Data Visualization 2",
+    "section": "Plan for today",
+    "text": "Plan for today\n\nAssignement 2 - Data and data visualization.\n\nWe go back to the cow data from last Wednesday\nWho can create the best plot?\nThe data owner will pick a winner..\n..all those who deliver will get 5 points, the winner will get a small prize :-)"
+  },
+  {
+    "objectID": "Data_visualization2.html#time-table",
+    "href": "Data_visualization2.html#time-table",
+    "title": "Data and Data Visualization 2",
     "section": "Time table",
     "text": "Time table\n\n\n\n\n\n\n\n\n\nWeek\nDate\nPlanned Activity\nDelivery\n\n\n\n\n35\nWed 26.08\nVisualization/Python\nYes (does not count)\n\n\n\nFri 28.08\nTelling stories\nYes (5 points)\n\n\n36\nWed 02.09\nVisualization/Python\nYes (5 points)\n\n\n\nFri 04.09\nScience and Data\nNo\n\n\n37\nWed 09.09\nScience and Data\nYes (5 points)\n\n\n\nFri 11.09\nRegression\nNo\n\n\n38\nWed 16.09\nRegression\nWed or Fri\n\n\n\nFri 18.09\nRegression\nWed or Fri\n\n\n39\nWed 23.09\nProject 1\n-\n\n\n\nFri 25.09\nProject 1\nFirst Hand-in\n\n\n40\nWed 30.09\nProject 1\n-\n\n\n\nFri 02.10\nProject 1\nSecond Hand-in"
   },
   {
-    "objectID": "telling_stories.html#reference-group",
-    "href": "telling_stories.html#reference-group",
-    "title": "Telling stories with data",
-    "section": "Reference group",
-    "text": "Reference group\nPlease join the reference group!"
+    "objectID": "Data_visualization2.html#answers-to-your-questions-i",
+    "href": "Data_visualization2.html#answers-to-your-questions-i",
+    "title": "Data and Data Visualization 2",
+    "section": "Answers to your questions I",
+    "text": "Answers to your questions I\n\nMore info about the cows - We do not know where the cows are..somewhere in Norway. For this reason it is not possible to get weather data.\nBattery voltage - battery_voltage is the voltage between the terminals of the battery. It is a function of the battery’s charge (decreases with decreasing charge). The unit associated with the data is cV: 340 cV empty battery, 420 cV full battery.\nSolar charge - unit “milliampere-hours” (if divided by 226 it you get it in cV). solar_charge indicates how much the solar panel has charged the battery in the last 30 minutes. For battery_voltage above 410 cV, charging from is turned off. For battery_voltage below 405 cV, charging is turned on again."
   },
   {
-    "objectID": "telling_stories.html#what-we-learnt-on-wednesday",
-    "href": "telling_stories.html#what-we-learnt-on-wednesday",
-    "title": "Telling stories with data",
-    "section": "What WE learnt on Wednesday",
-    "text": "What WE learnt on Wednesday\n \nCanvas deliveries take time\nWe give you a 15 minutes heads up today"
+    "objectID": "Data_visualization2.html#answers-to-your-questions-ii",
+    "href": "Data_visualization2.html#answers-to-your-questions-ii",
+    "title": "Data and Data Visualization 2",
+    "section": "Answers to your questions II",
+    "text": "Answers to your questions II\n\nStep count - Just a measure of how active the cows are. It should not be interpreted as an actual pedometer, and increases with other types of activity as well, as long as the animal moves its head violently enough.\nTime\n\ntime \\(\\rightarrow\\) time when the message was stored on the collar\nserver_time time when the message was received by the server.\n\n\nThe time intervals between seq messages will be longer than 30 minutes if the cloven does not have good enough mobile coverage to send - in which case the messages are sent only when the animal moves into an area with good enough coverage\n\nFirmware update - Happens regularly, not so important."
   },
   {
-    "objectID": "telling_stories.html#what-we-learnt-on-wednesday-1",
-    "href": "telling_stories.html#what-we-learnt-on-wednesday-1",
-    "title": "Telling stories with data",
-    "section": "What WE learnt on Wednesday",
-    "text": "What WE learnt on Wednesday\n \nYou are not AI/prompt experts (yet)"
+    "objectID": "Data_visualization2.html#data-for-today",
+    "href": "Data_visualization2.html#data-for-today",
+    "title": "Data and Data Visualization 2",
+    "section": "Data for today",
+    "text": "Data for today\n\nSeq-messages sent every 30 minuts, stored in the collar if not network coverage (this is the data you got last week)\nPoll-messages sent every 15 minutes contains also position. Not stored in there is no network coverage (New data)\nPasture coordinates for the pasture limits (New data)\n\nNOTE you can consider the new data or only the ones you got last week, that is up to you!"
   },
   {
-    "objectID": "telling_stories.html#what-you-perhaps-learnt-on-wednesday",
-    "href": "telling_stories.html#what-you-perhaps-learnt-on-wednesday",
-    "title": "Telling stories with data",
-    "section": "What YOU (perhaps) learnt on Wednesday",
-    "text": "What YOU (perhaps) learnt on Wednesday\n\nCanvas deliveries take time\nGetting to know a data set takes time and can be confusing\nThere is no right answer, but some data summaries are more useful than others\nA good visualization is rarely the first one, you need to keep asking questions to the data"
+    "objectID": "Data_visualization2.html#some-advises",
+    "href": "Data_visualization2.html#some-advises",
+    "title": "Data and Data Visualization 2",
+    "section": "Some advises",
+    "text": "Some advises\n\nKeep track of time so that you manage to deliver!!\nUSE AI, even if you are a Python expert!\nWe encourage you to use the first 20 minutes to try coding (with AI) individually and THEN discuss in group!"
   },
   {
-    "objectID": "telling_stories.html#next-wednesday",
-    "href": "telling_stories.html#next-wednesday",
-    "title": "Telling stories with data",
-    "section": "Next Wednesday",
-    "text": "Next Wednesday\n\nWe present answers from Ole Bernhard at Nofence\nWe give a task related to visualization of the Nofence data (with prize!)"
-  },
-  {
-    "objectID": "telling_stories.html#soft-skills",
-    "href": "telling_stories.html#soft-skills",
-    "title": "Telling stories with data",
-    "section": "Soft skills",
-    "text": "Soft skills\nData Literacy\nData literacy is the ability to read, work with, analyze and communicate data effectively.\nIt’s understanding what data means, how it’s created and how to use it so you can ask the right questions, interpret data correctly and make informed, evidence-based decisions.\n Source: Databricks"
-  },
-  {
-    "objectID": "telling_stories.html#soft-skills-1",
-    "href": "telling_stories.html#soft-skills-1",
-    "title": "Telling stories with data",
-    "section": "Soft skills",
-    "text": "Soft skills\nThe Five C’s: Soft Skills That Every Data Analytics Professional Should Have\nData analytics projects are full of uncertainties, ambiguities and numerous challenges such as:\n\nunclear decision objectives\ntime and resource constraints\nlack of expertise\npoor quality data\nethical and privacy issues.\n\n\nSource: Forbes Technology council"
-  },
-  {
-    "objectID": "telling_stories.html#soft-skills-2",
-    "href": "telling_stories.html#soft-skills-2",
-    "title": "Telling stories with data",
-    "section": "Soft skills",
-    "text": "Soft skills\n\nCommunication\n\nUnderstand information accurately and quickly.\nUnderstand others’ insight requirements and decision needs\nAvoid misunderstandings"
-  },
-  {
-    "objectID": "telling_stories.html#soft-skills-3",
-    "href": "telling_stories.html#soft-skills-3",
-    "title": "Telling stories with data",
-    "section": "Soft skills",
-    "text": "Soft skills\n\nCommunication\nCollaboration\n\nSuccessfully work toward realizing a common goal\nOpen-mindedness and respect"
-  },
-  {
-    "objectID": "telling_stories.html#soft-skills-4",
-    "href": "telling_stories.html#soft-skills-4",
-    "title": "Telling stories with data",
-    "section": "Soft skills",
-    "text": "Soft skills\n\nCommunication\nCollaboration\nCritical Thinking Think rationally and logically and solve problems in a consistent and systematic manner.\n\nQuestion the hypothesis\nIdentify biases\nValidate assumptions\nSelect appropriate models\nCritique the accuracy of the analysis and results"
-  },
-  {
-    "objectID": "telling_stories.html#soft-skills-5",
-    "href": "telling_stories.html#soft-skills-5",
-    "title": "Telling stories with data",
-    "section": "Soft skills",
-    "text": "Soft skills\n\nCommunication\nCollaboration\nCritical Thinking\nCuriosity Think rationally and logically and solve problems in a consistent and systematic manner.\n\nContinuously learn and expand knowledge\nOvercome obstacles by asking useful questions"
-  },
-  {
-    "objectID": "telling_stories.html#soft-skills-6",
-    "href": "telling_stories.html#soft-skills-6",
-    "title": "Telling stories with data",
-    "section": "Soft skills",
-    "text": "Soft skills\n\nCommunication\nCollaboration\nCritical Thinking\nCuriosity\nCreativity Think rationally and logically and solve problems in a consistent and systematic manner.\n\nContinuously strive to generate new insights that are timely, accurate and relevant.\nConsider and explore divergent possibilities and perspectives"
-  },
-  {
-    "objectID": "telling_stories.html#telling-stories-with-data",
-    "href": "telling_stories.html#telling-stories-with-data",
-    "title": "Telling stories with data",
-    "section": "Telling stories with data",
-    "text": "Telling stories with data"
-  },
-  {
-    "objectID": "telling_stories.html#telling-stories-with-data-1",
-    "href": "telling_stories.html#telling-stories-with-data-1",
-    "title": "Telling stories with data",
-    "section": "Telling stories with data",
-    "text": "Telling stories with data\n\n“Pairing reliable data with a coherent narrative and a clear visualization will create those “aha” moments that engage the audience.”\n\nSource: The Data Literacy Project"
-  },
-  {
-    "objectID": "telling_stories.html#today-case-study",
-    "href": "telling_stories.html#today-case-study",
-    "title": "Telling stories with data",
-    "section": "Today: case study",
-    "text": "Today: case study\nAugust 2025: Norwegian newspaper VG presents a story with the headline: “Young women with a master’s degree are on sick leave far more than men”.\nThey show that: “The higher the level of education, the greater the gender difference in sick leave”"
-  },
-  {
-    "objectID": "telling_stories.html#today-case-study-1",
-    "href": "telling_stories.html#today-case-study-1",
-    "title": "Telling stories with data",
-    "section": "Today: case study",
-    "text": "Today: case study\nE24: “The good girls are tired now”"
-  },
-  {
-    "objectID": "telling_stories.html#today-case-study-2",
-    "href": "telling_stories.html#today-case-study-2",
-    "title": "Telling stories with data",
-    "section": "Today: case study",
-    "text": "Today: case study\nVG (again): “Today’s working life is made for a man in the 1970s”"
-  },
-  {
-    "objectID": "telling_stories.html#today-case-study-3",
-    "href": "telling_stories.html#today-case-study-3",
-    "title": "Telling stories with data",
-    "section": "Today: case study",
-    "text": "Today: case study\nAdressa: “Young women struggle to balance work and family: - Say no to things that do not give you energy”"
-  },
-  {
-    "objectID": "telling_stories.html#today-case-study-4",
-    "href": "telling_stories.html#today-case-study-4",
-    "title": "Telling stories with data",
-    "section": "Today: case study",
-    "text": "Today: case study\nNorwegian Women’s Public Health Association: “Women with a masters’ degree also have bodies”"
-  },
-  {
-    "objectID": "telling_stories.html#today-case-study-5",
-    "href": "telling_stories.html#today-case-study-5",
-    "title": "Telling stories with data",
-    "section": "Today: case study",
-    "text": "Today: case study\nPart 0:\nOpen a document (word or what you prefer) for writing down the groups’ reflections. Headlines should be Part 1, Part 2, Part 3, Part 4.\nWe do Parts 1 and 2 first, then 3 and 4."
-  },
-  {
-    "objectID": "telling_stories.html#today-case-study-6",
-    "href": "telling_stories.html#today-case-study-6",
-    "title": "Telling stories with data",
-    "section": "Today: case study",
-    "text": "Today: case study\nPart 1: Use the statement from the Data Literacy Project:\n“Pairing reliable data with a coherent narrative and a clear visualization will create those “aha” moments that engage the audience.”\nDiscuss the VG article (header and visualization) [2 min first thoughts on post-its!]. Why do you think this story was successful? How do you interpret the numbers in the figure?\nPart 2: Consider all the elements of this figure in relation to the VG article.\n\n\n\n\n\nReality: What is it we are trying to describe?\nMeasurements: What measurements are done and who are included? Who and what is not included?\nData: What is the raw data?\nAnalysis: What analysis was done with the raw data?\nStory: What is the final story?\n\n\n\n\nNote: The data are from SSB (Statistics Norway), first quarter 2025."
-  },
-  {
-    "objectID": "telling_stories.html#today-case-study-7",
-    "href": "telling_stories.html#today-case-study-7",
-    "title": "Telling stories with data",
-    "section": "Today: case study",
-    "text": "Today: case study\nPart 3:\nThe table gives the raw data from SSB (statistics Norway).\nConsider “the story” (the headline + visualization) in relation to the data.\nWould you say that “they story” is a good representation of reality? Why or why not?\nIs “the story” relevant for decision makers?\nIf you were the decision maker, which group(s) would you be worried about?\n \nPart 4:\nCan statistics and data science be neutral? Why / why not?\nWhat other than neutrality should we strive for?"
-  },
-  {
-    "objectID": "intro.html#plan-for-today-friday-august-21st",
-    "href": "intro.html#plan-for-today-friday-august-21st",
-    "title": "About the course: TMA4269 Fall 2026",
-    "section": "Plan for today Friday August 21st",
-    "text": "Plan for today Friday August 21st\n\nAbout the course and requirements\nMENTI to gather your thoughts and expectations\nGroup discussions to introduce the way we will work in TMA4269"
-  },
-  {
-    "objectID": "intro.html#but-first",
-    "href": "intro.html#but-first",
-    "title": "About the course: TMA4269 Fall 2026",
-    "section": "But first…",
-    "text": "But first…\n2-3 minutes to get to know the persons at your table (name and study program, perhaps country?)"
-  },
-  {
-    "objectID": "intro.html#course-description",
-    "href": "intro.html#course-description",
-    "title": "About the course: TMA4269 Fall 2026",
-    "section": "Course description",
-    "text": "Course description\nData science is about extracting knowledge from data. This includes identifying patterns, making predictions, communicating results, and supporting decision-making.\nThis course provides a practical and example-based introduction to fundamental topics such as data visualisation, regression models, and machine learning."
-  },
-  {
-    "objectID": "intro.html#what-the-course-description-implies",
-    "href": "intro.html#what-the-course-description-implies",
-    "title": "About the course: TMA4269 Fall 2026",
-    "section": "What the course description implies",
-    "text": "What the course description implies\nYou will gain generic skills in handling, interpreting and discussing data, modelling, prediction etc etc.\nThis is accomplished mainly through examples and group work and only a few lectures."
-  },
-  {
-    "objectID": "intro.html#what-the-course-description-implies-1",
-    "href": "intro.html#what-the-course-description-implies-1",
-    "title": "About the course: TMA4269 Fall 2026",
-    "section": "What the course description implies",
-    "text": "What the course description implies\nYou will gain generic skills in handling, interpreting and discussing data, modelling, prediction etc etc.\nThis is accomplished mainly through examples and group work and only a few lectures.\nIf you need more fundamental/theoretical knowledge you should rather consider\n\nTMA4267 Linear statistical models (for multiple linear regression)\nTMA4268 Statistical learning (for machine learning)"
-  },
-  {
-    "objectID": "intro.html#portfolio-assessment",
-    "href": "intro.html#portfolio-assessment",
-    "title": "About the course: TMA4269 Fall 2026",
-    "section": "Portfolio assessment",
-    "text": "Portfolio assessment\n\nIndividual letter grades (A-F) are set based on your portfolio (“mappe”)\nAll elements of the portfolio are completed in groups\nThe group work is done mostly during class hours\n\nYou will at times be assigned some preparatory homework\nWe are not interested in polished project reports"
-  },
-  {
-    "objectID": "intro.html#portfolio-assessment-1",
-    "href": "intro.html#portfolio-assessment-1",
-    "title": "About the course: TMA4269 Fall 2026",
-    "section": "Portfolio assessment",
-    "text": "Portfolio assessment\n\nThe portfolio will consist of 3 types of activities:\n\n8 smaller activities, participation (hand-in) counts 5 points each, but at most 30 points\nProject 1: 2 hand-ins, at most 30 points (mandatory)\nProject 2: 3 hand-ins, at most 50 points (mandatory)\n\nEverything will be delivered in Canvas during class hours"
-  },
-  {
-    "objectID": "intro.html#what-the-portfolio-assessment-implies",
-    "href": "intro.html#what-the-portfolio-assessment-implies",
-    "title": "About the course: TMA4269 Fall 2026",
-    "section": "What the portfolio assessment implies",
-    "text": "What the portfolio assessment implies\n\nNo exam!\nYou have to show up and participate\n\nWednesdays 10:15 - 12:00\nFridays 12:15 - 14:00\n\nTentative weeks for projects:\n\n39, 40, 45, 46, 47"
-  },
-  {
-    "objectID": "intro.html#what-the-portfolio-assessment-implies-1",
-    "href": "intro.html#what-the-portfolio-assessment-implies-1",
-    "title": "About the course: TMA4269 Fall 2026",
-    "section": "What the portfolio assessment implies",
-    "text": "What the portfolio assessment implies\n\nSick? Travel? OK.\nBut if you miss to many sessions then you cannot get a grade\nAnd also, no group wants a group member who does not show up"
-  },
-  {
-    "objectID": "intro.html#groups-and-group-work",
-    "href": "intro.html#groups-and-group-work",
-    "title": "About the course: TMA4269 Fall 2026",
-    "section": "Groups and group work",
-    "text": "Groups and group work\n\nAbout 5 students per group\nGroups stay together for about two weeks, then rotate\nGroups hand in assignments and projects jointly through Canvas"
-  },
-  {
-    "objectID": "intro.html#teachers-and-assistants",
-    "href": "intro.html#teachers-and-assistants",
-    "title": "About the course: TMA4269 Fall 2026",
-    "section": "Teachers and assistants",
-    "text": "Teachers and assistants\n\nSara Martino (teacher)\nThea Bjørnland (teacher)\nFredrik M. Eriksen (teaching assistant)\nErin A. D. Bråten (teaching assistant)"
-  },
-  {
-    "objectID": "intro.html#some-context-1",
-    "href": "intro.html#some-context-1",
-    "title": "About the course: TMA4269 Fall 2026",
-    "section": "Some context (1)",
-    "text": "Some context (1)\nThis is the first time we:\n\nrun the course TMA4269 Data Science\nuse portfolio assessment (mappevurdering)\nbuilt an entire course around applications and group discussions\nuse Canvas"
-  },
-  {
-    "objectID": "intro.html#some-context-2",
-    "href": "intro.html#some-context-2",
-    "title": "About the course: TMA4269 Fall 2026",
-    "section": "Some context (2)",
-    "text": "Some context (2)\n\nThe course was designed as a ‘k-emne’ for ‘siving’ students (complementary course for certain NTNU programs), which means:\n\nNot a theoretical course\nWe focus on “apply, use, and discuss”\n\nThe course is also open to other students\nWe only require that you have taken a basic statistics course (e.g. TMA4240/45)\nMake sure the course can be approved as part of the study plan in you program"
-  },
-  {
-    "objectID": "intro.html#co-creation",
-    "href": "intro.html#co-creation",
-    "title": "About the course: TMA4269 Fall 2026",
-    "section": "Co-creation",
-    "text": "Co-creation\n\nThe course has no strict curriculum\nAll learning activities and assessment types are new and being developed as we go\nYou will learn from us and we will learn from you\n\n–&gt; We all need to be a bit flexible and collaborate"
-  },
-  {
-    "objectID": "intro.html#teaching-excellence-program-at-ntnu-toppundervisning",
-    "href": "intro.html#teaching-excellence-program-at-ntnu-toppundervisning",
-    "title": "About the course: TMA4269 Fall 2026",
-    "section": "Teaching Excellence Program at NTNU (Toppundervisning)",
-    "text": "Teaching Excellence Program at NTNU (Toppundervisning)\n\nWe are developing the course through the NTNU teaching excellence program\n“AI-assisted learning in statistics”\n\nFor several assignments / projects we expect you to use AI tools to get relevant Python code and suggestions for methods"
-  },
-  {
-    "objectID": "intro.html#menti-who-are-you",
-    "href": "intro.html#menti-who-are-you",
-    "title": "About the course: TMA4269 Fall 2026",
-    "section": "Menti: Who are you?",
-    "text": "Menti: Who are you?"
-  },
-  {
-    "objectID": "intro.html#break",
-    "href": "intro.html#break",
-    "title": "About the course: TMA4269 Fall 2026",
-    "section": "BREAK",
-    "text": "BREAK"
-  },
-  {
-    "objectID": "intro.html#group-practice-1",
-    "href": "intro.html#group-practice-1",
-    "title": "About the course: TMA4269 Fall 2026",
-    "section": "Group practice (1)",
-    "text": "Group practice (1)\nAll groups are given a graph (a time series)\nIndividual 2 min\nWrite down on a post-it: What do you notice?"
-  },
-  {
-    "objectID": "intro.html#group-practice-2",
-    "href": "intro.html#group-practice-2",
-    "title": "About the course: TMA4269 Fall 2026",
-    "section": "Group practice (2)",
-    "text": "Group practice (2)\nDiscuss together 5 min\nWhat did you notice? Make sure everyone at the table gives their opinion, and aim for different angles"
-  },
-  {
-    "objectID": "intro.html#group-practice-3",
-    "href": "intro.html#group-practice-3",
-    "title": "About the course: TMA4269 Fall 2026",
-    "section": "Group practice (3)",
-    "text": "Group practice (3)\nBe creative 5 min\nDraw something on the graph to make a story for a newspaper"
-  },
-  {
-    "objectID": "intro.html#group-practice-4",
-    "href": "intro.html#group-practice-4",
-    "title": "About the course: TMA4269 Fall 2026",
-    "section": "Group practice (4)",
-    "text": "Group practice (4)\nPresentation 5 min\nTell your story to the neighbor group."
-  },
-  {
-    "objectID": "intro.html#group-practice-5",
-    "href": "intro.html#group-practice-5",
-    "title": "About the course: TMA4269 Fall 2026",
-    "section": "Group practice (5)",
-    "text": "Group practice (5)\n\n\nAll groups are given a new version of the graph as presented by NRK 14.07.2026, and a reflection sheet.\n\n\n\nRead the NRK article here"
-  },
-  {
-    "objectID": "intro.html#for-next-time",
-    "href": "intro.html#for-next-time",
-    "title": "About the course: TMA4269 Fall 2026",
-    "section": "For next time",
-    "text": "For next time\nPlease answer the survey sent to you by e-mail: nettskjema (For room reasons we need to know how many will actually take the course.)\nCheck that you can log into Canvas and that you see the course page there.\nCheck that you can log into NTNUs JupyterHub: https://jupyter.ntnu.no\nWednesday we meet in R2 for a first go at visualization. Bring laptop."
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Welcome to the course TMA4269 Data Science",
-    "section": "",
-    "text": "The course TMA4269 Data Science is developed by the Department of Mathematical Sciences at NTNU, and intended as a ‘k-emne’ (complementary course) for 5-year integrated master of technology students (Siving). Other students are also welcome to the course. The course is given for the first time in the fall semester of 2026. Teachers are Sara Martino and Thea Bjørnland.\nThis page presents learning materials etc. Other details (schedule, messages etc) are posted at the course wikipages."
-  },
-  {
-    "objectID": "index.html#general-information",
-    "href": "index.html#general-information",
-    "title": "Welcome to the course TMA4269 Data Science",
-    "section": "",
-    "text": "The course TMA4269 Data Science is developed by the Department of Mathematical Sciences at NTNU, and intended as a ‘k-emne’ (complementary course) for 5-year integrated master of technology students (Siving). Other students are also welcome to the course. The course is given for the first time in the fall semester of 2026. Teachers are Sara Martino and Thea Bjørnland.\nThis page presents learning materials etc. Other details (schedule, messages etc) are posted at the course wikipages."
-  },
-  {
-    "objectID": "index.html#course-description",
-    "href": "index.html#course-description",
-    "title": "Welcome to the course TMA4269 Data Science",
-    "section": "Course description",
-    "text": "Course description\n\nContent\nData science is about extracting knowledge from data. This includes identifying patterns, making predictions, communicating results, and supporting decision-making. This course provides a practical and example-based introduction to fundamental topics such as data visualisation, regression models, and machine learning. We will discuss the limitations of data analysis and modeling to avoid misinterpretation or misuse of model results.\n\n\nLearning outcomes\nThe student is familiar with the most common methods and algorithms for data visualisation, modeling, and prediction. The student can critically evaluate results from various data science processes. This includes understanding the limitations of models, as well as being able to discuss the implications of these with others.\n\n\nLearning and assessment activities\nFor this course your grade is set using portfolio assessment. You will attend and participate in mandatory activities, and complete (in groups) two projects. All activities and project work are intended to take place during the lecture times."
+    "objectID": "Data_visualization2.html#assignement-2",
+    "href": "Data_visualization2.html#assignement-2",
+    "title": "Data and Data Visualization 2",
+    "section": "Assignement 2",
+    "text": "Assignement 2\nGoal Create 1 (or 2) plots that you give to the data owner showing some characteristics of the data.\nThink about:\n\nReadability\nUsefulness to the owner\nScalability (what if we had 100 cows)\nColor scale/axis/fonts\n\nDeliverables\n\nThe plot you created\nSome sentences where you discuss your plot in relation to the points above and why you have made your choices."
   },
   {
     "objectID": "Data_visualization.html#plan-for-today-wednesday-august-26th",
@@ -600,5 +306,355 @@
     "title": "Data and Data Visualization",
     "section": "For next time",
     "text": "For next time\n\n\n\n\n\n\n\n\n\nWeek\nDate\nPlanned Activity\nDelivery\n\n\n\n\n35\nWed 26.08\nVisualization/Python\nYes (does not count)\n\n\n\nFri 28.08\nTelling stories\nYes (5 points)\n\n\n36\nWed 02.09\nVisualization/Python\nYes (5 points)\n\n\n\nFri 04.09\nScience and Data\nNo\n\n\n37\nWed 09.09\nScience and Data\nYes (5 points)\n\n\n\nFri 11.09\nRegression\nNo\n\n\n38\nWed 16.09\nRegression\nWed or Fri\n\n\n\nFri 18.09\nRegression\nWed or Fri"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Welcome to the course TMA4269 Data Science",
+    "section": "",
+    "text": "The course TMA4269 Data Science is developed by the Department of Mathematical Sciences at NTNU, and intended as a ‘k-emne’ (complementary course) for 5-year integrated master of technology students (Siving). Other students are also welcome to the course. The course is given for the first time in the fall semester of 2026. Teachers are Sara Martino and Thea Bjørnland.\nThis page presents learning materials etc. Other details (schedule, messages etc) are posted at the course wikipages."
+  },
+  {
+    "objectID": "index.html#general-information",
+    "href": "index.html#general-information",
+    "title": "Welcome to the course TMA4269 Data Science",
+    "section": "",
+    "text": "The course TMA4269 Data Science is developed by the Department of Mathematical Sciences at NTNU, and intended as a ‘k-emne’ (complementary course) for 5-year integrated master of technology students (Siving). Other students are also welcome to the course. The course is given for the first time in the fall semester of 2026. Teachers are Sara Martino and Thea Bjørnland.\nThis page presents learning materials etc. Other details (schedule, messages etc) are posted at the course wikipages."
+  },
+  {
+    "objectID": "index.html#course-description",
+    "href": "index.html#course-description",
+    "title": "Welcome to the course TMA4269 Data Science",
+    "section": "Course description",
+    "text": "Course description\n\nContent\nData science is about extracting knowledge from data. This includes identifying patterns, making predictions, communicating results, and supporting decision-making. This course provides a practical and example-based introduction to fundamental topics such as data visualisation, regression models, and machine learning. We will discuss the limitations of data analysis and modeling to avoid misinterpretation or misuse of model results.\n\n\nLearning outcomes\nThe student is familiar with the most common methods and algorithms for data visualisation, modeling, and prediction. The student can critically evaluate results from various data science processes. This includes understanding the limitations of models, as well as being able to discuss the implications of these with others.\n\n\nLearning and assessment activities\nFor this course your grade is set using portfolio assessment. You will attend and participate in mandatory activities, and complete (in groups) two projects. All activities and project work are intended to take place during the lecture times."
+  },
+  {
+    "objectID": "intro.html#plan-for-today-friday-august-21st",
+    "href": "intro.html#plan-for-today-friday-august-21st",
+    "title": "About the course: TMA4269 Fall 2026",
+    "section": "Plan for today Friday August 21st",
+    "text": "Plan for today Friday August 21st\n\nAbout the course and requirements\nMENTI to gather your thoughts and expectations\nGroup discussions to introduce the way we will work in TMA4269"
+  },
+  {
+    "objectID": "intro.html#but-first",
+    "href": "intro.html#but-first",
+    "title": "About the course: TMA4269 Fall 2026",
+    "section": "But first…",
+    "text": "But first…\n2-3 minutes to get to know the persons at your table (name and study program, perhaps country?)"
+  },
+  {
+    "objectID": "intro.html#course-description",
+    "href": "intro.html#course-description",
+    "title": "About the course: TMA4269 Fall 2026",
+    "section": "Course description",
+    "text": "Course description\nData science is about extracting knowledge from data. This includes identifying patterns, making predictions, communicating results, and supporting decision-making.\nThis course provides a practical and example-based introduction to fundamental topics such as data visualisation, regression models, and machine learning."
+  },
+  {
+    "objectID": "intro.html#what-the-course-description-implies",
+    "href": "intro.html#what-the-course-description-implies",
+    "title": "About the course: TMA4269 Fall 2026",
+    "section": "What the course description implies",
+    "text": "What the course description implies\nYou will gain generic skills in handling, interpreting and discussing data, modelling, prediction etc etc.\nThis is accomplished mainly through examples and group work and only a few lectures."
+  },
+  {
+    "objectID": "intro.html#what-the-course-description-implies-1",
+    "href": "intro.html#what-the-course-description-implies-1",
+    "title": "About the course: TMA4269 Fall 2026",
+    "section": "What the course description implies",
+    "text": "What the course description implies\nYou will gain generic skills in handling, interpreting and discussing data, modelling, prediction etc etc.\nThis is accomplished mainly through examples and group work and only a few lectures.\nIf you need more fundamental/theoretical knowledge you should rather consider\n\nTMA4267 Linear statistical models (for multiple linear regression)\nTMA4268 Statistical learning (for machine learning)"
+  },
+  {
+    "objectID": "intro.html#portfolio-assessment",
+    "href": "intro.html#portfolio-assessment",
+    "title": "About the course: TMA4269 Fall 2026",
+    "section": "Portfolio assessment",
+    "text": "Portfolio assessment\n\nIndividual letter grades (A-F) are set based on your portfolio (“mappe”)\nAll elements of the portfolio are completed in groups\nThe group work is done mostly during class hours\n\nYou will at times be assigned some preparatory homework\nWe are not interested in polished project reports"
+  },
+  {
+    "objectID": "intro.html#portfolio-assessment-1",
+    "href": "intro.html#portfolio-assessment-1",
+    "title": "About the course: TMA4269 Fall 2026",
+    "section": "Portfolio assessment",
+    "text": "Portfolio assessment\n\nThe portfolio will consist of 3 types of activities:\n\n8 smaller activities, participation (hand-in) counts 5 points each, but at most 30 points\nProject 1: 2 hand-ins, at most 30 points (mandatory)\nProject 2: 3 hand-ins, at most 50 points (mandatory)\n\nEverything will be delivered in Canvas during class hours"
+  },
+  {
+    "objectID": "intro.html#what-the-portfolio-assessment-implies",
+    "href": "intro.html#what-the-portfolio-assessment-implies",
+    "title": "About the course: TMA4269 Fall 2026",
+    "section": "What the portfolio assessment implies",
+    "text": "What the portfolio assessment implies\n\nNo exam!\nYou have to show up and participate\n\nWednesdays 10:15 - 12:00\nFridays 12:15 - 14:00\n\nTentative weeks for projects:\n\n39, 40, 45, 46, 47"
+  },
+  {
+    "objectID": "intro.html#what-the-portfolio-assessment-implies-1",
+    "href": "intro.html#what-the-portfolio-assessment-implies-1",
+    "title": "About the course: TMA4269 Fall 2026",
+    "section": "What the portfolio assessment implies",
+    "text": "What the portfolio assessment implies\n\nSick? Travel? OK.\nBut if you miss to many sessions then you cannot get a grade\nAnd also, no group wants a group member who does not show up"
+  },
+  {
+    "objectID": "intro.html#groups-and-group-work",
+    "href": "intro.html#groups-and-group-work",
+    "title": "About the course: TMA4269 Fall 2026",
+    "section": "Groups and group work",
+    "text": "Groups and group work\n\nAbout 5 students per group\nGroups stay together for about two weeks, then rotate\nGroups hand in assignments and projects jointly through Canvas"
+  },
+  {
+    "objectID": "intro.html#teachers-and-assistants",
+    "href": "intro.html#teachers-and-assistants",
+    "title": "About the course: TMA4269 Fall 2026",
+    "section": "Teachers and assistants",
+    "text": "Teachers and assistants\n\nSara Martino (teacher)\nThea Bjørnland (teacher)\nFredrik M. Eriksen (teaching assistant)\nErin A. D. Bråten (teaching assistant)"
+  },
+  {
+    "objectID": "intro.html#some-context-1",
+    "href": "intro.html#some-context-1",
+    "title": "About the course: TMA4269 Fall 2026",
+    "section": "Some context (1)",
+    "text": "Some context (1)\nThis is the first time we:\n\nrun the course TMA4269 Data Science\nuse portfolio assessment (mappevurdering)\nbuilt an entire course around applications and group discussions\nuse Canvas"
+  },
+  {
+    "objectID": "intro.html#some-context-2",
+    "href": "intro.html#some-context-2",
+    "title": "About the course: TMA4269 Fall 2026",
+    "section": "Some context (2)",
+    "text": "Some context (2)\n\nThe course was designed as a ‘k-emne’ for ‘siving’ students (complementary course for certain NTNU programs), which means:\n\nNot a theoretical course\nWe focus on “apply, use, and discuss”\n\nThe course is also open to other students\nWe only require that you have taken a basic statistics course (e.g. TMA4240/45)\nMake sure the course can be approved as part of the study plan in you program"
+  },
+  {
+    "objectID": "intro.html#co-creation",
+    "href": "intro.html#co-creation",
+    "title": "About the course: TMA4269 Fall 2026",
+    "section": "Co-creation",
+    "text": "Co-creation\n\nThe course has no strict curriculum\nAll learning activities and assessment types are new and being developed as we go\nYou will learn from us and we will learn from you\n\n–&gt; We all need to be a bit flexible and collaborate"
+  },
+  {
+    "objectID": "intro.html#teaching-excellence-program-at-ntnu-toppundervisning",
+    "href": "intro.html#teaching-excellence-program-at-ntnu-toppundervisning",
+    "title": "About the course: TMA4269 Fall 2026",
+    "section": "Teaching Excellence Program at NTNU (Toppundervisning)",
+    "text": "Teaching Excellence Program at NTNU (Toppundervisning)\n\nWe are developing the course through the NTNU teaching excellence program\n“AI-assisted learning in statistics”\n\nFor several assignments / projects we expect you to use AI tools to get relevant Python code and suggestions for methods"
+  },
+  {
+    "objectID": "intro.html#menti-who-are-you",
+    "href": "intro.html#menti-who-are-you",
+    "title": "About the course: TMA4269 Fall 2026",
+    "section": "Menti: Who are you?",
+    "text": "Menti: Who are you?"
+  },
+  {
+    "objectID": "intro.html#break",
+    "href": "intro.html#break",
+    "title": "About the course: TMA4269 Fall 2026",
+    "section": "BREAK",
+    "text": "BREAK"
+  },
+  {
+    "objectID": "intro.html#group-practice-1",
+    "href": "intro.html#group-practice-1",
+    "title": "About the course: TMA4269 Fall 2026",
+    "section": "Group practice (1)",
+    "text": "Group practice (1)\nAll groups are given a graph (a time series)\nIndividual 2 min\nWrite down on a post-it: What do you notice?"
+  },
+  {
+    "objectID": "intro.html#group-practice-2",
+    "href": "intro.html#group-practice-2",
+    "title": "About the course: TMA4269 Fall 2026",
+    "section": "Group practice (2)",
+    "text": "Group practice (2)\nDiscuss together 5 min\nWhat did you notice? Make sure everyone at the table gives their opinion, and aim for different angles"
+  },
+  {
+    "objectID": "intro.html#group-practice-3",
+    "href": "intro.html#group-practice-3",
+    "title": "About the course: TMA4269 Fall 2026",
+    "section": "Group practice (3)",
+    "text": "Group practice (3)\nBe creative 5 min\nDraw something on the graph to make a story for a newspaper"
+  },
+  {
+    "objectID": "intro.html#group-practice-4",
+    "href": "intro.html#group-practice-4",
+    "title": "About the course: TMA4269 Fall 2026",
+    "section": "Group practice (4)",
+    "text": "Group practice (4)\nPresentation 5 min\nTell your story to the neighbor group."
+  },
+  {
+    "objectID": "intro.html#group-practice-5",
+    "href": "intro.html#group-practice-5",
+    "title": "About the course: TMA4269 Fall 2026",
+    "section": "Group practice (5)",
+    "text": "Group practice (5)\n\n\nAll groups are given a new version of the graph as presented by NRK 14.07.2026, and a reflection sheet.\n\n\n\nRead the NRK article here"
+  },
+  {
+    "objectID": "intro.html#for-next-time",
+    "href": "intro.html#for-next-time",
+    "title": "About the course: TMA4269 Fall 2026",
+    "section": "For next time",
+    "text": "For next time\nPlease answer the survey sent to you by e-mail: nettskjema (For room reasons we need to know how many will actually take the course.)\nCheck that you can log into Canvas and that you see the course page there.\nCheck that you can log into NTNUs JupyterHub: https://jupyter.ntnu.no\nWednesday we meet in R2 for a first go at visualization. Bring laptop."
+  },
+  {
+    "objectID": "telling_stories.html#first-create-groups-in-canvas",
+    "href": "telling_stories.html#first-create-groups-in-canvas",
+    "title": "Telling stories with data",
+    "section": "First: Create Groups in Canvas",
+    "text": "First: Create Groups in Canvas\nFind the desk with your group number: this is the same group number as last and next Wednesday\n\nLog into Canvas\nClick on People on the right side of the page\nClick on Group\nScroll to the group with the number on your desk and enroll yourself in the group (Telling stories Week 35)\n\nNOTE Remember your Group number for next week, you will have to enroll again!"
+  },
+  {
+    "objectID": "telling_stories.html#time-table",
+    "href": "telling_stories.html#time-table",
+    "title": "Telling stories with data",
+    "section": "Time table",
+    "text": "Time table\n\n\n\n\n\n\n\n\n\nWeek\nDate\nPlanned Activity\nDelivery\n\n\n\n\n35\nWed 26.08\nVisualization/Python\nYes (does not count)\n\n\n\nFri 28.08\nTelling stories\nYes (5 points)\n\n\n36\nWed 02.09\nVisualization/Python\nYes (5 points)\n\n\n\nFri 04.09\nScience and Data\nNo\n\n\n37\nWed 09.09\nScience and Data\nYes (5 points)\n\n\n\nFri 11.09\nRegression\nNo\n\n\n38\nWed 16.09\nRegression\nWed or Fri\n\n\n\nFri 18.09\nRegression\nWed or Fri\n\n\n39\nWed 23.09\nProject 1\n-\n\n\n\nFri 25.09\nProject 1\nFirst Hand-in\n\n\n40\nWed 30.09\nProject 1\n-\n\n\n\nFri 02.10\nProject 1\nSecond Hand-in"
+  },
+  {
+    "objectID": "telling_stories.html#reference-group",
+    "href": "telling_stories.html#reference-group",
+    "title": "Telling stories with data",
+    "section": "Reference group",
+    "text": "Reference group\nPlease join the reference group!"
+  },
+  {
+    "objectID": "telling_stories.html#what-we-learnt-on-wednesday",
+    "href": "telling_stories.html#what-we-learnt-on-wednesday",
+    "title": "Telling stories with data",
+    "section": "What WE learnt on Wednesday",
+    "text": "What WE learnt on Wednesday\n \nCanvas deliveries take time\nWe give you a 15 minutes heads up today"
+  },
+  {
+    "objectID": "telling_stories.html#what-we-learnt-on-wednesday-1",
+    "href": "telling_stories.html#what-we-learnt-on-wednesday-1",
+    "title": "Telling stories with data",
+    "section": "What WE learnt on Wednesday",
+    "text": "What WE learnt on Wednesday\n \nYou are not AI/prompt experts (yet)"
+  },
+  {
+    "objectID": "telling_stories.html#what-you-perhaps-learnt-on-wednesday",
+    "href": "telling_stories.html#what-you-perhaps-learnt-on-wednesday",
+    "title": "Telling stories with data",
+    "section": "What YOU (perhaps) learnt on Wednesday",
+    "text": "What YOU (perhaps) learnt on Wednesday\n\nCanvas deliveries take time\nGetting to know a data set takes time and can be confusing\nThere is no right answer, but some data summaries are more useful than others\nA good visualization is rarely the first one, you need to keep asking questions to the data"
+  },
+  {
+    "objectID": "telling_stories.html#next-wednesday",
+    "href": "telling_stories.html#next-wednesday",
+    "title": "Telling stories with data",
+    "section": "Next Wednesday",
+    "text": "Next Wednesday\n\nWe present answers from Ole Bernhard at Nofence\nWe give a task related to visualization of the Nofence data (with prize!)"
+  },
+  {
+    "objectID": "telling_stories.html#soft-skills",
+    "href": "telling_stories.html#soft-skills",
+    "title": "Telling stories with data",
+    "section": "Soft skills",
+    "text": "Soft skills\nData Literacy\nData literacy is the ability to read, work with, analyze and communicate data effectively.\nIt’s understanding what data means, how it’s created and how to use it so you can ask the right questions, interpret data correctly and make informed, evidence-based decisions.\n Source: Databricks"
+  },
+  {
+    "objectID": "telling_stories.html#soft-skills-1",
+    "href": "telling_stories.html#soft-skills-1",
+    "title": "Telling stories with data",
+    "section": "Soft skills",
+    "text": "Soft skills\nThe Five C’s: Soft Skills That Every Data Analytics Professional Should Have\nData analytics projects are full of uncertainties, ambiguities and numerous challenges such as:\n\nunclear decision objectives\ntime and resource constraints\nlack of expertise\npoor quality data\nethical and privacy issues.\n\n\nSource: Forbes Technology council"
+  },
+  {
+    "objectID": "telling_stories.html#soft-skills-2",
+    "href": "telling_stories.html#soft-skills-2",
+    "title": "Telling stories with data",
+    "section": "Soft skills",
+    "text": "Soft skills\n\nCommunication\n\nUnderstand information accurately and quickly.\nUnderstand others’ insight requirements and decision needs\nAvoid misunderstandings"
+  },
+  {
+    "objectID": "telling_stories.html#soft-skills-3",
+    "href": "telling_stories.html#soft-skills-3",
+    "title": "Telling stories with data",
+    "section": "Soft skills",
+    "text": "Soft skills\n\nCommunication\nCollaboration\n\nSuccessfully work toward realizing a common goal\nOpen-mindedness and respect"
+  },
+  {
+    "objectID": "telling_stories.html#soft-skills-4",
+    "href": "telling_stories.html#soft-skills-4",
+    "title": "Telling stories with data",
+    "section": "Soft skills",
+    "text": "Soft skills\n\nCommunication\nCollaboration\nCritical Thinking Think rationally and logically and solve problems in a consistent and systematic manner.\n\nQuestion the hypothesis\nIdentify biases\nValidate assumptions\nSelect appropriate models\nCritique the accuracy of the analysis and results"
+  },
+  {
+    "objectID": "telling_stories.html#soft-skills-5",
+    "href": "telling_stories.html#soft-skills-5",
+    "title": "Telling stories with data",
+    "section": "Soft skills",
+    "text": "Soft skills\n\nCommunication\nCollaboration\nCritical Thinking\nCuriosity Think rationally and logically and solve problems in a consistent and systematic manner.\n\nContinuously learn and expand knowledge\nOvercome obstacles by asking useful questions"
+  },
+  {
+    "objectID": "telling_stories.html#soft-skills-6",
+    "href": "telling_stories.html#soft-skills-6",
+    "title": "Telling stories with data",
+    "section": "Soft skills",
+    "text": "Soft skills\n\nCommunication\nCollaboration\nCritical Thinking\nCuriosity\nCreativity Think rationally and logically and solve problems in a consistent and systematic manner.\n\nContinuously strive to generate new insights that are timely, accurate and relevant.\nConsider and explore divergent possibilities and perspectives"
+  },
+  {
+    "objectID": "telling_stories.html#telling-stories-with-data",
+    "href": "telling_stories.html#telling-stories-with-data",
+    "title": "Telling stories with data",
+    "section": "Telling stories with data",
+    "text": "Telling stories with data"
+  },
+  {
+    "objectID": "telling_stories.html#telling-stories-with-data-1",
+    "href": "telling_stories.html#telling-stories-with-data-1",
+    "title": "Telling stories with data",
+    "section": "Telling stories with data",
+    "text": "Telling stories with data\n\n“Pairing reliable data with a coherent narrative and a clear visualization will create those “aha” moments that engage the audience.”\n\nSource: The Data Literacy Project"
+  },
+  {
+    "objectID": "telling_stories.html#today-case-study",
+    "href": "telling_stories.html#today-case-study",
+    "title": "Telling stories with data",
+    "section": "Today: case study",
+    "text": "Today: case study\nAugust 2025: Norwegian newspaper VG presents a story with the headline: “Young women with a master’s degree are on sick leave far more than men”.\nThey show that: “The higher the level of education, the greater the gender difference in sick leave”"
+  },
+  {
+    "objectID": "telling_stories.html#today-case-study-1",
+    "href": "telling_stories.html#today-case-study-1",
+    "title": "Telling stories with data",
+    "section": "Today: case study",
+    "text": "Today: case study\nE24: “The good girls are tired now”"
+  },
+  {
+    "objectID": "telling_stories.html#today-case-study-2",
+    "href": "telling_stories.html#today-case-study-2",
+    "title": "Telling stories with data",
+    "section": "Today: case study",
+    "text": "Today: case study\nVG (again): “Today’s working life is made for a man in the 1970s”"
+  },
+  {
+    "objectID": "telling_stories.html#today-case-study-3",
+    "href": "telling_stories.html#today-case-study-3",
+    "title": "Telling stories with data",
+    "section": "Today: case study",
+    "text": "Today: case study\nAdressa: “Young women struggle to balance work and family: - Say no to things that do not give you energy”"
+  },
+  {
+    "objectID": "telling_stories.html#today-case-study-4",
+    "href": "telling_stories.html#today-case-study-4",
+    "title": "Telling stories with data",
+    "section": "Today: case study",
+    "text": "Today: case study\nNorwegian Women’s Public Health Association: “Women with a masters’ degree also have bodies”"
+  },
+  {
+    "objectID": "telling_stories.html#today-case-study-5",
+    "href": "telling_stories.html#today-case-study-5",
+    "title": "Telling stories with data",
+    "section": "Today: case study",
+    "text": "Today: case study\nPart 0:\nOpen a document (word or what you prefer) for writing down the groups’ reflections. Headlines should be Part 1, Part 2, Part 3, Part 4.\nWe do Parts 1 and 2 first, then 3 and 4."
+  },
+  {
+    "objectID": "telling_stories.html#today-case-study-6",
+    "href": "telling_stories.html#today-case-study-6",
+    "title": "Telling stories with data",
+    "section": "Today: case study",
+    "text": "Today: case study\nPart 1: Use the statement from the Data Literacy Project:\n“Pairing reliable data with a coherent narrative and a clear visualization will create those “aha” moments that engage the audience.”\nDiscuss the VG article (header and visualization) [2 min first thoughts on post-its!]. Why do you think this story was successful? How do you interpret the numbers in the figure?\nPart 2: Consider all the elements of this figure in relation to the VG article.\n\n\n\n\n\nReality: What is it we are trying to describe?\nMeasurements: What measurements are done and who are included? Who and what is not included?\nData: What is the raw data?\nAnalysis: What analysis was done with the raw data?\nStory: What is the final story?\n\n\n\n\nNote: The data are from SSB (Statistics Norway), first quarter 2025."
+  },
+  {
+    "objectID": "telling_stories.html#today-case-study-7",
+    "href": "telling_stories.html#today-case-study-7",
+    "title": "Telling stories with data",
+    "section": "Today: case study",
+    "text": "Today: case study\nPart 3:\nThe table gives the raw data from SSB (statistics Norway).\nConsider “the story” (the headline + visualization) in relation to the data.\nWould you say that “they story” is a good representation of reality? Why or why not?\nIs “the story” relevant for decision makers?\nIf you were the decision maker, which group(s) would you be worried about?\n \nPart 4:\nCan statistics and data science be neutral? Why / why not?\nWhat other than neutrality should we strive for?"
   }
 ]
