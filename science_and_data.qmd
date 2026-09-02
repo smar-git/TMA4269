@@ -4,6 +4,23 @@ format: revealjs
 editor: visual
 ---
 
+## Time table {.smaller}
+
+| Week | Date | Planned Activity | Delivery |
+|---------------|:--------------|---------------------:|:--------------------:|
+| 35 | ~~Wed 26.08~~ | ~~Visualization/Python~~ | ~~Yes (does not count)~~ |
+|  | ~~Fri 28.08~~ | ~~Telling stories~~ | ~~Yes (5 points)~~ |
+| 36 | ~~Wed 02.09~~ | ~~Visualization/Python~~ | ~~Yes (5 points)~~ |
+|  | **Fri 04.09** | **Science and Data** | **No** |
+| 37 | Wed 09.09 *Cancelled* | Homework: reading science paper | No |
+|  | Fri 11.09 | Science and Data and Regression | Yes (5 points) |
+| 38 | Wed 16.09 | Regression | Wed or Fri |
+|  | Fri 18.09 | Regression | Wed or Fri |
+| *39* | *Wed 23.09* | *Project 1* | *-* |
+|  | *Fri 25.09* | *Project 1* | *First Hand-in* |
+| *40* | *Wed 30.09* | *Project 1* | *-* |
+|  | *Fri 02.10* | *Project 1* | *Second Hand-in* |
+
 ## Plan for today
 
 -   Mix of lecture and group discussions
@@ -84,7 +101,7 @@ Our *fake* example is motivated by the case study for next week in [Pediatrics](
 
 -   Exposure (the thing we hypothesize may influence the outcome): owning a smartphone (yes/no)
 
-We imagine: From a local school we have observations of 100 children in the 5th grade, 60 of them own a smartphone.
+*We imagine:* From a local school we have observations of 100 children in the 5th grade, 60 of them own a smartphone.
 
 ## Working example
 
@@ -106,9 +123,9 @@ H~0~: The groups are equal
 
 We aim to disprove H~0~, but in what direction? What is our alternative?
 
--   Smartphone owners sleep more?
+-   Kids without smartphones sleep more?
 
--   Smartphone owners sleep less?
+-   Kids without smartphones sleep less?
 
 -   Unequal sleep but we will not specify which direction?
 
@@ -128,35 +145,55 @@ The kids are unequal, so variation between kids is natural. By chance, two *rand
 
 So what types of differences do we expect to occur *by chance*, and what types of differences are too large to occur *by chance*?
 
-## Discuss
-
-What is the hypothesis we want to test?
-
-Worse sleep among smartphone owners?
-
-Worse sleep among non-owners?
-
-Unequal sleep but we will not specify which direction?
-
-## 
-
-## 
-
-Basics of hypothesis testing:
-
-Need to know how things look if the groups are "equal".
-
-What is "equal" in our setting?
-
-Any differences are only random variation, the split into two groups based on smartphone ownership is just as meaningful as splitting based on right/left handed kids.
-
 ## Methods
 
-Assuming normal distribution of sleep hours and compare means using t-tests
+*Examples:*
 
-Comparing medians using ... test
+Assuming normal distribution of sleep hours and compare means using **t-tests**
+
+Comparing distributions using a Mann–Whitney U test
 
 Comparing the statistic of our choice using random permutations (we do this)
+
+## Permutation testing
+
+![](images/clipboard-22274821.png)
+
+## Permutation testing
+
+![](images/clipboard-2691340054.png)
+
+## Permutation testing
+
+![](images/clipboard-330785760.png)
+
+## Permutation testing
+
+![](images/clipboard-3550101990.png)
+
+## Permutation testing
+
+![](images/clipboard-3739622475.png)
+
+## Permutation testing
+
+![](images/clipboard-821873803.png)
+
+## Permutation testing
+
+![](images/clipboard-3936451273.png)
+
+**P-value**: How likely is to observe what we have observed (orange triangle), or something even 'larger', if the null hypothesis is true?
+
+**Group discussion** (5 min): How would you go about calculating the p-value based on these permutations? Give a number in Menti
+
+## Working example
+
+**Step 3:** Lets look at our data!
+
+**Step 4:** Is our difference really something?
+
+**Step 5:** We do permutations and look at our data again
 
 ## Permutation testing
 
