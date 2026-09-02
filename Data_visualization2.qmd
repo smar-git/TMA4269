@@ -18,7 +18,7 @@ Find the desk with your group number: **this is the same group number as last Fr
 -   Click on **Group**
 -   Scroll to the group with the number on your desk and enroll yourself in the group (Visualization Week 36)
 
-**NOTE** Remember your Group number for next week, you will have to enroll again!
+**NOTE** Last time in these groups
 
 
 
@@ -71,14 +71,14 @@ The time intervals between seq messages will be longer than 30 minutes if the cl
 
 ## Data for today
 
-- **Seq-messages** sent every 30 minuts, stored in the collar if not network coverage  (this is the data you got last week)
+- **Seq-messages** sent every 30 minutes, stored in the collar if not network coverage  (this is the data you got last week)
 
 - **Poll-messages** sent every 15 minutes contains also position. Not stored in there is no network coverage (New data)
 
 - **Pasture** coordinates for the pasture limits (New data)
 
+**Note** It is up to you how you combine (or not) the three data sources.
 
-**NOTE** you can consider the new data or only the ones you got last week, that is up to you!
 
 ## Some advises
 
@@ -90,7 +90,7 @@ The time intervals between seq messages will be longer than 30 minutes if the cl
 
 ## Assignement 2{.smaller}
 
-**Goal** Create 1 (or 2) plots that you give to the data owner showing some characteristics of the data.
+**Goal** Create many plots and choose 1 or 2 plots that you give to the data owner showing some characteristics of the data.
 
 Think about:
 
@@ -101,6 +101,6 @@ Think about:
   
 **Deliverables**
 
-  1. The plot you created
+  1. The plot you chose
   2. Some sentences where you discuss your plot in relation to the points above and why you have made your choices.
   

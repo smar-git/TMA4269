@@ -4,7 +4,7 @@
     "href": "Data_visualization2.html#first-create-groups-in-canvas",
     "title": "Data and Data Visualization 2",
     "section": "First: Create Groups in Canvas",
-    "text": "First: Create Groups in Canvas\nFind the desk with your group number: this is the same group number as last Friday next Wednesday\n\nLog into Canvas\nClick on People on the right side of the page\nClick on Group\nScroll to the group with the number on your desk and enroll yourself in the group (Visualization Week 36)\n\nNOTE Remember your Group number for next week, you will have to enroll again!"
+    "text": "First: Create Groups in Canvas\nFind the desk with your group number: this is the same group number as last Friday next Wednesday\n\nLog into Canvas\nClick on People on the right side of the page\nClick on Group\nScroll to the group with the number on your desk and enroll yourself in the group (Visualization Week 36)\n\nNOTE Last time in these groups"
   },
   {
     "objectID": "Data_visualization2.html#plan-for-today",
@@ -39,7 +39,7 @@
     "href": "Data_visualization2.html#data-for-today",
     "title": "Data and Data Visualization 2",
     "section": "Data for today",
-    "text": "Data for today\n\nSeq-messages sent every 30 minuts, stored in the collar if not network coverage (this is the data you got last week)\nPoll-messages sent every 15 minutes contains also position. Not stored in there is no network coverage (New data)\nPasture coordinates for the pasture limits (New data)\n\nNOTE you can consider the new data or only the ones you got last week, that is up to you!"
+    "text": "Data for today\n\nSeq-messages sent every 30 minutes, stored in the collar if not network coverage (this is the data you got last week)\nPoll-messages sent every 15 minutes contains also position. Not stored in there is no network coverage (New data)\nPasture coordinates for the pasture limits (New data)\n\nNote It is up to you how you combine (or not) the three data sources."
   },
   {
     "objectID": "Data_visualization2.html#some-advises",
@@ -53,7 +53,7 @@
     "href": "Data_visualization2.html#assignement-2",
     "title": "Data and Data Visualization 2",
     "section": "Assignement 2",
-    "text": "Assignement 2\nGoal Create 1 (or 2) plots that you give to the data owner showing some characteristics of the data.\nThink about:\n\nReadability\nUsefulness to the owner\nScalability (what if we had 100 cows)\nColor scale/axis/fonts\n\nDeliverables\n\nThe plot you created\nSome sentences where you discuss your plot in relation to the points above and why you have made your choices."
+    "text": "Assignement 2\nGoal Create many plots and choose 1 or 2 plots that you give to the data owner showing some characteristics of the data.\nThink about:\n\nReadability\nUsefulness to the owner\nScalability (what if we had 100 cows)\nColor scale/axis/fonts\n\nDeliverables\n\nThe plot you chose\nSome sentences where you discuss your plot in relation to the points above and why you have made your choices."
   },
   {
     "objectID": "Data_visualization.html#plan-for-today-wednesday-august-26th",
