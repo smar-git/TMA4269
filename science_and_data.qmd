@@ -4,10 +4,16 @@ format: revealjs
 editor: visual
 ---
 
+## First: Meet your new group
+
+-   Find the desk with your **NEW** group number
+-   Introduce yourselves
+-   Remember your group number for next week
+
 ## Time table {.smaller}
 
 | Week | Date | Planned Activity | Delivery |
-|---------------|:--------------|---------------------:|:--------------------:|
+|-----------------|:----------------|-------------------:|:------------------:|
 | 35 | ~~Wed 26.08~~ | ~~Visualization/Python~~ | ~~Yes (does not count)~~ |
 |  | ~~Fri 28.08~~ | ~~Telling stories~~ | ~~Yes (5 points)~~ |
 | 36 | ~~Wed 02.09~~ | ~~Visualization/Python~~ | ~~Yes (5 points)~~ |
@@ -25,7 +31,7 @@ editor: visual
 
 -   Mix of lecture and group discussions
 
--   We are building up to next weeks discussion of a scientific paper
+-   We are building up to next weeks discussion of a scientific paper. Homework for next Friday is to read the paper and answer some questions (90 min)
 
 ![](images/clipboard-1566118370.png)
 
@@ -33,7 +39,7 @@ editor: visual
 
 ## The scientific method
 
-Speedy(!!) group discussion (3 min):
+Brief group discussion (5 min):
 
 What are the steps of "the scientific method"?
 
@@ -61,19 +67,25 @@ What are the steps of "the scientific method"?
 
 -   Confirmation / validation: Testing if a pattern is present in independent data
 
+## Science and data
+
+1st distinction to keep in mind when "the data shows that..."
+
+-   **Discovery**: Searching for patterns, generating hypotheses
+
+-   **Confirmation / validation**: Testing if a pattern is present in independent data
+
 *Example:* An association between a genetic variant and a disease is found in the UK Biobank dataset (*discovery*) and then re-produced in the Norwegian HUNT dataset (*confirmation*)
 
 ## Science and data
 
 2nd distinction to keep in mind when "the data shows that..."
 
--   Cause and effect: requires experiments, trials
+-   **Cause and effect**: requires experiments, trials
 
--   Associations: can be found in all data sets
+-   **Associations**: can be found in all data sets
 
-## Science and data
-
-Today: Comparing two "things" (groups)
+## Today: Comparing groups
 
 -   Before and after
 
@@ -83,9 +95,9 @@ Today: Comparing two "things" (groups)
 
 ## Comparing groups
 
-Speedy group discussion (5 min):
+Brief group discussion (5 min):
 
-What do you remember for a basic statistics group about comparing two groups?
+What do you remember from a basic statistics group about comparing two groups?
 
 ## Comparing groups
 
@@ -113,13 +125,29 @@ Our *fake* example is motivated by the case study for next week in [Pediatrics](
 
 -   The 25% percentile, i.e. the hours slept by the kid who is sleeps longest among the worst sleeping 1/4 of kids
 
-(menti)
+## Working example
+
+**Step 1:** What do we want to compare across the groups (smartphone owners vs non-owners)?
+
+-   The average hours of sleep in each group?
+
+-   The median hours of sleep in each group?
+
+-   The 25% percentile, i.e. the hours slept by the kid who is sleeps longest among the worst sleeping 1/4 of kids
+
+**Group discussion 5 min and then vote in MENTI**
 
 ## Working example
 
 **Step 2:** Formulating the null and alternative hypothesis
 
-H~0~: The groups are equal
+H~0~: The groups are "equal"
+
+## Working example
+
+**Step 2:** Formulating the null and alternative hypothesis
+
+H~0~: The groups are "equal"
 
 We aim to disprove H~0~, but in what direction? What is our alternative?
 
@@ -129,7 +157,7 @@ We aim to disprove H~0~, but in what direction? What is our alternative?
 
 -   Unequal sleep but we will not specify which direction?
 
-(menti)
+**Group discussion 2 min and then vote in MENTI**
 
 ## Working example
 
@@ -143,7 +171,7 @@ We aim to disprove H~0~, but in what direction? What is our alternative?
 
 The kids are unequal, so variation between kids is natural. By chance, two *randomly* selected groups will therefore also be different.
 
-So what types of differences do we expect to occur *by chance*, and what types of differences are too large to occur *by chance*?
+So what types of differences do we expect to occur *by chance*, and what types of differences are too large to just occur *by chance*?
 
 ## Methods
 
@@ -183,9 +211,9 @@ Comparing the statistic of our choice using random permutations (we do this)
 
 ![](images/clipboard-3936451273.png)
 
-**P-value**: How likely is to observe what we have observed (orange triangle), or something even 'larger', if the null hypothesis is true?
+**P-value**: How likely is to observe what we have observed (orange triangle), or something more "unusual", if the null hypothesis is true?
 
-**Group discussion** (5 min): How would you go about calculating the p-value based on these permutations? Give a number in Menti
+**Group discussion** (5 min): How would you go about calculating the p-value based on these permutations? Give a number in MENTI
 
 ## Working example
 
@@ -195,15 +223,23 @@ Comparing the statistic of our choice using random permutations (we do this)
 
 **Step 5:** We do permutations and look at our data again
 
-## Permutation testing
+## Working example
 
-1: We consider all the children as one large group and make a random split of n1 and n2 kids
+**Step 6:** Is our observed difference *significant* ?
 
-2: We calculate the difference (e.g. difference in means) between these (artificial) groups
+The p-value tells us something of the probability that our observation just occurred by chance. The smaller the p-value the more convinced we are that our data do not fit the null hypothesis and must be evidence of something else.
 
-3: After many such random splits we have a distribution of differences that occur just "by chance"
+Often, we compare our p-value to a predefined significance level such as 5%. We then accept a 5% chance of rejecting the null hypothesis even if it is true. If the p-value is less than 5% we say that our result is *statistically significant* at the 5% level.
 
-4: We compare *our* observed difference to this distribution.
+**Discuss 5 min**: Which is more meaningful to you, knowing the actual p-value or the binary result p \< 0.05 or p \> 0.05?
+
+## P-hacking
+
+What we just did:
+
+-   Decided what to investigate and how
+
+-   Did our investigation and compared to a "null distribution"
 
 ## P-hacking
 
@@ -225,6 +261,8 @@ What we did not do:
 
 ## P-hacking
 
+![](images/clipboard-620703042.png)
+
 (table of options and p-values +++ many tables according to exposures in the data set)
 
 Just by chance there will be some small p-values in there and the whole concept then looses its meaning.
@@ -233,8 +271,77 @@ Multiple testing correction:
 
 -   I did 100 tests and if i would normally consider p \< 0.05 to be "evidence" then i now have to look for p \< 0.05/100, i.e. p \< 0.0005.
 
-## Estimates and confidence intervals
+## 
+
+## Estimates and confidence intervals (if time)
 
 How many hours did the children actually sleep?
 
 When we focus only on significance we might loose track of the actual numbers.
+
+Perhaps it would be more interesting to summarize sleep in each group - with some uncertainty measure - and then compare
+
+## Estimating a parameter
+
+![](images/clipboard-3680627794.png)
+
+## Estimating a parameter
+
+![](images/clipboard-3852964183.png)
+
+## Estimating a parameter
+
+![](images/clipboard-3950589812.png)
+
+## Estimating a parameter
+
+![](images/clipboard-2381118312.png)
+
+## Estimating a parameter
+
+![](images/clipboard-638844359.png)
+
+## Estimating a parameter
+
+![](images/clipboard-102889936.png)
+
+Brief group discussion (5 min):
+
+What do you remember from a basic statistics group about confidence intervals?
+
+## Estimating a parameter
+
+![](images/clipboard-1391280396.png)
+
+## Estimating a parameter
+
+![](images/clipboard-957602047.png)
+
+## Estimating a parameter
+
+![](images/clipboard-1769668040.png)
+
+## Estimating a parameter
+
+![](images/clipboard-2784824170.png){width="518"}
+
+## Estimating a parameter
+
+Lets look at our data again:
+
+![](images/clipboard-869368813.png){width="316"}
+
+Group discussion:
+
+Are the groups different? Would you say the difference is important?
+
+What is the *effect* of owning a smartphone on childrens' sleep?
+
+## Homeword 
+
+Homework for next Friday is to read the paper and answer questions on the question sheet that we hand out (90 min).
+
+![](images/clipboard-1566118370.png)
+
+[Source: Pediatrics](https://doi.org/10.1542/peds.2025-072941)
+
