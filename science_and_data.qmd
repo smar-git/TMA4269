@@ -6,6 +6,6 @@ editor: visual
 
 ## Plan for today
 
--   Some lecturing, some group work and discussions
+- Some lecturing, some group work and discussions
 
--   We are building up to next weeks discussion of a scientific paper
+- We are building up to next weeks discussion of a scientific paper

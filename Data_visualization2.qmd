@@ -39,8 +39,8 @@ Find the desk with your group number: **this is the same group number as last Fr
 |      | ~~Fri 28.08~~ |      ~~Telling stories~~ |    ~~Yes (5 points)~~    |
 | 36   | **Wed 02.09**     |     **Visualization/Python** |      **Yes (5 points)**      |
 |      | Fri 04.09     |         Science and Data |            No            |
-| 37   | Wed 09.09     |         Science and Data |      Yes (5 points)      |
-|      | Fri 11.09     |               Regression |            No            |
+| 37   | ~~Wed 09.09~~ |         ~~Science and Data~~ |      ~~Yes (5 points)~~     |
+|      | Fri 11.09     |               Science and Data/Regression |            Yes (5 points)            |
 | 38   | Wed 16.09     |               Regression |        Wed or Fri        |
 |      | Fri 18.09     |               Regression |        Wed or Fri        |
 | *39* | *Wed 23.09*   |              *Project 1* |           *-*            |
