@@ -6,9 +6,33 @@ editor: visual
 
 ## First: Meet your new group
 
-- Find the desk with your **NEW** group number
-- Introduce yourselves
-- Remember your group number for next week
+-   Find the desk with your **NEW** group number
+-   Introduce yourselves
+-   Remember your group number for next week
+
+## Winners of Wednesdays competition
+
+We have chosen winners in 3 categories
+
+Category 1: Best map Group 2
+
+![](images/clipboard-4096787980.gif)
+
+## Winners of Wednesdays competition
+
+We have chosen winners in 3 categories
+
+Category 2: Most informative Group 1
+
+![](images/clipboard-2505088430.png)
+
+## Winners of Wednesdays competition
+
+We have chosen winners in 3 categories
+
+Category 3: Originality Group 7
+
+![](images/clipboard-3880252028.png)
 
 ## Time table {.smaller}
 
@@ -27,12 +51,11 @@ editor: visual
 | *40* | *Wed 30.09*   |                     *Project 1* |           *-*            |
 |      | *Fri 02.10*   |                     *Project 1* |     *Second Hand-in*     |
 
-
 ## Plan for today
 
-- Mix of lecture and group discussions
+-   Mix of lecture and group discussions
 
-- We are building up to next weeks discussion of a scientific paper. Homework for next Friday is to read the paper and answer some questions (90 min)
+-   We are building up to next weeks discussion of a scientific paper. Homework for next Friday is to read the paper and answer some questions (90 min)
 
 ![](images/clipboard-1566118370.png)
 
@@ -72,9 +95,9 @@ What is "the scientific method"?
 
 1st distinction to keep in mind when "the data shows that..."
 
-- **Discovery**: Searching for patterns, generating hypotheses
+-   **Discovery**: Searching for patterns, generating hypotheses
 
-- **Confirmation / validation**: Testing if a pattern is present in independent data
+-   **Confirmation / validation**: Testing if a pattern is present in independent data
 
 *Example:* An association between a genetic variant and a disease is found in the UK Biobank dataset (*discovery*) and then re-produced in the Norwegian HUNT dataset (*confirmation*)
 
@@ -82,21 +105,21 @@ What is "the scientific method"?
 
 2nd distinction to keep in mind when "the data shows that..."
 
-- **Cause and effect**: requires experiments, trials
+-   **Cause and effect**: requires experiments, trials
 
-- **Associations**: can be found in all data sets
+-   **Associations**: can be found in all data sets
 
 ## Today: Comparing groups
 
-- Before and after
+-   Before and after
 
-- With and without
+-   With and without
 
-- Setting 1 and setting 2
+-   Setting 1 and setting 2
 
 ## Comparing groups
 
-Brief group discussion (5 min):
+Brief group discussion:
 
 What do you remember from a basic statistics group about comparing two groups?
 
@@ -128,9 +151,9 @@ We imagine: From a local school we have observations of 100 children in the 5th 
 
 **Step 1:** What do we want to compare across the groups (smartphone owners vs non-owners)?
 
-- The average hours of sleep in each group?
+-   The average hours of sleep in each group?
 
-- The median hours of sleep in each group?
+-   The median hours of sleep in each group?
 
 -   The 25% percentile, i.e. the "best" sleeper among the worst sleeping 1/4 of kids
 
@@ -138,13 +161,13 @@ We imagine: From a local school we have observations of 100 children in the 5th 
 
 **Step 1:** What do we want to compare across the groups (smartphone owners vs non-owners)?
 
-- The average hours of sleep in each group?
+-   The average hours of sleep in each group?
 
-- The median hours of sleep in each group?
+-   The median hours of sleep in each group?
 
-- The 25% percentile, i.e. the "best" sleeper among the worst sleeping 1/4 of kids
+-   The 25% percentile, i.e. the "best" sleeper among the worst sleeping 1/4 of kids
 
-Group discussion 5 min and then vote in **MENTI** (one person per group)
+Brief group discussion and then vote in **MENTI** (one person per group)
 
 ![](images/clipboard-636079974.png)
 
@@ -154,7 +177,7 @@ Group discussion 5 min and then vote in **MENTI** (one person per group)
 
 H~0~: The groups are "equal"
 
-Group discussion 2 min: What do we mean by "equal"?
+Brief group discussion: What do we mean by "equal"?
 
 ## Working example
 
@@ -162,11 +185,11 @@ Group discussion 2 min: What do we mean by "equal"?
 
 H~1~: What is our alternative?
 
-- Kids without smartphones sleep more?
+-   Kids without smartphones sleep more?
 
-- Kids without smartphones sleep less?
+-   Kids without smartphones sleep less?
 
-- Unequal sleep but we will not specify which direction?
+-   Unequal sleep but we will not specify which direction?
 
 One person gives a group vote in **MENTI**
 
@@ -270,26 +293,25 @@ If the p-value is less than 5% we say that our result is *statistically signific
 
 What we just did:
 
-- Decided what to investigate and how
+-   Decided what to investigate and how
 
-- Did our investigation and compared to a "null distribution"
+-   Did our investigation and compared to a "null distribution"
 
 ## P-hacking
 
 What we just did:
 
-- Decided what to investigate and how
+-   Decided what to investigate and how
 
-- Did our investigation and compared to a "null distribution"
+-   Did our investigation and compared to a "null distribution"
 
 What we *did not* do:
 
-- Looked at the data from many angles
+-   Looked at the data from many angles
 
-- Found an interesting pattern
+-   Found an interesting pattern
 
-- Chose a test that could "reveal" that pattern
-
+-   Chose a test that could "reveal" that pattern
 
 ## P-hacking
 
@@ -383,7 +405,7 @@ Are the groups different? Would you say the difference is important?
 
 What is the *effect* of owning a smartphone on childrens' sleep?
 
-## Homeword
+## Homework
 
 Homework for next Friday is to read the paper and answer questions on the question sheet that we hand out (90 min).
 
