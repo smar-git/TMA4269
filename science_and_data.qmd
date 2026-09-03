@@ -12,20 +12,21 @@ editor: visual
 
 ## Time table {.smaller}
 
-| Week | Date | Planned Activity | Delivery |
-|----|:---|---:|:--:|
-| 35 | ~~Wed 26.08~~ | ~~Visualization/Python~~ | ~~Yes (does not count)~~ |
-|  | ~~Fri 28.08~~ | ~~Telling stories~~ | ~~Yes (5 points)~~ |
-| 36 | ~~Wed 02.09~~ | ~~Visualization/Python~~ | ~~Yes (5 points)~~ |
-|  | **Fri 04.09** | **Science and Data** | **No** |
-| 37 | Wed 09.09 *Cancelled* | Homework: reading science paper | No |
-|  | Fri 11.09 | Science and Data and Regression | Yes (5 points) |
-| 38 | Wed 16.09 | Regression | Wed or Fri |
-|  | Fri 18.09 | Regression | Wed or Fri |
-| *39* | *Wed 23.09* | *Project 1* | *-* |
-|  | *Fri 25.09* | *Project 1* | *First Hand-in* |
-| *40* | *Wed 30.09* | *Project 1* | *-* |
-|  | *Fri 02.10* | *Project 1* | *Second Hand-in* |
+| Week | Date          |                Planned Activity |         Delivery         |
+|------------------|:-----------------|-----------------:|:----------------:|
+| 35   | ~~Wed 26.08~~ |        ~~Visualization/Python~~ | ~~Yes (does not count)~~ |
+|      | ~~Fri 28.08~~ |             ~~Telling stories~~ |    ~~Yes (5 points)~~    |
+| 36   | ~~Wed 02.09~~ |        ~~Visualization/Python~~ |    ~~Yes (5 points)~~    |
+|      | **Fri 04.09** |            **Science and Data** |          **No**          |
+| 37   | ~~Wed 09.09~~ |                        Homework |            No            |
+|      | Fri 11.09     | Science and Data and Regression |      Yes (5 points)      |
+| 38   | Wed 16.09     |                      Regression |        Wed or Fri        |
+|      | Fri 18.09     |                      Regression |        Wed or Fri        |
+| *39* | *Wed 23.09*   |                     *Project 1* |           *-*            |
+|      | *Fri 25.09*   |                     *Project 1* |     *First Hand-in*      |
+| *40* | *Wed 30.09*   |                     *Project 1* |           *-*            |
+|      | *Fri 02.10*   |                     *Project 1* |     *Second Hand-in*     |
+
 
 ## Plan for today
 
@@ -41,7 +42,7 @@ editor: visual
 
 Brief group discussion (5 min):
 
-What are the steps of "the scientific method"?
+What is "the scientific method"?
 
 ## The scientific method
 
@@ -63,9 +64,9 @@ What are the steps of "the scientific method"?
 
 1st distinction to keep in mind when "the data shows that..."
 
-- Discovery: Searching for patterns, generating hypotheses
+-   **Discovery**: Searching for patterns, generating hypotheses
 
-- Confirmation / validation: Testing if a pattern is present in independent data
+-   **Confirmation / validation**: Testing if a pattern is present in independent data
 
 ## Science and data
 
@@ -107,23 +108,21 @@ TMA4240/45:
 
 ## Working example
 
-Our *fake* example is motivated by the case study for next week in [Pediatrics](https://doi.org/10.1542/peds.2025-072941)
+::::: columns
+::: {.column width="60%"}
+Our fake example is motivated by the case study for next week in Pediatrics
 
-- Outcome (what we care about): hours of sleep among children
+**Outcome**: hours of sleep among children
 
-- Exposure (the thing we hypothesize may influence the outcome): owning a smartphone (yes/no)
+**Exposure**: owning a smartphone (yes/no)
+:::
 
-*We imagine:* From a local school we have observations of 100 children in the 5th grade, 60 of them own a smartphone.
+::: {.column width="40%"}
+![](images/clipboard-3505453806.png)
+:::
+:::::
 
-## Working example
-
-**Step 1:** What do we want to compare across the groups (smartphone owners vs non-owners)?
-
-- The average hours of sleep in each group?
-
-- The median hours of sleep in each group?
-
-- The 25% percentile, i.e. the hours slept by the kid who is sleeps longest among the worst sleeping 1/4 of kids
+We imagine: From a local school we have observations of 100 children in the 5th grade, 60 of them own a smartphone.
 
 ## Working example
 
@@ -133,9 +132,21 @@ Our *fake* example is motivated by the case study for next week in [Pediatrics](
 
 - The median hours of sleep in each group?
 
-- The 25% percentile, i.e. the hours slept by the kid who is sleeps longest among the worst sleeping 1/4 of kids
+-   The 25% percentile, i.e. the "best" sleeper among the worst sleeping 1/4 of kids
 
-**Group discussion 5 min and then vote in MENTI**
+## Working example {.smaller}
+
+**Step 1:** What do we want to compare across the groups (smartphone owners vs non-owners)?
+
+- The average hours of sleep in each group?
+
+- The median hours of sleep in each group?
+
+- The 25% percentile, i.e. the "best" sleeper among the worst sleeping 1/4 of kids
+
+Group discussion 5 min and then vote in **MENTI** (one person per group)
+
+![](images/clipboard-636079974.png)
 
 ## Working example
 
@@ -143,13 +154,13 @@ Our *fake* example is motivated by the case study for next week in [Pediatrics](
 
 H~0~: The groups are "equal"
 
+Group discussion 2 min: What do we mean by "equal"?
+
 ## Working example
 
 **Step 2:** Formulating the null and alternative hypothesis
 
-H~0~: The groups are "equal"
-
-We aim to disprove H~0~, but in what direction? What is our alternative?
+H~1~: What is our alternative?
 
 - Kids without smartphones sleep more?
 
@@ -157,11 +168,15 @@ We aim to disprove H~0~, but in what direction? What is our alternative?
 
 - Unequal sleep but we will not specify which direction?
 
-**Group discussion 2 min and then vote in MENTI**
+One person gives a group vote in **MENTI**
+
+![](images/clipboard-636079974.png)
 
 ## Working example
 
 **Step 3:** Lets look at our data!
+
+![](images/clipboard-3505453806.png)
 
 ## Working example
 
@@ -209,11 +224,21 @@ Comparing the statistic of our choice using random permutations (we do this)
 
 ## Permutation testing
 
+::::: columns
+::: {.column width="40%"}
 ![](images/clipboard-3936451273.png)
 
 **P-value**: How likely is to observe what we have observed (orange triangle), or something more "unusual", if the null hypothesis is true?
+:::
 
-**Group discussion** (5 min): How would you go about calculating the p-value based on these permutations? Give a number in MENTI
+::: {.column width="60%"}
+**Group discussion** (5 min): How would you go about calculating the p-value based on these permutations?
+
+Give a number in **MENTI** (in percentage)
+
+![](images/clipboard-636079974.png){width="200"}
+:::
+:::::
 
 ## Working example
 
@@ -221,17 +246,25 @@ Comparing the statistic of our choice using random permutations (we do this)
 
 **Step 4:** Is our difference really something?
 
-**Step 5:** We do permutations and look at our data again
+We look at our data again.
 
 ## Working example
 
 **Step 6:** Is our observed difference *significant* ?
 
-The p-value tells us something of the probability that our observation just occurred by chance. The smaller the p-value the more convinced we are that our data do not fit the null hypothesis and must be evidence of something else.
+The p-value tells us something of the probability that our observation just occurred by chance.
 
-Often, we compare our p-value to a predefined significance level such as 5%. We then accept a 5% chance of rejecting the null hypothesis even if it is true. If the p-value is less than 5% we say that our result is *statistically significant* at the 5% level.
+The smaller the p-value the more convinced we are that our data do not fit the null hypothesis and must be evidence of something else.
 
-**Discuss 5 min**: Which is more meaningful to you, knowing the actual p-value or the binary result p \< 0.05 or p \> 0.05?
+## Working example
+
+**Step 6:** Is our observed difference *significant* ?
+
+Often, we compare our p-value to a predefined significance level such as 5%.
+
+We then accept a 5% chance of rejecting the null hypothesis even if it is true.
+
+If the p-value is less than 5% we say that our result is *statistically significant* at the 5% level.
 
 ## P-hacking
 
@@ -249,7 +282,7 @@ What we just did:
 
 - Did our investigation and compared to a "null distribution"
 
-What we did not do:
+What we *did not* do:
 
 - Looked at the data from many angles
 
@@ -257,29 +290,42 @@ What we did not do:
 
 - Chose a test that could "reveal" that pattern
 
-- "Cherry picking"
 
 ## P-hacking
 
 ![](images/clipboard-620703042.png)
 
-(table of options and p-values +++ many tables according to exposures in the data set)
+## P-hacking
 
-Just by chance there will be some small p-values in there and the whole concept then looses its meaning.
+If we have a dataset and do many different tests / comparisons, then just by chance we will always find some small p-values.
+
+P-hacking, data dredging, data snooping, cherry picking:
+
+*The misuse of data analysis to find patterns that can be presented as statistically significant*
+
+## P-hacking: solutions?
 
 Multiple testing correction:
 
-- I did 100 tests and if i would normally consider p \< 0.05 to be "evidence" then i now have to look for p \< 0.05/100, i.e. p \< 0.0005.
+If we would normally consider p \< 0.05 to be a significant result, then if we do M tests we have to consider p \< 0.05/M.
 
-## 
+E.g. 100 tests, p \< 0.0005 implies significance
 
-## Estimates and confidence intervals (if time)
+## P-hacking: solutions?
+
+Be honest / transparent:
+
+-   Write out a plan beforehand and stick to it
+
+-   If the study is exploratory (searching for patterns, generating hypotheses) then state that
+
+## Estimates and confidence intervals
 
 How many hours did the children actually sleep?
 
 When we focus only on significance we might loose track of the actual numbers.
 
-Perhaps it would be more interesting to summarize sleep in each group - with some uncertainty measure - and then compare
+Perhaps it would be more interesting to summarize sleep in each group - with some uncertainty measure - and then compare?
 
 ## Estimating a parameter
 
@@ -305,7 +351,7 @@ Perhaps it would be more interesting to summarize sleep in each group - with som
 
 ![](images/clipboard-102889936.png)
 
-Brief group discussion (5 min):
+Group discussion (5 min):
 
 What do you remember from a basic statistics group about confidence intervals?
 
