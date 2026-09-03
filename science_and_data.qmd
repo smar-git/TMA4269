@@ -6,14 +6,14 @@ editor: visual
 
 ## First: Meet your new group
 
--   Find the desk with your **NEW** group number
--   Introduce yourselves
--   Remember your group number for next week
+- Find the desk with your **NEW** group number
+- Introduce yourselves
+- Remember your group number for next week
 
 ## Time table {.smaller}
 
 | Week | Date | Planned Activity | Delivery |
-|-----------------|:----------------|-------------------:|:------------------:|
+|----|:---|---:|:--:|
 | 35 | ~~Wed 26.08~~ | ~~Visualization/Python~~ | ~~Yes (does not count)~~ |
 |  | ~~Fri 28.08~~ | ~~Telling stories~~ | ~~Yes (5 points)~~ |
 | 36 | ~~Wed 02.09~~ | ~~Visualization/Python~~ | ~~Yes (5 points)~~ |
@@ -29,9 +29,9 @@ editor: visual
 
 ## Plan for today
 
--   Mix of lecture and group discussions
+- Mix of lecture and group discussions
 
--   We are building up to next weeks discussion of a scientific paper. Homework for next Friday is to read the paper and answer some questions (90 min)
+- We are building up to next weeks discussion of a scientific paper. Homework for next Friday is to read the paper and answer some questions (90 min)
 
 ![](images/clipboard-1566118370.png)
 
@@ -63,17 +63,17 @@ What are the steps of "the scientific method"?
 
 1st distinction to keep in mind when "the data shows that..."
 
--   Discovery: Searching for patterns, generating hypotheses
+- Discovery: Searching for patterns, generating hypotheses
 
--   Confirmation / validation: Testing if a pattern is present in independent data
+- Confirmation / validation: Testing if a pattern is present in independent data
 
 ## Science and data
 
 1st distinction to keep in mind when "the data shows that..."
 
--   **Discovery**: Searching for patterns, generating hypotheses
+- **Discovery**: Searching for patterns, generating hypotheses
 
--   **Confirmation / validation**: Testing if a pattern is present in independent data
+- **Confirmation / validation**: Testing if a pattern is present in independent data
 
 *Example:* An association between a genetic variant and a disease is found in the UK Biobank dataset (*discovery*) and then re-produced in the Norwegian HUNT dataset (*confirmation*)
 
@@ -81,17 +81,17 @@ What are the steps of "the scientific method"?
 
 2nd distinction to keep in mind when "the data shows that..."
 
--   **Cause and effect**: requires experiments, trials
+- **Cause and effect**: requires experiments, trials
 
--   **Associations**: can be found in all data sets
+- **Associations**: can be found in all data sets
 
 ## Today: Comparing groups
 
--   Before and after
+- Before and after
 
--   With and without
+- With and without
 
--   Setting 1 and setting 2
+- Setting 1 and setting 2
 
 ## Comparing groups
 
@@ -109,9 +109,9 @@ TMA4240/45:
 
 Our *fake* example is motivated by the case study for next week in [Pediatrics](https://doi.org/10.1542/peds.2025-072941)
 
--   Outcome (what we care about): hours of sleep among children
+- Outcome (what we care about): hours of sleep among children
 
--   Exposure (the thing we hypothesize may influence the outcome): owning a smartphone (yes/no)
+- Exposure (the thing we hypothesize may influence the outcome): owning a smartphone (yes/no)
 
 *We imagine:* From a local school we have observations of 100 children in the 5th grade, 60 of them own a smartphone.
 
@@ -119,21 +119,21 @@ Our *fake* example is motivated by the case study for next week in [Pediatrics](
 
 **Step 1:** What do we want to compare across the groups (smartphone owners vs non-owners)?
 
--   The average hours of sleep in each group?
+- The average hours of sleep in each group?
 
--   The median hours of sleep in each group?
+- The median hours of sleep in each group?
 
--   The 25% percentile, i.e. the hours slept by the kid who is sleeps longest among the worst sleeping 1/4 of kids
+- The 25% percentile, i.e. the hours slept by the kid who is sleeps longest among the worst sleeping 1/4 of kids
 
 ## Working example
 
 **Step 1:** What do we want to compare across the groups (smartphone owners vs non-owners)?
 
--   The average hours of sleep in each group?
+- The average hours of sleep in each group?
 
--   The median hours of sleep in each group?
+- The median hours of sleep in each group?
 
--   The 25% percentile, i.e. the hours slept by the kid who is sleeps longest among the worst sleeping 1/4 of kids
+- The 25% percentile, i.e. the hours slept by the kid who is sleeps longest among the worst sleeping 1/4 of kids
 
 **Group discussion 5 min and then vote in MENTI**
 
@@ -151,11 +151,11 @@ H~0~: The groups are "equal"
 
 We aim to disprove H~0~, but in what direction? What is our alternative?
 
--   Kids without smartphones sleep more?
+- Kids without smartphones sleep more?
 
--   Kids without smartphones sleep less?
+- Kids without smartphones sleep less?
 
--   Unequal sleep but we will not specify which direction?
+- Unequal sleep but we will not specify which direction?
 
 **Group discussion 2 min and then vote in MENTI**
 
@@ -237,27 +237,27 @@ Often, we compare our p-value to a predefined significance level such as 5%. We 
 
 What we just did:
 
--   Decided what to investigate and how
+- Decided what to investigate and how
 
--   Did our investigation and compared to a "null distribution"
+- Did our investigation and compared to a "null distribution"
 
 ## P-hacking
 
 What we just did:
 
--   Decided what to investigate and how
+- Decided what to investigate and how
 
--   Did our investigation and compared to a "null distribution"
+- Did our investigation and compared to a "null distribution"
 
 What we did not do:
 
--   Looked at the data from many angles
+- Looked at the data from many angles
 
--   Found an interesting pattern
+- Found an interesting pattern
 
--   Chose a test that could "reveal" that pattern
+- Chose a test that could "reveal" that pattern
 
--   "Cherry picking"
+- "Cherry picking"
 
 ## P-hacking
 
@@ -269,7 +269,7 @@ Just by chance there will be some small p-values in there and the whole concept 
 
 Multiple testing correction:
 
--   I did 100 tests and if i would normally consider p \< 0.05 to be "evidence" then i now have to look for p \< 0.05/100, i.e. p \< 0.0005.
+- I did 100 tests and if i would normally consider p \< 0.05 to be "evidence" then i now have to look for p \< 0.05/100, i.e. p \< 0.0005.
 
 ## 
 
@@ -337,11 +337,10 @@ Are the groups different? Would you say the difference is important?
 
 What is the *effect* of owning a smartphone on childrens' sleep?
 
-## Homeword 
+## Homeword
 
 Homework for next Friday is to read the paper and answer questions on the question sheet that we hand out (90 min).
 
 ![](images/clipboard-1566118370.png)
 
 [Source: Pediatrics](https://doi.org/10.1542/peds.2025-072941)
-
