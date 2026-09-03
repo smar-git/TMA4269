@@ -1,15 +1,10 @@
-# Questions to be answered individually
+# Questions for class discussion
 
-Read the paper "Smartphone Ownership, Age of Smartphone Acquisition, 
-and Health Outcomes in Early Adolescence " by Barzilay et al., *Pediatrics*, 2026 and
-answer the following questions. 
+You have read the paper "Smartphone Ownership, Age of Smartphone Acquisition, 
+and Health Outcomes in Early Adolescence " by Barzilay et al., *Pediatrics*, 2026.
 
-Both the paper and question sheet are available in Canvas under the 
-assignment "Homework: Science and Data".
-
-Actively use AI to get help it there is 
-something you do not understand.
-
+Discuss the following questions in groups. Some are the same as you prepared at 
+home, and some are new. Come to an agreement and write down your answers.
 
 
 ## Part 1: Understanding the Research Question
@@ -38,14 +33,6 @@ ____________________________________________________________________
 ____________________________________________________________________
 
 
-4. What is an odds ratio? What does it mean if the odds ration is larger than 1?
-
-____________________________________________________________________
-
-
-____________________________________________________________________
-
-
 
 ## Part 2: The study design
 
@@ -65,32 +52,14 @@ ____________________________________________________________________
 
 ____________________________________________________________________
 
-
-3. What are the  advantages/disadvantages of 
-studying the research question using an existing cohort such as the ABCD study?
-
-____________________________________________________________________
-
-
-____________________________________________________________________
-
-
-4. Why do the author underline that with this study one cannot draw any _causal_ conclusion?
-
+3. How would you have designed a study to investigate a causal relationship
+between owning a smartphone and sleep duration, if you could do whatever you wanted?
+What are the practical issues of your study design?
 
 ____________________________________________________________________
 
 
 ____________________________________________________________________
-
-5. What is a randomized trial? Why would it give stronger evidence for causality? The authors say that such 
-study would not have been possible, why?
-
-____________________________________________________________________
-
-
-____________________________________________________________________
-
 
 ## Part 3: Testing differences in groups
 
@@ -102,7 +71,7 @@ __________________________________________________________________
 
 __________________________________________________________________
 
-2. The two-samples $t$-test used by the authors is defined as
+2. The two-samples $t$-test used by the authors is (approximately) defined as
 $$
 t = \frac{\bar{x}_1 - \bar{x}_2}{\sqrt{\frac{\hat{\sigma}^2_1}{n_1} + \frac{\hat{\sigma}^2_2}{n_2}}}
 $$
@@ -118,22 +87,37 @@ __________________________________________________________________
 
 ____________________________________________________________________
 
-____________________________________________________________________
-
-4. Look at the effect size, what is the difference between the two groups in
-terms of sleep hours? Do you think it is a big difference?
-
-____________________________________________________________________
 
 ____________________________________________________________________
 
 
-5. Why do you think that it is often stressed that scientists should look at
-effect sizes and not only p-values? How can a very large sample size make small effects statistically significant?
+4. Table 1 is a descriptive summary of the raw data. Why do you think the 
+researches did not just report these results, but continued on with a 
+regression model?
 
-____________________________________________________________________
+__________________________________________________________________
 
-____________________________________________________________________
 
+__________________________________________________________________
+
+5. In the text, page 3 left column, the authors write "to correct for the
+testing of 3 outcomes, we applied a P-value threshold of 0.017 (0.05/3)".
+Why is it necessary to correct for doing multiple tests? Did the researchers only
+do three tests? Suggest a stricter threshold that they also could have chosen.
+
+
+__________________________________________________________________
+
+
+__________________________________________________________________
+
+6. Look at Figure 2A and the blue lines. What are the dots, and what are the lines?
+Why is there a vertical dotted line at 1? Which outcome is most related to smartphone ownership?
+
+
+__________________________________________________________________
+
+
+__________________________________________________________________
 
 
