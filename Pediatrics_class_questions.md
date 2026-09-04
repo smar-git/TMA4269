@@ -1,4 +1,8 @@
-# Questions for class discussion
+---
+title: "Questions for class discussion"
+output: pdf_document
+---
+ 
 
 You have read the paper "Smartphone Ownership, Age of Smartphone Acquisition, 
 and Health Outcomes in Early Adolescence " by Barzilay et al., *Pediatrics*, 2026.
@@ -11,26 +15,17 @@ home, and some are new. Come to an agreement and write down your answers.
 
 1. What is the primary research question of the paper?
 
-____________________________________________________________________
-
-
-____________________________________________________________________
+\vspace{4cm}
 
 
 2. What are the main exposures (independent variables) studied?
 
-____________________________________________________________________
-
-
-____________________________________________________________________
+\vspace{4cm}
 
 
 3. What are the health outcomes (dependent variables)?
 
-____________________________________________________________________
-
-
-____________________________________________________________________
+\vspace{4cm}
 
 4. Discuss whether this study is
 -   Discovery: Searching for patterns, generating hypotheses, or 
@@ -47,37 +42,26 @@ ____________________________________________________________________
 1. Did the researchers design a study and collect data to answer a
 research question?
 
-____________________________________________________________________
-
-
-____________________________________________________________________
+\vspace{4cm}
 
 
 2. Why did the researchers choose 12 years as their age of study?
 
-____________________________________________________________________
-
-
-____________________________________________________________________
+\vspace{4cm}
 
 3. How would you have designed a study to investigate a causal relationship
 between owning a smartphone and sleep duration, if you could do whatever you wanted?
 What are the practical issues of your study design?
 
-____________________________________________________________________
-
-
-____________________________________________________________________
+\vspace{4cm}
 
 ## Part 3: Testing differences in groups
 
 1. Look at Table 1, and in particular to the line "Sleep duration", what is the null and alternative hypothesis that 
 authors are testing?
 
-__________________________________________________________________
+\vspace{4cm}
 
-
-__________________________________________________________________
 
 2. The two-samples $t$-test used by the authors is (approximately) defined as
 $$
@@ -85,28 +69,22 @@ t = \frac{\bar{x}_1 - \bar{x}_2}{\sqrt{\frac{\hat{\sigma}^2_1}{n_1} + \frac{\hat
 $$
 Can you identify in the table the numbers that are used to compute the test statistics?
 
-__________________________________________________________________
+\vspace{4cm}
 
-
-__________________________________________________________________
 
 
 3. What does the reported p-value say about the tested hypotheses?
 
-____________________________________________________________________
+\vspace{4cm}
 
-
-____________________________________________________________________
 
 
 4. Table 1 is a descriptive summary of the raw data. Why do you think the 
 researches did not just report these results, but continued on with a 
 regression model?
 
-__________________________________________________________________
+\vspace{4cm}
 
-
-__________________________________________________________________
 
 5. In the text, page 3 left column, the authors write "to correct for the
 testing of 3 outcomes, we applied a P-value threshold of 0.017 (0.05/3)".
@@ -114,18 +92,12 @@ Why is it necessary to correct for doing multiple tests? Did the researchers onl
 do three tests? Suggest a stricter threshold that they also could have chosen.
 
 
-__________________________________________________________________
+\vspace{4cm}
 
-
-__________________________________________________________________
 
 6. Look at Figure 2A and the blue lines. What are the dots, and what are the lines?
 Why is there a vertical dotted line at 1? Which outcome is most related to smartphone ownership?
 
 
-__________________________________________________________________
-
-
-__________________________________________________________________
-
+\vspace{4cm}
 

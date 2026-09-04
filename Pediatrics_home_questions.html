@@ -2,12 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.32">
+<meta name="generator" content="quarto-1.8.24">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Your Name">
 
-<title>pediatrics_home_questions</title>
+<title>Questions to be answered individually</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -26,14 +27,15 @@ ul.task-list li input[type="checkbox"] {
 <script src="Pediatrics_home_questions_files/libs/clipboard/clipboard.min.js"></script>
 <script src="Pediatrics_home_questions_files/libs/quarto-html/quarto.js" type="module"></script>
 <script src="Pediatrics_home_questions_files/libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="Pediatrics_home_questions_files/libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="Pediatrics_home_questions_files/libs/quarto-html/popper.min.js"></script>
 <script src="Pediatrics_home_questions_files/libs/quarto-html/tippy.umd.min.js"></script>
 <script src="Pediatrics_home_questions_files/libs/quarto-html/anchor.min.js"></script>
 <link href="Pediatrics_home_questions_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="Pediatrics_home_questions_files/libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="Pediatrics_home_questions_files/libs/quarto-html/quarto-syntax-highlighting-dc55a5b9e770e841cd82e46aadbfb9b0.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="Pediatrics_home_questions_files/libs/bootstrap/bootstrap.min.js"></script>
 <link href="Pediatrics_home_questions_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="Pediatrics_home_questions_files/libs/bootstrap/bootstrap-81267100e462c21b3d6c0d5bf76a3417.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="Pediatrics_home_questions_files/libs/bootstrap/bootstrap-d6a003b94517c951b2d65075d42fb01b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
@@ -49,7 +51,7 @@ const typesetMath = (el) => {
     var macros = [];
     for (var i = 0; i < mathElements.length; i++) {
       var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
         window.katex.render(texText.data, mathElements[i], {
           displayMode: mathElements[i].classList.contains('display'),
           throwOnError: false,
@@ -73,11 +75,31 @@ window.Quarto = {
 
 <main class="content" id="quarto-document-content">
 
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Questions to be answered individually</h1>
+</div>
 
 
 
-<section id="questions-to-be-answered-individually" class="level1">
-<h1>Questions to be answered individually</h1>
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Your Name </p>
+          </div>
+  </div>
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
 <p>Read the paper “Smartphone Ownership, Age of Smartphone Acquisition, and Health Outcomes in Early Adolescence” by Barzilay et al., <em>Pediatrics</em>, 2026 and answer the following questions.</p>
 <p>Both the paper and question sheet are available in Canvas under the assignment “Homework: Science and Data”.</p>
 <p>Actively use AI to get help it there is something you do not understand.</p>
@@ -162,7 +184,6 @@ t = \frac{\bar{x}_1 - \bar{x}_2}{\sqrt{\frac{\hat{\sigma}^2_1}{n_1} + \frac{\hat
 <hr>
 <hr>
 </section>
-</section>
 
 </main>
 <!-- /main column -->
@@ -217,13 +238,14 @@ t = \frac{\bar{x}_1 - \bar{x}_2}{\sqrt{\frac{\hat{\sigma}^2_1}{n_1} + \frac{\hat
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy
