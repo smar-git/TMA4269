@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html lang="en"><head>
-<script src="science_and_data_files/libs/clipboard/clipboard.min.js"></script>
-<script src="science_and_data_files/libs/quarto-html/tabby.min.js"></script>
-<script src="science_and_data_files/libs/quarto-html/popper.min.js"></script>
-<script src="science_and_data_files/libs/quarto-html/tippy.umd.min.js"></script>
-<link href="science_and_data_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="science_and_data_files/libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="science_and_data_files/libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-html/tabby.min.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.7.32">
 
-  <title>Science and Data</title>
+  <title>TMA4269 – Science and Data</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
-  <link rel="stylesheet" href="science_and_data_files/libs/revealjs/dist/reset.css">
-  <link rel="stylesheet" href="science_and_data_files/libs/revealjs/dist/reveal.css">
+  <link rel="stylesheet" href="site_libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="site_libs/revealjs/dist/reveal.css">
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
@@ -28,11 +28,11 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="science_and_data_files/libs/revealjs/dist/theme/quarto-f563837468303362081e247dddd440d0.css">
-  <link href="science_and_data_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
-  <link href="science_and_data_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
-  <link href="science_and_data_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
-  <link href="science_and_data_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <link rel="stylesheet" href="site_libs/revealjs/dist/theme/quarto-f563837468303362081e247dddd440d0.css">
+  <link href="site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="site_libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
   <style type="text/css">
     .reveal div.sourceCode {
       margin: 0;
@@ -440,16 +440,16 @@
 <p>We then accept a 5% chance of rejecting the null hypothesis even if it is true.</p>
 <p>If the p-value is less than 5% we say that our result is <em>statistically significant</em> at the 5% level.</p>
 </section>
-<section id="p-hacking" class="slide level2">
-<h2>P-hacking</h2>
+<section id="working-example-10" class="slide level2">
+<h2>Working example</h2>
 <p>What we just did:</p>
 <ul>
 <li><p>Decided what to investigate and how</p></li>
 <li><p>Did our investigation and compared to a “null distribution”</p></li>
 </ul>
 </section>
-<section id="p-hacking-1" class="slide level2">
-<h2>P-hacking</h2>
+<section id="working-example-11" class="slide level2">
+<h2>Working example</h2>
 <p>What we just did:</p>
 <ul>
 <li><p>Decided what to investigate and how</p></li>
@@ -462,16 +462,20 @@
 <li><p>Chose a test that could “reveal” that pattern</p></li>
 </ul>
 </section>
-<section id="p-hacking-2" class="slide level2">
+<section id="p-hacking" class="slide level2">
 <h2>P-hacking</h2>
 
-<img data-src="images/clipboard-620703042.png" class="r-stretch"></section>
-<section id="p-hacking-3" class="slide level2">
+<img data-src="images/clipboard-1113182128.png" class="r-stretch"></section>
+<section id="p-hacking-1" class="slide level2">
 <h2>P-hacking</h2>
 <p>If we have a dataset and do many different tests / comparisons, then just by chance we will always find some small p-values.</p>
 <p>P-hacking, data dredging, data snooping, cherry picking:</p>
 <p><em>The misuse of data analysis to find patterns that can be presented as statistically significant</em></p>
 </section>
+<section id="p-hacking-2" class="slide level2">
+<h2>P-hacking</h2>
+
+<img data-src="images/clipboard-620703042.png" class="r-stretch"></section>
 <section id="p-hacking-solutions" class="slide level2">
 <h2>P-hacking: solutions?</h2>
 <p>Multiple testing correction:</p>
@@ -515,7 +519,7 @@
 <section id="estimating-a-parameter-5" class="slide level2">
 <h2>Estimating a parameter</h2>
 
-<img data-src="images/clipboard-102889936.png" class="r-stretch"><p>Group discussion (5 min):</p>
+<img data-src="images/clipboard-102889936.png" class="r-stretch"><p>Group discussion:</p>
 <p>What do you remember from a basic statistics group about confidence intervals?</p>
 </section>
 <section id="estimating-a-parameter-6" class="slide level2">
@@ -548,6 +552,7 @@
 
 <img data-src="images/clipboard-1566118370.png" class="r-stretch"><p><a href="https://doi.org/10.1542/peds.2025-072941">Source: Pediatrics</a></p>
 
+
 </section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
@@ -557,19 +562,19 @@
 </div></div>
 
   <script>window.backupDefine = window.define; window.define = undefined;</script>
-  <script src="science_and_data_files/libs/revealjs/dist/reveal.js"></script>
+  <script src="site_libs/revealjs/dist/reveal.js"></script>
   <!-- reveal.js plugins -->
-  <script src="science_and_data_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
-  <script src="science_and_data_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
-  <script src="science_and_data_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
-  <script src="science_and_data_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
-  <script src="science_and_data_files/libs/revealjs/plugin/quarto-support/support.js"></script>
+  <script src="site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="site_libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="site_libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="site_libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="site_libs/revealjs/plugin/quarto-support/support.js"></script>
   
 
-  <script src="science_and_data_files/libs/revealjs/plugin/notes/notes.js"></script>
-  <script src="science_and_data_files/libs/revealjs/plugin/search/search.js"></script>
-  <script src="science_and_data_files/libs/revealjs/plugin/zoom/zoom.js"></script>
-  <script src="science_and_data_files/libs/revealjs/plugin/math/math.js"></script>
+  <script src="site_libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="site_libs/revealjs/plugin/search/search.js"></script>
+  <script src="site_libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="site_libs/revealjs/plugin/math/math.js"></script>
   <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
 
   <script>
