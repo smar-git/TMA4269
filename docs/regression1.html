@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en"><head>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" integrity="sha384-ZvpUoO/+PpLXR1lu4jmpXWu80pZlYUAfxl5NsBMWOEPSjUn/6Z/hRTt8+pR6L4N2" crossorigin="anonymous"></script><script src="site_libs/clipboard/clipboard.min.js"></script>
 <script src="site_libs/quarto-html/tabby.min.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -9,7 +9,8 @@
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-dc55a5b9e770e841cd82e46aadbfb9b0.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.8.24">
 
-  <title>TMA4269 – Data and Data Visualization 2</title>
+  <meta name="author" content="">
+  <title>TMA4269 – Linear Regression</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -120,49 +121,45 @@
       margin-right: 0; 
     }
   </style>
+  <script src="https://cdn.jsdelivr.net/npm/requirejs@2.3.6/require.min.js" integrity="sha384-c9c+LnTbwQ3aujuU7ULEPVvgLs+Fn6fJUvIGTsuu1ZcCf11fiEubah0ttpca4ntM sha384-6V1/AdqZRWk1KAlWbKBlGhN7VG4iE/yAZcO6NZPMF8od0vukrvr0tg4qY6NSrItx" crossorigin="anonymous"></script>
+  
+  <script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
 </head>
 <body class="quarto-light">
   <div class="reveal">
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Data and Data Visualization 2</h1>
+  <h1 class="title">Linear Regression</h1>
 
 <div class="quarto-title-authors">
+<div class="quarto-title-author">
+<div class="quarto-title-author-name">
+ 
+</div>
+</div>
 </div>
 
 </section>
 <section id="first-create-groups-in-canvas" class="slide level2">
 <h2>First: Create Groups in Canvas</h2>
-<p>Find the desk with your group number: <strong>this is the same group number as last Friday next Wednesday</strong></p>
+<p>Find the desk with your group number: <strong>this is the same group number as last and next week</strong></p>
 <ul>
 <li>Log into Canvas</li>
 <li>Click on <strong>People</strong> on the right side of the page</li>
 <li>Click on <strong>Group</strong></li>
-<li>Scroll to the group with the number on your desk and enroll yourself in the group (Visualization Week 36)</li>
+<li>Scroll to the group with the number on your desk and enroll yourself in the group (Classwork: Science and Data)</li>
 </ul>
-<p><strong>NOTE</strong> Last time in these groups</p>
-</section>
-<section id="plan-for-today" class="slide level2">
-<h2>Plan for today</h2>
-<ul>
-<li><strong>Assignement 2 - Data and data visualization.</strong>
-<ul>
-<li>We go back to the cow data from last Wednesday</li>
-<li>Who can create the best plot?</li>
-<li>The data owner will pick a winner..</li>
-<li>..all those who deliver will get 5 points, the winner will get a small prize :-)</li>
-</ul></li>
-</ul>
+<p><strong>NOTE</strong> Remember your Group number for next week, you will have to enroll again!</p>
 </section>
 <section id="time-table" class="slide level2 smaller">
 <h2>Time table</h2>
-<table class="caption-top" style="width:100%;">
+<table class="caption-top">
 <colgroup>
-<col style="width: 8%">
-<col style="width: 20%">
-<col style="width: 35%">
-<col style="width: 35%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -187,27 +184,27 @@
 </tr>
 <tr class="odd">
 <td>36</td>
-<td style="text-align: left;"><strong>Wed 02.09</strong></td>
-<td style="text-align: right;"><strong>Visualization/Python</strong></td>
-<td style="text-align: center;"><strong>Yes (5 points)</strong></td>
-</tr>
-<tr class="even">
-<td></td>
-<td style="text-align: left;">Fri 04.09</td>
-<td style="text-align: right;">Science and Data</td>
-<td style="text-align: center;">No</td>
-</tr>
-<tr class="odd">
-<td>37</td>
-<td style="text-align: left;"><del>Wed 09.09</del></td>
-<td style="text-align: right;"><del>Science and Data</del></td>
+<td style="text-align: left;"><del>Wed 02.09</del></td>
+<td style="text-align: right;"><del>Visualization/Python</del></td>
 <td style="text-align: center;"><del>Yes (5 points)</del></td>
 </tr>
 <tr class="even">
 <td></td>
-<td style="text-align: left;">Fri 11.09</td>
-<td style="text-align: right;">Science and Data/Regression</td>
-<td style="text-align: center;">Yes (5 points)</td>
+<td style="text-align: left;"><del>Fri 04.09</del></td>
+<td style="text-align: right;"><del>Science and Data</del></td>
+<td style="text-align: center;"><del>No</del></td>
+</tr>
+<tr class="odd">
+<td>37</td>
+<td style="text-align: left;"><del>Wed 09.09</del></td>
+<td style="text-align: right;"><del>Homework</del></td>
+<td style="text-align: center;"><del>No</del></td>
+</tr>
+<tr class="even">
+<td></td>
+<td style="text-align: left;"><strong>Fri 11.09</strong></td>
+<td style="text-align: right;"><strong>Science and Data and Regression</strong></td>
+<td style="text-align: center;"><strong>Yes (5 points)</strong></td>
 </tr>
 <tr class="odd">
 <td>38</td>
@@ -248,68 +245,396 @@
 </tbody>
 </table>
 </section>
-<section id="answers-to-your-questions-i" class="slide level2 smaller">
-<h2>Answers to your questions I</h2>
+<section id="plan-for-today" class="slide level2">
+<h2>Plan for today</h2>
 <ul>
-<li><p><strong>More info about the cows</strong> - We do not know where the cows are..somewhere in Norway. For this reason it is not possible to get weather data.</p></li>
-<li><p><strong>Battery voltage</strong> - <code>battery_voltage</code> is the voltage between the terminals of the battery. It is a function of the battery’s charge (decreases with decreasing charge). The unit associated with the data is cV: 340 cV empty battery, 420 cV full battery.</p></li>
-<li><p><strong>Solar charge</strong> - unit “milliampere-hours” (if divided by 226 it you get it in cV). solar_charge indicates how much the solar panel has charged the battery in the last 30 minutes. For battery_voltage above 410 cV, charging from is turned off. For battery_voltage below 405 cV, charging is turned on again.</p></li>
-</ul>
-</section>
-<section id="answers-to-your-questions-ii" class="slide level2 smaller">
-<h2>Answers to your questions II</h2>
+<li><p>Classwork: Science and Data</p>
 <ul>
-<li><p><strong>Step count</strong> - Just a measure of how active the cows are. It should not be interpreted as an actual pedometer, and increases with other types of activity as well, as long as the animal moves its head violently enough.</p></li>
-<li><p><strong>Time</strong></p>
-<ul>
-<li><code>time</code> <span class="math inline">\(\rightarrow\)</span> time when the message was stored on the collar</li>
-<li><code>server_time</code> time when the message was received by the server.</li>
+<li>Group discussion about the scientific paper you read at home</li>
+<li>Deliver a word file with your answers. This is an assignment worth 5 points</li>
 </ul></li>
-</ul>
-<p>The time intervals between seq messages will be longer than 30 minutes if the cloven does not have good enough mobile coverage to send - in which case the messages are sent only when the animal moves into an area with good enough coverage</p>
-<ul>
-<li><strong>Firmware update</strong> - Happens regularly, not so important.</li>
+<li><p>Introducing Regression</p></li>
 </ul>
 </section>
-<section id="data-for-today" class="slide level2">
-<h2>Data for today</h2>
+<section id="the-question" class="slide level2">
+<h2>The question</h2>
+<p><strong>Do children with a mobile phone sleep less?</strong></p>
+<p>We will start with a very simple comparison:</p>
 <ul>
-<li><p><strong>Seq-messages</strong> sent every 30 minutes, stored in the collar if not network coverage (this is the data you got last week)</p></li>
-<li><p><strong>Poll-messages</strong> sent every 15 minutes contains also position. Not stored in there is no network coverage (New data)</p></li>
-<li><p><strong>Pasture</strong> coordinates for the pasture limits (New data)</p></li>
-</ul>
-<p><strong>Note</strong> It is up to you how you combine (or not) the three data sources.</p>
-</section>
-<section id="some-advises" class="slide level2">
-<h2>Some advises</h2>
-<ul>
-<li>Keep track of time so that you manage to deliver!!</li>
-<li><strong>USE AI</strong>, even if you are a Python expert!</li>
-<li>We encourage you to use the first 20 minutes to try coding (with AI) individually and THEN discuss in group!</li>
+<li><strong>Group 1:</strong> children who have a mobile</li>
+<li><strong>Group 2:</strong> children who do not</li>
+<li><strong>Outcome:</strong> hours of sleep per night</li>
 </ul>
 </section>
-<section id="assignement-2" class="slide level2 smaller">
-<h2>Assignement 2</h2>
-<p><strong>Goal</strong> Create many plots and choose 1 or 2 plots that you give to the data owner showing some characteristics of the data.</p>
-<p>Think about:</p>
+<section id="lets-simulate-some-data" class="slide level2">
+<h2>Let’s simulate some data</h2>
+<p>We will simulate a fictional dataset - these are not the same data as in the paper!</p>
+<div id="fcc688b3" class="cell" data-execution_count="1">
+<div class="cell-output cell-output-display" data-execution_count="1">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+
+<table class="dataframe caption-top" data-border="1">
+<thead>
+<tr class="header" style="text-align: right;">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">parent_education_years</th>
+<th data-quarto-table-cell-role="th">mobile</th>
+<th data-quarto-table-cell-role="th">sleep_hours</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">0</th>
+<td>13.003075</td>
+<td>0</td>
+<td>7.563246</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">1</th>
+<td>13.746864</td>
+<td>1</td>
+<td>6.994161</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">2</th>
+<td>12.314655</td>
+<td>1</td>
+<td>6.541806</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">3</th>
+<td>10.773520</td>
+<td>0</td>
+<td>8.570364</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">4</th>
+<td>11.863323</td>
+<td>1</td>
+<td>7.169482</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+</section>
+<section id="what-do-the-data-look-like" class="slide level2">
+<h2>What do the data look like?</h2>
+<div id="d4a0b2a1" class="cell" data-execution_count="2">
+<div class="cell-output cell-output-display">
+<div>
+<figure>
+<p><img data-src="regression1_files/figure-revealjs/cell-3-output-1.png" width="663" height="411"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="first-idea-compare-the-averages" class="slide level2">
+<h2>First idea: compare the averages</h2>
+<p><strong>Calculate the average sleep in each group.</strong></p>
+<div id="71d583de" class="cell" data-execution_count="3">
+<div class="cell-output cell-output-display" data-execution_count="3">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+
+<table class="dataframe caption-top" data-border="1">
+<thead>
+<tr class="header" style="text-align: right;">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">mean</th>
+<th data-quarto-table-cell-role="th">std</th>
+<th data-quarto-table-cell-role="th">count</th>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">mobile</th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">0</th>
+<td>7.770903</td>
+<td>0.532023</td>
+<td>100</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">1</th>
+<td>7.491948</td>
+<td>0.488079</td>
+<td>140</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+<p>Is the difference large enough when we include also the variation within groups?</p>
+</section>
+<section id="a-t-test" class="slide level2">
+<h2>A t-test</h2>
+<p>A two-sample t-test asks:</p>
+<blockquote>
+<p><strong>Is the difference between the two group means large relative to the variation within the groups?</strong></p>
+</blockquote>
+<p><span class="math display">\[
+H_0:\mu_{\text{no phone}}=\mu_{\text{phone}}
+\qquad\text{vs}\qquad
+H_A:\mu_{\text{no phone}}&lt;\mu_{\text{phone}}
+\]</span></p>
+<div id="18679bd8" class="cell" data-execution_count="4">
+<div class="cell-output cell-output-stdout">
+<pre><code>t = -4.14
+p = 0.0000</code></pre>
+</div>
+</div>
+</section>
+<section id="but-are-the-groups-comparable" class="slide level2">
+<h2>But are the groups comparable?</h2>
+<p>Imagine that the two groups differ in more ways than just owning a phone.</p>
+<p>For example: <strong>Parent’s years of education</strong></p>
+<p>Brief group discussion: Why might this matter?</p>
+<div class="fragment">
 <ul>
-<li>Readability</li>
-<li>Usefulness to the owner</li>
-<li>Scalability (what if we had 100 cows)</li>
-<li>Color scale/axis/fonts</li>
+<li>It may be that high and low educated parents have different patterns when it comes to buying phones</li>
+<li>It may also be the parents education has something to say for the children’s sleeping patterns</li>
 </ul>
-<p><strong>Deliverables</strong></p>
+</div>
+</section>
+<section id="a-potential-confounder" class="slide level2">
+<h2>A potential confounder</h2>
+<p>Let’s look at parent education and mobile ownership</p>
+<div id="739d7cc7" class="cell" data-execution_count="5">
+<div class="cell-output cell-output-display">
+<div>
+<figure>
+<p><img data-src="regression1_files/figure-revealjs/cell-6-output-1.png" width="659" height="411"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="a-potential-confounder-1" class="slide level2">
+<h2>A potential confounder</h2>
+<p>Let’s look at parent education and sleep.</p>
+<div id="59aeca37" class="cell" data-execution_count="6">
+<div class="cell-output cell-output-display">
+<div>
+<figure>
+<p><img data-src="regression1_files/figure-revealjs/cell-7-output-1.png" width="663" height="429"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="confounding-the-key-idea" class="slide level2">
+<h2>Confounding: the key idea</h2>
+<p>A <strong>confounder</strong> is a variable that is related to:</p>
 <ol type="1">
-<li>The plot you chose</li>
-<li>Some sentences where you discuss your plot in relation to the points above and why you have made your choices.</li>
+<li>the thing we are comparing, and</li>
+<li>the outcome we care about.</li>
 </ol>
+<p>Parent education interacts with both <em>mobile ownership</em> and <em>sleep</em></p>
+<p>So the mobile/no-mobile comparison can mix together several differences.</p>
+</section>
+<section id="so-what-can-we-do" class="slide level2">
+<h2>So what can we do?</h2>
+<p>We would like to make a <strong>fairer comparison</strong>.</p>
+<p>Instead of asking:</p>
+<blockquote>
+<p>“How different is sleep between children with and without mobiles?”</p>
+</blockquote>
+<p>we can ask:</p>
+<blockquote>
+<p><strong>“How different is sleep between children with and without mobiles, <em>after accounting for parent education</em>?”</strong></p>
+</blockquote>
+<p><strong>Short group discussion</strong>: What does <em>after accounting for parent education</em> means?</p>
+</section>
+<section id="regression" class="slide level2 smaller">
+<h2>Regression</h2>
+<p>Regression allows us to describe the outcome using several variables.</p>
+<p>For example:</p>
+<p><strong>Sleep = mobile ownership + parent education + other variation</strong></p>
+<p>The important idea is:</p>
+<blockquote>
+<p>Each coefficient describes the relationship between a predictor and the outcome <strong>while taking the other predictors into account</strong>.</p>
+</blockquote>
+</section>
+<section id="simple-linear-regression" class="slide level2 smaller">
+<h2>Simple linear regression</h2>
+<p>A linear regression with only mobile ownership is essentially a group comparison.</p>
+<p><span class="math display">\[
+y_i = \beta_0 + \beta_1 x_i + \epsilon_i
+\]</span></p>
+<ul>
+<li><p><span class="math inline">\(y_i\)</span> hours of sleep for child <span class="math inline">\(i\)</span></p></li>
+<li><p><span class="math inline">\(x_i\)</span> mobile ownership (0/1) for child <span class="math inline">\(i\)</span></p></li>
+<li><p><span class="math inline">\(\beta_0, \beta_1\)</span> coefficient to be estimated</p></li>
+<li><p><span class="math inline">\(\epsilon_i\)</span> this is the “error” that we assume is <em>independent and identical distributed</em> among all observations</p></li>
+</ul>
+<p>Short group discussion: Do you remember what <em>independent and identical distributed</em> means?</p>
+</section>
+<section id="simple-linear-regression---fitted-model" class="slide level2 smaller">
+<h2>Simple linear regression - Fitted model</h2>
+<div id="17cde03d" class="cell" data-execution_count="7">
+<div class="cell-output cell-output-display cell-output-markdown">
+<p><span class="math display">\[
+\widehat{Sleep}
+=
+7.77
+-0.28\times Mobile
+\]</span></p>
+</div>
+</div>
+<div class="columns">
+<div class="column" style="width:50%;">
+<h3 id="interpretation">Interpretation</h3>
+<ul>
+<li><span class="math inline">\(\beta_0\)</span> Average over the whole group: on average the group of children sleeps 7.77 hours per night</li>
+<li><span class="math inline">\(\beta_1\)</span> Difference between not owning and owning a mobile decreases the hours of sleep by 0.28</li>
+<li>Testing for <span class="math inline">\(\beta_1 = 0\)</span> is equivalent to the t-test we had before!</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<div id="be60a1ff" class="cell" data-execution_count="8">
+<div class="cell-output cell-output-display">
+<div>
+<figure>
+<p><img data-src="regression1_files/figure-revealjs/cell-9-output-1.png" width="663" height="411"></p>
+</figure>
+</div>
+</div>
+</div>
+</div></div>
+</section>
+<section id="adding-a-potential-confounder" class="slide level2">
+<h2>Adding a potential confounder</h2>
+<p>A linear regression with only mobile ownership is essentially a group comparison.</p>
+<p><span class="math display">\[
+y_i = \beta_0 + \beta_1 x_{1i} + \beta_2 x_{2i} + \epsilon_i
+\]</span></p>
+<ul>
+<li><p><span class="math inline">\(y_i\)</span> hours of sleep for child <span class="math inline">\(i\)</span></p></li>
+<li><p><span class="math inline">\(x_{1i}\)</span> mobile ownership (0/1) for child <span class="math inline">\(i\)</span></p></li>
+<li><p><span class="math inline">\(x_{2i}\)</span> years of parents education for child <span class="math inline">\(i\)</span></p></li>
+<li><p><span class="math inline">\(\beta_0, \beta_1, \beta_2\)</span> are model parameters</p></li>
+</ul>
+</section>
+<section id="the-fitted-model" class="slide level2 smaller">
+<h2>The fitted model</h2>
+<div id="ee2340bf" class="cell" data-execution_count="10">
+<div class="cell-output cell-output-display cell-output-markdown">
+<p><span class="math display">\[
+\widehat{Sleep}
+=
+6.22
+-0.58\times Mobile
++0.14\times ParentEducation
+\]</span></p>
+</div>
+</div>
+<div class="columns">
+<div class="column" style="width:50%;">
+<h3 id="interpretation-1">Interpretation</h3>
+<ul>
+<li><p><span class="math inline">\(\hat{\beta_0} = 6.22\)</span> The predicted sleep when Mobile = 0 and ParentEducation = 0.</p></li>
+<li><p><span class="math inline">\(\hat{\beta_1} = −0.58\)</span> children with a mobile are predicted to sleep 0.50 hours less per night than those without a mobile, <em>holding constant the parents years of education</em>.</p></li>
+<li><p><span class="math inline">\(\beta_2=0.12\)</span> each additional year of parent education is associated with 0.12 additional hours of predicted sleep, <em>holding constant the mobile ownership</em>.</p></li>
+</ul>
+</div><div class="column" style="width:50%;">
+<div id="b67ffb29" class="cell" data-execution_count="11">
+<div class="cell-output cell-output-display">
+<div>
+<figure>
+<p><img data-src="regression1_files/figure-revealjs/cell-12-output-1.png" width="663" height="429"></p>
+</figure>
+</div>
+</div>
+</div>
+</div></div>
+</section>
+<section id="what-does-holding-constant-mean" class="slide level2">
+<h2>What does “holding constant” mean?</h2>
+<p>Suppose we compare two children who are similar with respect to parent education:</p>
+<ul>
+<li>both have parents with <strong>14 years of education</strong></li>
+<li>one child has a mobile</li>
+<li>one child does not</li>
+</ul>
+<p>Regression asks about the expected difference in their sleep</p>
+<p><strong>The mobile coefficient is a comparison after accounting for parent education.</strong></p>
+</section>
+<section id="comparing-the-models" class="slide level2">
+<h2>Comparing the models</h2>
+<p>Let’s compare the estimated coefficients for mobile ownership in the two models:</p>
+<div id="275acc36" class="cell" data-execution_count="12">
+<div class="cell-output cell-output-stdout">
+<pre><code>Simple linear regression estimate:      -0.28 hours
+Adjusted estimated: -0.58 hours</code></pre>
+</div>
+</div>
+<p>The estimates are different because <strong>mobile ownership and parent education are related in our simulated data</strong>.</p>
+</section>
+<section id="what-can-regression-do-and-what-it-cannot" class="slide level2">
+<h2>What can regression do and what it cannot</h2>
+<p>Regression can adjust for variables that:</p>
+<ul>
+<li>we have measured, and</li>
+<li>we have included in the model.</li>
+</ul>
+<p>It cannot automatically fix:</p>
+<ul>
+<li>an important confounder we did not measure</li>
+<li>poor measurement</li>
+<li>a badly specified model</li>
+<li>selection problems</li>
+</ul>
+<p>And:</p>
+<blockquote>
+<p><strong>Adjustment does not prove causation.</strong></p>
+</blockquote>
+<p>A safer phrase is:</p>
+<p><strong>“association after adjustment”</strong></p>
+<p>unless the study design and assumptions justify a causal interpretation.</p>
+</section>
+<section class="slide level2">
+
 
 
 </section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
 <div class="footer footer-default">
-<p><a href="./index.html">Back to Home</a></p>
+
 </div>
 </div></div>
 
@@ -467,7 +792,7 @@
         previewLinks: false,
 
         // Transition style (none/fade/slide/convex/concave/zoom)
-        transition: 'none',
+        transition: 'fade',
 
         // Transition speed (default/fast/slow)
         transitionSpeed: 'default',

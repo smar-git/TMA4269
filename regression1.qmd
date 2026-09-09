@@ -1,0 +1,593 @@
+---
+title: "Linear Regression"
+author: " "
+format:
+  revealjs:
+    theme: default
+    slide-number: true
+    transition: fade
+    code-fold: false
+execute:
+  echo: true
+  warning: false
+  message: false
+jupyter: python3
+---
+
+
+## First: Create Groups in Canvas
+
+Find the desk with your group number: **this is the same group number as last and next week**
+
+-   Log into Canvas
+-   Click on **People** on the right side of the page
+-   Click on **Group**
+-   Scroll to the group with the number on your desk and enroll yourself in the group (Classwork: Science and Data)
+
+**NOTE** Remember your Group number for next week, you will have to enroll again!
+
+
+## Time table {.smaller}
+
+| Week | Date          |                Planned Activity |         Delivery         |
+|------------------|:-----------------|-----------------:|:----------------:|
+| 35   | ~~Wed 26.08~~ |        ~~Visualization/Python~~ | ~~Yes (does not count)~~ |
+|      | ~~Fri 28.08~~ |             ~~Telling stories~~ |    ~~Yes (5 points)~~    |
+| 36   | ~~Wed 02.09~~ |        ~~Visualization/Python~~ |    ~~Yes (5 points)~~    |
+|      | ~~Fri 04.09~~ |            ~~Science and Data~~ |          ~~No~~          |
+| 37   | ~~Wed 09.09~~ |                        ~~Homework~~ |          ~~No~~            |
+|      | **Fri 11.09**     | **Science and Data and Regression** |      **Yes (5 points)**      |
+| 38   | Wed 16.09     |                      Regression |        Wed or Fri        |
+|      | Fri 18.09     |                      Regression |        Wed or Fri        |
+| *39* | *Wed 23.09*   |                     *Project 1* |           *-*            |
+|      | *Fri 25.09*   |                     *Project 1* |     *First Hand-in*      |
+| *40* | *Wed 30.09*   |                     *Project 1* |           *-*            |
+|      | *Fri 02.10*   |                     *Project 1* |     *Second Hand-in*     |
+
+## Plan for today
+
+- Classwork: Science and Data
+
+  - Group discussion about the scientific paper you read at home
+  - Deliver a word file with your answers. This is an assignment worth 5 points
+  
+- Introducing Regression
+
+## The question
+
+**Do children with a mobile phone sleep less?**
+
+We will start with a very simple comparison:
+
+- **Group 1:** children who have a mobile
+- **Group 2:** children who do not
+- **Outcome:** hours of sleep per night
+
+
+
+---
+
+## Let's simulate some data
+
+We will simulate a fictional dataset - these are not the same data as in the paper!
+
+```{python}
+#| echo: false
+import numpy as np
+import pandas as pd
+
+rng = np.random.default_rng(7)
+n = 240
+
+# Parent education: years of education
+parent_edu = np.clip(
+    rng.normal(13, 2.5, n), 8, 20
+)
+
+# Probability of having a mobile increases with parent education
+p_mobile = 1 / (1 + np.exp(-(parent_edu - 12) / 1.7))
+mobile = rng.binomial(1, p_mobile)
+
+# Sleep is affected by both parent education and mobile ownership
+sleep = (
+    8.0
+    + 0.12 * (parent_edu - 13)
+    - 0.55 * mobile
+    + rng.normal(0, 0.45, n)
+)
+
+df = pd.DataFrame({
+    "parent_education_years": parent_edu,
+    "mobile": mobile,
+    "sleep_hours": sleep
+})
+
+df.head()
+```
+
+
+---
+
+## What do the data look like?
+
+```{python}
+#| echo: false
+import matplotlib.pyplot as plt
+
+plt.figure(figsize=(8, 5))
+
+for value, label in [(0, "No mobile"), (1, "Has mobile")]:
+    subset = df[df["mobile"] == value]
+    x = np.full(len(subset), value) + rng.normal(0, 0.035, len(subset))
+    plt.scatter(x, subset["sleep_hours"], alpha=0.45, label=label)
+
+plt.xticks([0, 1], ["No mobile", "Has mobile"])
+plt.ylabel("Sleep (hours/night)")
+plt.xlabel("")
+plt.legend()
+plt.show()
+```
+
+---
+
+## First idea: compare the averages
+
+
+**Calculate the average sleep in each group.**
+
+```{python}
+#| echo: false
+df.groupby("mobile")["sleep_hours"].agg(
+    ["mean", "std", "count"]
+)
+```
+
+Is the difference large enough when we include also the variation within groups?
+
+---
+
+## A t-test
+
+A two-sample t-test asks:
+
+> **Is the difference between the two group means large relative to the variation within the groups?**
+
+$$
+H_0:\mu_{\text{no phone}}=\mu_{\text{phone}}
+\qquad\text{vs}\qquad
+H_A:\mu_{\text{no phone}}<\mu_{\text{phone}}
+$$
+
+```{python}
+#| echo: false
+from scipy.stats import ttest_ind
+
+sleep_no_mobile = df.loc[df["mobile"] == 0, "sleep_hours"]
+sleep_mobile = df.loc[df["mobile"] == 1, "sleep_hours"]
+
+t_stat, p_value = ttest_ind(
+    sleep_mobile,
+    sleep_no_mobile,
+    equal_var=False,
+    alternative="less"
+)
+
+print(f"t = {t_stat:.2f}")
+print(f"p = {p_value:.4f}")
+```
+
+
+
+---
+
+## But are the groups comparable?
+
+Imagine that the two  groups differ in more ways than just owning a phone.
+
+For example: **Parent's years of education**
+
+Brief group discussion: Why might this matter?
+
+
+
+. . .
+
+- It may be that high and low educated parents have different patterns when it comes to buying phones
+- It may also be the parents education has something to say for the children's sleeping patterns
+
+
+---
+
+## A potential confounder
+
+Let's look at parent education and mobile ownership
+
+
+```{python}
+
+#| echo: false
+import matplotlib.pyplot as plt
+
+plt.figure(figsize=(8, 5))
+
+for value, label in [(0, "No mobile"), (1, "Has mobile")]:
+    subset = df[df["mobile"] == value]
+    
+    # Add a little horizontal jitter so points don't overlap
+    x = np.full(len(subset), value) + rng.normal(0, 0.035, len(subset))
+    
+    plt.scatter(
+        x,
+        subset["parent_education_years"],
+        alpha=0.45,
+        label=label
+    )
+
+plt.xticks([0, 1], ["No mobile", "Has mobile"])
+plt.ylabel("Parent's years of education")
+plt.xlabel("")
+plt.legend()
+plt.show()
+
+
+```
+
+
+---
+
+## A potential confounder
+
+Let's look at parent education and sleep.
+
+```{python}
+#| echo: false
+plt.figure(figsize=(8, 5))
+
+for value, label in [(0, "No mobile"), (1, "Has mobile")]:
+    subset = df[df["mobile"] == value]
+    plt.scatter(
+        subset["parent_education_years"],
+        subset["sleep_hours"],
+        alpha=0.45,
+        label=label
+    )
+
+plt.xlabel("Parent's years of education")
+plt.ylabel("Sleep (hours/night)")
+plt.legend()
+plt.show()
+```
+
+---
+
+## Confounding: the key idea
+
+A **confounder** is a variable that is related to:
+
+1. the thing we are comparing, and
+2. the outcome we care about.
+
+Parent education interacts with both  _mobile ownership_ and  _sleep_
+
+So the mobile/no-mobile comparison can mix together several differences.
+
+
+---
+
+## So what can we do?
+
+We would like to make a **fairer comparison**.
+
+Instead of asking:
+
+> "How different is sleep between children with and without mobiles?"
+
+we can ask:
+
+> **"How different is sleep between children with and without mobiles, _after accounting for parent education_?"**
+
+**Short group discussion**: What does _after accounting for parent education_ means?
+
+---
+
+## Regression{.smaller}
+
+Regression allows us to describe the outcome using several variables.
+
+For example:
+
+**Sleep = mobile ownership + parent education + other variation**
+
+The important idea is:
+
+> Each coefficient describes the relationship between a predictor and the outcome **while taking the other predictors into account**.
+
+---
+
+## Simple linear regression{.smaller}
+
+A linear regression with only mobile ownership is essentially a group comparison.
+
+$$
+y_i = \beta_0 + \beta_1 x_i + \epsilon_i
+$$
+
+- $y_i$ hours of sleep for child $i$
+
+- $x_i$ mobile ownership (0/1) for child $i$
+
+- $\beta_0, \beta_1$ coefficient to be estimated
+
+- $\epsilon_i$ this is the "error" that we assume is _independent and identical distributed_ among all observations
+
+
+Short group discussion: Do you remember what _independent and identical distributed_ means?
+
+
+## Simple linear regression - Fitted model{.smaller}
+```{python}
+#| echo: false
+from IPython.display import Markdown
+
+from sklearn.linear_model import LinearRegression
+
+raw_model = LinearRegression().fit(
+    df[["mobile"]],
+    df["sleep_hours"]
+)
+
+display(Markdown(
+    f"""
+$$
+\\widehat{{Sleep}}
+=
+{raw_model.intercept_:.2f}
+{raw_model.coef_[0]:+.2f}\\times Mobile
+$$
+"""
+))
+```
+
+
+:::: {.columns}
+
+::: {.column width="50%"}
+### Interpretation
+
+- $\beta_0$ Average over the whole group: on average the group of children sleeps 7.77 hours per night
+- $\beta_1$ Difference between not owning and owning a mobile decreases the hours of sleep by 0.28
+- Testing for $\beta_1 = 0$ is equivalent to the t-test we had before!
+
+:::
+
+::: {.column width="50%"}
+
+```{python}
+#| echo: false
+
+import matplotlib.pyplot as plt
+from sklearn.linear_model import LinearRegression
+
+# Fit regression model with mobile as the only predictor
+model = LinearRegression()
+model.fit(df[["mobile"]], df["sleep_hours"])
+
+# Predicted values for the two groups
+x_pred = np.array([0, 1])
+y_pred = model.predict(x_pred.reshape(-1, 1))
+
+# Plot the observations
+plt.figure(figsize=(8, 5))
+
+for value, label in [(0, "No mobile"), (1, "Has mobile")]:
+    subset = df[df["mobile"] == value]
+    
+    # Horizontal jitter
+    x = np.full(len(subset), value) + rng.normal(0, 0.035, len(subset))
+    
+    plt.scatter(
+        x,
+        subset["sleep_hours"],
+        alpha=0.45,
+        label=label
+    )
+
+# Add regression line
+plt.plot(
+    x_pred,
+    y_pred,
+    linewidth=3,
+    label="Regression line"
+)
+
+plt.xticks([0, 1], ["No mobile", "Has mobile"])
+plt.ylabel("Sleep (hours/night)")
+plt.xlabel("")
+plt.legend()
+plt.show()
+```
+
+:::
+
+::::
+
+
+
+---
+
+## Adding a  potential confounder
+
+A linear regression with only mobile ownership is essentially a group comparison.
+
+$$
+y_i = \beta_0 + \beta_1 x_{1i} + \beta_2 x_{2i} + \epsilon_i
+$$
+
+- $y_i$ hours of sleep for child $i$
+
+- $x_{1i}$ mobile ownership (0/1) for child $i$
+
+- $x_{2i}$ years of parents education  for child $i$
+
+- $\beta_0, \beta_1, \beta_2$ are model parameters
+
+
+```{python}
+#| echo: false
+adjusted_model = LinearRegression().fit(
+    df[["mobile", "parent_education_years"]],
+    df["sleep_hours"]
+)
+
+
+
+```
+
+## The fitted model{.smaller}
+
+```{python}
+#| echo: false
+
+from IPython.display import display, Markdown
+
+b0 = adjusted_model.intercept_
+b1 = adjusted_model.coef_[0]
+b2 = adjusted_model.coef_[1]
+
+display(Markdown(
+    f"""
+$$
+\\widehat{{Sleep}}
+=
+{b0:.2f}
+{b1:+.2f}\\times Mobile
+{b2:+.2f}\\times ParentEducation
+$$
+
+"""
+))
+```
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+### Interpretation
+- $\hat{\beta_0} = 6.22$ The predicted sleep when Mobile = 0 and ParentEducation = 0.
+- $\hat{\beta_1} = −0.58$ children with a mobile are predicted to sleep 0.50 hours less per night than those without a mobile, _holding constant the parents years of education_.
+
+- $\beta_2=0.12$  each additional year of parent education is associated with 0.12 additional hours of predicted sleep, _holding constant the mobile ownership_.
+
+:::
+::: {.column width="50%"}
+```{python}
+#| echo: false
+
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Grid of parent education values
+edu_grid = np.linspace(8, 20, 100)
+
+plt.figure(figsize=(8, 5))
+
+# Observed data
+for m in [0, 1]:
+    subset = df[df["mobile"] == m]
+    plt.scatter(
+        subset["parent_education_years"],
+        subset["sleep_hours"],
+        alpha=0.25
+    )
+
+# Fitted values from the adjusted model
+for m, label in [(0, "No mobile"), (1, "Has mobile")]:
+    X = pd.DataFrame({
+        "mobile": np.full_like(edu_grid, m),
+        "parent_education_years": edu_grid
+    })
+    
+    predicted = adjusted_model.predict(X)
+    
+    plt.plot(
+        edu_grid,
+        predicted,
+        linewidth=3,
+        label=label
+    )
+
+plt.xlabel("Parent's years of education")
+plt.ylabel("Sleep (hours/night)")
+plt.legend()
+plt.show()
+
+
+```
+
+:::
+::::
+---
+
+## What does "holding constant" mean?
+
+Suppose we compare two children who are similar with respect to parent education:
+
+- both have parents with **14 years of education**
+- one child has a mobile
+- one child does not
+
+Regression asks about the expected difference in their sleep 
+
+**The mobile coefficient is a comparison after accounting for parent education.**
+
+---
+
+## Comparing the models
+
+Let's compare the estimated coefficients for mobile ownership in the two models:
+
+```{python}
+#| echo: false
+raw_effect = raw_model.coef_[0]
+adjusted_effect = adjusted_model.coef_[0]
+
+print(f"Simple linear regression estimate:      {raw_effect:.2f} hours")
+print(f"Adjusted estimated: {adjusted_effect:.2f} hours")
+```
+
+The estimates are different because **mobile ownership and parent education are related in our simulated data**.
+
+---
+
+
+
+## What can regression do and what it cannot
+
+Regression can adjust for variables that:
+
+- we have measured, and
+- we have included in the model.
+
+It cannot automatically fix:
+
+- an important confounder we did not measure
+- poor measurement
+- a badly specified model
+- selection problems
+
+And:
+
+> **Adjustment does not  prove causation.**
+
+A safer phrase is:
+
+**"association after adjustment"**
+
+unless the study design and assumptions justify a causal interpretation.
+
+---
+
+
+
+

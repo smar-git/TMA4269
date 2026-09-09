@@ -27,7 +27,6 @@ editor: visual
 | *40* | *Wed 30.09*   |                     *Project 1* |           *-*            |
 |      | *Fri 02.10*   |                     *Project 1* |     *Second Hand-in*     |
 
-
 ## Plan for today
 
 - Mix of lecture and group discussions
@@ -64,9 +63,9 @@ What is "the scientific method"?
 
 1st distinction to keep in mind when "the data shows that..."
 
--   **Discovery**: Searching for patterns, generating hypotheses
+- **Discovery**: Searching for patterns, generating hypotheses
 
--   **Confirmation / validation**: Testing if a pattern is present in independent data
+- **Confirmation / validation**: Testing if a pattern is present in independent data
 
 ## Science and data
 
@@ -132,7 +131,7 @@ We imagine: From a local school we have observations of 100 children in the 5th 
 
 - The median hours of sleep in each group?
 
--   The 25% percentile, i.e. the "best" sleeper among the worst sleeping 1/4 of kids
+- The 25% percentile, i.e. the "best" sleeper among the worst sleeping 1/4 of kids
 
 ## Working example {.smaller}
 
@@ -290,7 +289,6 @@ What we *did not* do:
 
 - Chose a test that could "reveal" that pattern
 
-
 ## P-hacking
 
 ![](images/clipboard-620703042.png)
@@ -315,9 +313,9 @@ E.g. 100 tests, p \< 0.0005 implies significance
 
 Be honest / transparent:
 
--   Write out a plan beforehand and stick to it
+- Write out a plan beforehand and stick to it
 
--   If the study is exploratory (searching for patterns, generating hypotheses) then state that
+- If the study is exploratory (searching for patterns, generating hypotheses) then state that
 
 ## Estimates and confidence intervals
 
