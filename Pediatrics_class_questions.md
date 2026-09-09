@@ -27,6 +27,14 @@ home, and some are new. Come to an agreement and write down your answers.
 
 \vspace{4cm}
 
+4. Discuss whether this study is
+-   Discovery: Searching for patterns, generating hypotheses, or 
+-   Confirmation / validation: Testing if a pattern is present in independent data
+
+____________________________________________________________________
+
+
+____________________________________________________________________
 
 
 ## Part 2: The study design

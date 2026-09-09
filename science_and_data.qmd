@@ -6,9 +6,33 @@ editor: visual
 
 ## First: Meet your new group
 
-- Find the desk with your **NEW** group number
-- Introduce yourselves
-- Remember your group number for next week
+-   Find the desk with your **NEW** group number
+-   Introduce yourselves
+-   Remember your group number for next week
+
+## Winners of Wednesdays competition
+
+We have chosen winners in 3 categories
+
+Category 1: Best map Group 2
+
+![](images/clipboard-4096787980.gif)
+
+## Winners of Wednesdays competition
+
+We have chosen winners in 3 categories
+
+Category 2: Most informative Group 1
+
+![](images/clipboard-2505088430.png)
+
+## Winners of Wednesdays competition
+
+We have chosen winners in 3 categories
+
+Category 3: Originality Group 7
+
+![](images/clipboard-3880252028.png)
 
 ## Time table {.smaller}
 
@@ -29,9 +53,9 @@ editor: visual
 
 ## Plan for today
 
-- Mix of lecture and group discussions
+-   Mix of lecture and group discussions
 
-- We are building up to next weeks discussion of a scientific paper. Homework for next Friday is to read the paper and answer some questions (90 min)
+-   We are building up to next weeks discussion of a scientific paper. Homework for next Friday is to read the paper and answer some questions (90 min)
 
 ![](images/clipboard-1566118370.png)
 
@@ -39,13 +63,9 @@ editor: visual
 
 ## The scientific method
 
-Brief group discussion (5 min):
+Brief group discussion:
 
 What is "the scientific method"?
-
-## The scientific method
-
-![](images/scientific_method.jpg)
 
 ## The scientific method
 
@@ -63,39 +83,29 @@ What is "the scientific method"?
 
 1st distinction to keep in mind when "the data shows that..."
 
-- **Discovery**: Searching for patterns, generating hypotheses
+-   **Discovery**: Searching for patterns, generating hypotheses
 
-- **Confirmation / validation**: Testing if a pattern is present in independent data
-
-## Science and data
-
-1st distinction to keep in mind when "the data shows that..."
-
-- **Discovery**: Searching for patterns, generating hypotheses
-
-- **Confirmation / validation**: Testing if a pattern is present in independent data
-
-*Example:* An association between a genetic variant and a disease is found in the UK Biobank dataset (*discovery*) and then re-produced in the Norwegian HUNT dataset (*confirmation*)
+-   **Confirmation / validation**: Testing if a pattern is present in independent data
 
 ## Science and data
 
 2nd distinction to keep in mind when "the data shows that..."
 
-- **Cause and effect**: requires experiments, trials
+-   **Cause and effect**: requires experiments, trials
 
-- **Associations**: can be found in all data sets
+-   **Associations**: can be found in all data sets
 
 ## Today: Comparing groups
 
-- Before and after
+-   Before and after
 
-- With and without
+-   With and without
 
-- Setting 1 and setting 2
+-   Setting 1 and setting 2
 
 ## Comparing groups
 
-Brief group discussion (5 min):
+Brief group discussion:
 
 What do you remember from a basic statistics group about comparing two groups?
 
@@ -125,25 +135,33 @@ We imagine: From a local school we have observations of 100 children in the 5th 
 
 ## Working example
 
-**Step 1:** What do we want to compare across the groups (smartphone owners vs non-owners)?
+::::: columns
+::: {.column width="60%"}
+**Step 1:** Specify our **test statistic**, what to compare across the two groups (group 1: non-owners, group 2: smartphone owners)
 
-- The average hours of sleep in each group?
+-   The average hours of sleep in each group?
 
-- The median hours of sleep in each group?
+-   The median hours of sleep in each group?
 
-- The 25% percentile, i.e. the "best" sleeper among the worst sleeping 1/4 of kids
+-   The 25% percentile, i.e. the "best" sleeper among the worst sleeping 1/4 of kids
+:::
+
+::: {.column width="40%"}
+![](images/clipboard-3505453806.png)
+:::
+:::::
 
 ## Working example {.smaller}
 
-**Step 1:** What do we want to compare across the groups (smartphone owners vs non-owners)?
+**Step 1:** Specify our **test statistic**, what to compare across the two groups (group 1: non-owners, group 2: smartphone owners)
 
-- The average hours of sleep in each group?
+-   The average hours of sleep in each group?
 
-- The median hours of sleep in each group?
+-   The median hours of sleep in each group?
 
-- The 25% percentile, i.e. the "best" sleeper among the worst sleeping 1/4 of kids
+-   The 25% percentile, i.e. the "best" sleeper among the worst sleeping 1/4 of kids
 
-Group discussion 5 min and then vote in **MENTI** (one person per group)
+Brief group discussion and then vote in **MENTI** (one person per group)
 
 ![](images/clipboard-636079974.png)
 
@@ -153,7 +171,7 @@ Group discussion 5 min and then vote in **MENTI** (one person per group)
 
 H~0~: The groups are "equal"
 
-Group discussion 2 min: What do we mean by "equal"?
+Brief group discussion: What do we mean by "equal"?
 
 ## Working example
 
@@ -161,11 +179,11 @@ Group discussion 2 min: What do we mean by "equal"?
 
 H~1~: What is our alternative?
 
-- Kids without smartphones sleep more?
+-   Kids without smartphones sleep more?
 
-- Kids without smartphones sleep less?
+-   Kids without smartphones sleep less?
 
-- Unequal sleep but we will not specify which direction?
+-   Unequal sleep but we will not specify which direction?
 
 One person gives a group vote in **MENTI**
 
@@ -183,9 +201,9 @@ One person gives a group vote in **MENTI**
 
 **Step 4:** Is our difference really something?
 
-The kids are unequal, so variation between kids is natural. By chance, two *randomly* selected groups will therefore also be different.
+<br>
 
-So what types of differences do we expect to occur *by chance*, and what types of differences are too large to just occur *by chance*?
+What differences do we expect to occur *by chance*, and what4/2 differences are too large to just occur *by chance*?
 
 ## Methods
 
@@ -231,7 +249,7 @@ Comparing the statistic of our choice using random permutations (we do this)
 :::
 
 ::: {.column width="60%"}
-**Group discussion** (5 min): How would you go about calculating the p-value based on these permutations?
+**Group discussion**: How would you go about calculating the p-value based on these permutations?
 
 Give a number in **MENTI** (in percentage)
 
@@ -265,33 +283,33 @@ We then accept a 5% chance of rejecting the null hypothesis even if it is true.
 
 If the p-value is less than 5% we say that our result is *statistically significant* at the 5% level.
 
-## P-hacking
+## Working example
 
 What we just did:
 
-- Decided what to investigate and how
+-   Decided what to investigate and how
 
-- Did our investigation and compared to a "null distribution"
+-   Did our investigation and compared to a "null distribution"
 
-## P-hacking
+## Working example
 
 What we just did:
 
-- Decided what to investigate and how
+-   Decided what to investigate and how
 
-- Did our investigation and compared to a "null distribution"
+-   Did our investigation and compared to a "null distribution"
 
 What we *did not* do:
 
-- Looked at the data from many angles
+-   Looked at the data from many angles
 
-- Found an interesting pattern
+-   Found an interesting pattern
 
-- Chose a test that could "reveal" that pattern
+-   Chose a test that could "reveal" that pattern
 
 ## P-hacking
 
-![](images/clipboard-620703042.png)
+![](images/clipboard-1113182128.png)
 
 ## P-hacking
 
@@ -300,6 +318,10 @@ If we have a dataset and do many different tests / comparisons, then just by cha
 P-hacking, data dredging, data snooping, cherry picking:
 
 *The misuse of data analysis to find patterns that can be presented as statistically significant*
+
+## P-hacking
+
+![](images/clipboard-620703042.png)
 
 ## P-hacking: solutions?
 
@@ -313,9 +335,9 @@ E.g. 100 tests, p \< 0.0005 implies significance
 
 Be honest / transparent:
 
-- Write out a plan beforehand and stick to it
+-   Write out a plan beforehand and stick to it
 
-- If the study is exploratory (searching for patterns, generating hypotheses) then state that
+-   If the study is exploratory (searching for patterns, generating hypotheses) then state that
 
 ## Estimates and confidence intervals
 
@@ -349,7 +371,7 @@ Perhaps it would be more interesting to summarize sleep in each group - with som
 
 ![](images/clipboard-102889936.png)
 
-Group discussion (5 min):
+Group discussion:
 
 What do you remember from a basic statistics group about confidence intervals?
 
@@ -381,7 +403,7 @@ Are the groups different? Would you say the difference is important?
 
 What is the *effect* of owning a smartphone on childrens' sleep?
 
-## Homeword
+## Homework
 
 Homework for next Friday is to read the paper and answer questions on the question sheet that we hand out (90 min).
 
