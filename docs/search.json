@@ -144,7 +144,21 @@
     "href": "regression1.html#what-can-regression-do-and-what-it-cannot",
     "title": "Linear Regression",
     "section": "What can regression do and what it cannot",
-    "text": "What can regression do and what it cannot\nRegression can adjust for variables that:\n\nwe have measured, and\nwe have included in the model.\n\nIt cannot automatically fix:\n\nan important confounder we did not measure\npoor measurement\na badly specified model\nselection problems\n\nAnd:\n\nAdjustment does not prove causation.\n\nA safer phrase is:\n“association after adjustment”\nunless the study design and assumptions justify a causal interpretation."
+    "text": "What can regression do and what it cannot\nRegression can adjust for variables that:\n\nwe have measured, and\nwe have included in the model.\n\nIt cannot automatically fix:\n\nan important confounder we did not measure\npoor measurement\na badly specified model\nselection problems"
+  },
+  {
+    "objectID": "regression1.html#how-about-causality",
+    "href": "regression1.html#how-about-causality",
+    "title": "Linear Regression",
+    "section": "How about causality?",
+    "text": "How about causality?\n\nAdjustment does not prove causation.\n\nA safer phrase is:\n“association after adjustment”\nunless the study design and assumptions justify a causal interpretation."
+  },
+  {
+    "objectID": "regression1.html#take-home-message",
+    "href": "regression1.html#take-home-message",
+    "title": "Linear Regression",
+    "section": "Take-home message",
+    "text": "Take-home message\nLinear regression is a way to compare and explain relationships\n\nSimple regression with a binary predictor is essentially a comparison of two group means.\nMultiple regression lets us compare groups while accounting for other variables.\nEach coefficient describes the association between a predictor and the outcome holding the other predictors constant.\nA coefficient tells us how much the predicted outcome changes for a one-unit change in the predictor.\nRegression does not automatically imply causation. Adjustment can reduce confounding, but it does not guarantee a causal interpretation.\n\n\nRegression lets us make more informative comparisons by considering several variables at the same time."
   },
   {
     "objectID": "telling_stories.html#first-create-groups-in-canvas",

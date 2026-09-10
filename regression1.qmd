@@ -576,7 +576,7 @@ It cannot automatically fix:
 - a badly specified model
 - selection problems
 
-And:
+## How about causality?
 
 > **Adjustment does not  prove causation.**
 
@@ -588,6 +588,19 @@ unless the study design and assumptions justify a causal interpretation.
 
 ---
 
+## Take-home message{.smaller}
+
+### Linear regression is a way to compare and explain relationships
+
+- **Simple regression** with a binary predictor is essentially a comparison of **two group means**.
+
+- **Multiple regression** lets us compare groups **while accounting for other variables**.
+
+- Each coefficient describes the association between a predictor and the outcome **holding the other predictors constant**.
+
+- A coefficient tells us **how much the predicted outcome changes** for a one-unit change in the predictor.
+
+- **Regression does not automatically imply causation.** Adjustment can reduce confounding, but it does not guarantee a causal interpretation.
 
 
-
+> **Regression lets us make more informative comparisons by considering several variables at the same time.**

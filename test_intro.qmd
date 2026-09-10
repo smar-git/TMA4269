@@ -1,0 +1,107 @@
+---
+title: "About the course: TMA4269 Fall 2026"
+format: revealjs
+editor: visual
+---
+
+## Course description
+
+Data science is about extracting knowledge from data. This includes identifying patterns, making predictions, communicating results, and supporting decision-making.
+
+This course provides a **practical and example-based** introduction to fundamental topics such as data visualisation, regression models, and machine learning.
+
+## Some context (1)
+
+-   This is the first semester we run the course TMA4269 Data Science
+
+-   This is also the first time we use portfolio assessment (mappevurdering)
+
+-   This is also the first time we have built an entire course around applications and group discussions
+
+-   This is also the first time we use Canvas
+
+## Some context (2)
+
+-   The course was designed as a 'k-emne' (complementary course), which means:
+
+    -   Not technical / theoretical (if this is what you require -\> TMA4268 Statistical Learning)
+
+    -   We focus on "apply, use, and discuss" data and methods for data analysis
+
+    -   We only require that you have taken a basic statistics course (e.g. TMA4240/45)
+
+-   The course is also open to other students
+
+## Co-creation
+
+-   The course has no strict curriculum
+
+-   All learning activities and assessment types are new and being developed as we go
+
+-   You will learn from us and **we will learn from you**
+
+    -   --\> We all need to be a bit flexible
+
+## Teaching Excellence Program at NTNU (Toppundervisning)
+
+-   Info info
+-   AI-assisted learning
+    -   NB we need to have an ethics discussion
+
+## BREAK / Group activity / Kahoot quiz
+
+## Portfolio assessment
+
+-   Individual letter grades (A-F) are set based on your portfolio ("mappe")
+
+-   The portfolio consists of several elements
+
+    -   Some are mandatory
+
+    -   Some you need to have a minimum amount of
+
+-   All elements are completed in groups
+
+    -   All the work is done during class hours
+
+    -   A "polished" hand-in does not count extra
+
+## Course structure (1)
+
+### Module 1: Data visualization (W35-36)
+
+-   We spend time to get familiar with the course
+
+-   Assignment 1: 1 trial hand-in W35 (figures and tables) and 1 final hand-in W36 (updates and evaluation of figures/tables)
+
+### **Module 2: Telling stories with data (W37)**
+
+-   Assignment 2: 1 hand-in (discussion notes and reflections)
+
+### Module 3: Science and data (W38)
+
+-   Assignment 3: NYTimes health effects of cell phone before age 12
+
+## Course structure (4)
+
+### Module 4: Regression (W39, W40, W41)
+
+-   Project 1
+
+    -   Delivery 1: Data description
+
+    -   Delivery 2: Model definition and first impressions
+
+    -   Activity: Group-to-group presentations of ideas + feedback
+
+    -   Delivery 3: Final model and discussion
+
+### Module 5: Machine learning (W42, 43, 44, 45, 46)
+
+-   Project 2
+
+## Group deliveries / projects
+
+-   RULES
+-   Groups established and handed in during one lecture
+-   Exceptions: First assignment + projects 1 and 2

@@ -269,8 +269,8 @@
 <section id="lets-simulate-some-data" class="slide level2">
 <h2>Let’s simulate some data</h2>
 <p>We will simulate a fictional dataset - these are not the same data as in the paper!</p>
-<div id="fcc688b3" class="cell" data-execution_count="1">
-<div class="cell-output cell-output-display" data-execution_count="1">
+<div id="3fd66887" class="cell" data-execution_count="1">
+<div class="cell-output cell-output-display" data-execution_count="13">
 <div>
 <style scoped="">
     .dataframe tbody tr th:only-of-type {
@@ -335,7 +335,7 @@
 </section>
 <section id="what-do-the-data-look-like" class="slide level2">
 <h2>What do the data look like?</h2>
-<div id="d4a0b2a1" class="cell" data-execution_count="2">
+<div id="08530c70" class="cell" data-execution_count="2">
 <div class="cell-output cell-output-display">
 <div>
 <figure>
@@ -348,8 +348,8 @@
 <section id="first-idea-compare-the-averages" class="slide level2">
 <h2>First idea: compare the averages</h2>
 <p><strong>Calculate the average sleep in each group.</strong></p>
-<div id="71d583de" class="cell" data-execution_count="3">
-<div class="cell-output cell-output-display" data-execution_count="3">
+<div id="09c5d89d" class="cell" data-execution_count="3">
+<div class="cell-output cell-output-display" data-execution_count="15">
 <div>
 <style scoped="">
     .dataframe tbody tr th:only-of-type {
@@ -412,7 +412,7 @@ H_0:\mu_{\text{no phone}}=\mu_{\text{phone}}
 \qquad\text{vs}\qquad
 H_A:\mu_{\text{no phone}}&lt;\mu_{\text{phone}}
 \]</span></p>
-<div id="18679bd8" class="cell" data-execution_count="4">
+<div id="85de0a49" class="cell" data-execution_count="4">
 <div class="cell-output cell-output-stdout">
 <pre><code>t = -4.14
 p = 0.0000</code></pre>
@@ -434,7 +434,7 @@ p = 0.0000</code></pre>
 <section id="a-potential-confounder" class="slide level2">
 <h2>A potential confounder</h2>
 <p>Let’s look at parent education and mobile ownership</p>
-<div id="739d7cc7" class="cell" data-execution_count="5">
+<div id="c4b157b1" class="cell" data-execution_count="5">
 <div class="cell-output cell-output-display">
 <div>
 <figure>
@@ -447,7 +447,7 @@ p = 0.0000</code></pre>
 <section id="a-potential-confounder-1" class="slide level2">
 <h2>A potential confounder</h2>
 <p>Let’s look at parent education and sleep.</p>
-<div id="59aeca37" class="cell" data-execution_count="6">
+<div id="bed3edd6" class="cell" data-execution_count="6">
 <div class="cell-output cell-output-display">
 <div>
 <figure>
@@ -506,7 +506,7 @@ y_i = \beta_0 + \beta_1 x_i + \epsilon_i
 </section>
 <section id="simple-linear-regression---fitted-model" class="slide level2 smaller">
 <h2>Simple linear regression - Fitted model</h2>
-<div id="17cde03d" class="cell" data-execution_count="7">
+<div id="40932dfa" class="cell" data-execution_count="7">
 <div class="cell-output cell-output-display cell-output-markdown">
 <p><span class="math display">\[
 \widehat{Sleep}
@@ -525,7 +525,7 @@ y_i = \beta_0 + \beta_1 x_i + \epsilon_i
 <li>Testing for <span class="math inline">\(\beta_1 = 0\)</span> is equivalent to the t-test we had before!</li>
 </ul>
 </div><div class="column" style="width:50%;">
-<div id="be60a1ff" class="cell" data-execution_count="8">
+<div id="7abfde70" class="cell" data-execution_count="8">
 <div class="cell-output cell-output-display">
 <div>
 <figure>
@@ -551,7 +551,7 @@ y_i = \beta_0 + \beta_1 x_{1i} + \beta_2 x_{2i} + \epsilon_i
 </section>
 <section id="the-fitted-model" class="slide level2 smaller">
 <h2>The fitted model</h2>
-<div id="ee2340bf" class="cell" data-execution_count="10">
+<div id="ac0aba33" class="cell" data-execution_count="10">
 <div class="cell-output cell-output-display cell-output-markdown">
 <p><span class="math display">\[
 \widehat{Sleep}
@@ -571,7 +571,7 @@ y_i = \beta_0 + \beta_1 x_{1i} + \beta_2 x_{2i} + \epsilon_i
 <li><p><span class="math inline">\(\beta_2=0.12\)</span> each additional year of parent education is associated with 0.12 additional hours of predicted sleep, <em>holding constant the mobile ownership</em>.</p></li>
 </ul>
 </div><div class="column" style="width:50%;">
-<div id="b67ffb29" class="cell" data-execution_count="11">
+<div id="beb9d0ac" class="cell" data-execution_count="11">
 <div class="cell-output cell-output-display">
 <div>
 <figure>
@@ -596,7 +596,7 @@ y_i = \beta_0 + \beta_1 x_{1i} + \beta_2 x_{2i} + \epsilon_i
 <section id="comparing-the-models" class="slide level2">
 <h2>Comparing the models</h2>
 <p>Let’s compare the estimated coefficients for mobile ownership in the two models:</p>
-<div id="275acc36" class="cell" data-execution_count="12">
+<div id="e40056c3" class="cell" data-execution_count="12">
 <div class="cell-output cell-output-stdout">
 <pre><code>Simple linear regression estimate:      -0.28 hours
 Adjusted estimated: -0.58 hours</code></pre>
@@ -618,7 +618,9 @@ Adjusted estimated: -0.58 hours</code></pre>
 <li>a badly specified model</li>
 <li>selection problems</li>
 </ul>
-<p>And:</p>
+</section>
+<section id="how-about-causality" class="slide level2">
+<h2>How about causality?</h2>
 <blockquote>
 <p><strong>Adjustment does not prove causation.</strong></p>
 </blockquote>
@@ -626,8 +628,19 @@ Adjusted estimated: -0.58 hours</code></pre>
 <p><strong>“association after adjustment”</strong></p>
 <p>unless the study design and assumptions justify a causal interpretation.</p>
 </section>
-<section class="slide level2">
-
+<section id="take-home-message" class="slide level2 smaller">
+<h2>Take-home message</h2>
+<h3 id="linear-regression-is-a-way-to-compare-and-explain-relationships">Linear regression is a way to compare and explain relationships</h3>
+<ul>
+<li><p><strong>Simple regression</strong> with a binary predictor is essentially a comparison of <strong>two group means</strong>.</p></li>
+<li><p><strong>Multiple regression</strong> lets us compare groups <strong>while accounting for other variables</strong>.</p></li>
+<li><p>Each coefficient describes the association between a predictor and the outcome <strong>holding the other predictors constant</strong>.</p></li>
+<li><p>A coefficient tells us <strong>how much the predicted outcome changes</strong> for a one-unit change in the predictor.</p></li>
+<li><p><strong>Regression does not automatically imply causation.</strong> Adjustment can reduce confounding, but it does not guarantee a causal interpretation.</p></li>
+</ul>
+<blockquote>
+<p><strong>Regression lets us make more informative comparisons by considering several variables at the same time.</strong></p>
+</blockquote>
 
 
 </section>
