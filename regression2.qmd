@@ -1,13 +1,13 @@
 ---
-title: "Untitled"
+title: "Multiple Linear Regression"
 format: revealjs
 execute:
   echo: false
 ---
 
-## Our Data{.smaller}
+## Our Data {.smaller}
 
-Read the _groceries.csv_ dataset.
+Read the *groceries.csv* dataset.
 
 Here you find the follwing variables:
 
@@ -15,8 +15,7 @@ Here you find the follwing variables:
 - **population**: Number of people living within 1 km of the store.
 - **distance**: Distance (in km) to the nearest competing grocery store.
 - **central**: Indicator variable equal to 1 if the store is located in a city center, 0 otherwise.
-- **mall**: Indicator variable equal to 1 if the store lies within a mall (shopping center), 0
-otherwise.
+- **mall**: Indicator variable equal to 1 if the store lies within a mall (shopping center), 0 otherwise.
 
 ```{r}
 library(car)
@@ -36,22 +35,20 @@ Our interest lies in predicting the turnover based on the other available data.
 - Create some plots to explore the relationship between turnover and the other variables
 - Which quantities appear to influence the turnover?
 
-##
+## Exploratory Plots
 
 ```{r}
 ggpairs(groceries)
 
 ```
 
-
 ## Simple linear regression
 
-- Create a linear model where the only covariate is _distance_
+- Run the linear model where the only covariate is *population*
 - How do you interpret the two estimated parameters?
 - One of the output of the model is the $R^2$ quantity, can you explain what it is?
 
-
-## Simple linear regression{.smaller}
+## Simple linear regression {.smaller}
 
 ```{r}
 model0 = lm(turnover ~ population, data = groceries)
@@ -59,15 +56,14 @@ summary(model0)
 
 ```
 
-- If the population is 0, the turnover is ca 250 000 NOK per week (??)
-- For each extra person leaving within 1 Km from the shop, the turnover increases by ca 390 NOK
+- The intercept is the predicted turnover when population = 0. Is that a realistic situation for these stores?
+- For each extra person living within 1 Km from the shop, the turnover increases by ca 390 NOK
 
 ## Simple linear regression
 
 - Plot the data together with the fitted regression line
 - Add prediction intervals to the line, what do you learn?
 - What is the predicted turnover (with uncertainty) for a shop that in an area where 2000 people live?
-
 
 ## Simple linear regression
 
@@ -114,17 +110,17 @@ pred <- predict(model0, newdata = data.frame(population = 2000), interval = "pre
 pred
 ```
 
-## Simple linear regression  - residuals
+## Simple linear regression - residuals
 
-The residuals, in this case,  are defined as the observed minus the predicted turnover
+The residuals, in this case, are defined as the observed minus the predicted turnover
 
 - Compute the residuals and plot them
 - Create a QQ plot of the residuals, what does this indicate?
 - What are we looking for in a residual plot?
 - Which model assumption are we checking when looking at residuals?
 
+## Simple linear regression - residuals
 
-## Simple linear regression  - residuals
 ```{r}
 res = data.frame(residuals = residuals(model0), 
                  pred = predict(newdata = groceries, model0),
@@ -143,12 +139,11 @@ p3 = p3 + stat_qq() + stat_qq_line()+xlab("Theoretical Quantiles") + ylab("Sampl
 
 ```
 
-## Model assumption and residuals{.smaller}
+
+## Model assumption and residuals {.smaller}
 
 Remember:
-$$
-y_i = \underbrace{\beta_0 + \beta_1\ x_i}_{\text{Sistematic part}} + \underbrace{\epsilon_i}_{\text{Random part/ error}}, \qquad \epsilon_i\sim\mathcal{N}(0,\sigma^2)
-$$
+$$y_i = \underbrace{\beta_0 + \beta_1\ x_i}_{\text{Sistematic part}} + \underbrace{\epsilon_i}_{\text{Random part/ error}}, \qquad \epsilon_i\sim\mathcal{N}(0,\sigma^2)$$
 
 The key assumption we check with residuals is:
 
@@ -162,46 +157,57 @@ A residual plot should therefore show:
 - No "funnel" shape
 
 
+## How residual plots should not look like...
+
+
+
+![](residual_plot.png)
+
 ## Improving the model
 
-Add the _distance_ covariate to the model
+Add the *distance* covariate to the model
 
 - How do you interpret the estimated parameters?
+
 - What happened to the parameter for population? Why?
-- Check if this has improved the model using $R^2$
 
-- You could consider instead to use _log(distance)_, why would that make sense?
-- Plot the predicted turnover for both model when population is 1000 and the distance goes from 0 to 10 km. (You can add prediction uncertainties). What do you notice?
+- Check if this has improved the model using adjusted $R^2$
 
-## Improving the model
 
+## Improving the model{.smaller}
 
 ```{r}
 model1 = lm(turnover ~ population + distance, data = groceries)
 model1b = lm(turnover ~ population + log(distance), data = groceries)
 ```
 
-
 Model 0 (only population)
-
 
 ```{r}
 summary(model0)
 ```
 
-
 Model 1 ( population + distance)
-
 
 ```{r}
 summary(model1)
 ```
 
-## Improving the model
 
+
+
+
+## Transforming covariates
+
+- You could consider instead to use *log(distance)*, why would that make sense? Does the effect of distance appear to be the same everywhere?
+For example, would increasing distance from 1 → 2 km have the same effect as increasing it from 8 → 9 km?
+
+- Plot the predicted turnover for both model when population is 1000 and the distance goes from 0.1 to 10 km. (You can add prediction uncertainties). What do you notice?
+
+## Transforming covariates
 
 ```{r}
-newdata = data.frame(distance  = seq(0.2, 10, 0.01), population = 1000)
+newdata = data.frame(distance  = seq(0.1, 10, 0.01), population = 1000)
 pred1 = data.frame(predict(model1, newdata, interval = "pred" )) %>%
   mutate(distance = newdata$distance)
 pred2 = data.frame(predict(model1b, newdata, interval = "pred")) %>%
@@ -213,21 +219,140 @@ ggplot() + geom_ribbon(data = pred1, aes(x = distance, ymin = lwr, ymax = upr), 
   geom_ribbon(data = pred2, aes(x = distance, ymin = lwr, ymax = upr), alpha = 0.5, fill = "red") +
   geom_line(data = pred2, aes(x = distance,y = fit), color ="red") 
 
-
-
 ```
+
+## Transforming covariates
+
+$$
+y_i = \beta_0 + \beta_1 f(x_i) + \epsilon_i
+$$
+- This add flexibility to the model
 
 ## Adding categorical covariates
 
 We want to check weather being in a mall or being in the city center has also an effect on the turnover.
 
-- Fit a model where you have population, log(distance) and you add the variable _mall_
-- How do you interpred the pararameter for mall?
+- Fit a model where you have population, log(distance) and you add the variable *mall* and *central*
+- How do you interpret the new parameters?
+
+## Adding categorical covariates {.smaller}
+
+```{r}
+model2 = lm(turnover ~ population + log(distance) + mall + central, data = groceries)
+summary(model2)
+```
+
+- If the store in a mall it will, all other variable being equal, earn ca 46 000 NOK more per week compared to one that is not in the mall. This effect does not seem to be significant
+
+- Holding population, distance and mall status constant, the model predicts that city-centre stores have approximately 345,000 NOK lower weekly turnover than stores outside the city centre.
+
+
+## Categorical variable - encoding
+
+- Because mall and central are coded 0/1, the model compares:
+
+  - mall = 1 vs mall = 0
+  - central = 1 vs central = 0
+
+- The coefficients for mall and central describe the difference relative to the 0 category (in this case "not in the mall" and "not in the center"), while keeping population and distance fixed.
+
+- The same principle applies for multiple categories, one is the reference one, the effect are differences from the reference category.
 
 
 ## Adding categorical covariates
 
+
+- Compare the predicted turnover for two shops, both in mall, one in the  center and one not, with population 1000 and distance from 0 to 5 Km
+- Add the confidence interval to the previous plot
+- Now add prediction uncertainty to the previous plot, what is the difference? what do you notice?
+
+
+
+## Adding categorical covariates {.smaller}
+
 ```{r}
-model2 = lm(turnover ~ population + log(distance) + mall, data = groceries)
-summary(model2)
+
+ndata  = data.frame(population = 2000, 
+                    distance = rep(seq(1,10),2),
+                    mall  = rep(c(1,1), each = 10),
+                    central = rep(c(0,1), each =10))
+
+ndata = ndata %>% mutate(pred = predict(model2, ndata))
+ndata %>% ggplot() + 
+  geom_line(aes(distance, pred, group = central, color  = factor(central)))
+                                
 ```
+
+## Confidence interval {.smaller}
+
+```{r}
+
+ndata  = data.frame(population = 2000, 
+                    distance = rep(seq(1,10),2),
+                    mall  = rep(c(1,1), each = 10),
+                    central = rep(c(0,1), each =10))
+
+pp =   predict(model2, ndata, interval = "confidence")
+plot = cbind(ndata,pp) %>% ggplot() + 
+  geom_line(aes(distance, fit, group = central, color  = factor(central))) +
+  geom_ribbon(aes(distance, ymin = lwr, ymax = upr, group = central, fill  = factor(central)), alpha = 0.5)
+
+plot                                
+```
+
+## Confidence and prediction interval {.smaller}
+
+```{r}
+
+ndata  = data.frame(population = 2000, 
+                    distance = rep(seq(1,10),2),
+                    mall  = rep(c(1,1), each = 10),
+                    central = rep(c(0,1), each =10))
+
+pp =   predict(model2, ndata, interval = "pred")
+
+plot + 
+#cbind(ndata,pp) %>% ggplot() + 
+#  geom_line(aes(distance, fit, group = central, color  = factor(central))) +
+  geom_ribbon(data= cbind(ndata,pp), aes(distance, ymin = lwr, ymax = upr, group = central, fill  = factor(central)), alpha = 0.3)
+                                
+```
+
+
+## Interactions
+
+What happen if the shop is in a mall *and* in the city center?
+
+- Fit a model where *mall* and *central* interact with each other
+- If population and distance are the same, what is the predicted turnover for a shop that is in a mall in the city center compared with a shop that is in the center outside a mall?
+
+## Interactions
+
+```{r}
+model3 = lm(turnover ~ population + log(distance) + mall * central, data = groceries)
+summary(model3)
+```
+
+## Interactions{.smaller}
+
+You are building a new store and have two locations to consider. Both are outside of a city center and have about 2500 inhabitants within the nearest 1 km. 
+
+The first location has a distance of 2 km to the nearest competitor, and is not within a mall. The second location is only 0.5 km from the nearest competitor, but is within a mall. 
+
+What is predicted turnover at the two locations? 
+Calculate 95% prediction intervals. 
+Is it clear, from the model, which location you should prefer?
+
+Use the model with interactions to evaluate this.
+
+##
+
+
+```{r}
+ndata = data.frame(distance = c(2, 0.5),
+                   population = c(2500,2500),
+                   mall = c(0,1),
+                   central = c(0,0))
+predict(model2, ndata, interval = "pred")
+```
+
