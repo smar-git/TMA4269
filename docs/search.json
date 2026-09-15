@@ -4,7 +4,7 @@
     "href": "regression2.html#our-data",
     "title": "Multiple Linear Regression",
     "section": "Our Data",
-    "text": "Our Data\nRead the groceries.csv dataset.\nHere you find the follwing variables:\n\nturnover: Weekly turnover (measured in 1000 NOK).\npopulation: Number of people living within 1 km of the store.\ndistance: Distance (in km) to the nearest competing grocery store.\ncentral: Indicator variable equal to 1 if the store is located in a city center, 0 otherwise.\nmall: Indicator variable equal to 1 if the store lies within a mall (shopping center), 0 otherwise.\n\nOur interest lies in predicting the turnover based on the other available data."
+    "text": "Our Data\nToday we will work with the (simulated) groceries.csv dataset.\nHere you find the following variables:\n\nturnover: Weekly turnover (measured in 1000 NOK).\npopulation: Number of people living within 1 km of the store.\ndistance: Distance (in km) to the nearest competing grocery store.\ncentral: Indicator variable equal to 1 if the store is located in a city center, 0 otherwise.\nmall: Indicator variable equal to 1 if the store lies within a mall (shopping center), 0 otherwise.\n\nOur interest lies in predicting the turnover based on the other available data."
   },
   {
     "objectID": "regression2.html#exploratory-analysis",
@@ -95,7 +95,7 @@
     "href": "regression2.html#adding-categorical-covariates-1",
     "title": "Multiple Linear Regression",
     "section": "Adding categorical covariates",
-    "text": "Adding categorical covariates\n\n\n\nCall:\nlm(formula = turnover ~ population + log(distance) + mall + central, \n    data = groceries)\n\nResiduals:\n    Min      1Q  Median      3Q     Max \n-369.47  -78.95   -0.49   92.19  383.18 \n\nCoefficients:\n                Estimate Std. Error t value Pr(&gt;|t|)    \n(Intercept)    214.17689   40.16125   5.333 4.37e-07 ***\npopulation       0.38334    0.01412  27.145  &lt; 2e-16 ***\nlog(distance)  245.60186   17.33399  14.169  &lt; 2e-16 ***\nmall            46.43245   25.37713   1.830   0.0697 .  \ncentral       -344.88252   25.27317 -13.646  &lt; 2e-16 ***\n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\nResidual standard error: 128.4 on 125 degrees of freedom\nMultiple R-squared:  0.9155,    Adjusted R-squared:  0.9128 \nF-statistic: 338.4 on 4 and 125 DF,  p-value: &lt; 2.2e-16\n\n\n\nIf the store in a mall it will, all other variable being equal, earn ca 46 000 NOK more per week compared to one that is not in the mall. This effect does not seem to be significant\nHolding population, distance and mall status constant, the model predicts that city-centre stores have approximately 345,000 NOK lower weekly turnover than stores outside the city centre."
+    "text": "Adding categorical covariates\n\n\n\nCall:\nlm(formula = turnover ~ population + log(distance) + mall + central, \n    data = groceries)\n\nResiduals:\n    Min      1Q  Median      3Q     Max \n-369.47  -78.95   -0.49   92.19  383.18 \n\nCoefficients:\n                Estimate Std. Error t value Pr(&gt;|t|)    \n(Intercept)    214.17689   40.16125   5.333 4.37e-07 ***\npopulation       0.38334    0.01412  27.145  &lt; 2e-16 ***\nlog(distance)  245.60186   17.33399  14.169  &lt; 2e-16 ***\nmall            46.43245   25.37713   1.830   0.0697 .  \ncentral       -344.88252   25.27317 -13.646  &lt; 2e-16 ***\n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\nResidual standard error: 128.4 on 125 degrees of freedom\nMultiple R-squared:  0.9155,    Adjusted R-squared:  0.9128 \nF-statistic: 338.4 on 4 and 125 DF,  p-value: &lt; 2.2e-16\n\n\n\nIf the store is in a mall it will, all other variable being equal, earn ca 46 000 NOK more per week compared to one that is not in a mall. This effect does not seem to be significant.\nHolding population, distance and mall status constant, the model predicts that city-centre stores have approximately 345 000 NOK lower weekly turnover than stores outside the city centre."
   },
   {
     "objectID": "Data_visualization2.html#first-create-groups-in-canvas",
@@ -921,7 +921,7 @@
     "href": "regression2.html#adding-categorical-covariates-2",
     "title": "Multiple Linear Regression",
     "section": "Adding categorical covariates",
-    "text": "Adding categorical covariates\n\nCompare the predicted turnover for two shops, both in mall, one in the center and one not, with population 1000 and distance from 0 to 5 Km\nAdd the confidence interval to the previous plot\nNow add prediction uncertainty to the previous plot, what is the difference? what do you notice?"
+    "text": "Adding categorical covariates\n\nPlot the predicted turnover for two shops, both in a mall, one in the center and one not, with population 1000 and distances to the nearest competitor ranging from 0.1 to 5 km (no intervals).\nAdd confidence intervals to the plot\nAdd prediction intervals to the plot\nWhat is the difference between these two types of intervals?"
   },
   {
     "objectID": "regression2.html#adding-categorical-covariates-3",
@@ -1020,5 +1020,19 @@
     "title": "Multiple Linear Regression",
     "section": "Interactions",
     "text": "Interactions\nYou are building a new store and have two locations to consider. Both are outside of a city center and have about 2500 inhabitants within the nearest 1 km.\nThe first location has a distance of 2 km to the nearest competitor, and is not within a mall. The second location is only 0.5 km from the nearest competitor, but is within a mall.\nWhat is predicted turnover at the two locations? Calculate 95% prediction intervals. Is it clear, from the model, which location you should prefer?\nUse the model with interactions to evaluate this."
+  },
+  {
+    "objectID": "regression2.html#multiple-linear-regression",
+    "href": "regression2.html#multiple-linear-regression",
+    "title": "Multiple Linear Regression",
+    "section": "Multiple Linear Regression",
+    "text": "Multiple Linear Regression\nLearning goals for today:\n\nFit a linear regression model and interpret the output (result)\nEvaluate the model using \\(R^2\\) and residual plots\nBuild the model using\n\nmultiple covariates\ntransformations\ncategorical variables\ninteractions\n\nMake predictions from the model, including prediction uncertainty"
+  },
+  {
+    "objectID": "regression2.html#todays-exercise",
+    "href": "regression2.html#todays-exercise",
+    "title": "Multiple Linear Regression",
+    "section": "Todays exercise",
+    "text": "Todays exercise\n\nLog into Canvas\nFind the assignment Regression Week 36 (no deliverables, practice only)\nYou’ll find two files:\n\nData: groceries.csv\nInstructions: lin_reg_week38.ipynb\n\nDownload both of them\nLog into NTNU JupyterHub https://jupyter.ntnu.no/\nDrag the files into the workspace. Here you find code for some of todays tasks. The remaining tasks we expect you to complete using AI."
   }
 ]
