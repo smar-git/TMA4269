@@ -37,7 +37,7 @@ Category 3: Originality Group 7
 ## Time table {.smaller}
 
 | Week | Date          |                Planned Activity |         Delivery         |
-|------------------|:-----------------|-----------------:|:----------------:|
+|------|:--------------|--------------------------------:|:------------------------:|
 | 35   | ~~Wed 26.08~~ |        ~~Visualization/Python~~ | ~~Yes (does not count)~~ |
 |      | ~~Fri 28.08~~ |             ~~Telling stories~~ |    ~~Yes (5 points)~~    |
 | 36   | ~~Wed 02.09~~ |        ~~Visualization/Python~~ |    ~~Yes (5 points)~~    |
