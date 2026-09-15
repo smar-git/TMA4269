@@ -4,7 +4,7 @@
     "href": "regression2.html#our-data",
     "title": "Multiple Linear Regression",
     "section": "Our Data",
-    "text": "Our Data\nRead the groceries.csv dataset.\nHere you find the follwing variables:\n\nturnover: Weekly turnover (measured in 1000 NOK).\npopulation: Number of people living within 1 km of the store.\ndistance: Distance (in km) to the nearest competing grocery store.\ncentral: Indicator variable equal to 1 if the store is located in a city center, 0 otherwise.\nmall: Indicator variable equal to 1 if the store lies within a mall (shopping center), 0 otherwise.\n\nOur interest lies in predicting the turnover based on the other available data."
+    "text": "Our Data\nToday we will work with the (simulated) groceries.csv dataset.\nHere you find the following variables:\n\nturnover: Weekly turnover (measured in 1000 NOK).\npopulation: Number of people living within 1 km of the store.\ndistance: Distance (in km) to the nearest competing grocery store.\ncentral: Indicator variable equal to 1 if the store is located in a city center, 0 otherwise.\nmall: Indicator variable equal to 1 if the store lies within a mall (shopping center), 0 otherwise.\n\nOur interest lies in predicting the turnover based on the other available data."
   },
   {
     "objectID": "regression2.html#exploratory-analysis",
@@ -12,13 +12,6 @@
     "title": "Multiple Linear Regression",
     "section": "Exploratory analysis",
     "text": "Exploratory analysis\n\nCreate some plots to explore the relationship between turnover and the other variables\nWhich quantities appear to influence the turnover?"
-  },
-  {
-    "objectID": "regression2.html#exploratory-plots",
-    "href": "regression2.html#exploratory-plots",
-    "title": "Multiple Linear Regression",
-    "section": "Exploratory Plots",
-    "text": "Exploratory Plots"
   },
   {
     "objectID": "regression2.html#simple-linear-regression",
@@ -70,13 +63,6 @@
     "text": "Model assumption and residuals\nRemember: \\[y_i = \\underbrace{\\beta_0 + \\beta_1\\ x_i}_{\\text{Sistematic part}} + \\underbrace{\\epsilon_i}_{\\text{Random part/ error}}, \\qquad \\epsilon_i\\sim\\mathcal{N}(0,\\sigma^2)\\]\nThe key assumption we check with residuals is:\nThe errors should behave like (gaussian) random noise.\nA residual plot should therefore show:\n\nRandom scatter around 0\nRoughly the same amount of spread across the range\nNo obvious curve or other pattern\nNo “funnel” shape"
   },
   {
-    "objectID": "regression2.html#how-residual-plots-should-not-look-like",
-    "href": "regression2.html#how-residual-plots-should-not-look-like",
-    "title": "Multiple Linear Regression",
-    "section": "How residual plots should not look like…",
-    "text": "How residual plots should not look like…"
-  },
-  {
     "objectID": "regression2.html#improving-the-model",
     "href": "regression2.html#improving-the-model",
     "title": "Multiple Linear Regression",
@@ -91,25 +77,11 @@
     "text": "Improving the model\nModel 0 (only population)\n\n\n\nCall:\nlm(formula = turnover ~ population, data = groceries)\n\nResiduals:\n    Min      1Q  Median      3Q     Max \n-756.00 -207.81   11.03  218.85  712.81 \n\nCoefficients:\n            Estimate Std. Error t value Pr(&gt;|t|)    \n(Intercept) 251.2913    79.2203   3.172   0.0019 ** \npopulation    0.3939     0.0308  12.790   &lt;2e-16 ***\n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\nResidual standard error: 289.1 on 128 degrees of freedom\nMultiple R-squared:  0.561, Adjusted R-squared:  0.5576 \nF-statistic: 163.6 on 1 and 128 DF,  p-value: &lt; 2.2e-16\n\n\nModel 1 ( population + distance)\n\n\n\nCall:\nlm(formula = turnover ~ population + distance, data = groceries)\n\nResiduals:\n   Min     1Q Median     3Q    Max \n-529.7 -208.6    4.2  184.3  534.1 \n\nCoefficients:\n            Estimate Std. Error t value Pr(&gt;|t|)    \n(Intercept) -70.1711    72.7041  -0.965    0.336    \npopulation    0.3754     0.0245  15.322  &lt; 2e-16 ***\ndistance    132.5288    15.1192   8.766 1.02e-14 ***\n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\nResidual standard error: 229.1 on 127 degrees of freedom\nMultiple R-squared:  0.7265,    Adjusted R-squared:  0.7222 \nF-statistic: 168.7 on 2 and 127 DF,  p-value: &lt; 2.2e-16"
   },
   {
-    "objectID": "regression2.html#transforming-covariates",
-    "href": "regression2.html#transforming-covariates",
+    "objectID": "regression2.html#improving-the-model-2",
+    "href": "regression2.html#improving-the-model-2",
     "title": "Multiple Linear Regression",
-    "section": "Transforming covariates",
-    "text": "Transforming covariates\n\nYou could consider instead to use log(distance), why would that make sense? Does the effect of distance appear to be the same everywhere? For example, would increasing distance from 1 → 2 km have the same effect as increasing it from 8 → 9 km?\nPlot the predicted turnover for both model when population is 1000 and the distance goes from 0.1 to 10 km. (You can add prediction uncertainties). What do you notice?"
-  },
-  {
-    "objectID": "regression2.html#transforming-covariates-1",
-    "href": "regression2.html#transforming-covariates-1",
-    "title": "Multiple Linear Regression",
-    "section": "Transforming covariates",
-    "text": "Transforming covariates"
-  },
-  {
-    "objectID": "regression2.html#transforming-covariates-2",
-    "href": "regression2.html#transforming-covariates-2",
-    "title": "Multiple Linear Regression",
-    "section": "Transforming covariates",
-    "text": "Transforming covariates\n\\[\ny_i = \\beta_0 + \\beta_1 f(x_i) + \\epsilon_i\n\\] - This add flexibility to the model"
+    "section": "Improving the model",
+    "text": "Improving the model"
   },
   {
     "objectID": "regression2.html#adding-categorical-covariates",
@@ -123,70 +95,7 @@
     "href": "regression2.html#adding-categorical-covariates-1",
     "title": "Multiple Linear Regression",
     "section": "Adding categorical covariates",
-    "text": "Adding categorical covariates\n\n\n\nCall:\nlm(formula = turnover ~ population + log(distance) + mall + central, \n    data = groceries)\n\nResiduals:\n    Min      1Q  Median      3Q     Max \n-369.47  -78.95   -0.49   92.19  383.18 \n\nCoefficients:\n                Estimate Std. Error t value Pr(&gt;|t|)    \n(Intercept)    214.17689   40.16125   5.333 4.37e-07 ***\npopulation       0.38334    0.01412  27.145  &lt; 2e-16 ***\nlog(distance)  245.60186   17.33399  14.169  &lt; 2e-16 ***\nmall            46.43245   25.37713   1.830   0.0697 .  \ncentral       -344.88252   25.27317 -13.646  &lt; 2e-16 ***\n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\nResidual standard error: 128.4 on 125 degrees of freedom\nMultiple R-squared:  0.9155,    Adjusted R-squared:  0.9128 \nF-statistic: 338.4 on 4 and 125 DF,  p-value: &lt; 2.2e-16\n\n\n\nIf the store in a mall it will, all other variable being equal, earn ca 46 000 NOK more per week compared to one that is not in the mall. This effect does not seem to be significant\nHolding population, distance and mall status constant, the model predicts that city-centre stores have approximately 345,000 NOK lower weekly turnover than stores outside the city centre."
-  },
-  {
-    "objectID": "regression2.html#categorical-variable---encoding",
-    "href": "regression2.html#categorical-variable---encoding",
-    "title": "Multiple Linear Regression",
-    "section": "Categorical variable - encoding",
-    "text": "Categorical variable - encoding\n\nBecause mall and central are coded 0/1, the model compares:\n\nmall = 1 vs mall = 0\ncentral = 1 vs central = 0\n\nThe coefficients for mall and central describe the difference relative to the 0 category (in this case “not in the mall” and “not in the center”), while keeping population and distance fixed.\nThe same principle applies for multiple categories, one is the reference one, the effect are differences from the reference category."
-  },
-  {
-    "objectID": "regression2.html#adding-categorical-covariates-2",
-    "href": "regression2.html#adding-categorical-covariates-2",
-    "title": "Multiple Linear Regression",
-    "section": "Adding categorical covariates",
-    "text": "Adding categorical covariates\n\nCompare the predicted turnover for two shops, both in mall, one in the center and one not, with population 1000 and distance from 0 to 5 Km\nAdd the confidence interval to the previous plot\nNow add prediction uncertainty to the previous plot, what is the difference? what do you notice?"
-  },
-  {
-    "objectID": "regression2.html#adding-categorical-covariates-3",
-    "href": "regression2.html#adding-categorical-covariates-3",
-    "title": "Multiple Linear Regression",
-    "section": "Adding categorical covariates",
-    "text": "Adding categorical covariates"
-  },
-  {
-    "objectID": "regression2.html#confidence-interval",
-    "href": "regression2.html#confidence-interval",
-    "title": "Multiple Linear Regression",
-    "section": "Confidence interval",
-    "text": "Confidence interval"
-  },
-  {
-    "objectID": "regression2.html#confidence-and-prediction-interval",
-    "href": "regression2.html#confidence-and-prediction-interval",
-    "title": "Multiple Linear Regression",
-    "section": "Confidence and prediction interval",
-    "text": "Confidence and prediction interval"
-  },
-  {
-    "objectID": "regression2.html#interactions",
-    "href": "regression2.html#interactions",
-    "title": "Multiple Linear Regression",
-    "section": "Interactions",
-    "text": "Interactions\nWhat happen if the shop is in a mall and in the city center?\n\nFit a model where mall and central interact with each other\nIf population and distance are the same, what is the predicted turnover for a shop that is in a mall in the city center compared with a shop that is in the center outside a mall?"
-  },
-  {
-    "objectID": "regression2.html#interactions-1",
-    "href": "regression2.html#interactions-1",
-    "title": "Multiple Linear Regression",
-    "section": "Interactions",
-    "text": "Interactions\n\n\n\nCall:\nlm(formula = turnover ~ population + log(distance) + mall * central, \n    data = groceries)\n\nResiduals:\n    Min      1Q  Median      3Q     Max \n-379.19  -86.07   -1.04   84.41  354.02 \n\nCoefficients:\n                Estimate Std. Error t value Pr(&gt;|t|)    \n(Intercept)    135.59153   45.91608   2.953 0.003765 ** \npopulation       0.38944    0.01376  28.297  &lt; 2e-16 ***\nlog(distance)  253.49006   16.91116  14.990  &lt; 2e-16 ***\nmall           124.47676   34.60382   3.597 0.000463 ***\ncentral       -263.11811   35.36725  -7.440 1.46e-11 ***\nmall:central  -156.34311   48.96914  -3.193 0.001787 ** \n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\nResidual standard error: 123.9 on 124 degrees of freedom\nMultiple R-squared:  0.9219,    Adjusted R-squared:  0.9187 \nF-statistic: 292.7 on 5 and 124 DF,  p-value: &lt; 2.2e-16"
-  },
-  {
-    "objectID": "regression2.html#interactions-2",
-    "href": "regression2.html#interactions-2",
-    "title": "Multiple Linear Regression",
-    "section": "Interactions",
-    "text": "Interactions\nYou are building a new store and have two locations to consider. Both are outside of a city center and have about 2500 inhabitants within the nearest 1 km.\nThe first location has a distance of 2 km to the nearest competitor, and is not within a mall. The second location is only 0.5 km from the nearest competitor, but is within a mall.\nWhat is predicted turnover at the two locations? Calculate 95% prediction intervals. Is it clear, from the model, which location you should prefer?\nUse the model with interactions to evaluate this."
-  },
-  {
-    "objectID": "regression2.html#section",
-    "href": "regression2.html#section",
-    "title": "Multiple Linear Regression",
-    "section": "",
-    "text": "fit      lwr      upr\n1 1342.762 1083.817 1601.708\n2 1048.718  786.442 1310.995"
+    "text": "Adding categorical covariates\n\n\n\nCall:\nlm(formula = turnover ~ population + log(distance) + mall + central, \n    data = groceries)\n\nResiduals:\n    Min      1Q  Median      3Q     Max \n-369.47  -78.95   -0.49   92.19  383.18 \n\nCoefficients:\n                Estimate Std. Error t value Pr(&gt;|t|)    \n(Intercept)    214.17689   40.16125   5.333 4.37e-07 ***\npopulation       0.38334    0.01412  27.145  &lt; 2e-16 ***\nlog(distance)  245.60186   17.33399  14.169  &lt; 2e-16 ***\nmall            46.43245   25.37713   1.830   0.0697 .  \ncentral       -344.88252   25.27317 -13.646  &lt; 2e-16 ***\n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\nResidual standard error: 128.4 on 125 degrees of freedom\nMultiple R-squared:  0.9155,    Adjusted R-squared:  0.9128 \nF-statistic: 338.4 on 4 and 125 DF,  p-value: &lt; 2.2e-16\n\n\n\nIf the store is in a mall it will, all other variable being equal, earn ca 46 000 NOK more per week compared to one that is not in a mall. This effect does not seem to be significant.\nHolding population, distance and mall status constant, the model predicts that city-centre stores have approximately 345 000 NOK lower weekly turnover than stores outside the city centre."
   },
   {
     "objectID": "Data_visualization2.html#first-create-groups-in-canvas",
@@ -1006,5 +915,124 @@
     "title": "Linear Regression",
     "section": "Take-home message",
     "text": "Take-home message\nLinear regression is a way to compare and explain relationships\n\nSimple regression with a binary predictor is essentially a comparison of two group means.\nMultiple regression lets us compare groups while accounting for other variables.\nEach coefficient describes the association between a predictor and the outcome holding the other predictors constant.\nA coefficient tells us how much the predicted outcome changes for a one-unit change in the predictor.\nRegression does not automatically imply causation. Adjustment can reduce confounding, but it does not guarantee a causal interpretation.\n\n\nRegression lets us make more informative comparisons by considering several variables at the same time."
+  },
+  {
+    "objectID": "regression2.html#adding-categorical-covariates-2",
+    "href": "regression2.html#adding-categorical-covariates-2",
+    "title": "Multiple Linear Regression",
+    "section": "Adding categorical covariates",
+    "text": "Adding categorical covariates\n\nPlot the predicted turnover for two shops, both in a mall, one in the center and one not, with population 1000 and distances to the nearest competitor ranging from 0.1 to 5 km (no intervals).\nAdd confidence intervals to the plot\nAdd prediction intervals to the plot\nWhat is the difference between these two types of intervals?"
+  },
+  {
+    "objectID": "regression2.html#adding-categorical-covariates-3",
+    "href": "regression2.html#adding-categorical-covariates-3",
+    "title": "Multiple Linear Regression",
+    "section": "Adding categorical covariates",
+    "text": "Adding categorical covariates"
+  },
+  {
+    "objectID": "regression2.html#interactions",
+    "href": "regression2.html#interactions",
+    "title": "Multiple Linear Regression",
+    "section": "Interactions",
+    "text": "Interactions\nWhat happen if the shop is in a mall and in the city center?\n\nFit a model where mall and central interact with each other\nIf population and distance are the same, what is the predicted turnover for a shop that is in a mall in the city center compared with a shop that is in the center outside a mall?"
+  },
+  {
+    "objectID": "regression2.html#exploratory-plots",
+    "href": "regression2.html#exploratory-plots",
+    "title": "Multiple Linear Regression",
+    "section": "Exploratory Plots",
+    "text": "Exploratory Plots"
+  },
+  {
+    "objectID": "regression2.html#how-residual-plots-should-not-look-like",
+    "href": "regression2.html#how-residual-plots-should-not-look-like",
+    "title": "Multiple Linear Regression",
+    "section": "How residual plots should not look like…",
+    "text": "How residual plots should not look like…"
+  },
+  {
+    "objectID": "regression2.html#categorical-variable---encoding",
+    "href": "regression2.html#categorical-variable---encoding",
+    "title": "Multiple Linear Regression",
+    "section": "Categorical variable - encoding",
+    "text": "Categorical variable - encoding\n\nBecause mall and central are coded 0/1, the model compares:\n\nmall = 1 vs mall = 0\ncentral = 1 vs central = 0\n\nThe coefficients for mall and central describe the difference relative to the 0 category (in this case “not in the mall” and “not in the center”), while keeping population and distance fixed.\nThe same principle applies for multiple categories, one is the reference one, the effect are differences from the reference category."
+  },
+  {
+    "objectID": "regression2.html#interactions-1",
+    "href": "regression2.html#interactions-1",
+    "title": "Multiple Linear Regression",
+    "section": "Interactions",
+    "text": "Interactions\n\n\n\nCall:\nlm(formula = turnover ~ population + log(distance) + mall * central, \n    data = groceries)\n\nResiduals:\n    Min      1Q  Median      3Q     Max \n-379.19  -86.07   -1.04   84.41  354.02 \n\nCoefficients:\n                Estimate Std. Error t value Pr(&gt;|t|)    \n(Intercept)    135.59153   45.91608   2.953 0.003765 ** \npopulation       0.38944    0.01376  28.297  &lt; 2e-16 ***\nlog(distance)  253.49006   16.91116  14.990  &lt; 2e-16 ***\nmall           124.47676   34.60382   3.597 0.000463 ***\ncentral       -263.11811   35.36725  -7.440 1.46e-11 ***\nmall:central  -156.34311   48.96914  -3.193 0.001787 ** \n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\nResidual standard error: 123.9 on 124 degrees of freedom\nMultiple R-squared:  0.9219,    Adjusted R-squared:  0.9187 \nF-statistic: 292.7 on 5 and 124 DF,  p-value: &lt; 2.2e-16"
+  },
+  {
+    "objectID": "regression2.html#section",
+    "href": "regression2.html#section",
+    "title": "Multiple Linear Regression",
+    "section": "",
+    "text": "fit      lwr      upr\n1 1342.762 1083.817 1601.708\n2 1048.718  786.442 1310.995"
+  },
+  {
+    "objectID": "regression2.html#transforming-covariates",
+    "href": "regression2.html#transforming-covariates",
+    "title": "Multiple Linear Regression",
+    "section": "Transforming covariates",
+    "text": "Transforming covariates\n\nYou could consider instead to use log(distance), why would that make sense? Does the effect of distance appear to be the same everywhere? For example, would increasing distance from 1 → 2 km have the same effect as increasing it from 8 → 9 km?\nPlot the predicted turnover for both model when population is 1000 and the distance goes from 0.1 to 10 km. (You can add prediction uncertainties). What do you notice?"
+  },
+  {
+    "objectID": "regression2.html#transforming-covariates-1",
+    "href": "regression2.html#transforming-covariates-1",
+    "title": "Multiple Linear Regression",
+    "section": "Transforming covariates",
+    "text": "Transforming covariates"
+  },
+  {
+    "objectID": "regression2.html#transforming-covariates-2",
+    "href": "regression2.html#transforming-covariates-2",
+    "title": "Multiple Linear Regression",
+    "section": "Transforming covariates",
+    "text": "Transforming covariates\n\\[\ny_i = \\beta_0 + \\beta_1 f(x_i) + \\epsilon_i\n\\] - This add flexibility to the model"
+  },
+  {
+    "objectID": "regression2.html#adding-categorical-covariates-4",
+    "href": "regression2.html#adding-categorical-covariates-4",
+    "title": "Multiple Linear Regression",
+    "section": "Adding categorical covariates",
+    "text": "Adding categorical covariates"
+  },
+  {
+    "objectID": "regression2.html#confidence-interval",
+    "href": "regression2.html#confidence-interval",
+    "title": "Multiple Linear Regression",
+    "section": "Confidence interval",
+    "text": "Confidence interval"
+  },
+  {
+    "objectID": "regression2.html#confidence-and-prediction-interval",
+    "href": "regression2.html#confidence-and-prediction-interval",
+    "title": "Multiple Linear Regression",
+    "section": "Confidence and prediction interval",
+    "text": "Confidence and prediction interval"
+  },
+  {
+    "objectID": "regression2.html#interactions-2",
+    "href": "regression2.html#interactions-2",
+    "title": "Multiple Linear Regression",
+    "section": "Interactions",
+    "text": "Interactions\nYou are building a new store and have two locations to consider. Both are outside of a city center and have about 2500 inhabitants within the nearest 1 km.\nThe first location has a distance of 2 km to the nearest competitor, and is not within a mall. The second location is only 0.5 km from the nearest competitor, but is within a mall.\nWhat is predicted turnover at the two locations? Calculate 95% prediction intervals. Is it clear, from the model, which location you should prefer?\nUse the model with interactions to evaluate this."
+  },
+  {
+    "objectID": "regression2.html#multiple-linear-regression",
+    "href": "regression2.html#multiple-linear-regression",
+    "title": "Multiple Linear Regression",
+    "section": "Multiple Linear Regression",
+    "text": "Multiple Linear Regression\nLearning goals for today:\n\nFit a linear regression model and interpret the output (result)\nEvaluate the model using \\(R^2\\) and residual plots\nBuild the model using\n\nmultiple covariates\ntransformations\ncategorical variables\ninteractions\n\nMake predictions from the model, including prediction uncertainty"
+  },
+  {
+    "objectID": "regression2.html#todays-exercise",
+    "href": "regression2.html#todays-exercise",
+    "title": "Multiple Linear Regression",
+    "section": "Todays exercise",
+    "text": "Todays exercise\n\nLog into Canvas\nFind the assignment Regression Week 36 (no deliverables, practice only)\nYou’ll find two files:\n\nData: groceries.csv\nInstructions: lin_reg_week38.ipynb\n\nDownload both of them\nLog into NTNU JupyterHub https://jupyter.ntnu.no/\nDrag the files into the workspace. Here you find code for some of todays tasks. The remaining tasks we expect you to complete using AI."
   }
 ]

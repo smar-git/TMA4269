@@ -6,8 +6,8 @@
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dc55a5b9e770e841cd82e46aadbfb9b0.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.8.24">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.7.32">
 
   <title>TMA4269 – Multiple Linear Regression</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -28,7 +28,7 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="site_libs/revealjs/dist/theme/quarto-534cd8e3a96973385dffff3f4709048d.css">
+  <link rel="stylesheet" href="site_libs/revealjs/dist/theme/quarto-f563837468303362081e247dddd440d0.css">
   <link href="site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -132,10 +132,26 @@
 </div>
 
 </section>
+<section id="multiple-linear-regression" class="slide level2">
+<h2>Multiple Linear Regression</h2>
+<p>Learning goals for today:</p>
+<ul>
+<li><p>Fit a linear regression model and interpret the output (result)</p></li>
+<li><p>Evaluate the model using <span class="math inline">\(R^2\)</span> and residual plots</p></li>
+<li><p>Build the model using</p>
+<ul>
+<li>multiple covariates</li>
+<li>transformations</li>
+<li>categorical variables</li>
+<li>interactions</li>
+</ul></li>
+<li><p>Make predictions from the model, including prediction uncertainty</p></li>
+</ul>
+</section>
 <section id="our-data" class="slide level2 smaller">
 <h2>Our Data</h2>
-<p>Read the <em>groceries.csv</em> dataset.</p>
-<p>Here you find the follwing variables:</p>
+<p>Today we will work with the (simulated) <em>groceries.csv</em> dataset.</p>
+<p>Here you find the following variables:</p>
 <ul>
 <li><strong>turnover</strong>: Weekly turnover (measured in 1000 NOK).</li>
 <li><strong>population</strong>: Number of people living within 1 km of the store.</li>
@@ -144,6 +160,21 @@
 <li><strong>mall</strong>: Indicator variable equal to 1 if the store lies within a mall (shopping center), 0 otherwise.</li>
 </ul>
 <p>Our interest lies in predicting the turnover based on the other available data.</p>
+</section>
+<section id="todays-exercise" class="slide level2 smaller">
+<h2>Todays exercise</h2>
+<ul>
+<li><p>Log into Canvas</p></li>
+<li><p>Find the assignment <strong>Regression Week 36</strong> (no deliverables, practice only)</p></li>
+<li><p>You’ll find two files:</p>
+<ol type="1">
+<li>Data: <code>groceries.csv</code></li>
+<li>Instructions: <code>lin_reg_week38.ipynb</code></li>
+</ol></li>
+<li><p>Download both of them</p></li>
+<li><p>Log into NTNU JupyterHub <a href="https://jupyter.ntnu.no/">https://jupyter.ntnu.no/</a></p></li>
+<li><p>Drag the files into the workspace. Here you find code for some of todays tasks. The remaining tasks we expect you to complete using AI.</p></li>
+</ul>
 </section>
 <section id="exploratory-analysis" class="slide level2">
 <h2>Exploratory analysis</h2>
@@ -355,8 +386,8 @@ F-statistic: 338.4 on 4 and 125 DF,  p-value: &lt; 2.2e-16</code></pre>
 </div>
 </div>
 <ul>
-<li><p>If the store in a mall it will, all other variable being equal, earn ca 46 000 NOK more per week compared to one that is not in the mall. This effect does not seem to be significant</p></li>
-<li><p>Holding population, distance and mall status constant, the model predicts that city-centre stores have approximately 345,000 NOK lower weekly turnover than stores outside the city centre.</p></li>
+<li><p>If the store is in a mall it will, all other variable being equal, earn ca 46 000 NOK more per week compared to one that is not in a mall. This effect does not seem to be significant.</p></li>
+<li><p>Holding population, distance and mall status constant, the model predicts that city-centre stores have approximately 345 000 NOK lower weekly turnover than stores outside the city centre.</p></li>
 </ul>
 </section>
 <section id="categorical-variable---encoding" class="slide level2">
@@ -374,9 +405,10 @@ F-statistic: 338.4 on 4 and 125 DF,  p-value: &lt; 2.2e-16</code></pre>
 <section id="adding-categorical-covariates-2" class="slide level2">
 <h2>Adding categorical covariates</h2>
 <ul>
-<li>Compare the predicted turnover for two shops, both in mall, one in the center and one not, with population 1000 and distance from 0 to 5 Km</li>
-<li>Add the confidence interval to the previous plot</li>
-<li>Now add prediction uncertainty to the previous plot, what is the difference? what do you notice?</li>
+<li>Plot the predicted turnover for two shops, both in a mall, one in the center and one not, with population 1000 and distances to the nearest competitor ranging from 0.1 to 5 km (no intervals).</li>
+<li>Add <strong>confidence intervals</strong> to the plot</li>
+<li>Add <strong>prediction intervals</strong> to the plot</li>
+<li>What is the difference between these two types of intervals?</li>
 </ul>
 </section>
 <section id="adding-categorical-covariates-3" class="slide level2 smaller">
@@ -637,7 +669,7 @@ F-statistic: 292.7 on 5 and 124 DF,  p-value: &lt; 2.2e-16</code></pre>
         margin: 0.1,
 
         math: {
-          mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@2.7.9/MathJax.js',
+          mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js',
           config: 'TeX-AMS_HTML-full',
           tex2jax: {
             inlineMath: [['\\(','\\)']],
@@ -749,14 +781,13 @@ F-statistic: 292.7 on 5 and 124 DF,  p-value: &lt; 2.2e-16</code></pre>
           e.clearSelection();
         }
         const getTextToCopy = function(trigger) {
-          const outerScaffold = trigger.parentElement.cloneNode(true);
-          const codeEl = outerScaffold.querySelector('code');
-          for (const childEl of codeEl.children) {
-            if (isCodeAnnotation(childEl)) {
-              childEl.remove();
+            const codeEl = trigger.previousElementSibling.cloneNode(true);
+            for (const childEl of codeEl.children) {
+              if (isCodeAnnotation(childEl)) {
+                childEl.remove();
+              }
             }
-          }
-          return codeEl.innerText;
+            return codeEl.innerText;
         }
         const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
           text: getTextToCopy
