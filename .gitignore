@@ -2,8 +2,20 @@
 .Rhistory
 .RData
 .Ruserdata
-.DS_store
+.DS_Store
 
 /.quarto/
 **/*.quarto_ipynb
-.positai
+
+# Quarto generated asset directories
+*_files/
+docs/site_libs/
+
+# Quarto freeze output
+_freeze/
+
+# Other generated site directory
+_site/
+
+# Generated search index
+/docs/search.json
