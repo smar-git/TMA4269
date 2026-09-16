@@ -323,7 +323,7 @@ $$
 
 **Python:** Do `TASK 7: Add categorical covariates`, use AI if needed.
 
-**Discuss 2:** How do you interpret the new parameters?
+**Discuss:** How do you interpret the new parameters?
 
 ## Adding categorical covariates {.smaller}
 
@@ -347,7 +347,7 @@ model2 = lm(turnover ~ population + log(distance) + mall + central, data = groce
 
 -   The coefficients for mall and central describe the difference relative to the 0 category (in this case "not in the mall" and "not in the center"), while keeping population and distance fixed.
 
--   The same principle applies for variables with multiple categories, one cetagory is the reference one, the effects are differences from the reference category.
+-   The same principle applies for variables with multiple categories, one category is the reference, the effects are differences from the reference category.
 
 ## Adding categorical covariates {.smaller}
 
@@ -363,7 +363,7 @@ $$
 -   Add **confidence intervals** to the plot
 -   Add **prediction intervals** to the plot
 
-**Discuss:** What is the difference between these two types of intervals?
+**Discuss:** What is the difference between these two types of intervals? Why is the prediction interval so wide?
 
 ## Adding categorical covariates
 
@@ -399,11 +399,21 @@ $$
 
 **Python:** Do `TASK 8: Add interaction`, use AI if needed, to fit a model where *mall* and *central* interact with each other.
 
-**Discuss:** If population and distance are the same, what is the predicted turnover for a shop that is in a mall in the city center compared with a shop that is in the center but outside a mall?
+**Discuss:** If population and distance are the same; 
+
+  -   if two shops are in the city center, what is the difference between being in a mall or not?
+  -   if two shops are not in the city center, what is the difference between being in a mall or not?
+
+What is the adjusted $R^2$ for this final model? 
 
 ## Interactions
 
 ![](images/clipboard-1315578469.png)
+
+In city centre: approx 32 000 NOK higher turnover if in a mall
+
+Outside city centre: approx 124 000 NOK higher turnover if in a mall
+
 
 ```{r}
 model3 = lm(turnover ~ population + log(distance) + mall * central, data = groceries)

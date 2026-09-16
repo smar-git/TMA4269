@@ -8,7 +8,7 @@ project:
   - telling_stories.qmd
   - Data_visualization2.qmd
   - regression1.qmd
-  - regression2.qmd
+  - regression2_v2.qmd
 
   
 website:
@@ -35,7 +35,7 @@ website:
       - text: Slides Regression 1
         href: regression1.html
       - text: Slides Regression 2
-        href: regression2.html
+        href: regression2_v2.html
   
 
 format:
