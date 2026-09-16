@@ -5,7 +5,7 @@ execute:
   echo: false
 ---
 
-## Multiple Linear Regression
+## Multiple Linear Regression {.smaller}
 
 Learning goals for today:
 
@@ -13,15 +13,14 @@ Learning goals for today:
 
 -   Evaluate the model using $R^2$ and residual plots
 
--   Build the model using 
-    - multiple covariates
-    - transformations
-    - categorical variables
-    - interactions
-    
+-   Build the model using
+
+    -   multiple covariates
+    -   transformations
+    -   categorical variables
+    -   interactions
+
 -   Make predictions from the model, including prediction uncertainty
-
-
 
 ## Our Data {.smaller}
 
@@ -44,64 +43,80 @@ library(tidyverse)
 rm(list = ls())
 groceries = read.csv("groceries.csv")
 
+model0 = lm(turnover ~ population, data = groceries)
+
 ```
 
-Our interest lies in predicting the turnover based on the other available data.
+Our interest lies in predicting the weekly turnover based on the other available data.
 
-## Todays exercise {.smaller}
-- Log into Canvas 
+## Today's exercise {.smaller}
 
-- Find the assignment **Regression Week 36** (no deliverables, practice only)
+-   Log into Canvas
 
-- You'll find two files:
+-   Find the assignment **Regression Week 36** (no deliverables, practice only)
 
-  1. Data: `groceries.csv`
-  2. Instructions: `lin_reg_week38.ipynb`
-  
-- Download both of them
+-   You'll find two files:
 
-- Log into NTNU JupyterHub [https://jupyter.ntnu.no/](https://jupyter.ntnu.no/)
-  
-- Drag the files into the workspace. Here you find code for some of todays tasks. The remaining tasks we expect you to complete using AI. 
+    1.  Data: `groceries.csv`
+    2.  Instructions: `lin_reg_week38.ipynb`
 
+-   Download both of them
 
+-   Log into NTNU JupyterHub <https://jupyter.ntnu.no/>
+
+-   Drag the files into the workspace. Here you find code for some of todays tasks. The remaining tasks we expect you to complete using AI.
 
 ## Exploratory analysis
 
--   Create some plots to explore the relationship between turnover and the other variables
--   Which quantities appear to influence the turnover?
+**Python:** Complete `TASK 1: Visualize the data`
 
-## Exploratory Plots
+**Discuss:** What do you notice from the plot? Which quantities appear to influence the turnover?
 
-```{r}
-ggpairs(groceries)
+## Exploratory analysis
 
-```
+![](images/clipboard-1339286751.png)
 
 ## Simple linear regression
 
--   Run the linear model where the only covariate is *population*
+**Model 1:**
+
+$$
+\text{turnover} = \beta_0 + \beta_1 \text{population} + \epsilon
+$$
+
+**Python:** Complete `TASK 2: Simple linear regression` where you fit a linear regression model with *population* as the only covariate.
+
+**Discuss:**
+
 -   How do you interpret the two estimated parameters?
--   One of the output of the model is the $R^2$ quantity, can you explain what it is?
+-   One of the outputs of the model is the $R^2$ quantity, can you explain what it is?
 
 ## Simple linear regression {.smaller}
 
-```{r}
-model0 = lm(turnover ~ population, data = groceries)
-summary(model0)
-
-```
+![](images/clipboard-4287424498.png)
 
 -   The intercept is the predicted turnover when population = 0. Is that a realistic situation for these stores?
--   For each extra person living within 1 Km from the shop, the turnover increases by ca 390 NOK
+-   For each extra person living within 1 km from the shop, the weekly turnover increases by approx 390 NOK.
 
 ## Simple linear regression
 
--   Plot the data together with the fitted regression line
--   Add prediction intervals to the line, what do you learn?
--   What is the predicted turnover (with uncertainty) for a shop that in an area where 2000 people live?
+**Model 1:**
+
+$$
+\text{turnover} = \beta_0 + \beta_1 \text{population} + \epsilon
+$$
+
+**Python:** Complete `TASK 3: Visualize the model, including prediction interval`
+
+**Discuss:** What do you notice by looking at the fitted regression line, the data points and the prediction interval? What is the predicted turnover (with uncertainty) for a *new* shop built in an area where 2000 people live?
 
 ## Simple linear regression
+
+![](images/clipboard-2770976451.png)
+
+```         
+Predicted turnover 2000 people: 1039 [464, 1614]
+```
 
 ```{r}
 
@@ -120,42 +135,51 @@ pred <- predict(model0, newdata = newdata, interval = "prediction")
 # Add predictions to newdata
 newdata <- cbind(newdata, as.data.frame(pred))
 
-# Plot
-ggplot() +
-  geom_point(data = groceries, aes(x = population, y = turnover)) +
-  geom_ribbon(
-    data = newdata,
-    aes(x = population, ymin = lwr, ymax = upr),
-    alpha = 0.2
-  ) +
-  geom_line(
-    data = newdata,
-    aes(x = population, y = fit),
-    linewidth = 1
-  ) +
-  labs(
-    x = "Population",
-    y = "Turnover"
-  ) +
-  theme_minimal()
+# # Plot
+# ggplot() +
+#   geom_point(data = groceries, aes(x = population, y = turnover)) +
+#   geom_ribbon(
+#     data = newdata,
+#     aes(x = population, ymin = lwr, ymax = upr),
+#     alpha = 0.2
+#   ) +
+#   geom_line(
+#     data = newdata,
+#     aes(x = population, y = fit),
+#     linewidth = 1
+#   ) +
+#   labs(
+#     x = "Population",
+#     y = "Turnover"
+#   ) +
+#   theme_minimal()
 ```
 
 ```{r}
 
 pred <- predict(model0, newdata = data.frame(population = 2000), interval = "prediction")
-pred
+# pred
 ```
 
-## Simple linear regression - residuals
+## Simple linear regression: residuals {.smaller}
 
-The residuals, in this case, are defined as the observed minus the predicted turnover
+**Model 1:**
 
--   Compute the residuals and plot them
--   Create a QQ plot of the residuals, what does this indicate?
--   What are we looking for in a residual plot?
--   Which model assumption are we checking when looking at residuals?
+$$
+\text{turnover} = \beta_0 + \beta_1 \text{population} + \epsilon
+$$
 
-## Simple linear regression - residuals
+**Definition:** The residuals, in this case, are defined as the *observed* minus the *predicted* turnover
+
+**Python:** Do `TASK 4: Residuals` where you are given code to compute residuals and standardized residuals, and plotting two common diagnostic plots.
+
+**Discuss:** What do you remember from a basic statistics course about these plots? What are we looking for?
+
+How are the residuals related to the mathematical model formulation, and how should the residuals behave?
+
+## Simple linear regression: residuals
+
+![](images/clipboard-2332403411.png)
 
 ```{r}
 res = data.frame(residuals = residuals(model0), 
@@ -171,17 +195,20 @@ p2 = res %>% ggplot() + geom_point(aes(pred, residuals)) + ggtitle("Residuals vs
 p3 <- ggplot(res, aes(sample = residuals))
 p3 = p3 + stat_qq() + stat_qq_line()+xlab("Theoretical Quantiles") + ylab("Sample Quantiles") +
   ggtitle("QQ plot")
- p1+p2 + p3 + plot_layout(ncol= 2)
+# p1+p2 + p3 + plot_layout(ncol= 2)
 
 ```
 
 ## Model assumption and residuals {.smaller}
 
-Remember: $$y_i = \underbrace{\beta_0 + \beta_1\ x_i}_{\text{Sistematic part}} + \underbrace{\epsilon_i}_{\text{Random part/ error}}, \qquad \epsilon_i\sim\mathcal{N}(0,\sigma^2)$$
+Remember: $y_i = \beta_0 + \beta_1 x_i + \epsilon_i$ where
+
+-   $\beta_0 + \beta_1 x_i$ is the **systematic part**
+-   $\epsilon_i$ is the **random error**, with $\epsilon_i \sim N(0,\sigma^2)$
 
 The key assumption we check with residuals is:
 
-**The errors should behave like (gaussian) random noise.**
+**The errors should behave like (Gaussian) random noise.**
 
 A residual plot should therefore show:
 
@@ -190,46 +217,74 @@ A residual plot should therefore show:
 -   No obvious curve or other pattern
 -   No "funnel" shape
 
-## How residual plots should not look like...
+## What we don't want to see ...
 
 ![](residual_plot.png)
 
-## Improving the model
+## Improving our regression model {.smaller}
 
-Add the *distance* covariate to the model
+We will now add the *distance* covariate to the model
+
+**Model 2:**
+
+$$
+\text{turnover} = \beta_0 + \beta_1 \text{population} + \beta_2 \text{distance} + \epsilon
+$$
+
+**Python:** Do `TASK 5: Extend the model`, use AI if needed, to add the extra covariate.
+
+**Discuss:**
 
 -   How do you interpret the estimated parameters?
 
 -   What happened to the parameter for population? Why?
 
--   Check if this has improved the model using adjusted $R^2$
+-   Compare adjusted $R^2$ between Model 1 and Model 2, do you see an improvement?
 
-## Improving the model {.smaller}
+## Improving our regression model
+
+Model 1: Only population
+
+![](images/clipboard-4287424498.png)
+
+## Improving our regression model
+
+Model 2: Population and distance
+
+![](images/clipboard-3557717231.png)
 
 ```{r}
 model1 = lm(turnover ~ population + distance, data = groceries)
 model1b = lm(turnover ~ population + log(distance), data = groceries)
 ```
 
-Model 0 (only population)
-
 ```{r}
-summary(model0)
+#summary(model0)
 ```
 
-Model 1 ( population + distance)
-
 ```{r}
-summary(model1)
+#summary(model1)
 ```
+
+## Transforming covariates {.smaller}
+
+We will now modify how the *distance* covariate enters the model
+
+**Model 3:**
+
+$$
+\text{turnover} = \beta_0 + \beta_1 \text{population} + \beta_2 \text{log(distance)} + \epsilon
+$$
+
+**Discuss 1:** Why would this model make sense? For example, should increasing distance from 1 → 2 km have the same effect as increasing it from 8 → 9 km?
+
+**Python:** Do `TASK 6: Covariate transformation`, use AI if needed, to add the log transform of distance as a covariate. Plot the predicted turnover for both models (model 2 and model 3) when the population is 1000 and the distance ranges from 0.1 to 10 km (you can add prediction uncertainties).
+
+**Discuss 2:** What do you notice from these plots?
 
 ## Transforming covariates
 
--   You could consider instead to use *log(distance)*, why would that make sense? Does the effect of distance appear to be the same everywhere? For example, would increasing distance from 1 → 2 km have the same effect as increasing it from 8 → 9 km?
-
--   Plot the predicted turnover for both model when population is 1000 and the distance goes from 0.1 to 10 km. (You can add prediction uncertainties). What do you notice?
-
-## Transforming covariates
+![](images/clipboard-880061565.png)
 
 ```{r}
 newdata = data.frame(distance  = seq(0.1, 10, 0.01), population = 1000)
@@ -239,38 +294,51 @@ pred2 = data.frame(predict(model1b, newdata, interval = "pred")) %>%
   mutate(distance = newdata$distance)
 
 
-ggplot() + geom_ribbon(data = pred1, aes(x = distance, ymin = lwr, ymax = upr), alpha = 0.5)+ 
-  geom_line(data = pred1, aes(x = distance,y = fit)) + 
-  geom_ribbon(data = pred2, aes(x = distance, ymin = lwr, ymax = upr), alpha = 0.5, fill = "red") +
-  geom_line(data = pred2, aes(x = distance,y = fit), color ="red") 
+#ggplot() + geom_ribbon(data = pred1, aes(x = distance, ymin = lwr, ymax = upr), alpha = 0.5)+ 
+#  geom_line(data = pred1, aes(x = distance,y = fit)) + 
+#  geom_ribbon(data = pred2, aes(x = distance, ymin = lwr, ymax = upr), alpha = 0.5, fill = "red") +
+#  geom_line(data = pred2, aes(x = distance,y = fit), color ="red") 
 
 ```
 
 ## Transforming covariates
 
+In general, a covariate can enter into our model in many ways using some transformation, i.e:
+
 $$
 y_i = \beta_0 + \beta_1 f(x_i) + \epsilon_i
-$$ - This add flexibility to the model
+$$
+
+This adds a lot of flexibility to the model.
 
 ## Adding categorical covariates
 
-We want to check weather being in a mall or being in the city center has also an effect on the turnover.
+We now want to check weather being in a mall or being in the city center has also an effect on the turnover.
 
--   Fit a model where you have population, log(distance) and you add the variable *mall* and *central*
--   How do you interpret the new parameters?
+**Model 4:**
+
+$$
+\text{turnover} = \beta_0 + \beta_1 \text{population} + \beta_2 \text{log(distance)} + \beta_3 \text{mall} + \beta_4 \text{center} + \epsilon
+$$
+
+**Python:** Do `TASK 7: Add categorical covariates`, use AI if needed.
+
+**Discuss 2:** How do you interpret the new parameters?
 
 ## Adding categorical covariates {.smaller}
 
 ```{r}
 model2 = lm(turnover ~ population + log(distance) + mall + central, data = groceries)
-summary(model2)
+#summary(model2)
 ```
+
+![](images/clipboard-3514989628.png)
 
 -   If the store is in a mall it will, all other variable being equal, earn ca 46 000 NOK more per week compared to one that is not in a mall. This effect does not seem to be significant.
 
 -   Holding population, distance and mall status constant, the model predicts that city-centre stores have approximately 345 000 NOK lower weekly turnover than stores outside the city centre.
 
-## Categorical variable - encoding
+## Categorical variables - encoding {.smaller}
 
 -   Because mall and central are coded 0/1, the model compares:
 
@@ -279,80 +347,70 @@ summary(model2)
 
 -   The coefficients for mall and central describe the difference relative to the 0 category (in this case "not in the mall" and "not in the center"), while keeping population and distance fixed.
 
--   The same principle applies for multiple categories, one is the reference one, the effect are differences from the reference category.
+-   The same principle applies for variables with multiple categories, one cetagory is the reference one, the effects are differences from the reference category.
 
-## Adding categorical covariates
+## Adding categorical covariates {.smaller}
+
+**Model 4:**
+
+$$
+\text{turnover} = \beta_0 + \beta_1 \text{population} + \beta_2 \text{log(distance)} + \beta_3 \text{mall} + \beta_4 \text{center} + \epsilon
+$$
+
+**Python:** Continue on `TASK 7: Add categorical covariates`, use AI if needed.
 
 -   Plot the predicted turnover for two shops, both in a mall, one in the center and one not, with population 1000 and distances to the nearest competitor ranging from 0.1 to 5 km (no intervals).
 -   Add **confidence intervals** to the plot
 -   Add **prediction intervals** to the plot
--   What is the difference between these two types of intervals?
 
-## Adding categorical covariates {.smaller}
+**Discuss:** What is the difference between these two types of intervals?
 
-```{r}
+## Adding categorical covariates
 
-ndata  = data.frame(population = 2000, 
-                    distance = rep(seq(1,10),2),
-                    mall  = rep(c(1,1), each = 10),
-                    central = rep(c(0,1), each =10))
+Predictions:
 
-ndata = ndata %>% mutate(pred = predict(model2, ndata))
-ndata %>% ggplot() + 
-  geom_line(aes(distance, pred, group = central, color  = factor(central)))
-                                
-```
+![](images/clipboard-1039071274.png)
 
-## Confidence interval {.smaller}
+## Adding categorical covariates
 
-```{r}
+Confidence intervals:
 
-ndata  = data.frame(population = 2000, 
-                    distance = rep(seq(1,10),2),
-                    mall  = rep(c(1,1), each = 10),
-                    central = rep(c(0,1), each =10))
+![](images/clipboard-210460476.png)
 
-pp =   predict(model2, ndata, interval = "confidence")
-plot = cbind(ndata,pp) %>% ggplot() + 
-  geom_line(aes(distance, fit, group = central, color  = factor(central))) +
-  geom_ribbon(aes(distance, ymin = lwr, ymax = upr, group = central, fill  = factor(central)), alpha = 0.5)
+## Adding categorical covariates
 
-plot                                
-```
+Prediction intervals:
 
-## Confidence and prediction interval {.smaller}
+![](images/clipboard-2965623269.png)
 
-```{r}
+## Interactions {.smaller}
 
-ndata  = data.frame(population = 2000, 
-                    distance = rep(seq(1,10),2),
-                    mall  = rep(c(1,1), each = 10),
-                    central = rep(c(0,1), each =10))
+What happens if a shop is in a mall *and* in the city center?
 
-pp =   predict(model2, ndata, interval = "pred")
+**Model 5:**
 
-plot + 
-#cbind(ndata,pp) %>% ggplot() + 
-#  geom_line(aes(distance, fit, group = central, color  = factor(central))) +
-  geom_ribbon(data= cbind(ndata,pp), aes(distance, ymin = lwr, ymax = upr, group = central, fill  = factor(central)), alpha = 0.3)
-                                
-```
+$$
+\text{turnover} = \beta_0 + \beta_1 \text{population} + \beta_2 \text{log(distance)} 
+$$ 
+
+$$
++ \beta_3 \text{mall} + \beta_4 \text{center} + \beta_5 \text{mall} \cdot \text{center} + \epsilon
+$$
+
+**Python:** Do `TASK 8: Add interaction`, use AI if needed, to fit a model where *mall* and *central* interact with each other.
+
+**Discuss:** If population and distance are the same, what is the predicted turnover for a shop that is in a mall in the city center compared with a shop that is in the center but outside a mall?
 
 ## Interactions
 
-What happen if the shop is in a mall *and* in the city center?
-
--   Fit a model where *mall* and *central* interact with each other
--   If population and distance are the same, what is the predicted turnover for a shop that is in a mall in the city center compared with a shop that is in the center outside a mall?
-
-## Interactions
+![](images/clipboard-1315578469.png)
 
 ```{r}
 model3 = lm(turnover ~ population + log(distance) + mall * central, data = groceries)
-summary(model3)
+# summary(model3)
 ```
 
-## Interactions {.smaller}
+## Predictions and decision making {.smaller}
 
 You are building a new store and have two locations to consider. Both are outside of a city center and have about 2500 inhabitants within the nearest 1 km.
 
@@ -360,14 +418,17 @@ The first location has a distance of 2 km to the nearest competitor, and is not 
 
 What is predicted turnover at the two locations? Calculate 95% prediction intervals. Is it clear, from the model, which location you should prefer?
 
-Use the model with interactions to evaluate this.
+Use our final model with interactions to evaluate this.
 
-## 
+## Predictions and decision making {.smaller}
+
+![](images/clipboard-479889719.png)
+
 
 ```{r}
 ndata = data.frame(distance = c(2, 0.5),
                    population = c(2500,2500),
                    mall = c(0,1),
                    central = c(0,0))
-predict(model2, ndata, interval = "pred")
+#predict(model2, ndata, interval = "pred")
 ```
