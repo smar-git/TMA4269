@@ -2,52 +2,48 @@ project:
   type: website
   output-dir: docs
   render:
-  - index.qmd
-  - intro.qmd
-  - Data_visualization.qmd
-  - telling_stories.qmd
-  - Data_visualization2.qmd
-  - regression1.qmd
-  - regression2_v2.qmd
+    - index.qmd
+    - intro.qmd
+    - Data_visualization.qmd
+    - telling_stories.qmd
+    - Data_visualization2.qmd
+    - regression1.qmd
+    - regression2_v2.qmd
 
-  
 website:
   title: TMA4269
+  site-url: https://smar-git.github.io/TMA4269/
+  site-path: /TMA4269/
   navbar:
-    logo: Image/INLA_logo.png
     right:
-    - text: GitHub
-      href: https://github.com/smar-git/TMA4269
-      icon: brands/github
+      - text: GitHub
+        href: https://github.com/smar-git/TMA4269
+        icon: brands/github
     left:
-    - text: Home
-      href: index.qmd
-    - text: Slides
-      menu:
-      - text: Slides Intro
-        href: intro.html
-      - text: Slides Visualization
-        href: Data_visualization.html
-      - text: Slides Telling Stories
-        href: telling_stories.html
-      - text: Slides Visualization 2
-        href: Data_visualization2.html
-      - text: Slides Regression 1
-        href: regression1.html
-      - text: Slides Regression 2
-        href: regression2_v2.html
-  
+      - text: Home
+        href: index.qmd
+      - text: Slides
+        menu:
+          - text: Slides Intro
+            href: intro.html
+          - text: Slides Visualization
+            href: Data_visualization.html
+          - text: Slides Telling Stories
+            href: telling_stories.html
+          - text: Slides Visualization 2
+            href: Data_visualization2.html
+          - text: Slides Regression 1
+            href: regression1.html
+          - text: Slides Regression 2
+            href: regression2_v2.html
 
 format:
   html:
     theme: flatly
     respect-user-color-scheme: false
-    css: include/webex.css
-    include-after-body: include/webex.js
     toc: true
     toc-location: right
-    toc-depth: 3    
+    toc-depth: 3
+
 execute:
   freeze: auto
-
-
