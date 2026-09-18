@@ -6,10 +6,10 @@
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.7.32">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dc55a5b9e770e841cd82e46aadbfb9b0.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.8.24">
 
-  <title>TMA4269 – Multiple Linear Regression</title>
+  <title>TMA4269 – Multiple Linear Regression - Continuation</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -28,7 +28,7 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="site_libs/revealjs/dist/theme/quarto-f563837468303362081e247dddd440d0.css">
+  <link rel="stylesheet" href="site_libs/revealjs/dist/theme/quarto-534cd8e3a96973385dffff3f4709048d.css">
   <link href="site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -126,26 +126,37 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Multiple Linear Regression</h1>
+  <h1 class="title">Multiple Linear Regression - Continuation</h1>
 
 <div class="quarto-title-authors">
 </div>
 
 </section>
-<section id="multiple-linear-regression" class="slide level2 smaller">
-<h2>Multiple Linear Regression</h2>
-<p>Learning goals for today:</p>
+<section id="first-create-groups-in-canvas" class="slide level2">
+<h2>First: Create Groups in Canvas</h2>
+<p>Find the desk with your group number:</p>
 <ul>
-<li><p>Fit a linear regression model and interpret the output (result)</p></li>
-<li><p>Evaluate the model using <span class="math inline">\(R^2\)</span> and residual plots</p></li>
-<li><p>Build the model using</p>
+<li>Log into Canvas</li>
+<li>Click on <strong>People</strong> on the right side of the page</li>
+<li>Click on <strong>Group</strong></li>
+<li>Scroll to the group with the number on your desk and enroll yourself in the group (Regression Week 38)</li>
+</ul>
+</section>
+<section id="plan-for-today" class="slide level2">
+<h2>Plan for Today</h2>
 <ul>
-<li>multiple covariates</li>
-<li>transformations</li>
-<li>categorical variables</li>
-<li>interactions</li>
-</ul></li>
-<li><p>Make predictions from the model, including prediction uncertainty</p></li>
+<li>A short survey about the course</li>
+<li>Continue with the regression workshop</li>
+<li>Break</li>
+<li>Assignment</li>
+</ul>
+</section>
+<section id="about-todays-assignment" class="slide level2">
+<h2>About today’s assignment</h2>
+<ul>
+<li>The assignment has to be done with pen and paper (you do not need a computer)</li>
+<li>Collect all the sheet you use, mark them with the group number and deliver them to us</li>
+<li>In <strong>Canvas</strong>: Deliver a picture of the first sheet</li>
 </ul>
 </section>
 <section id="our-data" class="slide level2 smaller">
@@ -161,228 +172,115 @@
 </ul>
 <p>Our interest lies in predicting the weekly turnover based on the other available data.</p>
 </section>
-<section id="todays-exercise" class="slide level2 smaller">
-<h2>Today’s exercise</h2>
+<section id="what-we-did-last-time" class="slide level2">
+<h2>What we did last time</h2>
 <ul>
-<li><p>Log into Canvas</p></li>
-<li><p>Find the assignment <strong>Regression Week 36</strong> (no deliverables, practice only)</p></li>
-<li><p>You’ll find two files:</p>
-<ol type="1">
-<li>Data: <code>groceries.csv</code></li>
-<li>Instructions: <code>lin_reg_week38.ipynb</code></li>
-</ol></li>
-<li><p>Download both of them</p></li>
-<li><p>Log into NTNU JupyterHub <a href="https://jupyter.ntnu.no/" class="uri">https://jupyter.ntnu.no/</a></p></li>
-<li><p>Drag the files into the workspace. Here you find code for some of todays tasks. The remaining tasks we expect you to complete using AI.</p></li>
-</ul>
-</section>
-<section id="exploratory-analysis" class="slide level2">
-<h2>Exploratory analysis</h2>
-<p><strong>Python:</strong> Complete <code>TASK 1: Visualize the data</code></p>
-<p><strong>Discuss:</strong> What do you notice from the plot? Which quantities appear to influence the turnover?</p>
-</section>
-<section id="exploratory-analysis-1" class="slide level2">
-<h2>Exploratory analysis</h2>
-
-<img data-src="images/clipboard-1339286751.png" class="r-stretch"></section>
-<section id="simple-linear-regression" class="slide level2">
-<h2>Simple linear regression</h2>
-<p><strong>Model 1:</strong></p>
-<p><span class="math display">\[
-\text{turnover} = \beta_0 + \beta_1 \text{population} + \epsilon
-\]</span></p>
-<p><strong>Python:</strong> Complete <code>TASK 2: Simple linear regression</code> where you fit a linear regression model with <em>population</em> as the only covariate.</p>
-<p><strong>Discuss:</strong></p>
+<li><p>Fit simple linear regression model</p>
 <ul>
-<li>How do you interpret the two estimated parameters?</li>
-<li>One of the outputs of the model is the <span class="math inline">\(R^2\)</span> quantity, can you explain what it is?</li>
-</ul>
-</section>
-<section id="simple-linear-regression-1" class="slide level2 smaller">
-<h2>Simple linear regression</h2>
-
-<img data-src="images/clipboard-4287424498.png" class="r-stretch"><ul>
-<li>The intercept is the predicted turnover when population = 0. Is that a realistic situation for these stores?</li>
-<li>For each extra person living within 1 km from the shop, the weekly turnover increases by approx 390 NOK.</li>
-</ul>
-</section>
-<section id="simple-linear-regression-2" class="slide level2">
-<h2>Simple linear regression</h2>
-<p><strong>Model 1:</strong></p>
-<p><span class="math display">\[
-\text{turnover} = \beta_0 + \beta_1 \text{population} + \epsilon
-\]</span></p>
-<p><strong>Python:</strong> Complete <code>TASK 3: Visualize the model, including prediction interval</code></p>
-<p><strong>Discuss:</strong> What do you notice by looking at the fitted regression line, the data points and the prediction interval? What is the predicted turnover (with uncertainty) for a <em>new</em> shop built in an area where 2000 people live?</p>
-</section>
-<section id="simple-linear-regression-3" class="slide level2">
-<h2>Simple linear regression</h2>
-
-<img data-src="images/clipboard-2770976451.png" class="r-stretch"><pre><code>Predicted turnover 2000 people: 1039 [464, 1614]</code></pre>
-</section>
-<section id="simple-linear-regression-residuals" class="slide level2 smaller">
-<h2>Simple linear regression: residuals</h2>
-<p><strong>Model 1:</strong></p>
-<p><span class="math display">\[
-\text{turnover} = \beta_0 + \beta_1 \text{population} + \epsilon
-\]</span></p>
-<p><strong>Definition:</strong> The residuals, in this case, are defined as the <em>observed</em> minus the <em>predicted</em> turnover</p>
-<p><strong>Python:</strong> Do <code>TASK 4: Residuals</code> where you are given code to compute residuals and standardized residuals, and plotting two common diagnostic plots.</p>
-<p><strong>Discuss:</strong> What do you remember from a basic statistics course about these plots? What are we looking for?</p>
-<p>How are the residuals related to the mathematical model formulation, and how should the residuals behave?</p>
-</section>
-<section id="simple-linear-regression-residuals-1" class="slide level2">
-<h2>Simple linear regression: residuals</h2>
-
-<img data-src="images/clipboard-2332403411.png" class="r-stretch"></section>
-<section id="model-assumption-and-residuals" class="slide level2 smaller">
-<h2>Model assumption and residuals</h2>
-<p>Remember: <span class="math inline">\(y_i = \beta_0 + \beta_1 x_i + \epsilon_i\)</span> where</p>
+<li>Interpret parameters</li>
+<li>Check residuals</li>
+<li>Predict (with uncertainty)</li>
+</ul></li>
+<li><p>Multiple Linear Regression</p>
 <ul>
-<li><span class="math inline">\(\beta_0 + \beta_1 x_i\)</span> is the <strong>systematic part</strong></li>
-<li><span class="math inline">\(\epsilon_i\)</span> is the <strong>random error</strong>, with <span class="math inline">\(\epsilon_i \sim N(0,\sigma^2)\)</span></li>
+<li>multiple covariates</li>
+<li>transformations</li>
+</ul></li>
 </ul>
-<p>The key assumption we check with residuals is:</p>
-<p><strong>The errors should behave like (Gaussian) random noise.</strong></p>
-<p>A residual plot should therefore show:</p>
+</section>
+<section id="what-we-do-today" class="slide level2">
+<h2>What we do today</h2>
 <ul>
-<li>Random scatter around 0</li>
-<li>Roughly the same amount of spread across the range</li>
-<li>No obvious curve or other pattern</li>
-<li>No “funnel” shape</li>
-</ul>
-</section>
-<section id="what-we-dont-want-to-see" class="slide level2">
-<h2>What we don’t want to see …</h2>
-
-<img data-src="residual_plot.png" class="r-stretch"></section>
-<section id="improving-our-regression-model" class="slide level2 smaller">
-<h2>Improving our regression model</h2>
-<p>We will now add the <em>distance</em> covariate to the model</p>
-<p><strong>Model 2:</strong></p>
-<p><span class="math display">\[
-\text{turnover} = \beta_0 + \beta_1 \text{population} + \beta_2 \text{distance} + \epsilon
-\]</span></p>
-<p><strong>Python:</strong> Do <code>TASK 5: Extend the model</code>, use AI if needed, to add the extra covariate.</p>
-<p><strong>Discuss:</strong></p>
+<li><p>Multiple Linear Regression</p>
 <ul>
-<li><p>How do you interpret the estimated parameters?</p></li>
-<li><p>What happened to the parameter for population? Why?</p></li>
-<li><p>Compare adjusted <span class="math inline">\(R^2\)</span> between Model 1 and Model 2, do you see an improvement?</p></li>
+<li>categorical covariates</li>
+<li>interactions</li>
+</ul></li>
 </ul>
 </section>
-<section id="improving-our-regression-model-1" class="slide level2">
-<h2>Improving our regression model</h2>
-<p>Model 1: Only population</p>
-
-<img data-src="images/clipboard-4287424498.png" class="r-stretch"></section>
-<section id="improving-our-regression-model-2" class="slide level2">
-<h2>Improving our regression model</h2>
-<p>Model 2: Population and distance</p>
-
-<img data-src="images/clipboard-3557717231.png" class="r-stretch"></section>
-<section id="transforming-covariates" class="slide level2 smaller">
-<h2>Transforming covariates</h2>
-<p>We will now modify how the <em>distance</em> covariate enters the model</p>
-<p><strong>Model 3:</strong></p>
-<p><span class="math display">\[
-\text{turnover} = \beta_0 + \beta_1 \text{population} + \beta_2 \text{log(distance)} + \epsilon
-\]</span></p>
-<p><strong>Discuss 1:</strong> Why would this model make sense? For example, should increasing distance from 1 → 2 km have the same effect as increasing it from 8 → 9 km?</p>
-<p><strong>Python:</strong> Do <code>TASK 6: Covariate transformation</code>, use AI if needed, to add the log transform of distance as a covariate. Plot the predicted turnover for both models (model 2 and model 3) when the population is 1000 and the distance ranges from 0.1 to 10 km (you can add prediction uncertainties).</p>
-<p><strong>Discuss 2:</strong> What do you notice from these plots?</p>
+<section id="adding-categorical-covariates" class="slide level2">
+<h2>Adding categorical covariates</h2>
+<p>We now want to check weather being in a mall or being in the city center has also an effect on the turnover.</p>
+<p><strong>Model 4:</strong></p>
+<p><span class="math display">\[\text{turnover} = \beta_0 + \beta_1 \text{population} + \beta_2 \text{log(distance)} \]</span></p>
+<p><span class="math display">\[ + \beta_3 \text{mall} + \beta_4 \text{center} + \epsilon\]</span></p>
 </section>
-<section id="transforming-covariates-1" class="slide level2">
-<h2>Transforming covariates</h2>
+<section id="adding-categorical-covariates-1" class="slide level2 smaller">
+<h2>Adding categorical covariates</h2>
 
-<img data-src="images/clipboard-880061565.png" class="r-stretch"></section>
-<section id="transforming-covariates-2" class="slide level2">
-<h2>Transforming covariates</h2>
-<p>In general, a covariate can enter into our model in many ways using some transformation, i.e:</p>
-<p><span class="math display">\[
-y_i = \beta_0 + \beta_1 f(x_i) + \epsilon_i
-\]</span></p>
-<p>This adds a lot of flexibility to the model.</p>
-<!-- ## Adding categorical covariates -->
-<!-- We now want to check weather being in a mall or being in the city center has also an effect on the turnover. -->
-<!-- **Model 4:** -->
-<!-- $$ -->
-<!-- \text{turnover} = \beta_0 + \beta_1 \text{population} + \beta_2 \text{log(distance)} + \beta_3 \text{mall} + \beta_4 \text{center} + \epsilon -->
-<!-- $$ -->
-<!-- **Python:** Do `TASK 7: Add categorical covariates`, use AI if needed. -->
-<!-- **Discuss:** How do you interpret the new parameters? -->
-<!-- ## Adding categorical covariates {.smaller} -->
-<!-- ```{r} -->
-<!-- model2 = lm(turnover ~ population + log(distance) + mall + central, data = groceries) -->
-<!-- #summary(model2) -->
-<!-- ``` -->
-<!-- ![](images/clipboard-3514989628.png) -->
-<!-- -   If the store is in a mall it will, all other variable being equal, earn ca 46 000 NOK more per week compared to one that is not in a mall. This effect does not seem to be significant. -->
-<!-- -   Holding population, distance and mall status constant, the model predicts that city-centre stores have approximately 345 000 NOK lower weekly turnover than stores outside the city centre. -->
-<!-- ## Categorical variables - encoding {.smaller} -->
-<!-- -   Because mall and central are coded 0/1, the model compares: -->
-<!--     -   mall = 1 vs mall = 0 -->
-<!--     -   central = 1 vs central = 0 -->
-<!-- -   The coefficients for mall and central describe the difference relative to the 0 category (in this case "not in the mall" and "not in the center"), while keeping population and distance fixed. -->
-<!-- -   The same principle applies for variables with multiple categories, one category is the reference, the effects are differences from the reference category. -->
-<!-- ## Adding categorical covariates {.smaller} -->
-<!-- **Model 4:** -->
-<!-- $$ -->
-<!-- \text{turnover} = \beta_0 + \beta_1 \text{population} + \beta_2 \text{log(distance)} + \beta_3 \text{mall} + \beta_4 \text{center} + \epsilon -->
-<!-- $$ -->
-<!-- **Python:** Continue on `TASK 7: Add categorical covariates`, use AI if needed. -->
-<!-- -   Plot the predicted turnover for two shops, both in a mall, one in the center and one not, with population 1000 and distances to the nearest competitor ranging from 0.1 to 5 km (no intervals). -->
-<!-- -   Add **confidence intervals** to the plot -->
-<!-- -   Add **prediction intervals** to the plot -->
-<!-- **Discuss:** What is the difference between these two types of intervals? Why is the prediction interval so wide? -->
-<!-- ## Adding categorical covariates -->
-<!-- Predictions: -->
-<!-- ![](images/clipboard-1039071274.png) -->
-<!-- ## Adding categorical covariates -->
-<!-- Confidence intervals: -->
-<!-- ![](images/clipboard-210460476.png) -->
-<!-- ## Adding categorical covariates -->
-<!-- Prediction intervals: -->
-<!-- ![](images/clipboard-2965623269.png) -->
-<!-- ## Interactions {.smaller} -->
-<!-- What happens if a shop is in a mall *and* in the city center? -->
-<!-- **Model 5:** -->
-<!-- $$ -->
-<!-- \text{turnover} = \beta_0 + \beta_1 \text{population} + \beta_2 \text{log(distance)}  -->
-<!-- $$  -->
-<!-- $$ -->
-<!-- + \beta_3 \text{mall} + \beta_4 \text{center} + \beta_5 \text{mall} \cdot \text{center} + \epsilon -->
-<!-- $$ -->
-<!-- **Python:** Do `TASK 8: Add interaction`, use AI if needed, to fit a model where *mall* and *central* interact with each other. -->
-<!-- **Discuss:** If population and distance are the same;  -->
-<!--   -   if two shops are in the city center, what is the difference between being in a mall or not? -->
-<!--   -   if two shops are not in the city center, what is the difference between being in a mall or not? -->
-<!-- What is the adjusted $R^2$ for this final model?  -->
-<!-- ## Interactions -->
-<!-- ![](images/clipboard-1315578469.png) -->
-<!-- In city centre: approx 32 000 NOK higher turnover if in a mall -->
-<!-- Outside city centre: approx 124 000 NOK higher turnover if in a mall -->
-<!-- ```{r} -->
-<!-- model3 = lm(turnover ~ population + log(distance) + mall * central, data = groceries) -->
-<!-- # summary(model3) -->
-<!-- ``` -->
-<!-- ## Predictions and decision making {.smaller} -->
-<!-- You are building a new store and have two locations to consider. Both are outside of a city center and have about 2500 inhabitants within the nearest 1 km. -->
-<!-- The first location has a distance of 2 km to the nearest competitor, and is not within a mall. The second location is only 0.5 km from the nearest competitor, but is within a mall. -->
-<!-- What is predicted turnover at the two locations? Calculate 95% prediction intervals. Is it clear, from the model, which location you should prefer? -->
-<!-- Use our final model with interactions to evaluate this. -->
-<!-- ## Predictions and decision making {.smaller} -->
-<!-- ![](images/clipboard-479889719.png) -->
-<!-- ```{r} -->
-<!-- ndata = data.frame(distance = c(2, 0.5), -->
-<!--                    population = c(2500,2500), -->
-<!--                    mall = c(0,1), -->
-<!--                    central = c(0,0)) -->
-<!-- #predict(model2, ndata, interval = "pred") -->
-<!-- ``` -->
-
-
+<img data-src="images/clipboard-3514989628.png" class="r-stretch"><p><strong>Discuss:</strong> How do you interpret the new parameters?</p>
+<div class="fragment">
+<ul>
+<li><p>If the store is in a mall it will, all other variable being equal, earn ca 46 000 NOK more per week compared to one that is not in a mall. This effect does not seem to be significant.</p></li>
+<li><p>Holding population, distance and mall status constant, the model predicts that city-centre stores have approximately 345 000 NOK lower weekly turnover than stores outside the city centre.</p></li>
+</ul>
+</div>
 </section>
+<section id="categorical-variables---encoding" class="slide level2 smaller">
+<h2>Categorical variables - encoding</h2>
+<ul>
+<li><p>Because mall and central are coded 0/1, the model compares:</p>
+<ul>
+<li>mall = 1 vs mall = 0</li>
+<li>central = 1 vs central = 0</li>
+</ul></li>
+<li><p>The coefficients for mall and central describe the difference relative to the 0 category (in this case “not in the mall” and “not in the center”), while keeping population and distance fixed.</p></li>
+<li><p>The same principle applies for variables with multiple categories, one category is the reference, the effects are differences from the reference category.</p></li>
+</ul>
+</section>
+<section id="adding-categorical-covariates-2" class="slide level2 smaller">
+<h2>Adding categorical covariates</h2>
+<p><strong>Model 4:</strong></p>
+<p><span class="math display">\[\text{turnover} = \beta_0 + \beta_1 \text{population} + \beta_2 \text{log(distance)} + \beta_3 \text{mall} + \beta_4 \text{center} + \epsilon\]</span> In the next slide we show prediction for two shops, both in a mall, one in the center and one not, with population 1000 and distances to the nearest competitor ranging from 0.1 to 5 km (no intervals).</p>
+</section>
+<section id="adding-categorical-covariates-3" class="slide level2">
+<h2>Adding categorical covariates</h2>
+<p>Predictions:</p>
+
+<img data-src="images/clipboard-1039071274.png" class="r-stretch"></section>
+<section id="adding-categorical-covariates-4" class="slide level2">
+<h2>Adding categorical covariates</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p>Confidence intervals: <img data-src="images/clipboard-210460476.png"></p>
+</div><div class="column" style="width:50%;">
+<p>Prediction intervals: <img data-src="images/clipboard-2965623269.png"></p>
+</div></div>
+<p><strong>Discuss:</strong> What is the difference between these two types of intervals? Why is the prediction interval so wide?</p>
+</section>
+<section id="interactions" class="slide level2 smaller">
+<h2>Interactions</h2>
+<p>What happens if a shop is in a mall <em>and</em> in the city center?</p>
+<p><strong>Model 5:</strong></p>
+<p><span class="math display">\[\text{turnover} = \beta_0 + \beta_1 \text{population} + \beta_2 \text{log(distance)} \]</span></p>
+<p><span class="math display">\[+ \beta_3 \text{mall} + \beta_4 \text{center} + \beta_5 \text{mall} \cdot \text{center} + \epsilon\]</span></p>
+</section>
+<section id="interactions-1" class="slide level2 smaller">
+<h2>Interactions</h2>
+
+<img data-src="images/clipboard-2259143419.png" class="r-stretch"><p><strong>Discuss:</strong> If population and distance are the same;</p>
+<ul>
+<li>if two shops are in the city center, what is the difference between being in a mall or not?</li>
+<li>if two shops are not in the city center, what is the difference between being in a mall or not?</li>
+</ul>
+<div class="fragment">
+<p>In city centre: approx 32 000 NOK higher turnover if in a mall</p>
+<p>Outside city centre: approx 124 000 NOK higher turnover if in a mall</p>
+</div>
+</section>
+<section id="predictions-and-decision-making" class="slide level2 smaller">
+<h2>Predictions and decision making</h2>
+<p>You are building a new store and have two locations to consider. Both are outside of a city center and have about 2500 inhabitants within the nearest 1 km.</p>
+<p>The first location has a distance of 2 km to the nearest competitor, and is not within a mall. The second location is only 0.5 km from the nearest competitor, but is within a mall.</p>
+<p>What is predicted turnover at the two locations? Calculate 95% prediction intervals. Is it clear, from the model, which location you should prefer?</p>
+<p>Use our final model with interactions to evaluate this.</p>
+</section>
+<section id="predictions-and-decision-making-1" class="slide level2 smaller">
+<h2>Predictions and decision making</h2>
+
+
+
+<img data-src="images/clipboard-479889719.png" class="r-stretch"></section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
 <div class="footer footer-default">
@@ -572,7 +470,7 @@ y_i = \beta_0 + \beta_1 f(x_i) + \epsilon_i
         margin: 0.1,
 
         math: {
-          mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js',
+          mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@2.7.9/MathJax.js',
           config: 'TeX-AMS_HTML-full',
           tex2jax: {
             inlineMath: [['\\(','\\)']],
@@ -684,13 +582,14 @@ y_i = \beta_0 + \beta_1 f(x_i) + \epsilon_i
           e.clearSelection();
         }
         const getTextToCopy = function(trigger) {
-            const codeEl = trigger.previousElementSibling.cloneNode(true);
-            for (const childEl of codeEl.children) {
-              if (isCodeAnnotation(childEl)) {
-                childEl.remove();
-              }
+          const outerScaffold = trigger.parentElement.cloneNode(true);
+          const codeEl = outerScaffold.querySelector('code');
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
             }
-            return codeEl.innerText;
+          }
+          return codeEl.innerText;
         }
         const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
           text: getTextToCopy
