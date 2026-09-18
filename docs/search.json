@@ -102,7 +102,7 @@
     "href": "regression3.html#interactions-1",
     "title": "Multiple Linear Regression - Continuation",
     "section": "Interactions",
-    "text": "Interactions\n\nDiscuss: If population and distance are the same;\n\nif two shops are in the city center, what is the difference between being in a mall or not?\nif two shops are not in the city center, what is the difference between being in a mall or not?\n\n\nIn city centre: approx 32 000 NOK higher turnover if in a mall\nOutside city centre: approx 124 000 NOK higher turnover if in a mall"
+    "text": "Interactions\n\nDiscuss: If population and distance are the same;\n\nif two shops are in the city center, what is the difference between being in a mall or not?\nif two shops are not in the city center, what is the difference between being in a mall or not?\n\n\nIn city centre: approx -32 000 NOK higher turnover if in a mall\nOutside city centre: approx 124 000 NOK higher turnover if in a mall"
   },
   {
     "objectID": "regression3.html#predictions-and-decision-making",

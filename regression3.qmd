@@ -163,7 +163,7 @@ $$+ \beta_3 \text{mall} + \beta_4 \text{center} + \beta_5 \text{mall} \cdot \tex
 
 . . .
 
-In city centre: approx 32 000 NOK higher turnover if in a mall
+In city centre: approx -32 000 NOK higher turnover if in a mall
 
 Outside city centre: approx 124 000 NOK higher turnover if in a mall
 
