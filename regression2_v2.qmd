@@ -311,134 +311,134 @@ $$
 
 This adds a lot of flexibility to the model.
 
-## Adding categorical covariates
+<!-- ## Adding categorical covariates -->
 
-We now want to check weather being in a mall or being in the city center has also an effect on the turnover.
+<!-- We now want to check weather being in a mall or being in the city center has also an effect on the turnover. -->
 
-**Model 4:**
+<!-- **Model 4:** -->
 
-$$
-\text{turnover} = \beta_0 + \beta_1 \text{population} + \beta_2 \text{log(distance)} + \beta_3 \text{mall} + \beta_4 \text{center} + \epsilon
-$$
+<!-- $$ -->
+<!-- \text{turnover} = \beta_0 + \beta_1 \text{population} + \beta_2 \text{log(distance)} + \beta_3 \text{mall} + \beta_4 \text{center} + \epsilon -->
+<!-- $$ -->
 
-**Python:** Do `TASK 7: Add categorical covariates`, use AI if needed.
+<!-- **Python:** Do `TASK 7: Add categorical covariates`, use AI if needed. -->
 
-**Discuss:** How do you interpret the new parameters?
+<!-- **Discuss:** How do you interpret the new parameters? -->
 
-## Adding categorical covariates {.smaller}
+<!-- ## Adding categorical covariates {.smaller} -->
 
-```{r}
-model2 = lm(turnover ~ population + log(distance) + mall + central, data = groceries)
-#summary(model2)
-```
+<!-- ```{r} -->
+<!-- model2 = lm(turnover ~ population + log(distance) + mall + central, data = groceries) -->
+<!-- #summary(model2) -->
+<!-- ``` -->
 
-![](images/clipboard-3514989628.png)
+<!-- ![](images/clipboard-3514989628.png) -->
 
--   If the store is in a mall it will, all other variable being equal, earn ca 46 000 NOK more per week compared to one that is not in a mall. This effect does not seem to be significant.
+<!-- -   If the store is in a mall it will, all other variable being equal, earn ca 46 000 NOK more per week compared to one that is not in a mall. This effect does not seem to be significant. -->
 
--   Holding population, distance and mall status constant, the model predicts that city-centre stores have approximately 345 000 NOK lower weekly turnover than stores outside the city centre.
+<!-- -   Holding population, distance and mall status constant, the model predicts that city-centre stores have approximately 345 000 NOK lower weekly turnover than stores outside the city centre. -->
 
-## Categorical variables - encoding {.smaller}
+<!-- ## Categorical variables - encoding {.smaller} -->
 
--   Because mall and central are coded 0/1, the model compares:
+<!-- -   Because mall and central are coded 0/1, the model compares: -->
 
-    -   mall = 1 vs mall = 0
-    -   central = 1 vs central = 0
+<!--     -   mall = 1 vs mall = 0 -->
+<!--     -   central = 1 vs central = 0 -->
 
--   The coefficients for mall and central describe the difference relative to the 0 category (in this case "not in the mall" and "not in the center"), while keeping population and distance fixed.
+<!-- -   The coefficients for mall and central describe the difference relative to the 0 category (in this case "not in the mall" and "not in the center"), while keeping population and distance fixed. -->
 
--   The same principle applies for variables with multiple categories, one category is the reference, the effects are differences from the reference category.
+<!-- -   The same principle applies for variables with multiple categories, one category is the reference, the effects are differences from the reference category. -->
 
-## Adding categorical covariates {.smaller}
+<!-- ## Adding categorical covariates {.smaller} -->
 
-**Model 4:**
+<!-- **Model 4:** -->
 
-$$
-\text{turnover} = \beta_0 + \beta_1 \text{population} + \beta_2 \text{log(distance)} + \beta_3 \text{mall} + \beta_4 \text{center} + \epsilon
-$$
+<!-- $$ -->
+<!-- \text{turnover} = \beta_0 + \beta_1 \text{population} + \beta_2 \text{log(distance)} + \beta_3 \text{mall} + \beta_4 \text{center} + \epsilon -->
+<!-- $$ -->
 
-**Python:** Continue on `TASK 7: Add categorical covariates`, use AI if needed.
+<!-- **Python:** Continue on `TASK 7: Add categorical covariates`, use AI if needed. -->
 
--   Plot the predicted turnover for two shops, both in a mall, one in the center and one not, with population 1000 and distances to the nearest competitor ranging from 0.1 to 5 km (no intervals).
--   Add **confidence intervals** to the plot
--   Add **prediction intervals** to the plot
+<!-- -   Plot the predicted turnover for two shops, both in a mall, one in the center and one not, with population 1000 and distances to the nearest competitor ranging from 0.1 to 5 km (no intervals). -->
+<!-- -   Add **confidence intervals** to the plot -->
+<!-- -   Add **prediction intervals** to the plot -->
 
-**Discuss:** What is the difference between these two types of intervals? Why is the prediction interval so wide?
+<!-- **Discuss:** What is the difference between these two types of intervals? Why is the prediction interval so wide? -->
 
-## Adding categorical covariates
+<!-- ## Adding categorical covariates -->
 
-Predictions:
+<!-- Predictions: -->
 
-![](images/clipboard-1039071274.png)
+<!-- ![](images/clipboard-1039071274.png) -->
 
-## Adding categorical covariates
+<!-- ## Adding categorical covariates -->
 
-Confidence intervals:
+<!-- Confidence intervals: -->
 
-![](images/clipboard-210460476.png)
+<!-- ![](images/clipboard-210460476.png) -->
 
-## Adding categorical covariates
+<!-- ## Adding categorical covariates -->
 
-Prediction intervals:
+<!-- Prediction intervals: -->
 
-![](images/clipboard-2965623269.png)
+<!-- ![](images/clipboard-2965623269.png) -->
 
-## Interactions {.smaller}
+<!-- ## Interactions {.smaller} -->
 
-What happens if a shop is in a mall *and* in the city center?
+<!-- What happens if a shop is in a mall *and* in the city center? -->
 
-**Model 5:**
+<!-- **Model 5:** -->
 
-$$
-\text{turnover} = \beta_0 + \beta_1 \text{population} + \beta_2 \text{log(distance)} 
-$$ 
+<!-- $$ -->
+<!-- \text{turnover} = \beta_0 + \beta_1 \text{population} + \beta_2 \text{log(distance)}  -->
+<!-- $$  -->
 
-$$
-+ \beta_3 \text{mall} + \beta_4 \text{center} + \beta_5 \text{mall} \cdot \text{center} + \epsilon
-$$
+<!-- $$ -->
+<!-- + \beta_3 \text{mall} + \beta_4 \text{center} + \beta_5 \text{mall} \cdot \text{center} + \epsilon -->
+<!-- $$ -->
 
-**Python:** Do `TASK 8: Add interaction`, use AI if needed, to fit a model where *mall* and *central* interact with each other.
+<!-- **Python:** Do `TASK 8: Add interaction`, use AI if needed, to fit a model where *mall* and *central* interact with each other. -->
 
-**Discuss:** If population and distance are the same; 
+<!-- **Discuss:** If population and distance are the same;  -->
 
-  -   if two shops are in the city center, what is the difference between being in a mall or not?
-  -   if two shops are not in the city center, what is the difference between being in a mall or not?
+<!--   -   if two shops are in the city center, what is the difference between being in a mall or not? -->
+<!--   -   if two shops are not in the city center, what is the difference between being in a mall or not? -->
 
-What is the adjusted $R^2$ for this final model? 
+<!-- What is the adjusted $R^2$ for this final model?  -->
 
-## Interactions
+<!-- ## Interactions -->
 
-![](images/clipboard-1315578469.png)
+<!-- ![](images/clipboard-1315578469.png) -->
 
-In city centre: approx 32 000 NOK higher turnover if in a mall
+<!-- In city centre: approx 32 000 NOK higher turnover if in a mall -->
 
-Outside city centre: approx 124 000 NOK higher turnover if in a mall
-
-
-```{r}
-model3 = lm(turnover ~ population + log(distance) + mall * central, data = groceries)
-# summary(model3)
-```
-
-## Predictions and decision making {.smaller}
-
-You are building a new store and have two locations to consider. Both are outside of a city center and have about 2500 inhabitants within the nearest 1 km.
-
-The first location has a distance of 2 km to the nearest competitor, and is not within a mall. The second location is only 0.5 km from the nearest competitor, but is within a mall.
-
-What is predicted turnover at the two locations? Calculate 95% prediction intervals. Is it clear, from the model, which location you should prefer?
-
-Use our final model with interactions to evaluate this.
-
-## Predictions and decision making {.smaller}
-
-![](images/clipboard-479889719.png)
+<!-- Outside city centre: approx 124 000 NOK higher turnover if in a mall -->
 
 
-```{r}
-ndata = data.frame(distance = c(2, 0.5),
-                   population = c(2500,2500),
-                   mall = c(0,1),
-                   central = c(0,0))
-#predict(model2, ndata, interval = "pred")
-```
+<!-- ```{r} -->
+<!-- model3 = lm(turnover ~ population + log(distance) + mall * central, data = groceries) -->
+<!-- # summary(model3) -->
+<!-- ``` -->
+
+<!-- ## Predictions and decision making {.smaller} -->
+
+<!-- You are building a new store and have two locations to consider. Both are outside of a city center and have about 2500 inhabitants within the nearest 1 km. -->
+
+<!-- The first location has a distance of 2 km to the nearest competitor, and is not within a mall. The second location is only 0.5 km from the nearest competitor, but is within a mall. -->
+
+<!-- What is predicted turnover at the two locations? Calculate 95% prediction intervals. Is it clear, from the model, which location you should prefer? -->
+
+<!-- Use our final model with interactions to evaluate this. -->
+
+<!-- ## Predictions and decision making {.smaller} -->
+
+<!-- ![](images/clipboard-479889719.png) -->
+
+
+<!-- ```{r} -->
+<!-- ndata = data.frame(distance = c(2, 0.5), -->
+<!--                    population = c(2500,2500), -->
+<!--                    mall = c(0,1), -->
+<!--                    central = c(0,0)) -->
+<!-- #predict(model2, ndata, interval = "pred") -->
+<!-- ``` -->
