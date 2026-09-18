@@ -21,6 +21,10 @@ Find the desk with your group number:
 - Break
 - Assignment
 
+## Survey
+
+![](images/clipboard-3063398218.png)
+
 ## About today's assignment
 
 - The assignment has to be done with pen and paper (you do not need a computer)
@@ -116,8 +120,7 @@ model2 = lm(turnover ~ population + log(distance) + mall + central, data = groce
 
 **Model 4:**
 
-$$\text{turnover} = \beta_0 + \beta_1 \text{population} + \beta_2 \text{log(distance)} + \beta_3 \text{mall} + \beta_4 \text{center} + \epsilon$$
-In the next slide we show prediction for two shops, both in a mall, one in the center and one not, with population 1000 and distances to the nearest competitor ranging from 0.1 to 5 km (no intervals).
+$$\text{turnover} = \beta_0 + \beta_1 \text{population} + \beta_2 \text{log(distance)} + \beta_3 \text{mall} + \beta_4 \text{center} + \epsilon$$ In the next slide we show prediction for two shops, both in a mall, one in the center and one not, with population 1000 and distances to the nearest competitor ranging from 0.1 to 5 km (no intervals).
 
 ## Adding categorical covariates
 
