@@ -2,8 +2,14 @@
 .Rhistory
 .RData
 .Ruserdata
-.DS_store
+.DS_Store
 
 /.quarto/
 **/*.quarto_ipynb
-.positai
+
+_freeze/
+_site/
+
+
+
+
