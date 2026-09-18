@@ -1,0 +1,415 @@
+---
+title: " Linear Regression with Bike Sharing Data"
+author: ""
+number-sections: true
+format:
+  pdf:
+    geometry: margin=2.2cm
+    fontsize: 11pt
+    colorlinks: true
+jupyter: python3
+---
+\vspace{-2cm}
+
+A city operates a bike-sharing system. We want to understand what affects the number of bikes rented on a given day and use regression to predict demand. The dataset contains the following variables:
+
+- `rentals`: total number of bike rentals that day
+- `temperature`: temperature in degrees Celsius
+- `hum`:  humidity in percentage
+- `season`: season of the year (spring, summer, fall, winter)
+
+```{python}
+#| echo: false
+#| output: true
+
+import numpy as np
+import matplotlib.pyplot as plt
+import pandas as pd
+import seaborn as sns
+# Read the Bike Sharing data
+data = pd.read_csv("bike_rentals.csv")
+data["temp"] = data["temp"] * 41
+data["hum"] = data["hum"] * 100
+
+data["season"] = data["season"].replace({
+    1: "Spring",
+    2: "Summer",
+    3: "Fall",
+    4: "Winter"})
+
+data["season"] = pd.Categorical(
+    data["season"],
+    categories=["Spring", "Summer", "Fall", "Winter"],
+    ordered=True)
+```
+
+#  Exploratory analysis
+
+```{python}
+#| echo: false
+#| warning: false
+#| output: true
+#| fig-width: 4
+#| fig-height: 4
+
+plot_data = data[["rentals", "temp", "hum", "season"]].rename(
+    columns={
+        "rentals": "Rentals",
+        "temp": "Temperature",
+        "hum": "Humidity",
+        "season":"Season"
+    }
+)
+
+g = sns.pairplot(plot_data, corner=True, diag_kind = "hist")
+
+
+g.fig.set_size_inches(4, 4)
+g.fig.tight_layout()
+
+plt.show()
+
+```
+
+Discuss the relationship between the continuous variables in the dataset, two sentences: 
+
+\vspace{0.4cm}
+
+\noindent\rule{\textwidth}{0.4pt}
+
+\vspace{0.7cm}
+
+\noindent\rule{\textwidth}{0.4pt}
+
+
+
+```{python}
+#| echo: false
+#| warning: false
+#| output: true
+#| fig-width: 4
+#| fig-height: 4
+
+fig, axes = plt.subplots(1, 3, figsize=(10, 3.5))
+
+sns.boxplot(data=data, x="season", y="rentals", ax=axes[0])
+axes[0].set_xlabel("Season")
+axes[0].set_ylabel("Rentals")
+
+sns.boxplot(data=data, x="season", y="temp", ax=axes[1])
+axes[1].set_xlabel("Season")
+axes[1].set_ylabel("Temperature")
+
+sns.boxplot(data=data, x="season", y="hum", ax=axes[2])
+axes[2].set_xlabel("Season")
+axes[2].set_ylabel("Humidity")
+
+plt.tight_layout()
+plt.show()
+
+```
+
+
+
+Discuss the relationship between the continuous variables in the dataset and the categorical season variable, two sentences: 
+
+\vspace{0.4cm}
+
+\noindent\rule{\textwidth}{0.4pt}
+
+\vspace{0.7cm}
+
+\noindent\rule{\textwidth}{0.4pt}
+
+
+
+
+# Simple linear regression 
+
+We fit a model using only temperature as covariate:
+
+$$
+\text{rentals} = \beta_0+\beta_1\text{temperature} + \epsilon, \qquad \epsilon \sim\mathcal{N}(0,\sigma^2)
+$$
+
+```{python}
+#| echo: false
+import statsmodels.formula.api as smf
+# Fit linear model
+model = smf.ols("rentals ~ temp", data=data).fit()
+
+# Regression output
+print(model.summary().tables[0])
+print(model.summary().tables[1])
+```
+
+Interpret the temperature coefficient, one sentence:
+
+\vspace{0.4cm}
+
+\noindent\rule{\textwidth}{0.4pt}
+
+What does $R^2=0.39$ mean? One sentence: 
+
+\vspace{0.4cm}
+
+\noindent\rule{\textwidth}{0.4pt}
+
+
+Calculate the predicted number of rentals for a day with temperature $20^\circ\text{C}$:
+
+\vspace{0.4cm}
+
+\noindent\rule{\textwidth}{0.4pt}
+
+
+Does the small p-value tell us that temperature is important in a practical sense? Discuss the distinction between statistical significance and practical importance. One sentence:
+
+\vspace{0.4cm}
+
+\noindent\rule{\textwidth}{0.4pt}
+
+Below you see a plot of the model residuals against fitted values. What does this residual plot suggest about the fitted linear regression model? Discuss and sketch on the figure.
+
+\vspace{0.4cm}
+
+\noindent\rule{\textwidth}{0.4pt}
+
+```{python}
+#| echo: false
+#| # Residual plot
+plt.scatter(model.fittedvalues, model.resid, alpha=0.5)
+
+# Horizontal line at zero
+plt.axhline(0, linestyle="--")
+
+plt.xlabel("Fitted values")
+plt.ylabel("Residuals")
+plt.title("Residuals versus fitted values")
+
+plt.tight_layout()
+plt.show()
+
+```
+
+
+
+#  Multiple regression 
+
+
+We now include  temperature, humidity and season to the model
+
+The fitted model is:
+
+```{python}
+#| echo: false
+# Fit linear model
+model3 = smf.ols("rentals ~ temp + hum + C(season)", data=data).fit()
+
+# Regression output
+print(model3.summary().tables[0])
+print(model3.summary().tables[1])
+```
+
+We included season as a categorical covariate in the model. Why this choice? And why in the output there are only 3 parameters for season? Two sentences:
+\vspace{0.4cm}
+
+\noindent\rule{\textwidth}{0.4pt}
+
+\vspace{0.7cm}
+
+\noindent\rule{\textwidth}{0.4pt}
+
+
+Below are the estimated effect of season. How do you interpret them? One sentence: 
+\vspace{0.4cm}
+
+\noindent\rule{\textwidth}{0.4pt}
+
+
+```{python}
+#| echo: FALSE
+# Extract season coefficients
+season_effects = model3.params.filter(like="C(season)")
+season_ci = model3.conf_int().loc[season_effects.index]
+
+# Plot
+plt.figure(figsize=(5, 3))
+
+plt.errorbar(
+    x=season_effects.index,
+    y=season_effects.values,
+    yerr=[
+        season_effects.values - season_ci[0].values,
+        season_ci[1].values - season_effects.values
+    ],
+    fmt="o",
+    capsize=5
+)
+
+plt.axhline(0, linestyle="--")
+plt.xlabel("Season")
+plt.ylabel("Estimated effect on rentals")
+plt.title("Estimated seasonal effects with 95% confidence intervals")
+plt.tight_layout()
+plt.show()
+```
+
+
+Sketch two regression lines, with temperature along the x-axis varying from 0 to 30, and predicted rentals on the y-axis. Humidity should be the same for both lines, but one should be for spring, and the other for winter (you do not need numbers on the figure). 
+
+\vspace{0.3cm}
+\begin{center}
+\fbox{\rule{0pt}{7cm}\rule{13cm}{0pt}}
+\end{center}
+
+
+$R^2$ increased from 0.39 to 0.51 when additional predictors were included.  What does this tell us? One sentence:
+
+\vspace{0.4cm}
+
+\noindent\rule{\textwidth}{0.4pt}
+
+\clearpage
+
+# Model with interactions
+
+\small
+```{python}
+#| echo: false
+
+# Fit linear model
+model4 = smf.ols("rentals ~   hum + temp*C(season)", data=data).fit()
+
+# Regression output
+print(model4.summary().tables[1])
+```
+
+
+What is the estimated coefficient of the temperature in Spring and Fall? And what is the estimated intercept for the two seasons? Answers:
+
+\vspace{0.4cm}
+
+\noindent\rule{\textwidth}{0.4pt}
+
+\vspace{0.7cm}
+
+\noindent\rule{\textwidth}{0.4pt}
+
+
+
+Below is a plot that shows estimated regression lines, with confidence and prediction intervals, for Spring and Fall (we have set humidity to zero for simplicity of the task). Which line is for Spring and which one is for Fall?
+
+\vspace{0.4cm}
+
+\noindent\rule{\textwidth}{0.4pt}
+
+Explain the difference between prediction and confidence intervals, and why is one type of interval so much wider than the other one? Two sentences:
+
+\vspace{0.4cm}
+
+\noindent\rule{\textwidth}{0.4pt}
+
+\vspace{0.7cm}
+
+\noindent\rule{\textwidth}{0.4pt}
+
+```{python}
+#| echo: false
+#| 
+
+
+# Temperature range
+temp_range = np.linspace(
+    data["temp"].min(),
+    data["temp"].max(),
+    100
+)
+
+# Hold humidity constant at its mean
+mean_hum = 0
+
+# Prediction data for spring
+pred_spring = pd.DataFrame({
+    "temp": temp_range,
+    "hum": mean_hum,
+    "season": "Spring"
+})
+
+# Prediction data for Fall
+pred_Fall = pd.DataFrame({
+    "temp": temp_range,
+    "hum": mean_hum,
+    "season": "Fall"
+})
+
+# Get predictions and intervals
+spring_pred = model4.get_prediction(pred_spring).summary_frame(alpha=0.05)
+Fall_pred = model4.get_prediction(pred_Fall).summary_frame(alpha=0.05)
+
+
+
+
+plt.figure(figsize=(8, 5))
+
+# Spring
+plt.plot(
+    temp_range,
+    spring_pred["mean"],
+    color="blue",
+    label="Spring"
+)
+
+plt.fill_between(
+    temp_range,
+    spring_pred["mean_ci_lower"],
+    spring_pred["mean_ci_upper"],
+    color="blue",
+    alpha=0.30,
+    label="Spring 95% CI"
+)
+
+plt.fill_between(
+    temp_range,
+    spring_pred["obs_ci_lower"],
+    spring_pred["obs_ci_upper"],
+    color="blue",
+    alpha=0.10,
+    label="Spring 95% PI"
+)
+
+# Fall
+plt.plot(
+    temp_range,
+    Fall_pred["mean"],
+    color="orange",
+    label="Fall"
+)
+
+plt.fill_between(
+    temp_range,
+    Fall_pred["mean_ci_lower"],
+    Fall_pred["mean_ci_upper"],
+    color="orange",
+    alpha=0.30,
+    label="Fall 95% CI"
+)
+
+plt.fill_between(
+    temp_range,
+    Fall_pred["obs_ci_lower"],
+    Fall_pred["obs_ci_upper"],
+    color="orange",
+    alpha=0.10,
+    label="Fall 95% PI"
+)
+
+plt.xlabel("Temperature")
+plt.ylabel("Predicted rentals")
+plt.show()
+```
+
+
+
+
+
