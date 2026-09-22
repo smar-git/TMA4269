@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en"><head>
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" integrity="sha384-ZvpUoO/+PpLXR1lu4jmpXWu80pZlYUAfxl5NsBMWOEPSjUn/6Z/hRTt8+pR6L4N2" crossorigin="anonymous"></script><script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script><script src="site_libs/clipboard/clipboard.min.js"></script>
 <script src="site_libs/quarto-html/tabby.min.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dc55a5b9e770e841cd82e46aadbfb9b0.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.8.24">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.7.32">
 
   <meta name="author" content="">
   <title>TMA4269 – Linear Regression</title>
@@ -29,7 +29,7 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="site_libs/revealjs/dist/theme/quarto-534cd8e3a96973385dffff3f4709048d.css">
+  <link rel="stylesheet" href="site_libs/revealjs/dist/theme/quarto-f563837468303362081e247dddd440d0.css">
   <link href="site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -121,7 +121,7 @@
       margin-right: 0; 
     }
   </style>
-  <script src="https://cdn.jsdelivr.net/npm/requirejs@2.3.6/require.min.js" integrity="sha384-c9c+LnTbwQ3aujuU7ULEPVvgLs+Fn6fJUvIGTsuu1ZcCf11fiEubah0ttpca4ntM sha384-6V1/AdqZRWk1KAlWbKBlGhN7VG4iE/yAZcO6NZPMF8od0vukrvr0tg4qY6NSrItx" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" integrity="sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg==" crossorigin="anonymous"></script>
   
   <script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
 </head>
@@ -269,8 +269,8 @@
 <section id="lets-simulate-some-data" class="slide level2">
 <h2>Let’s simulate some data</h2>
 <p>We will simulate a fictional dataset - these are not the same data as in the paper!</p>
-<div id="3fd66887" class="cell" data-execution_count="1">
-<div class="cell-output cell-output-display" data-execution_count="13">
+<div id="1259c240" class="cell" data-execution_count="1">
+<div class="cell-output cell-output-display" data-execution_count="1">
 <div>
 <style scoped="">
     .dataframe tbody tr th:only-of-type {
@@ -286,7 +286,7 @@
     }
 </style>
 
-<table class="dataframe caption-top" data-border="1">
+<table class="dataframe caption-top" data-quarto-postprocess="true" data-border="1">
 <thead>
 <tr class="header" style="text-align: right;">
 <th data-quarto-table-cell-role="th"></th>
@@ -297,31 +297,31 @@
 </thead>
 <tbody>
 <tr class="odd">
-<th data-quarto-table-cell-role="th">0</th>
+<td data-quarto-table-cell-role="th">0</td>
 <td>13.003075</td>
 <td>0</td>
 <td>7.563246</td>
 </tr>
 <tr class="even">
-<th data-quarto-table-cell-role="th">1</th>
+<td data-quarto-table-cell-role="th">1</td>
 <td>13.746864</td>
 <td>1</td>
 <td>6.994161</td>
 </tr>
 <tr class="odd">
-<th data-quarto-table-cell-role="th">2</th>
+<td data-quarto-table-cell-role="th">2</td>
 <td>12.314655</td>
 <td>1</td>
 <td>6.541806</td>
 </tr>
 <tr class="even">
-<th data-quarto-table-cell-role="th">3</th>
+<td data-quarto-table-cell-role="th">3</td>
 <td>10.773520</td>
 <td>0</td>
 <td>8.570364</td>
 </tr>
 <tr class="odd">
-<th data-quarto-table-cell-role="th">4</th>
+<td data-quarto-table-cell-role="th">4</td>
 <td>11.863323</td>
 <td>1</td>
 <td>7.169482</td>
@@ -335,7 +335,7 @@
 </section>
 <section id="what-do-the-data-look-like" class="slide level2">
 <h2>What do the data look like?</h2>
-<div id="08530c70" class="cell" data-execution_count="2">
+<div id="5fd98949" class="cell" data-execution_count="2">
 <div class="cell-output cell-output-display">
 <div>
 <figure>
@@ -348,8 +348,8 @@
 <section id="first-idea-compare-the-averages" class="slide level2">
 <h2>First idea: compare the averages</h2>
 <p><strong>Calculate the average sleep in each group.</strong></p>
-<div id="09c5d89d" class="cell" data-execution_count="3">
-<div class="cell-output cell-output-display" data-execution_count="15">
+<div id="54980c3f" class="cell" data-execution_count="3">
+<div class="cell-output cell-output-display" data-execution_count="3">
 <div>
 <style scoped="">
     .dataframe tbody tr th:only-of-type {
@@ -365,7 +365,7 @@
     }
 </style>
 
-<table class="dataframe caption-top" data-border="1">
+<table class="dataframe caption-top" data-quarto-postprocess="true" data-border="1">
 <thead>
 <tr class="header" style="text-align: right;">
 <th data-quarto-table-cell-role="th"></th>
@@ -382,13 +382,13 @@
 </thead>
 <tbody>
 <tr class="odd">
-<th data-quarto-table-cell-role="th">0</th>
+<td data-quarto-table-cell-role="th">0</td>
 <td>7.770903</td>
 <td>0.532023</td>
 <td>100</td>
 </tr>
 <tr class="even">
-<th data-quarto-table-cell-role="th">1</th>
+<td data-quarto-table-cell-role="th">1</td>
 <td>7.491948</td>
 <td>0.488079</td>
 <td>140</td>
@@ -412,7 +412,7 @@ H_0:\mu_{\text{no phone}}=\mu_{\text{phone}}
 \qquad\text{vs}\qquad
 H_A:\mu_{\text{no phone}}&lt;\mu_{\text{phone}}
 \]</span></p>
-<div id="85de0a49" class="cell" data-execution_count="4">
+<div id="1b8df9c4" class="cell" data-execution_count="4">
 <div class="cell-output cell-output-stdout">
 <pre><code>t = -4.14
 p = 0.0000</code></pre>
@@ -434,7 +434,7 @@ p = 0.0000</code></pre>
 <section id="a-potential-confounder" class="slide level2">
 <h2>A potential confounder</h2>
 <p>Let’s look at parent education and mobile ownership</p>
-<div id="c4b157b1" class="cell" data-execution_count="5">
+<div id="2a15b9d6" class="cell" data-execution_count="5">
 <div class="cell-output cell-output-display">
 <div>
 <figure>
@@ -447,7 +447,7 @@ p = 0.0000</code></pre>
 <section id="a-potential-confounder-1" class="slide level2">
 <h2>A potential confounder</h2>
 <p>Let’s look at parent education and sleep.</p>
-<div id="bed3edd6" class="cell" data-execution_count="6">
+<div id="1cbd6d83" class="cell" data-execution_count="6">
 <div class="cell-output cell-output-display">
 <div>
 <figure>
@@ -506,7 +506,7 @@ y_i = \beta_0 + \beta_1 x_i + \epsilon_i
 </section>
 <section id="simple-linear-regression---fitted-model" class="slide level2 smaller">
 <h2>Simple linear regression - Fitted model</h2>
-<div id="40932dfa" class="cell" data-execution_count="7">
+<div id="45f2b6ea" class="cell" data-execution_count="7">
 <div class="cell-output cell-output-display cell-output-markdown">
 <p><span class="math display">\[
 \widehat{Sleep}
@@ -525,7 +525,7 @@ y_i = \beta_0 + \beta_1 x_i + \epsilon_i
 <li>Testing for <span class="math inline">\(\beta_1 = 0\)</span> is equivalent to the t-test we had before!</li>
 </ul>
 </div><div class="column" style="width:50%;">
-<div id="7abfde70" class="cell" data-execution_count="8">
+<div id="4bf49e6c" class="cell" data-execution_count="8">
 <div class="cell-output cell-output-display">
 <div>
 <figure>
@@ -551,7 +551,7 @@ y_i = \beta_0 + \beta_1 x_{1i} + \beta_2 x_{2i} + \epsilon_i
 </section>
 <section id="the-fitted-model" class="slide level2 smaller">
 <h2>The fitted model</h2>
-<div id="ac0aba33" class="cell" data-execution_count="10">
+<div id="5f5febb5" class="cell" data-execution_count="10">
 <div class="cell-output cell-output-display cell-output-markdown">
 <p><span class="math display">\[
 \widehat{Sleep}
@@ -571,7 +571,7 @@ y_i = \beta_0 + \beta_1 x_{1i} + \beta_2 x_{2i} + \epsilon_i
 <li><p><span class="math inline">\(\beta_2=0.12\)</span> each additional year of parent education is associated with 0.12 additional hours of predicted sleep, <em>holding constant the mobile ownership</em>.</p></li>
 </ul>
 </div><div class="column" style="width:50%;">
-<div id="beb9d0ac" class="cell" data-execution_count="11">
+<div id="0238a645" class="cell" data-execution_count="11">
 <div class="cell-output cell-output-display">
 <div>
 <figure>
@@ -596,7 +596,7 @@ y_i = \beta_0 + \beta_1 x_{1i} + \beta_2 x_{2i} + \epsilon_i
 <section id="comparing-the-models" class="slide level2">
 <h2>Comparing the models</h2>
 <p>Let’s compare the estimated coefficients for mobile ownership in the two models:</p>
-<div id="e40056c3" class="cell" data-execution_count="12">
+<div id="063149ed" class="cell" data-execution_count="12">
 <div class="cell-output cell-output-stdout">
 <pre><code>Simple linear regression estimate:      -0.28 hours
 Adjusted estimated: -0.58 hours</code></pre>
@@ -833,7 +833,7 @@ Adjusted estimated: -0.58 hours</code></pre>
         margin: 0.1,
 
         math: {
-          mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@2.7.9/MathJax.js',
+          mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js',
           config: 'TeX-AMS_HTML-full',
           tex2jax: {
             inlineMath: [['\\(','\\)']],
@@ -907,14 +907,13 @@ Adjusted estimated: -0.58 hours</code></pre>
           e.clearSelection();
         }
         const getTextToCopy = function(trigger) {
-          const outerScaffold = trigger.parentElement.cloneNode(true);
-          const codeEl = outerScaffold.querySelector('code');
-          for (const childEl of codeEl.children) {
-            if (isCodeAnnotation(childEl)) {
-              childEl.remove();
+            const codeEl = trigger.previousElementSibling.cloneNode(true);
+            for (const childEl of codeEl.children) {
+              if (isCodeAnnotation(childEl)) {
+                childEl.remove();
+              }
             }
-          }
-          return codeEl.innerText;
+            return codeEl.innerText;
         }
         const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
           text: getTextToCopy

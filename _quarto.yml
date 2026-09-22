@@ -10,6 +10,7 @@ project:
     - regression1.qmd
     - regression2_v2.qmd
     - regression3.qmd
+    - project1_pt1.qmd
 
     
 
@@ -41,6 +42,8 @@ website:
             href: regression2_v2.html
           - text: Slides Regression 3
             href: regression3.html
+          - text: Slides Project 1 Part 1
+            href: project1_pt1.html
 
 
 format:
