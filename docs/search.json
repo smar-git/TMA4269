@@ -53,7 +53,7 @@
     "href": "project1_pt1.html#project-1-overall-aim",
     "title": "Project 1: Linear regression",
     "section": "Project 1: Overall aim",
-    "text": "Project 1: Overall aim\nYour overall aim is modelling of traffic load (number of vehicles per 30 minutes) using two different data sources (traffic monitoring and weather).\n\nYou will use multiple linear regression and can apply all variations of this that you have learnt so far (transformations, categorical variables, interactions), or add new elements.\n\n\nBefore you can arrive at a suitable model, you will have to make several choices. Some choices are up to your imagination (no right/wrong), but for most problems there are more and less reasonable choices to make."
+    "text": "Project 1: Overall aim\nYour overall aim is modelling of traffic load (number of vehicles per 1 hour) using two different data sources (traffic monitoring and weather).\n\nYou will use multiple linear regression and can apply all variations of this that you have learnt so far (transformations, categorical variables, interactions), or add new elements.\n\n\nBefore you can arrive at a suitable model, you will have to make several choices. Some choices are up to your imagination (no right/wrong), but for most problems there are more and less reasonable choices to make."
   },
   {
     "objectID": "project1_pt1.html#grading",

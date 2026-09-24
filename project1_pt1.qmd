@@ -101,7 +101,7 @@ Your job is to work as a data science team, finding out how the data can be used
 
 ## Project 1: Overall aim
 
-Your overall aim is modelling of traffic load (number of vehicles per 30 minutes) using two different data sources (traffic monitoring and weather).
+Your overall aim is modelling of traffic load (number of vehicles per 1 hour) using two different data sources (traffic monitoring and weather).
 
 . . .
 
