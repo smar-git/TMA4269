@@ -1,35 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://smar-git.github.io/TMA4269/regression3.html</loc>
-    <lastmod>2026-09-18T11:06:40.318Z</lastmod>
-  </url>
-  <url>
-    <loc>https://smar-git.github.io/TMA4269/regression1.html</loc>
-    <lastmod>2026-09-10T08:04:23.108Z</lastmod>
-  </url>
-  <url>
-    <loc>https://smar-git.github.io/TMA4269/telling_stories.html</loc>
-    <lastmod>2026-08-28T14:53:19.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://smar-git.github.io/TMA4269/intro.html</loc>
-    <lastmod>2026-08-24T10:56:22.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://smar-git.github.io/TMA4269/index.html</loc>
-    <lastmod>2026-09-16T15:27:48.564Z</lastmod>
-  </url>
-  <url>
-    <loc>https://smar-git.github.io/TMA4269/Data_visualization.html</loc>
-    <lastmod>2026-08-26T07:27:54.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://smar-git.github.io/TMA4269/Data_visualization2.html</loc>
-    <lastmod>2026-09-02T11:32:10.000Z</lastmod>
+    <loc>https://smar-git.github.io/TMA4269/project1_pt1.html</loc>
+    <lastmod>2026-09-24T09:13:45.276Z</lastmod>
   </url>
   <url>
     <loc>https://smar-git.github.io/TMA4269/regression2_v2.html</loc>
-    <lastmod>2026-09-18T07:09:11.430Z</lastmod>
+    <lastmod>2026-09-24T07:21:08.967Z</lastmod>
+  </url>
+  <url>
+    <loc>https://smar-git.github.io/TMA4269/Data_visualization2.html</loc>
+    <lastmod>2026-09-24T07:21:08.769Z</lastmod>
+  </url>
+  <url>
+    <loc>https://smar-git.github.io/TMA4269/Data_visualization.html</loc>
+    <lastmod>2026-09-24T07:21:08.768Z</lastmod>
+  </url>
+  <url>
+    <loc>https://smar-git.github.io/TMA4269/index.html</loc>
+    <lastmod>2026-09-24T07:21:08.928Z</lastmod>
+  </url>
+  <url>
+    <loc>https://smar-git.github.io/TMA4269/intro.html</loc>
+    <lastmod>2026-09-24T07:21:08.929Z</lastmod>
+  </url>
+  <url>
+    <loc>https://smar-git.github.io/TMA4269/telling_stories.html</loc>
+    <lastmod>2026-09-24T07:21:08.974Z</lastmod>
+  </url>
+  <url>
+    <loc>https://smar-git.github.io/TMA4269/regression1.html</loc>
+    <lastmod>2026-09-24T07:21:08.951Z</lastmod>
+  </url>
+  <url>
+    <loc>https://smar-git.github.io/TMA4269/regression3.html</loc>
+    <lastmod>2026-09-24T07:21:08.967Z</lastmod>
   </url>
 </urlset>

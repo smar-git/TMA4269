@@ -4,7 +4,8 @@
 At the end of each session the group must complete and hand in this short reflective note.
 The notes will document progress and be part of the overall evaluation. 
 
-## Date and group members present
+## Date and group members present. How did you work as a group today (all individual coding, one person coding for all, no PC), and why?
+
 ____________________________________________________________________
 ____________________________________________________________________
 ____________________________________________________________________
