@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html lang="en"><head>
-<script src="regression3_files/libs/clipboard/clipboard.min.js"></script>
-<script src="regression3_files/libs/quarto-html/tabby.min.js"></script>
-<script src="regression3_files/libs/quarto-html/popper.min.js"></script>
-<script src="regression3_files/libs/quarto-html/tippy.umd.min.js"></script>
-<link href="regression3_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="regression3_files/libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="regression3_files/libs/quarto-html/quarto-syntax-highlighting-dc55a5b9e770e841cd82e46aadbfb9b0.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.8.24">
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-html/tabby.min.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.7.32">
 
-  <title>Multiple Linear Regression - Continuation</title>
+  <title>TMA4269 – Project 1: Linear regression</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
-  <link rel="stylesheet" href="regression3_files/libs/revealjs/dist/reset.css">
-  <link rel="stylesheet" href="regression3_files/libs/revealjs/dist/reveal.css">
+  <link rel="stylesheet" href="site_libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="site_libs/revealjs/dist/reveal.css">
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
@@ -28,11 +28,11 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="regression3_files/libs/revealjs/dist/theme/quarto-534cd8e3a96973385dffff3f4709048d.css">
-  <link href="regression3_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
-  <link href="regression3_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
-  <link href="regression3_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
-  <link href="regression3_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <link rel="stylesheet" href="site_libs/revealjs/dist/theme/quarto-f563837468303362081e247dddd440d0.css">
+  <link href="site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="site_libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
   <style type="text/css">
     .reveal div.sourceCode {
       margin: 0;
@@ -126,7 +126,7 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Multiple Linear Regression - Continuation</h1>
+  <h1 class="title">Project 1: Linear regression</h1>
 
 <div class="quarto-title-authors">
 </div>
@@ -134,165 +134,160 @@
 </section>
 <section id="first-create-groups-in-canvas" class="slide level2">
 <h2>First: Create Groups in Canvas</h2>
-<p>Find the desk with your group number:</p>
+<p>Find the desk with your group number: <em>This is your group for the entire project</em></p>
+<p>- Log into Canvas</p>
+<p>- Click on People on the right side of the page</p>
+<p>- Click on Group</p>
+<p>- Scroll to the group with the number on your desk and enroll yourself in the group</p>
+<p><strong>Introduce yourselves to the other group members :)</strong></p>
+</section>
+<section id="results-from-first-course-survey-reference-group" class="slide level2">
+<h2>Results from first course survey (“reference group”)</h2>
 <ul>
-<li>Log into Canvas</li>
-<li>Click on <strong>People</strong> on the right side of the page</li>
-<li>Click on <strong>Group</strong></li>
-<li>Scroll to the group with the number on your desk and enroll yourself in the group (Regression Week 38)</li>
+<li>88% responded “<em>I usually learn something from discussing with the other students</em>”</li>
+</ul>
+<div class="fragment">
+<ul>
+<li><p>Many find it easy to get to know new group members, but quite a few also find it a bit difficult.</p></li>
+<li><p>For the project: take time to introduce yourselves, and to hear everyone’s thoughts and ideas. Not all students jump into a discussion voluntarily.</p></li>
+</ul>
+</div>
+</section>
+<section id="working-in-project-groups" class="slide level2 smaller">
+<h2>Working in project groups</h2>
+<p>For the project, you are freer than before to manage your work.</p>
+<p>Here are some tips based on what we have observed so far:</p>
+<ol type="1">
+<li><p>Have one person dedicated to keep track of time, so that you don’t spend too much time on one task</p></li>
+<li><p>Vary between different work modes:</p>
+<ol type="1">
+<li><p>All students work individually with AI and coding to generate ideas</p></li>
+<li><p>Only 1 student with a PC and sharing the screen</p></li>
+<li><p>No PC - only discussions</p></li>
+</ol></li>
+</ol>
+<div class="fragment">
+<p>Why? When you are all lost behind your screen you sometimes get extremely inefficient / unfocused.</p>
+</div>
+</section>
+<section id="time-table" class="slide level2 smaller">
+<h2>Time table</h2>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>Week</th>
+<th style="text-align: left;">Date</th>
+<th style="text-align: right;">Planned Activity</th>
+<th style="text-align: center;">Delivery</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><em>39</em></td>
+<td style="text-align: left;"><em>Wed 23.09</em></td>
+<td style="text-align: right;"><em>Project 1</em></td>
+<td style="text-align: center;">(Part 1 presented)</td>
+</tr>
+<tr class="even">
+<td></td>
+<td style="text-align: left;"><em>Fri 25.09</em></td>
+<td style="text-align: right;"><em>Project 1</em></td>
+<td style="text-align: center;"><em>First Hand-in</em></td>
+</tr>
+<tr class="odd">
+<td><em>40</em></td>
+<td style="text-align: left;"><em>Wed 30.09</em></td>
+<td style="text-align: right;"><em>Project 1</em></td>
+<td style="text-align: center;">(Part 2 presented)</td>
+</tr>
+<tr class="even">
+<td></td>
+<td style="text-align: left;"><em>Fri 02.10</em></td>
+<td style="text-align: right;"><em>Project 1</em></td>
+<td style="text-align: center;"><em>-</em></td>
+</tr>
+<tr class="odd">
+<td><em>41</em></td>
+<td style="text-align: left;"><em>Wed 07.10</em></td>
+<td style="text-align: right;"><em>Project 1</em></td>
+<td style="text-align: center;"><em>Final Hand-in</em></td>
+</tr>
+<tr class="even">
+<td></td>
+<td style="text-align: left;"><em>Fri 09.10</em></td>
+<td style="text-align: right;">TBD</td>
+<td style="text-align: center;">Assignment, 5 points</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Note 1:</strong> The groups will manage the work done and participation in/outside class. An entire group cannot be absent without agreement with the lecturers.</p>
+<div class="fragment">
+<p><strong>Note 2:</strong> If we see it necessary for your work, the time table can change. Give us feedback!</p>
+</div>
+<div class="fragment">
+<p><strong>Note 3:</strong> No lecturing other than general information at the <strong>start of each session</strong> (be on time!). And we will not disturb you (like we usually do), now it is up to you to ask us for help.</p>
+</div>
+</section>
+<section id="portfolio-assessment" class="slide level2">
+<h2>Portfolio assessment</h2>
+<ul>
+<li><p>8 smaller activities, participation (hand-in) counts 5 points each, but at most 30 points. <strong>We have completed 4 of these</strong>.</p></li>
+<li><p>Projects (graded by us) account for the remaining (up to) 70 points</p></li>
+<li><p>Project 1: 30 points</p></li>
+<li><p>Project 2: 40 points</p></li>
 </ul>
 </section>
-<section id="plan-for-today" class="slide level2">
-<h2>Plan for Today</h2>
-<ul>
-<li>A short survey about the course</li>
-<li>Contunue with the regression workshop</li>
-<li>Break</li>
-<li>Assignment</li>
-</ul>
-</section>
-<section id="about-todays-assignment" class="slide level2">
-<h2>About today’s assignment</h2>
-<ul>
-<li>The assignment has to be done with pen and paper (you do not need a computer)</li>
-<li>Collect all the sheet you use, mark them with the group number and deliver them to us</li>
-<li>In <strong>Canvas</strong>: Deliver a picture of the first sheet</li>
-</ul>
-</section>
-<section id="our-data" class="slide level2 smaller">
-<h2>Our Data</h2>
-<p>Today we will work with the (simulated) <em>groceries.csv</em> dataset.</p>
-<p>Here you find the following variables:</p>
-<ul>
-<li><strong>turnover</strong>: Weekly turnover (measured in 1000 NOK).</li>
-<li><strong>population</strong>: Number of people living within 1 km of the store.</li>
-<li><strong>distance</strong>: Distance (in km) to the nearest competing grocery store.</li>
-<li><strong>central</strong>: Indicator variable equal to 1 if the store is located in a city center, 0 otherwise.</li>
-<li><strong>mall</strong>: Indicator variable equal to 1 if the store lies within a mall (shopping center), 0 otherwise.</li>
-</ul>
-<p>Our interest lies in predicting the weekly turnover based on the other available data.</p>
-</section>
-<section id="what-we-did-last-time" class="slide level2">
-<h2>What we did last time</h2>
-<ul>
-<li><p>Fit simple linear regression model</p>
-<ul>
-<li>Interpret parameters</li>
-<li>Check residuals</li>
-<li>Predict (with undertainty)</li>
-</ul></li>
-<li><p>Multiple Linear Regression</p>
-<ul>
-<li>multiple covariates</li>
-<li>transformations</li>
-</ul></li>
-</ul>
-</section>
-<section id="what-we-do-today" class="slide level2">
-<h2>What we do today</h2>
-<ul>
-<li><p>Multiple Linear Regression</p>
-<ul>
-<li>categorical covariates</li>
-<li>interactions</li>
-</ul></li>
-</ul>
-</section>
-<section id="adding-categorical-covariates" class="slide level2">
-<h2>Adding categorical covariates</h2>
-<p>We now want to check weather being in a mall or being in the city center has also an effect on the turnover.</p>
-<p><strong>Model 4:</strong></p>
-<p><span class="math display">\[
-\text{turnover} = \beta_0 + \beta_1 \text{population} + \beta_2 \text{log(distance)} + \beta_3 \text{mall} + \beta_4 \text{center} + \epsilon
-\]</span></p>
-<p><strong>Python:</strong> Do <code>TASK 7: Add categorical covariates</code>, use AI if needed.</p>
-<p><strong>Discuss:</strong> How do you interpret the new parameters?</p>
-</section>
-<section id="adding-categorical-covariates-1" class="slide level2 smaller">
-<h2>Adding categorical covariates</h2>
+<section id="project-1-about-the-data" class="slide level2">
+<h2>Project 1: About the data</h2>
 
-<img data-src="images/clipboard-3514989628.png" class="r-stretch"><ul>
-<li><p>If the store is in a mall it will, all other variable being equal, earn ca 46 000 NOK more per week compared to one that is not in a mall. This effect does not seem to be significant.</p></li>
-<li><p>Holding population, distance and mall status constant, the model predicts that city-centre stores have approximately 345 000 NOK lower weekly turnover than stores outside the city centre.</p></li>
-</ul>
+<img data-src="images/clipboard-1949702402.png" class="r-stretch"><p>The project data is given to us by a statistician at Statens Vegvesen (The Norwegian Public Roads Administration), Emma Skarstein.</p>
 </section>
-<section id="categorical-variables---encoding" class="slide level2 smaller">
-<h2>Categorical variables - encoding</h2>
-<ul>
-<li><p>Because mall and central are coded 0/1, the model compares:</p>
-<ul>
-<li>mall = 1 vs mall = 0</li>
-<li>central = 1 vs central = 0</li>
-</ul></li>
-<li><p>The coefficients for mall and central describe the difference relative to the 0 category (in this case “not in the mall” and “not in the center”), while keeping population and distance fixed.</p></li>
-<li><p>The same principle applies for variables with multiple categories, one category is the reference, the effects are differences from the reference category.</p></li>
-</ul>
-</section>
-<section id="adding-categorical-covariates-2" class="slide level2 smaller">
-<h2>Adding categorical covariates</h2>
-<p><strong>Model 4:</strong></p>
-<p><span class="math display">\[
-\text{turnover} = \beta_0 + \beta_1 \text{population} + \beta_2 \text{log(distance)} + \beta_3 \text{mall} + \beta_4 \text{center} + \epsilon
-\]</span></p>
-<p><strong>Python:</strong> Continue on <code>TASK 7: Add categorical covariates</code>, use AI if needed.</p>
-<ul>
-<li>Plot the predicted turnover for two shops, both in a mall, one in the center and one not, with population 1000 and distances to the nearest competitor ranging from 0.1 to 5 km (no intervals).</li>
-<li>Add <strong>confidence intervals</strong> to the plot</li>
-<li>Add <strong>prediction intervals</strong> to the plot</li>
-</ul>
-<p><strong>Discuss:</strong> What is the difference between these two types of intervals? Why is the prediction interval so wide?</p>
-</section>
-<section id="adding-categorical-covariates-3" class="slide level2">
-<h2>Adding categorical covariates</h2>
-<p>Predictions:</p>
+<section id="project-1-about-the-data-1" class="slide level2 smaller">
+<h2>Project 1: About the data</h2>
 
-<img data-src="images/clipboard-1039071274.png" class="r-stretch"></section>
-<section id="adding-categorical-covariates-4" class="slide level2">
-<h2>Adding categorical covariates</h2>
-<p>Confidence intervals:</p>
-
-<img data-src="images/clipboard-210460476.png" class="r-stretch"></section>
-<section id="adding-categorical-covariates-5" class="slide level2">
-<h2>Adding categorical covariates</h2>
-<p>Prediction intervals:</p>
-
-<img data-src="images/clipboard-2965623269.png" class="r-stretch"></section>
-<section id="interactions" class="slide level2 smaller">
-<h2>Interactions</h2>
-<p>What happens if a shop is in a mall <em>and</em> in the city center?</p>
-<p><strong>Model 5:</strong></p>
-<p><span class="math display">\[
-\text{turnover} = \beta_0 + \beta_1 \text{population} + \beta_2 \text{log(distance)}
-\]</span></p>
-<p><span class="math display">\[
-+ \beta_3 \text{mall} + \beta_4 \text{center} + \beta_5 \text{mall} \cdot \text{center} + \epsilon
-\]</span></p>
-<p><strong>Python:</strong> Do <code>TASK 8: Add interaction</code>, use AI if needed, to fit a model where <em>mall</em> and <em>central</em> interact with each other.</p>
-<p><strong>Discuss:</strong> If population and distance are the same;</p>
-<ul>
-<li>if two shops are in the city center, what is the difference between being in a mall or not?</li>
-<li>if two shops are not in the city center, what is the difference between being in a mall or not?</li>
-</ul>
-<p>What is the adjusted <span class="math inline">\(R^2\)</span> for this final model?</p>
+<img data-src="images/clipboard-2400579473.png" class="r-stretch"><p>The data contains data from two traffic monitoring points in Frogner, Oslo: one monitoring motor vehicles and one monitoring bicycles. You will also be given weather data from a nearby location.</p>
+<div class="fragment">
+<p>The data are provided in the original format. The traffic data cover the period from 1 January 2026 to 1 June 2026.</p>
+</div>
+<div class="fragment">
+<p>Your job is to work as a data science team, finding out how the data can be used, i.e.&nbsp;gaining knowledge and value from data.</p>
+</div>
 </section>
-<section id="interactions-1" class="slide level2">
-<h2>Interactions</h2>
-
-<img data-src="images/clipboard-1315578469.png" class="r-stretch"><p>In city centre: approx 32 000 NOK higher turnover if in a mall</p>
-<p>Outside city centre: approx 124 000 NOK higher turnover if in a mall</p>
+<section id="project-1-overall-aim" class="slide level2">
+<h2>Project 1: Overall aim</h2>
+<p>Your overall aim is modelling of traffic load (number of vehicles per 1 hour) using two different data sources (traffic monitoring and weather).</p>
+<div class="fragment">
+<p>You will use multiple linear regression and can apply all variations of this that you have learnt so far (transformations, categorical variables, interactions), or add new elements.</p>
+</div>
+<div class="fragment">
+<p>Before you can arrive at a suitable model, you will have to make several choices. Some choices are up to your imagination (no right/wrong), but for most problems there are more and less reasonable choices to make.</p>
+</div>
 </section>
-<section id="predictions-and-decision-making" class="slide level2 smaller">
-<h2>Predictions and decision making</h2>
-<p>You are building a new store and have two locations to consider. Both are outside of a city center and have about 2500 inhabitants within the nearest 1 km.</p>
-<p>The first location has a distance of 2 km to the nearest competitor, and is not within a mall. The second location is only 0.5 km from the nearest competitor, but is within a mall.</p>
-<p>What is predicted turnover at the two locations? Calculate 95% prediction intervals. Is it clear, from the model, which location you should prefer?</p>
-<p>Use our final model with interactions to evaluate this.</p>
+<section id="grading" class="slide level2 smaller">
+<h2>Grading</h2>
+<p>In general, we are looking for both <strong>correctness</strong> in use of methods, and your <strong>understanding/reflections</strong> regarding the data, you choices and your results.</p>
+<p><strong>AI-use</strong>: We expect you to take advantage of all available resources, but the challenge is to use them in a good way. (Your teachers and teaching assistants are also a resource…)</p>
+<div class="fragment">
+<p><strong>Documenting progress</strong>: One of the final hand-ins for the project is a (brief) timeline. At the end of <em>each</em> session you will make a short reflective note, including</p>
+<ol type="1">
+<li>Date, group members present and how you collaborated</li>
+<li>Main confusion / frustration</li>
+<li>Main breakthrough</li>
+<li>Most useful AI-output of the session</li>
+<li>A list of choices made (and why)</li>
+</ol>
+</div>
 </section>
-<section id="predictions-and-decision-making-1" class="slide level2 smaller">
-<h2>Predictions and decision making</h2>
+<section id="project-1-part-1" class="slide level2">
+<h2>Project 1: Part 1</h2>
+<p><em>Today (Wednesday) and Friday</em></p>
+<p><strong>Getting to know the data, data cleaning, and prepare for modelling</strong></p>
+<p>You will get the Part 1 project description on paper and in Canvas. <em>Read carefully.</em></p>
+<p>Todays’ reflection note is on paper, hand in to teacher before you leave (we give them back later, take a picture so that you have a copy).</p>
+<p><strong>Note:</strong> We will not disturb you in the same way as we have done before, it is now up to you to ask us questions.</p>
 
 
-<img data-src="images/clipboard-479889719.png" class="r-stretch"></section>
+</section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
 <div class="footer footer-default">
@@ -301,19 +296,19 @@
 </div></div>
 
   <script>window.backupDefine = window.define; window.define = undefined;</script>
-  <script src="regression3_files/libs/revealjs/dist/reveal.js"></script>
+  <script src="site_libs/revealjs/dist/reveal.js"></script>
   <!-- reveal.js plugins -->
-  <script src="regression3_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
-  <script src="regression3_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
-  <script src="regression3_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
-  <script src="regression3_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
-  <script src="regression3_files/libs/revealjs/plugin/quarto-support/support.js"></script>
+  <script src="site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="site_libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="site_libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="site_libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="site_libs/revealjs/plugin/quarto-support/support.js"></script>
   
 
-  <script src="regression3_files/libs/revealjs/plugin/notes/notes.js"></script>
-  <script src="regression3_files/libs/revealjs/plugin/search/search.js"></script>
-  <script src="regression3_files/libs/revealjs/plugin/zoom/zoom.js"></script>
-  <script src="regression3_files/libs/revealjs/plugin/math/math.js"></script>
+  <script src="site_libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="site_libs/revealjs/plugin/search/search.js"></script>
+  <script src="site_libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="site_libs/revealjs/plugin/math/math.js"></script>
   <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
 
   <script>
@@ -482,7 +477,7 @@
         margin: 0.1,
 
         math: {
-          mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@2.7.9/MathJax.js',
+          mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js',
           config: 'TeX-AMS_HTML-full',
           tex2jax: {
             inlineMath: [['\\(','\\)']],
@@ -508,44 +503,6 @@
         ]
       });
     </script>
-    
-    <script>
-      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
-      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
-      // slide changes (different for each slide format).
-      (function () {
-        // dispatch for htmlwidgets
-        function fireSlideEnter() {
-          const event = window.document.createEvent("Event");
-          event.initEvent("slideenter", true, true);
-          window.document.dispatchEvent(event);
-        }
-
-        function fireSlideChanged(previousSlide, currentSlide) {
-          fireSlideEnter();
-
-          // dispatch for shiny
-          if (window.jQuery) {
-            if (previousSlide) {
-              window.jQuery(previousSlide).trigger("hidden");
-            }
-            if (currentSlide) {
-              window.jQuery(currentSlide).trigger("shown");
-            }
-          }
-        }
-
-        // hookup for slidy
-        if (window.w3c_slidy) {
-          window.w3c_slidy.add_observer(function (slide_num) {
-            // slide_num starts at position 1
-            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
-          });
-        }
-
-      })();
-    </script>
-
     <script id="quarto-html-after-body" type="application/javascript">
       window.document.addEventListener("DOMContentLoaded", function (event) {
         const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
@@ -594,14 +551,13 @@
           e.clearSelection();
         }
         const getTextToCopy = function(trigger) {
-          const outerScaffold = trigger.parentElement.cloneNode(true);
-          const codeEl = outerScaffold.querySelector('code');
-          for (const childEl of codeEl.children) {
-            if (isCodeAnnotation(childEl)) {
-              childEl.remove();
+            const codeEl = trigger.previousElementSibling.cloneNode(true);
+            for (const childEl of codeEl.children) {
+              if (isCodeAnnotation(childEl)) {
+                childEl.remove();
+              }
             }
-          }
-          return codeEl.innerText;
+            return codeEl.innerText;
         }
         const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
           text: getTextToCopy
@@ -616,7 +572,7 @@
         }
           var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
           var mailtoRegex = new RegExp(/^mailto:/);
-            var filterRegex = new RegExp('/' + window.location.host + '/');
+            var filterRegex = new RegExp("https:\/\/smar-git\.github\.io\/TMA4269\/");
           var isInternal = (href) => {
               return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
           }
