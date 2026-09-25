@@ -1,5 +1,5 @@
 ---
-title: "Neural networks"
+title: "Neural networks and multiclass prediction"
 format: revealjs
 editor: visual
 ---
@@ -54,7 +54,7 @@ x = (0,0,0,0,0,0, ... {something closer to 1}, ...)
 
 ## Multiclass prediction {.smaller}
 
-**Task 1: How do we go from a list of probabilities to an actual prediction?**
+**How do we go from a list of probabilities to an actual prediction?**
 
 Discuss: What should be our predicted digit if our "black box" returns:
 
@@ -76,9 +76,9 @@ b.
 
 <!-- We may also see this as a probability distribution and sample from it -->
 
-## Multiclass prediction {.smaller}
+## Multiclass prediction
 
-Task 1: How do we go from a list of probabilities to an actual prediction?
+How do we go from a list of probabilities to an actual prediction?
 
 **Decision rule** for us today:
 
@@ -88,6 +88,172 @@ $$
 
 ## Multiclass prediction {.smaller}
 
-![](images/clipboard-2268868461.png)
+![](images/clipboard-3163756644.png)
+
+. . .
+
+Discuss: What is a good "black box" in this case?
+
+Come up with a description both in terms of the $\widehat{p}$-s and $\widehat{y}$.
 
 <!-- Our black box will not actually give 10 probabilities, it will give 10 scores that are not numbers between 0 and 1 and do not sum to one. To make sure we actually get class probabilities we need to do a transformation of these output scores, and the typical choice is the softmax function. -->
+
+<!-- We ultimately want a prediction method that predicts 9 when the intended digit was actually 9 (yhat = y). But we also want a prediction method that gives a high probability for the correct digit.  -->
+
+## Multiclass prediction
+
+What is a good prediction method?
+
+**Loss function** for us today: cross-entropy
+
+If the true digit is $y = 3$ then the loss is:
+
+$$
+L = -\log (\widehat{p}_3)
+$$
+
+. . .
+
+This loss function rewards putting high probability on the true class ($y = 3$).
+
+. . .
+
+If $\widehat{p}_3 = 0.9$ then $L \approx 0.1$
+
+If $\widehat{p}_3 = 0.3$ then $L \approx 1.2$
+
+<!-- Note: both of the method would give the correct prediciton, but the first is better -->
+
+## Multiclass prediction
+
+What is a good prediction method?
+
+**Loss function** for us today: cross-entropy
+
+If the true digit is $y = 3$ then the loss is:
+
+$$
+L = -\log (\widehat{p}_3)
+$$
+
+. . .
+
+**Accuracy of predictions**:
+
+$$ 
+\text{accuracy} = \frac{\text{number of correct predictions}}{\text{total number of predictions}}
+$$
+
+<!-- maybe take accuracy first -->
+
+## Neural networks
+
+![](images/clipboard-4184254498.png)
+
+<!-- We want to go from the input layer to the output layer in such a way that the final class probabilities (in the output layer) are accurate (i.e. minimizing the loss function). The question is how? -->
+
+## Neural networks
+
+![](images/clipboard-2170788124.png)
+
+<!-- the numerical values on the input layer is what our image gave us. The numberical values in the output layer are the numbers that we transform into class probabililies. The values in the nodes of the hidden layer will be a function of all the values in the input layer. Lets focus only on the first node in the hidden layer and the value h1.  -->
+
+## Neural networks
+
+![](images/clipboard-3650861443.png)
+
+<!-- h1 is a function of the values of the input layer  -->
+
+## Neural networks
+
+![](images/clipboard-3472600208.png)
+
+<!-- the w-s are weights. these are unknown, and behave like parameters in statistical models. we will estimate them from the data in our training set. the b is just a constant added to the weighted sum of all the input values. and then that function f is called an activation function. f is not a parameter that we will estimate, but a function that we need to choose when we build the network. It is a bit meaningless if f is a linear function, so the most common choices are non-linear functions -->
+
+## Neural networks
+
+Common activation functions:
+
+![](images/clipboard-1214831749.png)
+
+. . .
+
+*We go with ReLU today*
+
+## Neural networks
+
+![](images/clipboard-1280144099.png)
+
+## Neural networks {.smaller}
+
+![](images/clipboard-1987245684.png)
+
+. . .
+
+Discuss: How many unknown parameters have we introduced so far?
+
+. . .
+
+Answer: 784x32 weights (w-s) and 32 offsets (b-s) gives 25 120 unknown parameters
+
+## Neural networks
+
+![](images/clipboard-1377190659.png)
+
+## Neural networks
+
+![](images/clipboard-1979300363.png)
+
+## Neural networks
+
+![](images/clipboard-3699038552.png)
+
+<!-- the function that transforms weighted sums in the numbers to get to the output layer needs -->
+<!-- to have some special properties, since the class probabilities should form a discrete probabililty -->
+<!-- distribution. we therefore need a function that gives numbers between 0 and 1, and makes sure that they -->
+<!-- all sum to one. The softmax activation function does that for us.  -->
+
+
+## Neural networks {.smaller}
+
+![](images/clipboard-3699038552.png)
+
+
+Softmax gives the final class probabilities:
+
+$$
+z_k = \sum_i v_i h_i + c_k, k = 0, 1, \ldots, 9
+$$
+
+
+$$
+\widehat{p}_k = \frac{e^{z_k}}{\sum_{j=0}^9 e^{z_j}}
+$$
+
+## Neural networks {.smaller}
+
+![](images/clipboard-3699038552.png)
+
+Now we have 25 450 unknown parameters that we must estimate from data by minimizing the loss, using our training data (7500 images (x) and corresponding true digits (y)).
+
+. . .
+
+We start with a random guess, and then try to improve until we are happy with our result or we don't want to spend any  more time (stopping criterion).
+
+## Group work: neural networks
+
+We have seen an example of a neural network with one hidden layer with 32 nodes and the ReLU activation function. In canvas you will find code for this. 
+
+Decide on two other architectures: 
+
+- Adding a second hidden layer?
+
+- Changing the number of nodes in the hidden layer(s)?
+
+- A different activation function? (ReLU, sigmoid or tanh)
+
+Run all three using the test set and calculate the accuracy on the verication set. 
+Choose one method and write it down. 
+
+Finally, calculate the accuracy on the test set. 
+

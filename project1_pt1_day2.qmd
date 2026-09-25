@@ -15,7 +15,7 @@ editor: visual
 | *41* | *Wed 07.10*     |      *Project 1* |    *Final Hand-in*     |
 |      | *Fri 09.10*     |              TBD |  Assignment, 5 points  |
 
-## A few thoughts {.smaller}
+## Comments on your reflection sheets {.smaller}
 
 A typical frustration: what the columns meant, data cleaning
 
@@ -25,12 +25,22 @@ AI-use: plotting, data cleaning
 
 . . .
 
-Be more precise: "converting weather data to hourly format": how? mean? max?
+**Be more precise:** "converting weather data to hourly format": how? mean? max?
 
 . . .
 
-Temporal variables: You have dates in your data set, and from this you can create a lot of variables, and perhaps do some relevant filtering
+**Time variables:** You have dates in your data set, and from this you can create a lot of variables, and perhaps do some relevant filtering
 
 . . .
 
 7 groups have chosen to consider only bicycles because "it depends more on weather".
+
+Comments on your reflection sheets
+
+## Deliverables Part 1
+
+2 reflection sheets (Wednesday and Friday)
+
+1 modelling pipeline (Friday)
+
+**Note: The pipeline must be delivered in Canvas today.**

@@ -9,7 +9,7 @@
 <link href="neural_network_files/libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.7.32">
 
-  <title>Neural networks</title>
+  <title>Neural networks and multiclass prediction</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -126,7 +126,7 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Neural networks</h1>
+  <h1 class="title">Neural networks and multiclass prediction</h1>
 
 <div class="quarto-title-authors">
 </div>
@@ -174,7 +174,7 @@
 <img data-src="images/clipboard-3163756644.png" class="r-stretch"></section>
 <section id="multiclass-prediction-3" class="slide level2 smaller">
 <h2>Multiclass prediction</h2>
-<p><strong>Task 1: How do we go from a list of probabilities to an actual prediction?</strong></p>
+<p><strong>How do we go from a list of probabilities to an actual prediction?</strong></p>
 <p>Discuss: What should be our predicted digit if our “black box” returns:</p>
 <ol type="a">
 <li></li>
@@ -190,9 +190,9 @@
 <!-- We may also choose to NOT give a prediction if none of the probabilities are above some threshold -->
 <!-- We may also see this as a probability distribution and sample from it -->
 </section>
-<section id="multiclass-prediction-4" class="slide level2 smaller">
+<section id="multiclass-prediction-4" class="slide level2">
 <h2>Multiclass prediction</h2>
-<p>Task 1: How do we go from a list of probabilities to an actual prediction?</p>
+<p>How do we go from a list of probabilities to an actual prediction?</p>
 <p><strong>Decision rule</strong> for us today:</p>
 <p><span class="math display">\[
 \widehat{y} = \arg\max_{k \in \{0,\ldots,9\}} \widehat{p}_k
@@ -201,9 +201,136 @@
 <section id="multiclass-prediction-5" class="slide level2 smaller">
 <h2>Multiclass prediction</h2>
 
+<img data-src="images/clipboard-3163756644.png" class="r-stretch"><div class="fragment">
+<p>Discuss: What is a good “black box” in this case?</p>
+<p>Come up with a description both in terms of the <span class="math inline">\(\widehat{p}\)</span>-s and <span class="math inline">\(\widehat{y}\)</span>.</p>
 <!-- Our black box will not actually give 10 probabilities, it will give 10 scores that are not numbers between 0 and 1 and do not sum to one. To make sure we actually get class probabilities we need to do a transformation of these output scores, and the typical choice is the softmax function. -->
+<!-- We ultimately want a prediction method that predicts 9 when the intended digit was actually 9 (yhat = y). But we also want a prediction method that gives a high probability for the correct digit.  -->
+</div>
+</section>
+<section id="multiclass-prediction-6" class="slide level2">
+<h2>Multiclass prediction</h2>
+<p>What is a good prediction method?</p>
+<p><strong>Loss function</strong> for us today: cross-entropy</p>
+<p>If the true digit is <span class="math inline">\(y = 3\)</span> then the loss is:</p>
+<p><span class="math display">\[
+L = -\log (\widehat{p}_3)
+\]</span></p>
+<div class="fragment">
+<p>This loss function rewards putting high probability on the true class (<span class="math inline">\(y = 3\)</span>).</p>
+</div>
+<div class="fragment">
+<p>If <span class="math inline">\(\widehat{p}_3 = 0.9\)</span> then <span class="math inline">\(L \approx 0.1\)</span></p>
+<p>If <span class="math inline">\(\widehat{p}_3 = 0.3\)</span> then <span class="math inline">\(L \approx 1.2\)</span></p>
+<!-- Note: both of the method would give the correct prediciton, but the first is better -->
+</div>
+</section>
+<section id="multiclass-prediction-7" class="slide level2">
+<h2>Multiclass prediction</h2>
+<p>What is a good prediction method?</p>
+<p><strong>Loss function</strong> for us today: cross-entropy</p>
+<p>If the true digit is <span class="math inline">\(y = 3\)</span> then the loss is:</p>
+<p><span class="math display">\[
+L = -\log (\widehat{p}_3)
+\]</span></p>
+<div class="fragment">
+<p><strong>Accuracy of predictions</strong>:</p>
+<p><span class="math display">\[
+\text{accuracy} = \frac{\text{number of correct predictions}}{\text{total number of predictions}}
+\]</span></p>
+<!-- maybe take accuracy first -->
+</div>
+</section>
+<section id="neural-networks" class="slide level2">
+<h2>Neural networks</h2>
 
-<img data-src="images/clipboard-2268868461.png" class="r-stretch"></section>
+<!-- We want to go from the input layer to the output layer in such a way that the final class probabilities (in the output layer) are accurate (i.e. minimizing the loss function). The question is how? -->
+<img data-src="images/clipboard-4184254498.png" class="r-stretch"></section>
+<section id="neural-networks-1" class="slide level2">
+<h2>Neural networks</h2>
+
+<!-- the numerical values on the input layer is what our image gave us. The numberical values in the output layer are the numbers that we transform into class probabililies. The values in the nodes of the hidden layer will be a function of all the values in the input layer. Lets focus only on the first node in the hidden layer and the value h1.  -->
+<img data-src="images/clipboard-2170788124.png" class="r-stretch"></section>
+<section id="neural-networks-2" class="slide level2">
+<h2>Neural networks</h2>
+
+<!-- h1 is a function of the values of the input layer  -->
+<img data-src="images/clipboard-3650861443.png" class="r-stretch"></section>
+<section id="neural-networks-3" class="slide level2">
+<h2>Neural networks</h2>
+
+<!-- the w-s are weights. these are unknown, and behave like parameters in statistical models. we will estimate them from the data in our training set. the b is just a constant added to the weighted sum of all the input values. and then that function f is called an activation function. f is not a parameter that we will estimate, but a function that we need to choose when we build the network. It is a bit meaningless if f is a linear function, so the most common choices are non-linear functions -->
+<img data-src="images/clipboard-3472600208.png" class="r-stretch"></section>
+<section id="neural-networks-4" class="slide level2">
+<h2>Neural networks</h2>
+<p>Common activation functions:</p>
+
+<img data-src="images/clipboard-1214831749.png" class="r-stretch"><div class="fragment">
+<p><em>We go with ReLU today</em></p>
+</div>
+</section>
+<section id="neural-networks-5" class="slide level2">
+<h2>Neural networks</h2>
+
+<img data-src="images/clipboard-1280144099.png" class="r-stretch"></section>
+<section id="neural-networks-6" class="slide level2 smaller">
+<h2>Neural networks</h2>
+
+<img data-src="images/clipboard-1987245684.png" class="r-stretch"><div class="fragment">
+<p>Discuss: How many unknown parameters have we introduced so far?</p>
+</div>
+<div class="fragment">
+<p>Answer: 784x32 weights (w-s) and 32 offsets (b-s) gives 25 120 unknown parameters</p>
+</div>
+</section>
+<section id="neural-networks-7" class="slide level2">
+<h2>Neural networks</h2>
+
+<img data-src="images/clipboard-1377190659.png" class="r-stretch"></section>
+<section id="neural-networks-8" class="slide level2">
+<h2>Neural networks</h2>
+
+<img data-src="images/clipboard-1979300363.png" class="r-stretch"></section>
+<section id="neural-networks-9" class="slide level2">
+<h2>Neural networks</h2>
+
+<!-- the function that transforms weighted sums in the numbers to get to the output layer needs -->
+<!-- to have some special properties, since the class probabilities should form a discrete probabililty -->
+<!-- distribution. we therefore need a function that gives numbers between 0 and 1, and makes sure that they -->
+<!-- all sum to one. The softmax activation function does that for us.  -->
+<img data-src="images/clipboard-3699038552.png" class="r-stretch"></section>
+<section id="neural-networks-10" class="slide level2 smaller">
+<h2>Neural networks</h2>
+
+<img data-src="images/clipboard-3699038552.png" class="r-stretch"><p>Softmax gives the final class probabilities:</p>
+<p><span class="math display">\[
+z_k = \sum_i v_i h_i + c_k, k = 0, 1, \ldots, 9
+\]</span></p>
+<p><span class="math display">\[
+\widehat{p}_k = \frac{e^{z_k}}{\sum_{j=0}^9 e^{z_j}}
+\]</span></p>
+</section>
+<section id="neural-networks-11" class="slide level2 smaller">
+<h2>Neural networks</h2>
+
+<img data-src="images/clipboard-3699038552.png" class="r-stretch"><p>Now we have 25 450 unknown parameters that we must estimate from data by minimizing the loss, using our training data (7500 images (x) and corresponding true digits (y)).</p>
+<div class="fragment">
+<p>We start with a random guess, and then try to improve until we are happy with our result or we don’t want to spend any more time (stopping criterion).</p>
+</div>
+</section>
+<section id="group-work-neural-networks" class="slide level2">
+<h2>Group work: neural networks</h2>
+<p>We have seen an example of a neural network with one hidden layer with 32 nodes and the ReLU activation function. In canvas you will find code for this.</p>
+<p>Decide on two other architectures:</p>
+<ul>
+<li><p>Adding a second hidden layer?</p></li>
+<li><p>Changing the number of nodes in the hidden layer(s)?</p></li>
+<li><p>A different activation function? (ReLU, sigmoid or tanh)</p></li>
+</ul>
+<p>Run all three using the test set and calculate the accuracy on the verication set. Choose one method and write it down.</p>
+<p>Finally, calculate the accuracy on the test set.</p>
+
+</section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
 <div class="footer footer-default">
