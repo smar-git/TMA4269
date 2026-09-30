@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html lang="en"><head>
-<script src="project1_pt2_files/libs/clipboard/clipboard.min.js"></script>
-<script src="project1_pt2_files/libs/quarto-html/tabby.min.js"></script>
-<script src="project1_pt2_files/libs/quarto-html/popper.min.js"></script>
-<script src="project1_pt2_files/libs/quarto-html/tippy.umd.min.js"></script>
-<link href="project1_pt2_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="project1_pt2_files/libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="project1_pt2_files/libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-html/tabby.min.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.7.32">
 
-  <title>Project 1: Linear regression</title>
+  <title>TMA4269 – Project 1: Linear regression</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
-  <link rel="stylesheet" href="project1_pt2_files/libs/revealjs/dist/reset.css">
-  <link rel="stylesheet" href="project1_pt2_files/libs/revealjs/dist/reveal.css">
+  <link rel="stylesheet" href="site_libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="site_libs/revealjs/dist/reveal.css">
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
@@ -28,11 +28,11 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="project1_pt2_files/libs/revealjs/dist/theme/quarto-f563837468303362081e247dddd440d0.css">
-  <link href="project1_pt2_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
-  <link href="project1_pt2_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
-  <link href="project1_pt2_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
-  <link href="project1_pt2_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <link rel="stylesheet" href="site_libs/revealjs/dist/theme/quarto-f563837468303362081e247dddd440d0.css">
+  <link href="site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="site_libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
   <style type="text/css">
     .reveal div.sourceCode {
       margin: 0;
@@ -234,6 +234,7 @@
 <div class="fragment">
 <p><em>Not part of the final evaluation, but an extra 5 points earned on the first Friday following the project deadline: 5-10 minutes presentations (3 groups together).</em></p>
 
+
 </div>
 </section>
     </div>
@@ -244,19 +245,19 @@
 </div></div>
 
   <script>window.backupDefine = window.define; window.define = undefined;</script>
-  <script src="project1_pt2_files/libs/revealjs/dist/reveal.js"></script>
+  <script src="site_libs/revealjs/dist/reveal.js"></script>
   <!-- reveal.js plugins -->
-  <script src="project1_pt2_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
-  <script src="project1_pt2_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
-  <script src="project1_pt2_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
-  <script src="project1_pt2_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
-  <script src="project1_pt2_files/libs/revealjs/plugin/quarto-support/support.js"></script>
+  <script src="site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="site_libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="site_libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="site_libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="site_libs/revealjs/plugin/quarto-support/support.js"></script>
   
 
-  <script src="project1_pt2_files/libs/revealjs/plugin/notes/notes.js"></script>
-  <script src="project1_pt2_files/libs/revealjs/plugin/search/search.js"></script>
-  <script src="project1_pt2_files/libs/revealjs/plugin/zoom/zoom.js"></script>
-  <script src="project1_pt2_files/libs/revealjs/plugin/math/math.js"></script>
+  <script src="site_libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="site_libs/revealjs/plugin/search/search.js"></script>
+  <script src="site_libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="site_libs/revealjs/plugin/math/math.js"></script>
   <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
 
   <script>
@@ -520,7 +521,7 @@
         }
           var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
           var mailtoRegex = new RegExp(/^mailto:/);
-            var filterRegex = new RegExp('/' + window.location.host + '/');
+            var filterRegex = new RegExp("https:\/\/smar-git\.github\.io\/TMA4269\/");
           var isInternal = (href) => {
               return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
           }
