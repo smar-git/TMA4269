@@ -8,10 +8,10 @@ editor: visual
 
 Find the desk with your group number: **this is the same group number as last and next Wednesday**
 
--   Log into Canvas
--   Click on **People** on the right side of the page
--   Click on **Group**
--   Scroll to the group with the number on your desk and enroll yourself in the group (Telling stories Week 35)
+- Log into Canvas
+- Click on **People** on the right side of the page
+- Click on **Group**
+- Scroll to the group with the number on your desk and enroll yourself in the group (Telling stories Week 35)
 
 **NOTE** Remember your Group number for next week, you will have to enroll again!
 
@@ -52,18 +52,18 @@ You are not AI/prompt experts (yet)
 
 ## What YOU (perhaps) learnt on Wednesday
 
--   Canvas deliveries take time
+- Canvas deliveries take time
 
--   Getting to know a data set takes time and can be confusing
+- Getting to know a data set takes time and can be confusing
 
--   There is no right answer, but some data summaries are more useful than others
+- There is no right answer, but some data summaries are more useful than others
 
--   A good visualization is rarely the first one, you need to keep asking questions to the data
+- A good visualization is rarely the first one, you need to keep asking questions to the data
 
 ## Next Wednesday
 
--   We present answers from Ole Bernhard at Nofence
--   We give a task related to visualization of the Nofence data (with prize!)
+- We present answers from Ole Bernhard at Nofence
+- We give a task related to visualization of the Nofence data (with prize!)
 
 ## Soft skills
 
@@ -81,15 +81,15 @@ It’s understanding what data means, how it’s created and how to use it so yo
 
 Data analytics projects are full of uncertainties, ambiguities and numerous challenges such as:
 
--   unclear decision objectives
+- unclear decision objectives
 
--   time and resource constraints
+- time and resource constraints
 
--   lack of expertise
+- lack of expertise
 
--   poor quality data
+- poor quality data
 
--   ethical and privacy issues.
+- ethical and privacy issues.
 
 <br><br><br>
 
@@ -98,27 +98,27 @@ Data analytics projects are full of uncertainties, ambiguities and numerous chal
 ## Soft skills {.smaller}
 
 1.  **Communication**
-    -   Understand information accurately and quickly.
-    -   Understand others' insight requirements and decision needs
-    -   Avoid misunderstandings
+    - Understand information accurately and quickly.
+    - Understand others' insight requirements and decision needs
+    - Avoid misunderstandings
 
 ## Soft skills {.smaller}
 
 1.  **Communication**
 2.  **Collaboration**
-    -   Successfully work toward realizing a common goal
-    -   Open-mindedness and respect
+    - Successfully work toward realizing a common goal
+    - Open-mindedness and respect
 
 ## Soft skills {.smaller}
 
 1.  **Communication**
 2.  **Collaboration**
 3.  **Critical Thinking** Think rationally and logically and solve problems in a consistent and systematic manner.
-    -   Question the hypothesis
-    -   Identify biases
-    -   Validate assumptions
-    -   Select appropriate models
-    -   Critique the accuracy of the analysis and results
+    - Question the hypothesis
+    - Identify biases
+    - Validate assumptions
+    - Select appropriate models
+    - Critique the accuracy of the analysis and results
 
 ## Soft skills {.smaller}
 
@@ -126,8 +126,8 @@ Data analytics projects are full of uncertainties, ambiguities and numerous chal
 2.  **Collaboration**
 3.  **Critical Thinking**
 4.  **Curiosity** Think rationally and logically and solve problems in a consistent and systematic manner.
-    -   Continuously learn and expand knowledge
-    -   Overcome obstacles by asking useful questions
+    - Continuously learn and expand knowledge
+    - Overcome obstacles by asking useful questions
 
 ## Soft skills {.smaller}
 
@@ -136,8 +136,8 @@ Data analytics projects are full of uncertainties, ambiguities and numerous chal
 3.  **Critical Thinking**
 4.  **Curiosity**
 5.  **Creativity** Think rationally and logically and solve problems in a consistent and systematic manner.
-    -   Continuously strive to generate new insights that are timely, accurate and relevant.
-    -   Consider and explore divergent possibilities and perspectives
+    - Continuously strive to generate new insights that are timely, accurate and relevant.
+    - Consider and explore divergent possibilities and perspectives
 
 ## Telling stories with data
 
@@ -213,15 +213,15 @@ Discuss the VG article (header and visualization) \[*2 min first thoughts on pos
 :::
 
 ::: {.column width="65%"}
--   Reality: What is it we are trying to describe?
+- Reality: What is it we are trying to describe?
 
--   Measurements: What measurements are done and who are included? Who and what is not included?
+- Measurements: What measurements are done and who are included? Who and what is not included?
 
--   Data: What is the raw data?
+- Data: What is the raw data?
 
--   Analysis: What analysis was done with the raw data?
+- Analysis: What analysis was done with the raw data?
 
--   Story: What is the final story?
+- Story: What is the final story?
 :::
 :::::
 
