@@ -255,6 +255,129 @@ ggplot(aes(prob, odds)) +
 
 
 
+
+
+
+ 
+## Logistic regression
+
+Logistic regression models log odds:
+
+$$
+\log\left(\frac{p}{1-p}\right)=\beta_0+\beta_1x+\dots
+$$
+
+How do we interpret $\beta_1$?
+
+A one-unit increase in $x$
+
+- increases the **log odds** by $\beta_1$
+
+. . .
+
+Unfortunately, log-odds are not very intuitive.
+
+## Parameter Interpretation{.smaller}
+
+
+Instead, we exponentiate the coefficient
+
+$$
+OR = e^{\beta_1}
+$$
+
+where $OR$ is an **odds ratio**.
+
+. . .
+
+**Example: ** Suppose
+
+$$
+\log\left(\frac{p}{1-p}\right)
+=
+-3+0.4\times \text{Hours}
+$$
+
+Then
+
+$$
+OR=e^{0.4}=1.49
+$$
+
+. . .
+
+**Interpretation**
+
+For each additional hour of smartphone use,
+the odds of sleeping less than 9 hours are multiplied by **1.49**
+(approximately a **49% increase in odds**).
+
+
+## Interpreting Odds Ratios{.smaller}
+
+What do the following odds ratios mean?
+
+| Odds Ratio | Interpretation |
+|------------|---------------|
+| 1.0 | ? |
+| 1.3 | ? |
+| 2.0 | ? |
+| 0.7 | ? |
+
+. . .
+
+
+**Answers**
+
+- OR = 1.0: no association
+- OR = 1.3: odds are 30% higher
+- OR = 2.0: odds are doubled
+- OR = 0.7: odds are 30% lower
+
+## Logistic regression as a prediction tool
+
+
+```{r}
+
+library(tidyverse)
+
+set.seed(123)
+
+n <- 500
+
+hours <- runif(n, 0, 10)
+age   <- runif(n, 10, 15)
+
+eta <- -10 +
+  0.8 * hours +
+  0.7 * age
+
+p <- plogis(eta)
+
+df <- tibble(
+  hours,
+  age,
+  sleep_problem = rbinom(n, 1, p)
+)
+
+
+
+df_new = data.frame(expand.grid(hours = seq(0,10,0.1),
+                    age = seq(10,15,0.05)))
+
+fit = glm(sleep_problem ~ hours + age, family = "binomial", data = df)
+out = cbind(df_new, prob = predict(fit, df_new, type = "response")) %>%
+  mutate(preds = ifelse(prob>0.5,1,0))
+
+
+out %>% ggplot() + geom_point(aes(hours, age, color = factor(preds)), alpha = 0.1) +
+  geom_point(data = df, aes(hours, age, color = factor(sleep_problem))) 
+  
+
+
+```
+
+
 ## Linear and logistic regression{.smaller}
 
 ::::: columns
