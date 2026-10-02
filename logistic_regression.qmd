@@ -7,12 +7,11 @@ slide-number: "c/t"
 editor: source
 execute:
   echo: false
-
 ---
 
 ## 
 
-![](images/clipboard-2133479479.png){width=100}
+![](images/clipboard-2133479479.png){width="100"}
 
 **Goal** Does owning a smartphone influences sleep, depression, obesity?
 
@@ -34,22 +33,17 @@ $$
 
 > If age uncreases by one year, keeping all other predictors constant, the mean slept hours decreases by $\beta$
 
-## Group Discussion{.smaller}
+## Group Discussion {.smaller}
 
-
-:::: {.columns}
-
+::::: columns
 ::: {.column width="40%"}
-
-Our response is the answer to: 
+Our response is the answer to:
 
 > Does the child sleep less than 9 hours per night? Yes/No
 
-
-Our predictor: 
+Our predictor:
 
 > hours of smartphone use per day.
-
 :::
 
 ::: {.column width="60%"}
@@ -74,35 +68,26 @@ df %>% ggplot() + geom_point(aes(hours, y)) + xlab(" hours of smartphone use per
   ylab("Sleep less than 9hours")
 ```
 :::
+:::::
 
-
-
-::::
-
-
-
-
-
-
-**Discuss** 
+**Discuss**
 
 - What should a good model predict?
 
-- Can we use linear regression? 
+- Can we use linear regression?
 
-- Do you see any possible problem/challenge with linear regression? 
+- Do you see any possible problem/challenge with linear regression?
 
-
-
-## The model{.smaller}
+## The model {.smaller}
 
 - We want the model to predict probabilities!
 
-- We want a linear predictor of the form $\beta_0 + \beta_1 x_1 + \beta_2 x_2 + \dots$ 
+- We want a linear predictor of the form $\beta_0 + \beta_1 x_1 + \beta_2 x_2 + \dots$
 
 . . .
 
-Let's try to fit a linear regression: $y =\beta_0 + \beta_1x +\epsilon$ 
+Let's try to fit a linear regression: $y =\beta_0 + \beta_1x +\epsilon$
+
 ```{r}
 lm_fit  <- lm(y ~ hours, data = df)
 
@@ -131,16 +116,12 @@ ggplot(df, aes(hours, y)) +
     colour = ""
   ) + xlab(" hours of smartphone use per day") + easy_remove_legend()
 ```
- 
-
-
 
 ## Logistic Regression
 
-We want to find a function of the probability to link to the linear predictor such that the predicted values always  make sense!
+We want to find a function of the probability to link to the linear predictor such that the predicted values always make sense!
 
 . . .
-
 
 ```{r}
 
@@ -189,3 +170,132 @@ ggplot(df, aes(hours, y)) +
 ```
 
 ## From probabilities to odds
+
+> Odds are just another way to express probabilities!
+
+Assume we have 100 childred, 20 sleep less than hours are 80 more.
+
+- What is the probability that a randomly selected child sleeps less than 9 hours?
+
+## From probabilities to odds{.smaller}
+
+> Odds are just another way to express probabilities!
+
+. . .
+
+Assume we have 100 childred, 20 sleep less than hours are 80 more.
+
+- What is the probability that a randomly selected child sleeps less than 9 hours? $\frac{20}{100} = 0.2$
+
+. . .
+
+- For every child who sleeps less than 9 hours, how many sleep at least 9 hours? $\frac{20}{80} = 0.25$
+
+. . .
+
+$$
+\text{Odds} = \frac{\text{number of events}}{\text{number of non-events}} = \frac{p}{1-p}
+$$
+
+## Compute the odds
+
+| Probability | Odds |
+|-------------|------|
+| 0.5         |      |
+| 0.1         |      |
+| 0.9         |      |
+
+
+- What do odds equal to 4 mean?
+
+## Compute the odds
+
+| Probability | Odds |
+|-------------|------|
+| 0.5         |   1   |
+| 0.1         |   0.111   |
+| 0.9         |    9   |
+
+- Four children sleeping less than 9 hours for every one child who sleeps at least 9 hours.
+
+## Odds and probability
+
+```{r}
+prob <- seq(0.01, 0.99, length.out = 200)
+
+tibble(
+  prob = prob,
+  odds = prob/(1-prob)
+) |>
+ggplot(aes(prob, odds)) +
+  geom_line(linewidth = 1.2) +
+  labs(
+    x = "Probability",
+    y = "Odds"
+  )
+```
+
+
+## Log Odds and probability
+
+```{r}
+prob <- seq(0.001, 0.999, length.out = 200)
+
+tibble(
+  prob = prob,
+  odds = log(prob/(1-prob))
+) |>
+ggplot(aes(prob, odds)) +
+  geom_line(linewidth = 1.2) +
+  labs(
+    x = "Probability",
+    y = "log Odds"
+  )
+```
+
+
+
+## Linear and logistic regression{.smaller}
+
+::::: columns
+::: {.column width="50%"}
+Linear Regression
+$$
+y = \beta_0 + \beta_1x + \epsilon
+$$
+
+- Response is continuous
+
+- Covariates act linearly on the mean
+
+:::
+
+::: {.column width="50%"}
+
+Logistic Regression
+$$
+\log\left(\frac{p}{1-p}\right) = \beta_0 + \beta_1x 
+$$
+
+- Response is binary (0/1)
+- Covariates act linearly on the odds
+:::
+:::::
+
+. . .
+
+What they have in common:
+
+- Clear model assumptions
+- Simple and rigid relation between covariates and response
+- Few parameters ( #covariates $\ll$ #observations)
+- The parameters are interpretable
+
+. . .
+
+What comes in the next weeks (ML models):
+
+- (Much) More flexible models
+- Many more parameters
+- 
+
