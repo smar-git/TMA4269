@@ -99,12 +99,8 @@ The figure shows reported hours studied per week and attendance rates of 40 stud
 ----------------------------------------------------------
 
 
-1.3) Circle the student nearest to our new student. Use the nearest student's result to predict the *new* students' result. What is the prediction? $\hat{y} = ?$
 
-----------------------------------------------------------
-
-
-1.4) Find the $k = 3$ nearest students to our new student. Use the 3 nearest students' result to predict the *new* students' result. What is the prediction? $\hat{y} = ?$
+1.3) Find the $k = 3$ nearest students to our new student. Use the 3 nearest students' result to predict the *new* students' result. What is the prediction? $\hat{y} = ?$. What is your decision rule (e.g. the mean? the mode?)?
 
 ----------------------------------------------------------
 
@@ -196,7 +192,7 @@ p1 + p2 + p3
 
 ```
 
-The figures show what we would predict for new students at any location in the plot. 
+The figures show what we would predict for new students at any location in the data domain. 
 
 
 2.1) At what $k$ is the KNN prediction model most flexible? Flexible = highly adapting to the data that we have seen. 
@@ -308,11 +304,24 @@ knitr::kable(
 
 
 
+
 <!-- create from training or validation data, or: CV! -->
 
 <!-- show some cross validation slides -->
 
-3.3) The table below gives error rates based on 5-fold cross validation on the training data. Which value of $k$ would you choose? 
+
+
+
+## Part 4: Cross validation
+
+
+
+4.1) The table below gives error rates based on 5-fold cross validation on the training data. Which value of $k$ would you choose? 
+
+----------------------------------------------------------
+
+
+4.2) Is your choice of $k$ the same of different than before? Why do you think it differs?
 
 ----------------------------------------------------------
 
