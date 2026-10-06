@@ -154,6 +154,16 @@ y = \beta_0 + \beta_1x_1 + \beta_2x_2+\dots+\epsilon, \qquad \epsilon\sim\mathca
 </blockquote>
 </div>
 </section>
+<section id="how-do-we-estimate-the-parameters" class="slide level2 smaller">
+<h2>How do we estimate the parameters?</h2>
+
+<img data-src="logistic_regression_files/figure-revealjs/unnamed-chunk-1-1.png" width="960" class="r-stretch"><ul>
+<li>We find the parameters that minimize the <strong>loss function</strong>: <span class="math display">\[
+\sum_{i =1 }^n(y_i-\hat{y}_i)^2 = \sum_{i =1 }^n(y_i-\beta_0-\beta_1x_i-\dots)^2
+\]</span></li>
+<li><strong>Note</strong> The model has strict assumption regarding parameters, linearity, independence</li>
+</ul>
+</section>
 <section id="group-discussion" class="slide level2 smaller">
 <h2>Group Discussion</h2>
 <div class="columns">
@@ -171,7 +181,7 @@ y = \beta_0 + \beta_1x_1 + \beta_2x_2+\dots+\epsilon, \qquad \epsilon\sim\mathca
 <div class="cell-output-display">
 <div>
 <figure>
-<p><img data-src="logistic_regression_files/figure-revealjs/unnamed-chunk-1-1.png" width="960"></p>
+<p><img data-src="logistic_regression_files/figure-revealjs/unnamed-chunk-2-1.png" width="960"></p>
 </figure>
 </div>
 </div>
@@ -196,7 +206,7 @@ y = \beta_0 + \beta_1x_1 + \beta_2x_2+\dots+\epsilon, \qquad \epsilon\sim\mathca
 <div class="cell-output-display">
 <div>
 <figure>
-<p><img data-src="logistic_regression_files/figure-revealjs/unnamed-chunk-2-1.png" width="960"></p>
+<p><img data-src="logistic_regression_files/figure-revealjs/unnamed-chunk-3-1.png" width="960"></p>
 </figure>
 </div>
 </div>
@@ -211,7 +221,7 @@ y = \beta_0 + \beta_1x_1 + \beta_2x_2+\dots+\epsilon, \qquad \epsilon\sim\mathca
 <div class="cell-output-display">
 <div>
 <figure>
-<p><img data-src="logistic_regression_files/figure-revealjs/unnamed-chunk-3-1.png" width="960"></p>
+<p><img data-src="logistic_regression_files/figure-revealjs/unnamed-chunk-4-1.png" width="960"></p>
 </figure>
 </div>
 </div>
@@ -252,6 +262,9 @@ y = \beta_0 + \beta_1x_1 + \beta_2x_2+\dots+\epsilon, \qquad \epsilon\sim\mathca
 </section>
 <section id="compute-the-odds" class="slide level2">
 <h2>Compute the odds</h2>
+<p><span class="math display">\[
+\text{Odds} = \frac{\text{number of events}}{\text{number of non-events}} = \frac{p}{1-p}
+\]</span></p>
 <table class="caption-top">
 <thead>
 <tr class="header">
@@ -303,17 +316,17 @@ y = \beta_0 + \beta_1x_1 + \beta_2x_2+\dots+\epsilon, \qquad \epsilon\sim\mathca
 </tbody>
 </table>
 <ul>
-<li>Four children sleeping less than 9 hours for every one child who sleeps at least 9 hours.</li>
+<li>For each child sleeping less than 9 hours there are four who sleep at least 9 hours.</li>
 </ul>
 </section>
 <section id="odds-and-probability" class="slide level2">
 <h2>Odds and probability</h2>
 
-<img data-src="logistic_regression_files/figure-revealjs/unnamed-chunk-4-1.png" width="960" class="r-stretch"></section>
+<img data-src="logistic_regression_files/figure-revealjs/unnamed-chunk-5-1.png" width="960" class="r-stretch"></section>
 <section id="log-odds-and-probability" class="slide level2">
 <h2>Log Odds and probability</h2>
 
-<img data-src="logistic_regression_files/figure-revealjs/unnamed-chunk-5-1.png" width="960" class="r-stretch"></section>
+<img data-src="logistic_regression_files/figure-revealjs/unnamed-chunk-6-1.png" width="960" class="r-stretch"></section>
 <section id="logistic-regression-1" class="slide level2">
 <h2>Logistic regression</h2>
 <p>Logistic regression models log odds:</p>
@@ -394,8 +407,36 @@ OR=e^{0.4}=1.49
 </section>
 <section id="logistic-regression-as-a-prediction-tool" class="slide level2">
 <h2>Logistic regression as a prediction tool</h2>
+<p>We want to use logistic regression to predict (classify) new observation</p>
+<p>The model output is “probabilities” for example</p>
+<blockquote>
+<p>The probability that a child using the mobile 6 hours a day sleeps less than 9 hours is 0.3</p>
+</blockquote>
+<p><strong>Discussion</strong>: How do you use this to predict if a child sleep less than 9 hours or not?</p>
+</section>
+<section id="predicting-with-logistic-regression" class="slide level2">
+<h2>Predicting with logistic regression</h2>
+<!-- - prediction and classification -->
+<!-- - model gives probabilities...how to you predciton? -->
+<!-- - false positive false negative -->
 
-<img data-src="logistic_regression_files/figure-revealjs/unnamed-chunk-6-1.png" width="960" class="r-stretch"></section>
+<img data-src="logistic_regression_files/figure-revealjs/unnamed-chunk-7-1.png" width="960" class="r-stretch"></section>
+<section id="predicting-with-logistic-regression-1" class="slide level2">
+<h2>Predicting with logistic regression</h2>
+<!-- - prediction and classification -->
+<!-- - model gives probabilities...how to you predciton? -->
+<!-- - false positive false negative -->
+
+<img data-src="logistic_regression_files/figure-revealjs/unnamed-chunk-8-1.png" width="960" class="r-stretch"><p>False Negative: predicted to be 0, observed to be 1</p>
+</section>
+<section id="predicting-with-logistic-regression-2" class="slide level2">
+<h2>Predicting with logistic regression</h2>
+<!-- - prediction and classification -->
+<!-- - model gives probabilities...how to you predciton? -->
+<!-- - false positive false negative -->
+
+<img data-src="logistic_regression_files/figure-revealjs/unnamed-chunk-9-1.png" width="960" class="r-stretch"><p>False Positive: predicted to be 1, observed to be 0</p>
+</section>
 <section id="linear-and-logistic-regression" class="slide level2 smaller">
 <h2>Linear and logistic regression</h2>
 <div class="columns">
@@ -425,15 +466,16 @@ y = \beta_0 + \beta_1x + \epsilon
 <li>The parameters are interpretable</li>
 </ul>
 </div>
-<div class="fragment">
-<p>What comes in the next weeks (ML models):</p>
+</section>
+<section id="what-comes-in-the-next-weeks" class="slide level2">
+<h2>What comes in the next weeks</h2>
+<p><strong>Machine Learning Models</strong></p>
 <ul>
 <li>(Much) More flexible models</li>
 <li>Many more parameters</li>
-<li></li>
+<li>More fuzzy relationship between covariates and responses</li>
 </ul>
 
-</div>
 </section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">

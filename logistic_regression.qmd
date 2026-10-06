@@ -33,6 +33,83 @@ $$
 
 > If age uncreases by one year, keeping all other predictors constant, the mean slept hours decreases by $\beta$
 
+## How do we estimate the parameters?{.smaller}
+
+```{r}
+library(tidyverse)
+
+set.seed(133)
+
+# Simulate data
+n <- 15
+x <- seq(1, 10, length.out = n)
+y <- 2 + 1.5 * x + rnorm(n, sd = 2)
+
+df <- tibble(x, y)
+
+# Fit linear regression
+fit <- lm(y ~ x, data = df)
+
+df <- df %>%
+  mutate(
+    yhat = predict(fit),
+    residual = y - yhat
+  )
+
+# Create squares representing squared errors
+squares <- map_dfr(1:nrow(df), function(i) {
+
+  xi <- df$x[i]
+  yi <- df$y[i]
+  yhat <- df$yhat[i]
+
+  side <- abs(yi - yhat)
+
+  tibble(
+    x = c(xi, xi + side, xi + side, xi),
+    y = c(min(yi, yhat),
+          min(yi, yhat),
+          min(yi, yhat) + side,
+          min(yi, yhat) + side),
+    id = i
+  )
+})
+
+# Compute MSE
+mse <- mean(df$residual^2)
+
+ggplot(df, aes(x, y)) +
+  geom_segment(
+    aes(
+      x = x,
+      xend = x,
+      y = y,
+      yend = yhat
+    ),
+    colour = "red",
+    linewidth = 0.8
+  ) +
+  geom_point(size = 3) +
+  geom_point(
+    aes(y = yhat),
+    colour = "steelblue",
+    size = 2
+  ) +
+  geom_abline(
+    intercept = coef(fit)[1],
+    slope = coef(fit)[2],
+    colour = "steelblue",
+    linewidth = 1.2
+  ) +
+  theme_minimal(base_size = 14)
+```
+
+- We find the parameters that minimize the **loss function**:
+$$
+\sum_{i =1 }^n(y_i-\hat{y}_i)^2 = \sum_{i =1 }^n(y_i-\beta_0-\beta_1x_i-\dots)^2
+$$
+- **Note** The model has strict assumption regarding parameters, linearity, independence
+
 ## Group Discussion {.smaller}
 
 ::::: columns
@@ -199,6 +276,11 @@ $$
 
 ## Compute the odds
 
+$$
+\text{Odds} = \frac{\text{number of events}}{\text{number of non-events}} = \frac{p}{1-p}
+$$
+
+
 | Probability | Odds |
 |-------------|------|
 | 0.5         |      |
@@ -216,7 +298,7 @@ $$
 | 0.1         |   0.111   |
 | 0.9         |    9   |
 
-- Four children sleeping less than 9 hours for every one child who sleeps at least 9 hours.
+- For each child sleeping less than 9 hours there are four   who sleep at least 9 hours.
 
 ## Odds and probability
 
@@ -336,46 +418,311 @@ What do the following odds ratios mean?
 
 ## Logistic regression as a prediction tool
 
+We want to use logistic regression to predict (classify) new observation
+
+ The model output is "probabilities" for example 
+ 
+> The probability that a child using the mobile 6 hours a day sleeps less than 9 hours is 0.3
+
+**Discussion**: How do you use this to predict if a child sleep less than 9 hours or not?
+
+## Predicting with logistic regression
+
+<!-- - prediction and classification -->
+<!-- - model gives probabilities...how to you predciton? -->
+<!-- - false positive false negative -->
+
+
 
 ```{r}
 
-library(tidyverse)
-
-set.seed(123)
-
-n <- 500
+n <- 200
 
 hours <- runif(n, 0, 10)
 age   <- runif(n, 10, 15)
 
-eta <- -10 +
+eta <- -17 +
   0.8 * hours +
-  0.7 * age
+  0.9 * age +
+  0.25 * (hours - 5) * (age - 12.5)
 
 p <- plogis(eta)
+
+y <- rbinom(n, 1, p)
 
 df <- tibble(
   hours,
   age,
-  sleep_problem = rbinom(n, 1, p)
+  y
+)
+
+log_fit <- glm(
+  y ~ hours + age,
+  family = binomial,
+  data = df
+)
+
+preds = data.frame(df, pred_p = predict(log_fit, df, type = "response")) %>%
+  mutate(pp = ifelse(pred_p>0.5,1,0))
+
+
+grid <- expand.grid(
+  hours = seq(min(df$hours),
+              max(df$hours),
+              length.out = 200),
+  age   = seq(min(df$age),
+              max(df$age),
+              length.out = 200)
+)
+
+grid$prob_logit <- predict(
+  log_fit,
+  newdata = grid,
+  type = "response"
 )
 
 
 
-df_new = data.frame(expand.grid(hours = seq(0,10,0.1),
-                    age = seq(10,15,0.05)))
+grid_long <- bind_rows(
+  grid %>%
+    transmute(
+      hours,
+      age,
+      prob = prob_logit,
+      model = "Logistic regression"
+    )
+)
 
-fit = glm(sleep_problem ~ hours + age, family = "binomial", data = df)
-out = cbind(df_new, prob = predict(fit, df_new, type = "response")) %>%
-  mutate(preds = ifelse(prob>0.5,1,0))
 
+ggplot() +
 
-out %>% ggplot() + geom_point(aes(hours, age, color = factor(preds)), alpha = 0.1) +
-  geom_point(data = df, aes(hours, age, color = factor(sleep_problem))) 
-  
+  geom_raster(
+    data = grid_long,
+    aes(hours, age, fill = prob),
+    alpha = 0.7
+  ) +
+
+  geom_contour(
+    data = grid_long,
+    aes(hours, age, z = prob),
+    breaks = 0.5,
+    colour = "black",
+    linewidth = 1.2
+  ) +
+
+  geom_point(
+    data = df,
+    aes(hours, age, colour = factor(y)),
+    alpha = .6,
+    size = 1.5
+  ) +
+
+  facet_wrap(~model) +
+
+  scale_fill_viridis_c(
+    name = "Predicted\nProbability"
+  ) +
+
+  labs(
+    x = "Hours smartphone use",
+    y = "Age",
+    colour = "Observed"
+  ) +
+
+  theme_minimal(base_size = 12)
+
 
 
 ```
+
+
+
+
+
+
+
+## Predicting with logistic regression
+
+<!-- - prediction and classification -->
+<!-- - model gives probabilities...how to you predciton? -->
+<!-- - false positive false negative -->
+
+
+
+```{r}
+
+
+
+
+preds = data.frame(df, pred_p = predict(log_fit, df, type = "response")) %>%
+  mutate(pp = ifelse(pred_p>0.5,1,0))
+
+
+grid <- expand.grid(
+  hours = seq(min(df$hours),
+              max(df$hours),
+              length.out = 200),
+  age   = seq(min(df$age),
+              max(df$age),
+              length.out = 200)
+)
+
+grid$prob_logit <- predict(
+  log_fit,
+  newdata = grid,
+  type = "response"
+)
+
+
+
+grid_long <- bind_rows(
+  grid %>%
+    transmute(
+      hours,
+      age,
+      prob = prob_logit,
+      model = "Logistic regression"
+    )
+)
+
+
+ggplot() +
+
+  geom_raster(
+    data = grid_long,
+    aes(hours, age, fill = prob),
+    alpha = 0.7
+  ) +
+
+  geom_contour(
+    data = grid_long,
+    aes(hours, age, z = prob),
+    breaks = 0.5,
+    colour = "black",
+    linewidth = 1.2
+  ) +
+
+  geom_point(
+    data = df,
+    aes(hours, age, colour = factor(y)),
+    alpha = .6,
+    size = 1.5
+  ) +
+
+  facet_wrap(~model) +
+
+  scale_fill_viridis_c(
+    name = "Predicted\nProbability"
+  ) +
+
+  labs(
+    x = "Hours smartphone use",
+    y = "Age",
+    colour = "Observed"
+  ) +
+  geom_point(data = preds %>% filter(y==1, pp==0),
+             aes(hours, age), shape = 21
+             ) +
+  theme_minimal(base_size = 12)
+
+
+
+```
+False Negative: predicted to be 0, observed to be 1
+
+## Predicting with logistic regression
+
+<!-- - prediction and classification -->
+<!-- - model gives probabilities...how to you predciton? -->
+<!-- - false positive false negative -->
+
+
+
+```{r}
+
+
+
+
+preds = data.frame(df, pred_p = predict(log_fit, df, type = "response")) %>%
+  mutate(pp = ifelse(pred_p>0.5,1,0))
+
+
+grid <- expand.grid(
+  hours = seq(min(df$hours),
+              max(df$hours),
+              length.out = 200),
+  age   = seq(min(df$age),
+              max(df$age),
+              length.out = 200)
+)
+
+grid$prob_logit <- predict(
+  log_fit,
+  newdata = grid,
+  type = "response"
+)
+
+
+
+grid_long <- bind_rows(
+  grid %>%
+    transmute(
+      hours,
+      age,
+      prob = prob_logit,
+      model = "Logistic regression"
+    )
+)
+
+
+ggplot() +
+
+  geom_raster(
+    data = grid_long,
+    aes(hours, age, fill = prob),
+    alpha = 0.7
+  ) +
+
+  geom_contour(
+    data = grid_long,
+    aes(hours, age, z = prob),
+    breaks = 0.5,
+    colour = "black",
+    linewidth = 1.2
+  ) +
+
+  geom_point(
+    data = df,
+    aes(hours, age, colour = factor(y)),
+    alpha = .6,
+    size = 1.5
+  ) +
+
+  facet_wrap(~model) +
+
+  scale_fill_viridis_c(
+    name = "Predicted\nProbability"
+  ) +
+
+  labs(
+    x = "Hours smartphone use",
+    y = "Age",
+    colour = "Observed"
+  ) +
+  geom_point(data = preds %>% filter(y==1, pp==1),
+             aes(hours, age), shape = 21
+             ) +
+  theme_minimal(base_size = 12)
+
+
+
+```
+False Positive: predicted to be 1, observed to be 0
+
+
+
+
+
 
 
 ## Linear and logistic regression{.smaller}
@@ -414,11 +761,12 @@ What they have in common:
 - Few parameters ( #covariates $\ll$ #observations)
 - The parameters are interpretable
 
-. . .
 
-What comes in the next weeks (ML models):
+## What comes in the next weeks 
+
+**Machine Learning Models**
 
 - (Much) More flexible models
 - Many more parameters
-- 
+- More fuzzy relationship between covariates and responses
 
