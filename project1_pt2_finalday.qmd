@@ -1,0 +1,84 @@
+---
+title: "Project 1: Linear regression"
+format: revealjs
+editor: visual
+---
+
+## Time table {.smaller}
+
+| Week | Date | Planned Activity | Delivery |
+|--------------|:-------------|----------------:|:--------------------------:|
+| ~~*39*~~ | ~~*Wed 23.09*~~ | ~~*Project 1*~~ | ~~(Part 1 presented)~~ |
+|  | ~~*Fri 25.09*~~ | ~~*Project 1*~~ | ~~*First Hand-in*~~ |
+| ~~*40*~~ | ~~*Wed 30.09*~~ | ~~*Project 1*~~ | ~~(Part 2 presented)~~ |
+|  | ~~*Fri 02.10*~~ | ~~*Project 1*~~ | ~~*-*~~ |
+| *41* | *Wed 07.10* | *Project 1* | *Final Hand-in* |
+|  | *Fri 09.10* | Presentation of projects and new topic: logistic regression | Assignment, 5 points |
+
+## Presentation
+
+Visualizations:
+
+-   Clear (font size, colors, etc)
+
+-   Has a description: What are we seeing?
+
+-   Fits with the overall presentation
+
+-   You can also use tables
+
+## Presentation
+
+Pipeline:
+
+-   Tell us what you did with the data
+
+    -   Did you remove weekends?
+
+    -   Did you select only bikes?
+
+-   From the pipeline, we should be able to **reproduce** you model and results
+
+Reflections:
+
+-   What is the goal with the data analysis, and how is the final goal related to your thoughts in Part 1
+
+## Presentation
+
+Model formulation, results and interpretation
+
+-   This part also concerns **reproducibility**: what is the model? Give the formula.
+
+-   What are the results? Model summary, tables, figures
+
+-   What is your interpretation of the results? Show us that you thought about the model output
+
+-   Don't forget **uncertainty**! Confidence intervals, prediction intervals, p-values, discussion of model assumptions
+
+## Presentation
+
+Newspaper article:
+
+-   Don't lie
+
+-   But have fun with your results
+
+Timeline:
+
+-   Document your progress, frustrations, breakthoughs
+
+-   A way to show and document AI-use
+
+## Presnting the presentation
+
+Friday 12:15 - 13:00, three groups toghether and present to each other
+
+If all four group members present:
+
+-   2 in charge of presenting (5-10 minutes)
+
+-   2 in charge of asking questions to the other groups
+
+-   Fun and informal
+
+-   Individual 5 points

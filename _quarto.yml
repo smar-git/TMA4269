@@ -13,6 +13,7 @@ project:
     - project1_pt1.qmd
     - project1_pt1_day2.qmd
     - project1_pt2.qmd
+    - project1_pt2_finalday.qmd
 
 
     
@@ -51,6 +52,8 @@ website:
             href: project1_pt1_day2.html
           - text: Slides Project 1 Part 2
             href: project1_pt2.html
+          - text: Slides Project 1 Hand-in
+            href: project1_pt2_finalday.html
 
 
 format:
