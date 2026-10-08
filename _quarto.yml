@@ -14,6 +14,7 @@ project:
     - project1_pt1_day2.qmd
     - project1_pt2.qmd
     - project1_pt2_finalday.qmd
+    - logistic_regression.qmd
 
 
     
@@ -54,6 +55,8 @@ website:
             href: project1_pt2.html
           - text: Slides Project 1 Hand-in
             href: project1_pt2_finalday.html
+          - text: Slides logitic regression
+            href: logistic_regression.html
 
 
 format:
