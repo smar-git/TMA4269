@@ -709,7 +709,7 @@ ggplot() +
     y = "Age",
     colour = "Observed"
   ) +
-  geom_point(data = preds %>% filter(y==1, pp==1),
+  geom_point(data = preds %>% filter(y==0, pp==1),
              aes(hours, age), shape = 21
              ) +
   theme_minimal(base_size = 12)
