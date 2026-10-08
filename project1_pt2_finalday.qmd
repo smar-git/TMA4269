@@ -7,7 +7,7 @@ editor: visual
 ## Time table {.smaller}
 
 | Week | Date | Planned Activity | Delivery |
-|--------------|:-------------|----------------:|:--------------------------:|
+|----|:---|---:|:--:|
 | ~~*39*~~ | ~~*Wed 23.09*~~ | ~~*Project 1*~~ | ~~(Part 1 presented)~~ |
 |  | ~~*Fri 25.09*~~ | ~~*Project 1*~~ | ~~*First Hand-in*~~ |
 | ~~*40*~~ | ~~*Wed 30.09*~~ | ~~*Project 1*~~ | ~~(Part 2 presented)~~ |

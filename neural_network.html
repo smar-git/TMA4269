@@ -156,9 +156,13 @@
 <img data-src="images/clipboard-275188323.png" class="r-stretch"></section>
 <section id="mnist-database-our-goal" class="slide level2">
 <h2>MNIST Database: Our goal</h2>
-<p><strong>Step 1a</strong>: Using training data (7500 images), create <strong>models</strong> that take in an image and return a prediction (0, 1, 2, …, 9)</p>
-<p><strong>Step 1b</strong>: Evaluate the different models on a validation set (1500 images), and select one</p>
-<p><strong>Step 2</strong>: Final evaluation of the chosen model on a test set (1500 images)</p>
+<p>Using <em>training</em> data, 7500 images with digit ‘instructions’ (X,y), create <strong>prediction models</strong> that take in an image and return a prediction: 0, 1, 2, 4, 5, 6, 7, 8 or 9</p>
+<div class="fragment">
+<p>Evaluate the different models on a <em>validation</em> set; 1500 images, (X,y), Select the ‘best’</p>
+</div>
+<div class="fragment">
+<p>Final evaluation of the chosen model on a <em>test</em> set: another set 1500 images, (X,y),</p>
+</div>
 </section>
 <section id="multiclass-prediction" class="slide level2">
 <h2>Multiclass prediction</h2>
@@ -172,8 +176,8 @@
 <h2>Multiclass prediction</h2>
 
 <img data-src="images/clipboard-3163756644.png" class="r-stretch"></section>
-<section id="multiclass-prediction-3" class="slide level2 smaller">
-<h2>Multiclass prediction</h2>
+<section id="multiclass-prediction-group-task" class="slide level2 smaller">
+<h2>Multiclass prediction: Group task</h2>
 <p><strong>How do we go from a list of probabilities to an actual prediction?</strong></p>
 <p>Discuss: What should be our predicted digit if our “black box” returns:</p>
 <ol type="a">
@@ -190,7 +194,7 @@
 <!-- We may also choose to NOT give a prediction if none of the probabilities are above some threshold -->
 <!-- We may also see this as a probability distribution and sample from it -->
 </section>
-<section id="multiclass-prediction-4" class="slide level2">
+<section id="multiclass-prediction-3" class="slide level2">
 <h2>Multiclass prediction</h2>
 <p>How do we go from a list of probabilities to an actual prediction?</p>
 <p><strong>Decision rule</strong> for us today:</p>
@@ -198,70 +202,75 @@
 \widehat{y} = \arg\max_{k \in \{0,\ldots,9\}} \widehat{p}_k
 \]</span></p>
 </section>
-<section id="multiclass-prediction-5" class="slide level2 smaller">
-<h2>Multiclass prediction</h2>
+<section id="multiclass-prediction-group-task-1" class="slide level2 smaller">
+<h2>Multiclass prediction: Group task</h2>
 
 <img data-src="images/clipboard-3163756644.png" class="r-stretch"><div class="fragment">
-<p>Discuss: What is a good “black box” in this case?</p>
-<p>Come up with a description both in terms of the <span class="math inline">\(\widehat{p}\)</span>-s and <span class="math inline">\(\widehat{y}\)</span>.</p>
+<p>Discuss: What is a good “black box” in this case (for the MNIST data)?</p>
+<p>Come up with a description both in terms of the class probabilities <span class="math inline">\(\widehat{p}\)</span>-s and the final digit predictions <span class="math inline">\(\widehat{y}\)</span>.</p>
 <!-- Our black box will not actually give 10 probabilities, it will give 10 scores that are not numbers between 0 and 1 and do not sum to one. To make sure we actually get class probabilities we need to do a transformation of these output scores, and the typical choice is the softmax function. -->
 <!-- We ultimately want a prediction method that predicts 9 when the intended digit was actually 9 (yhat = y). But we also want a prediction method that gives a high probability for the correct digit.  -->
 </div>
 </section>
-<section id="multiclass-prediction-6" class="slide level2">
+<section id="multiclass-prediction-4" class="slide level2">
 <h2>Multiclass prediction</h2>
 <p>What is a good prediction method?</p>
-<p><strong>Loss function</strong> for us today: cross-entropy</p>
-<p>If the true digit is <span class="math inline">\(y = 3\)</span> then the loss is:</p>
-<p><span class="math display">\[
-L = -\log (\widehat{p}_3)
-\]</span></p>
-<div class="fragment">
-<p>This loss function rewards putting high probability on the true class (<span class="math inline">\(y = 3\)</span>).</p>
-</div>
-<div class="fragment">
-<p>If <span class="math inline">\(\widehat{p}_3 = 0.9\)</span> then <span class="math inline">\(L \approx 0.1\)</span></p>
-<p>If <span class="math inline">\(\widehat{p}_3 = 0.3\)</span> then <span class="math inline">\(L \approx 1.2\)</span></p>
-<!-- Note: both of the method would give the correct prediciton, but the first is better -->
-</div>
-</section>
-<section id="multiclass-prediction-7" class="slide level2">
-<h2>Multiclass prediction</h2>
-<p>What is a good prediction method?</p>
-<p><strong>Loss function</strong> for us today: cross-entropy</p>
-<p>If the true digit is <span class="math inline">\(y = 3\)</span> then the loss is:</p>
-<p><span class="math display">\[
-L = -\log (\widehat{p}_3)
-\]</span></p>
-<div class="fragment">
-<p><strong>Accuracy of predictions</strong>:</p>
+<p><strong>Accuracy of predictions on test data</strong>:</p>
 <p><span class="math display">\[
 \text{accuracy} = \frac{\text{number of correct predictions}}{\text{total number of predictions}}
 \]</span></p>
-<!-- maybe take accuracy first -->
+<div class="fragment">
+<p>But in the model building phase (training data) we will work with minimizing some <em>loss function</em>.</p>
+</div>
+</section>
+<section id="multiclass-prediction-5" class="slide level2">
+<h2>Multiclass prediction</h2>
+<p>What is a good prediction method?</p>
+<p><strong>Loss function</strong> for us today: cross-entropy</p>
+<div class="fragment">
+<p>If the true digit is <span class="math inline">\(y = 3\)</span> then the loss is:</p>
+<p><span class="math display">\[
+L = -\log (\widehat{p}_3)
+\]</span></p>
+</div>
+<div class="fragment">
+<p>This loss function rewards putting high probability on the true class.</p>
+</div>
+<div class="fragment">
+<p>For example, for <span class="math inline">\(y = 3\)</span>:</p>
+<p>If <span class="math inline">\(\widehat{p}_3 = 0.9\)</span> then <span class="math inline">\(L \approx 0.1\)</span></p>
+<p>If <span class="math inline">\(\widehat{p}_3 = 0.3\)</span> then <span class="math inline">\(L \approx 1.2\)</span></p>
+</div>
+<div class="fragment">
+<!-- Aim: Minimize loss -->
+<!-- Note: both of the method would give the correct prediciton, but the first is better -->
 </div>
 </section>
 <section id="neural-networks" class="slide level2">
 <h2>Neural networks</h2>
 
+<img data-src="images/clipboard-3163756644.png" class="r-stretch"></section>
+<section id="neural-networks-1" class="slide level2">
+<h2>Neural networks</h2>
+
 <!-- We want to go from the input layer to the output layer in such a way that the final class probabilities (in the output layer) are accurate (i.e. minimizing the loss function). The question is how? -->
 <img data-src="images/clipboard-4184254498.png" class="r-stretch"></section>
-<section id="neural-networks-1" class="slide level2">
+<section id="neural-networks-2" class="slide level2">
 <h2>Neural networks</h2>
 
 <!-- the numerical values on the input layer is what our image gave us. The numberical values in the output layer are the numbers that we transform into class probabililies. The values in the nodes of the hidden layer will be a function of all the values in the input layer. Lets focus only on the first node in the hidden layer and the value h1.  -->
 <img data-src="images/clipboard-2170788124.png" class="r-stretch"></section>
-<section id="neural-networks-2" class="slide level2">
+<section id="neural-networks-3" class="slide level2">
 <h2>Neural networks</h2>
 
 <!-- h1 is a function of the values of the input layer  -->
 <img data-src="images/clipboard-3650861443.png" class="r-stretch"></section>
-<section id="neural-networks-3" class="slide level2">
+<section id="neural-networks-4" class="slide level2">
 <h2>Neural networks</h2>
 
 <!-- the w-s are weights. these are unknown, and behave like parameters in statistical models. we will estimate them from the data in our training set. the b is just a constant added to the weighted sum of all the input values. and then that function f is called an activation function. f is not a parameter that we will estimate, but a function that we need to choose when we build the network. It is a bit meaningless if f is a linear function, so the most common choices are non-linear functions -->
 <img data-src="images/clipboard-3472600208.png" class="r-stretch"></section>
-<section id="neural-networks-4" class="slide level2">
+<section id="neural-networks-5" class="slide level2">
 <h2>Neural networks</h2>
 <p>Common activation functions:</p>
 
@@ -269,29 +278,46 @@ L = -\log (\widehat{p}_3)
 <p><em>We go with ReLU today</em></p>
 </div>
 </section>
-<section id="neural-networks-5" class="slide level2">
+<section id="neural-networks-group-task" class="slide level2 smaller">
+<h2>Neural networks: Group task</h2>
+
+<img data-src="images/clipboard-2836236914.png" class="r-stretch"><p>Calculate the value at the first hidden node <span class="math inline">\(h_1\)</span>, using input node values:</p>
+<p><span class="math display">\[
+x_1 = 0.8, \, x_2 = 0.4, \, x_3 = 0.6.
+\]</span></p>
+<p>Use the following weights and bias:</p>
+<p><span class="math display">\[
+w_1 = 1.0, \, w_2 = 0.5, \, w_3 = -0.5, \, b = 0.1.
+\]</span></p>
+<div class="fragment">
+<p>Answer: <span class="math inline">\(z_1 = 0.8\)</span>, so <span class="math inline">\(h_1 = 0.8\)</span>.</p>
+</div>
+</section>
+<section id="neural-networks-6" class="slide level2">
 <h2>Neural networks</h2>
 
 <img data-src="images/clipboard-1280144099.png" class="r-stretch"></section>
-<section id="neural-networks-6" class="slide level2 smaller">
+<section id="neural-networks-7" class="slide level2">
 <h2>Neural networks</h2>
 
-<img data-src="images/clipboard-1987245684.png" class="r-stretch"><div class="fragment">
-<p>Discuss: How many unknown parameters have we introduced so far?</p>
-</div>
+<img data-src="images/clipboard-1987245684.png" class="r-stretch"></section>
+<section id="neural-networks-group-task-1" class="slide level2 smaller">
+<h2>Neural networks: Group task</h2>
+
+<img data-src="images/clipboard-1987245684.png" class="r-stretch"><p>Discuss: How many unknown parameters have we introduced so far?</p>
 <div class="fragment">
 <p>Answer: 784x32 weights (w-s) and 32 offsets (b-s) gives 25 120 unknown parameters</p>
 </div>
 </section>
-<section id="neural-networks-7" class="slide level2">
-<h2>Neural networks</h2>
-
-<img data-src="images/clipboard-1377190659.png" class="r-stretch"></section>
 <section id="neural-networks-8" class="slide level2">
 <h2>Neural networks</h2>
 
-<img data-src="images/clipboard-1979300363.png" class="r-stretch"></section>
+<img data-src="images/clipboard-1377190659.png" class="r-stretch"></section>
 <section id="neural-networks-9" class="slide level2">
+<h2>Neural networks</h2>
+
+<img data-src="images/clipboard-1979300363.png" class="r-stretch"></section>
+<section id="neural-networks-10" class="slide level2">
 <h2>Neural networks</h2>
 
 <!-- the function that transforms weighted sums in the numbers to get to the output layer needs -->
@@ -299,23 +325,97 @@ L = -\log (\widehat{p}_3)
 <!-- distribution. we therefore need a function that gives numbers between 0 and 1, and makes sure that they -->
 <!-- all sum to one. The softmax activation function does that for us.  -->
 <img data-src="images/clipboard-3699038552.png" class="r-stretch"></section>
-<section id="neural-networks-10" class="slide level2 smaller">
+<section id="neural-networks-11" class="slide level2 smaller">
 <h2>Neural networks</h2>
 
 <img data-src="images/clipboard-3699038552.png" class="r-stretch"><p>Softmax gives the final class probabilities:</p>
 <p><span class="math display">\[
-z_k = \sum_i v_i h_i + c_k, k = 0, 1, \ldots, 9
-\]</span></p>
-<p><span class="math display">\[
-\widehat{p}_k = \frac{e^{z_k}}{\sum_{j=0}^9 e^{z_j}}
+z_k = \sum_i v_i h_i + c_k, \, \, \widehat{p}_k = \frac{e^{z_k}}{\sum_{j=0}^9 e^{z_j}}
 \]</span></p>
 </section>
-<section id="neural-networks-11" class="slide level2 smaller">
+<section id="neural-networks-group-task-2" class="slide level2 smaller">
+<h2>Neural networks: Group task</h2>
+
+<img data-src="images/clipboard-1267905106.png" class="r-stretch"><p>Calculate the class probability at the 10th output node <span class="math inline">\(\widehat{p}_9\)</span>, using values given on your handout.</p>
+<!-- $$ -->
+<!-- h_1 = 0.8, \, h_2 = 0.5. -->
+<!-- $$ -->
+<!-- Use the following 9 output scores for the digits 0, 1, to 8: -->
+<!-- $$ -->
+<!-- z_0=0.2, \, z_1=0.5, \, z_2=−0.4, \, z_3=0.8, \, z_4=0.1,  -->
+<!-- $$ -->
+<!-- $$ -->
+<!-- z_5=0.6, \, z_6=−0.2, \, z_7=0.3, \, z_8=0.7. -->
+<!-- $$ -->
+<!-- Use the following weights and bias: -->
+<!-- $$ -->
+<!-- v_1 = 1.0, \, v_2 = 0.4, \, b = 0.0. -->
+<!-- $$ -->
+<div class="fragment">
+<p>Answer: <span class="math inline">\(z_9 = 1.0\)</span> and <span class="math inline">\(\widehat{p}_9 = 0.17\)</span>.</p>
+</div>
+</section>
+<section id="neural-networks-12" class="slide level2 smaller">
 <h2>Neural networks</h2>
 
-<img data-src="images/clipboard-3699038552.png" class="r-stretch"><p>Now we have 25 450 unknown parameters that we must estimate from data by minimizing the loss, using our training data (7500 images (x) and corresponding true digits (y)).</p>
+<img data-src="images/clipboard-3699038552.png" class="r-stretch"><p>Now we have 25 450 unknown parameters (weights and biases) that we must estimate from our training data (7500 images (x) and corresponding true digits (y)).</p>
+</section>
+<section id="neural-networks-group-task-3" class="slide level2 smaller">
+<h2>Neural networks: Group task</h2>
+<p><strong>How can we find good values of all those weights and biases?</strong></p>
+<ul>
+<li>We randomly choose values for our 25 450 parameters.</li>
+<li>We run some training images through the network and calculate the loss (recall: cross-entropy, rewards putting high probability on the true class).</li>
+<li>The loss is high. What should we do next?</li>
+</ul>
+<ol type="a">
+<li><p>Choose 25 450 completely new random values and try again.</p></li>
+<li><p>Change each parameter a little and determine whether increasing or decreasing it would reduce the loss.</p></li>
+<li><p>Keep the parameters because the network will improve if we simply show it more images.</p></li>
+</ol>
+<p>Which strategy seems most sensible?</p>
+</section>
+<section id="neural-networks-gradient-descent" class="slide level2 smaller">
+<h2>Neural networks: Gradient descent</h2>
+<p>To find the parameter values that minimize the loss over the training data we want to know which direction to change each parameter to reduce the loss.</p>
 <div class="fragment">
-<p>We start with a random guess, and then try to improve until we are happy with our result or we don’t want to spend any more time (stopping criterion).</p>
+<p><strong>Gradient descent</strong> (very informally!):</p>
+<ul>
+<li>Current parameters</li>
+<li>Make predictions and calculate loss</li>
+<li>How would changing each parameter affect the loss?</li>
+<li>Update/change parameters in a direction that lowers the loss</li>
+<li>Repeat</li>
+</ul>
+</div>
+<div class="fragment">
+<p><strong>Backpropagation</strong> is the procedure neural networks use to work out how the parameters contributed to the loss.</p>
+</div>
+<div class="fragment">
+<p><strong>Stopping criterion:</strong> When should we stop updating parameters?</p>
+<ul>
+<li>When we have reached a maximum number of iterations</li>
+<li>When the loss is no longer improving substantially</li>
+<li>…</li>
+</ul>
+</div>
+</section>
+<section id="neural-networks-hyperparameter-tuning" class="slide level2 smaller">
+<h2>Neural networks: Hyperparameter tuning</h2>
+<p>For our specified network:</p>
+<ul>
+<li>1 hidden layer,</li>
+<li>32 hidden nodes,</li>
+<li>ReLU activation,</li>
+<li>etc,</li>
+</ul>
+<p>we use training data to estimate 25 450 unknown parameters (weights and biases).</p>
+<div class="fragment">
+<p>But why 1 hidden layer, 32 nodes and ReLU? These are <em>hyperparameters</em>, and we might want to consider other choices (architectures).</p>
+</div>
+<div class="fragment">
+<p>For each architecture, we train the network using the training data.</p>
+<p>Then using <em>validation data</em> we compare the trained models and make modelling choices.</p>
 </div>
 </section>
 <section id="group-work-neural-networks" class="slide level2">
