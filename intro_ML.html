@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html lang="en"><head>
-<script src="logistic_regression_files/libs/clipboard/clipboard.min.js"></script>
-<script src="logistic_regression_files/libs/quarto-html/tabby.min.js"></script>
-<script src="logistic_regression_files/libs/quarto-html/popper.min.js"></script>
-<script src="logistic_regression_files/libs/quarto-html/tippy.umd.min.js"></script>
-<link href="logistic_regression_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="logistic_regression_files/libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="logistic_regression_files/libs/quarto-html/quarto-syntax-highlighting-dc55a5b9e770e841cd82e46aadbfb9b0.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+<script src="intro_ML_files/libs/clipboard/clipboard.min.js"></script>
+<script src="intro_ML_files/libs/quarto-html/tabby.min.js"></script>
+<script src="intro_ML_files/libs/quarto-html/popper.min.js"></script>
+<script src="intro_ML_files/libs/quarto-html/tippy.umd.min.js"></script>
+<link href="intro_ML_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="intro_ML_files/libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="intro_ML_files/libs/quarto-html/quarto-syntax-highlighting-dc55a5b9e770e841cd82e46aadbfb9b0.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.8.24">
 
-  <title>Logistic Regression</title>
+  <title>Introduction to machine learning</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
-  <link rel="stylesheet" href="logistic_regression_files/libs/revealjs/dist/reset.css">
-  <link rel="stylesheet" href="logistic_regression_files/libs/revealjs/dist/reveal.css">
+  <link rel="stylesheet" href="intro_ML_files/libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="intro_ML_files/libs/revealjs/dist/reveal.css">
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
@@ -28,11 +28,11 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="logistic_regression_files/libs/revealjs/dist/theme/quarto-534cd8e3a96973385dffff3f4709048d.css">
-  <link href="logistic_regression_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
-  <link href="logistic_regression_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
-  <link href="logistic_regression_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
-  <link href="logistic_regression_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <link rel="stylesheet" href="intro_ML_files/libs/revealjs/dist/theme/quarto-534cd8e3a96973385dffff3f4709048d.css">
+  <link href="intro_ML_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="intro_ML_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="intro_ML_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="intro_ML_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
   <style type="text/css">
     .reveal div.sourceCode {
       margin: 0;
@@ -126,7 +126,7 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Logistic Regression</h1>
+  <h1 class="title">Introduction to machine learning</h1>
 
 <div class="quarto-title-authors">
 </div>
@@ -151,368 +151,213 @@
 </thead>
 <tbody>
 <tr class="odd">
-<td><del><em>41</em></del></td>
-<td style="text-align: left;"><del><em>Wed 07.10</em></del></td>
-<td style="text-align: right;"><del><em>Project 1</em></del></td>
-<td style="text-align: center;"><del><em>Final Hand-in</em></del></td>
+<td></td>
+<td style="text-align: left;"><del><em>Fri 09.10</em></del></td>
+<td style="text-align: right;"><del>Presentation of projects and new topic: logistic regression</del></td>
+<td style="text-align: center;"><del>Assignment, 5 points</del></td>
 </tr>
 <tr class="even">
-<td></td>
-<td style="text-align: left;"><em>Fri 09.10</em></td>
-<td style="text-align: right;">Presentation of projects and new topic: logistic regression</td>
-<td style="text-align: center;">Assignment, 5 points</td>
-</tr>
-<tr class="odd">
 <td><em>42</em></td>
 <td style="text-align: left;"><em>Wed 07.10</em></td>
-<td style="text-align: right;"><em>Intro to ML</em></td>
-<td style="text-align: center;"><em>Assi</em></td>
+<td style="text-align: right;">Intro to ML</td>
+<td style="text-align: center;">Assignement 5 points</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td style="text-align: left;"><em>Fri 14.10</em></td>
+<td style="text-align: right;">Tree based methods</td>
+<td style="text-align: center;">Assignement 5 points</td>
+</tr>
+<tr class="even">
+<td><em>43</em></td>
+<td style="text-align: left;"><em>Wed 21.10</em></td>
+<td style="text-align: right;">Neural Networks</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td style="text-align: left;"><em>Fri 13.10</em></td>
+<td style="text-align: right;"></td>
+<td style="text-align: center;"></td>
 </tr>
 </tbody>
 </table>
+<div class="fragment">
+<p>Before we start: A small survey!</p>
+</div>
 </section>
-<section id="section" class="slide level2">
-<h2></h2>
+<section id="from-regression-to-machine-learning" class="slide level2">
+<h2>From regression to machine learning</h2>
+<p>Imagine we want to create a predictive model for these data</p>
 
-<img data-src="images/clipboard-2133479479.png" width="100" class="r-stretch"><p><strong>Goal</strong> Does owning a smartphone influences sleep, depression, obesity?</p>
-</section>
-<section id="what-we-know---linear-regression" class="slide level2">
-<h2>What we know - Linear Regression</h2>
-<p><span class="math display">\[
-y = \beta_0 + \beta_1x_1 + \beta_2x_2+\dots+\epsilon, \qquad \epsilon\sim\mathcal{N}(0,\sigma^2)
-\]</span></p>
-<ul>
-<li><p>The <u>response</u> is continuous (hours of sleep)</p></li>
-<li><p>The <u>predictors</u> can be continuous of categorical (age, phone ownership, etc)</p></li>
-<li><p>The effects of the predictos act on the mean of the response.</p></li>
-</ul>
-<div class="fragment">
-<p><strong>Example</strong></p>
-<blockquote>
-<p>If age uncreases by one year, keeping all other predictors constant, the mean slept hours decreases by <span class="math inline">\(\beta\)</span></p>
-</blockquote>
-</div>
-</section>
-<section id="how-do-we-estimate-the-parameters" class="slide level2 smaller">
-<h2>How do we estimate the parameters?</h2>
+<img data-src="intro_ML_files/figure-revealjs/unnamed-chunk-1-1.png" width="960" class="r-stretch"></section>
+<section id="from-regression-to-machine-learning-1" class="slide level2">
+<h2>From regression to machine learning</h2>
+<p>We can use logistic regression as before …</p>
 
-<img data-src="logistic_regression_files/figure-revealjs/unnamed-chunk-1-1.png" width="960" class="r-stretch"><ul>
-<li>We find the parameters that minimize the <strong>loss function</strong>: <span class="math display">\[
-\sum_{i =1 }^n(y_i-\hat{y}_i)^2 = \sum_{i =1 }^n(y_i-\beta_0-\beta_1x_i-\dots)^2
-\]</span></li>
-<li><strong>Note</strong> The model has strict assumption regarding parameters, linearity, independence</li>
-</ul>
-</section>
-<section id="group-discussion" class="slide level2 smaller">
-<h2>Group Discussion</h2>
-<div class="columns">
-<div class="column" style="width:40%;">
-<p>Our response is the answer to:</p>
-<blockquote>
-<p>Does the child sleep less than 9 hours per night? Yes/No</p>
-</blockquote>
-<p>Our predictor:</p>
-<blockquote>
-<p>hours of smartphone use per day.</p>
-</blockquote>
-</div><div class="column" style="width:60%;">
-<div class="cell">
-<div class="cell-output-display">
-<div>
-<figure>
-<p><img data-src="logistic_regression_files/figure-revealjs/unnamed-chunk-2-1.png" width="960"></p>
-</figure>
-</div>
-</div>
-</div>
-</div></div>
-<p><strong>Discuss</strong></p>
-<ul>
-<li><p>What should a good model predict?</p></li>
-<li><p>Can we use linear regression?</p></li>
-<li><p>Do you see any possible problem/challenge with linear regression?</p></li>
-</ul>
-</section>
-<section id="the-model" class="slide level2 smaller">
-<h2>The model</h2>
-<ul>
-<li><p>We want the model to predict probabilities!</p></li>
-<li><p>We want a linear predictor of the form <span class="math inline">\(\beta_0 + \beta_1 x_1 + \beta_2 x_2 + \dots\)</span></p></li>
-</ul>
-<div class="fragment">
-<p>Let’s try to fit a linear regression: <span class="math inline">\(y =\beta_0 + \beta_1x +\epsilon\)</span></p>
-<div class="cell">
-<div class="cell-output-display">
-<div>
-<figure>
-<p><img data-src="logistic_regression_files/figure-revealjs/unnamed-chunk-3-1.png" width="960"></p>
-</figure>
-</div>
-</div>
-</div>
+<img data-src="intro_ML_files/figure-revealjs/unnamed-chunk-2-1.png" width="960" class="r-stretch"><div class="fragment">
+<p>..but could we do better?</p>
 </div>
 </section>
-<section id="logistic-regression" class="slide level2">
-<h2>Logistic Regression</h2>
-<p>We want to find a function of the probability to link to the linear predictor such that the predicted values always make sense!</p>
+<section id="from-regression-to-machine-learning-2" class="slide level2">
+<h2>From regression to machine learning</h2>
+<p>We might want less rigid models that can capture more characteristics of the data…</p>
+
+<img data-src="intro_ML_files/figure-revealjs/unnamed-chunk-3-1.png" width="960" class="r-stretch"></section>
+<section id="what-do-we-want-from-a-model" class="slide level2 smaller">
+<h2>What do we want from a model?</h2>
+
+<img data-src="intro_ML_files/figure-revealjs/unnamed-chunk-4-1.png" width="960" class="r-stretch"><ul>
+<li>The model should capture the important characterstics of the data</li>
+<li>The model should be generalizable to similar data set</li>
+</ul>
+</section>
+<section id="what-do-we-want-from-a-model-1" class="slide level2 smaller">
+<h2>What do we want from a model?</h2>
+
+<img data-src="intro_ML_files/figure-revealjs/unnamed-chunk-5-1.png" width="960" class="r-stretch"><div class="fragment">
+<p>This model is too simple (it does not capture enough caracteristics of the data). We say that it <strong>underfits</strong></p>
+</div>
+</section>
+<section id="what-do-we-want-from-a-model-2" class="slide level2 smaller">
+<h2>What do we want from a model?</h2>
+
+<img data-src="intro_ML_files/figure-revealjs/unnamed-chunk-6-1.png" width="960" class="r-stretch"><div class="fragment">
+<p>This model seems to capture the right about of information</p>
+</div>
+</section>
+<section id="what-do-we-want-from-a-model-3" class="slide level2 smaller">
+<h2>What do we want from a model?</h2>
+
+<img data-src="intro_ML_files/figure-revealjs/unnamed-chunk-7-1.png" width="960" class="r-stretch"><div class="fragment">
+<p>This model is too complex, it seems to capture also the noise in the data. We say that it <strong>overfits</strong>.</p>
+<p>It cannot be generalized to other datasets.</p>
+</div>
+</section>
+<section id="k-nearest-neighbour" class="slide level2">
+<h2>K-nearest neighbour</h2>
+<p>KNN is a ML learning algorithm that makes a prediction for something new by looking at the most similar examples it has seen before.</p>
 <div class="fragment">
 <div class="cell">
 <div class="cell-output-display">
 <div>
 <figure>
-<p><img data-src="logistic_regression_files/figure-revealjs/unnamed-chunk-4-1.png" width="960"></p>
+<p><img data-src="intro_ML_files/figure-revealjs/unnamed-chunk-8-1.png" width="960"></p>
 </figure>
 </div>
 </div>
 </div>
 </div>
 </section>
-<section id="from-probabilities-to-odds" class="slide level2">
-<h2>From probabilities to odds</h2>
-<blockquote>
-<p>Odds are just another way to express probabilities!</p>
-</blockquote>
-<p>Assume we have 100 childred, 20 sleep less than hours are 80 more.</p>
-<ul>
-<li>What is the probability that a randomly selected child sleeps less than 9 hours?</li>
-</ul>
-</section>
-<section id="from-probabilities-to-odds-1" class="slide level2 smaller">
-<h2>From probabilities to odds</h2>
-<blockquote>
-<p>Odds are just another way to express probabilities!</p>
-</blockquote>
-<div class="fragment">
-<p>Assume we have 100 childred, 20 sleep less than hours are 80 more.</p>
-<ul>
-<li>What is the probability that a randomly selected child sleeps less than 9 hours? <span class="math inline">\(\frac{20}{100} = 0.2\)</span></li>
-</ul>
-</div>
-<div class="fragment">
-<ul>
-<li>For every child who sleeps less than 9 hours, how many sleep at least 9 hours? <span class="math inline">\(\frac{20}{80} = 0.25\)</span></li>
-</ul>
-</div>
-<div class="fragment">
-<p><span class="math display">\[
-\text{Odds} = \frac{\text{number of events}}{\text{number of non-events}} = \frac{p}{1-p}
-\]</span></p>
-</div>
-</section>
-<section id="compute-the-odds" class="slide level2">
-<h2>Compute the odds</h2>
-<p><span class="math display">\[
-\text{Odds} = \frac{\text{number of events}}{\text{number of non-events}} = \frac{p}{1-p}
-\]</span></p>
-<table class="caption-top">
-<thead>
-<tr class="header">
-<th>Probability</th>
-<th>Odds</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>0.5</td>
-<td></td>
-</tr>
-<tr class="even">
-<td>0.1</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>0.9</td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<ul>
-<li>What do odds equal to 4 mean?</li>
-</ul>
-</section>
-<section id="compute-the-odds-1" class="slide level2">
-<h2>Compute the odds</h2>
-<table class="caption-top">
-<thead>
-<tr class="header">
-<th>Probability</th>
-<th>Odds</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>0.5</td>
-<td>1</td>
-</tr>
-<tr class="even">
-<td>0.1</td>
-<td>0.111</td>
-</tr>
-<tr class="odd">
-<td>0.9</td>
-<td>9</td>
-</tr>
-</tbody>
-</table>
-<ul>
-<li>For each child sleeping less than 9 hours there are four who sleep at least 9 hours.</li>
-</ul>
-</section>
-<section id="odds-and-probability" class="slide level2">
-<h2>Odds and probability</h2>
+<section id="k-nearest-neighbour-1" class="slide level2">
+<h2>K-nearest neighbour</h2>
 
-<img data-src="logistic_regression_files/figure-revealjs/unnamed-chunk-5-1.png" width="960" class="r-stretch"></section>
-<section id="log-odds-and-probability" class="slide level2">
-<h2>Log Odds and probability</h2>
+<img data-src="intro_ML_files/figure-revealjs/unnamed-chunk-9-1.png" width="960" class="r-stretch"><div class="fragment">
+<p><strong>Group discussion</strong> Answer to the question on part 1 of the handout.</p>
+</div>
+</section>
+<section id="nearest-neighbour" class="slide level2">
+<h2>1-Nearest Neighbour</h2>
 
-<img data-src="logistic_regression_files/figure-revealjs/unnamed-chunk-6-1.png" width="960" class="r-stretch"></section>
-<section id="logistic-regression-1" class="slide level2">
-<h2>Logistic regression</h2>
-<p>Logistic regression models log odds:</p>
-<p><span class="math display">\[
-\log\left(\frac{p}{1-p}\right)=\beta_0+\beta_1x+\dots
-\]</span></p>
-<p>How do we interpret <span class="math inline">\(\beta_1\)</span>?</p>
-<p>A one-unit increase in <span class="math inline">\(x\)</span></p>
-<ul>
-<li>increases the <strong>log odds</strong> by <span class="math inline">\(\beta_1\)</span></li>
-</ul>
-<div class="fragment">
-<p>Unfortunately, log-odds are not very intuitive.</p>
-</div>
+<img data-src="intro_ML_files/figure-revealjs/unnamed-chunk-10-1.png" width="960" class="r-stretch"><p>What is happening?</p>
 </section>
-<section id="parameter-interpretation" class="slide level2 smaller">
-<h2>Parameter Interpretation</h2>
-<p>Instead, we exponentiate the coefficient</p>
-<p><span class="math display">\[
-OR = e^{\beta_1}
-\]</span></p>
-<p>where <span class="math inline">\(OR\)</span> is an <strong>odds ratio</strong>.</p>
-<div class="fragment">
-<p><strong>Example:</strong> Suppose</p>
-<p><span class="math display">\[
-\log\left(\frac{p}{1-p}\right)
-=
--3+0.4\times \text{Hours}
-\]</span></p>
-<p>Then</p>
-<p><span class="math display">\[
-OR=e^{0.4}=1.49
-\]</span></p>
-</div>
-<div class="fragment">
-<p><strong>Interpretation</strong></p>
-<p>For each additional hour of smartphone use, the odds of sleeping less than 9 hours are multiplied by <strong>1.49</strong> (approximately a <strong>49% increase in odds</strong>).</p>
-</div>
-</section>
-<section id="interpreting-odds-ratios" class="slide level2 smaller">
-<h2>Interpreting Odds Ratios</h2>
-<p>What do the following odds ratios mean?</p>
-<table class="caption-top">
-<thead>
-<tr class="header">
-<th>Odds Ratio</th>
-<th>Interpretation</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>1.0</td>
-<td>?</td>
-</tr>
-<tr class="even">
-<td>1.3</td>
-<td>?</td>
-</tr>
-<tr class="odd">
-<td>2.0</td>
-<td>?</td>
-</tr>
-<tr class="even">
-<td>0.7</td>
-<td>?</td>
-</tr>
-</tbody>
-</table>
-<div class="fragment">
-<p><strong>Answers</strong></p>
-<ul>
-<li>OR = 1.0: no association</li>
-<li>OR = 1.3: odds are 30% higher</li>
-<li>OR = 2.0: odds are doubled</li>
-<li>OR = 0.7: odds are 30% lower</li>
-</ul>
-</div>
-</section>
-<section id="logistic-regression-as-a-prediction-tool" class="slide level2">
-<h2>Logistic regression as a prediction tool</h2>
-<p>We want to use logistic regression to predict (classify) new observation</p>
-<p>The model output is “probabilities” for example</p>
-<blockquote>
-<p>The probability that a child using the mobile 6 hours a day sleeps less than 9 hours is 0.3</p>
-</blockquote>
-<p><strong>Discussion</strong>: How do you use this to predict if a child sleep less than 9 hours or not?</p>
-</section>
-<section id="predicting-with-logistic-regression" class="slide level2">
-<h2>Predicting with logistic regression</h2>
-<!-- - prediction and classification -->
-<!-- - model gives probabilities...how to you predciton? -->
-<!-- - false positive false negative -->
+<section id="nearest-neighbour-1" class="slide level2">
+<h2>1-Nearest Neighbour</h2>
 
-<img data-src="logistic_regression_files/figure-revealjs/unnamed-chunk-7-1.png" width="960" class="r-stretch"></section>
-<section id="predicting-with-logistic-regression-1" class="slide level2">
-<h2>Predicting with logistic regression</h2>
-<!-- - prediction and classification -->
-<!-- - model gives probabilities...how to you predciton? -->
-<!-- - false positive false negative -->
+<img data-src="intro_ML_files/figure-revealjs/unnamed-chunk-11-1.png" width="960" class="r-stretch"></section>
+<section id="nearest-neighbour-2" class="slide level2">
+<h2>3-Nearest Neighbour</h2>
 
-<img data-src="logistic_regression_files/figure-revealjs/unnamed-chunk-8-1.png" width="960" class="r-stretch"><p>False Negative: predicted to be 0, observed to be 1</p>
+<img data-src="intro_ML_files/figure-revealjs/unnamed-chunk-12-1.png" width="960" class="r-stretch"></section>
+<section id="k-nn-algorithm" class="slide level2">
+<h2>k-NN algorithm</h2>
+<ul>
+<li><p>No defined model</p></li>
+<li><p>Very flexible/ not many assumption</p></li>
+<li><p>The answer depends on the parameter <span class="math inline">\(k\)</span>…</p>
+<ul>
+<li>What is the effect of <span class="math inline">\(k\)</span>?</li>
+<li>How to choose it?</li>
+</ul></li>
+</ul>
+<p><strong>Group discussion</strong> Answer to the question on part 2 of the handout.</p>
 </section>
-<section id="predicting-with-logistic-regression-2" class="slide level2">
-<h2>Predicting with logistic regression</h2>
-<!-- - prediction and classification -->
-<!-- - model gives probabilities...how to you predciton? -->
-<!-- - false positive false negative -->
+<section id="effect-of-the-k-parameter" class="slide level2">
+<h2>Effect of the <span class="math inline">\(k\)</span> parameter</h2>
 
-<img data-src="logistic_regression_files/figure-revealjs/unnamed-chunk-9-1.png" width="960" class="r-stretch"><p>False Positive: predicted to be 1, observed to be 0</p>
+<img data-src="intro_ML_files/figure-revealjs/unnamed-chunk-13-1.png" width="1152" class="r-stretch"><ul>
+<li>smaller <span class="math inline">\(k\)</span> gives more flexibility</li>
+<li>larger <span class="math inline">\(k\)</span> gives more smoothness</li>
+</ul>
+<p>Ideally, we want to find a good balance between flexibility and smoothness.</p>
 </section>
-<section id="linear-and-logistic-regression" class="slide level2 smaller">
-<h2>Linear and logistic regression</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p>Linear Regression <span class="math display">\[
-y = \beta_0 + \beta_1x + \epsilon
-\]</span></p>
-<ul>
-<li><p>Response is continuous</p></li>
-<li><p>Covariates act linearly on the mean</p></li>
-</ul>
-</div><div class="column" style="width:50%;">
-<p>Logistic Regression <span class="math display">\[
-\log\left(\frac{p}{1-p}\right) = \beta_0 + \beta_1x
-\]</span></p>
-<ul>
-<li>Response is binary (0/1)</li>
-<li>Covariates act linearly on the odds</li>
-</ul>
-</div></div>
+<section id="parameter-tuning" class="slide level2 smaller">
+<h2>Parameter tuning</h2>
+<p>We tune <span class="math inline">\(k\)</span> based on a validation set (ie data that are not used to create the prediction model)</p>
+<ol type="1">
+<li>Use the <em>training</em> data to build a prediction model</li>
+</ol>
+
+<img data-src="intro_ML_files/figure-revealjs/unnamed-chunk-14-1.png" width="960" class="r-stretch"></section>
+<section id="parameter-tuning-1" class="slide level2 smaller">
+<h2>Parameter tuning</h2>
+<p>We tune <span class="math inline">\(k\)</span> based on a validation set (ie data that are not used to create the prediction model)</p>
+<ol type="1">
+<li>Use the <em>training</em> data to build a prediction model</li>
+</ol>
+
+<img data-src="intro_ML_files/figure-revealjs/unnamed-chunk-15-1.png" width="960" class="r-stretch"></section>
+<section id="parameter-tuning-2" class="slide level2 smaller">
+<h2>Parameter tuning</h2>
+<p>We tune <span class="math inline">\(k\)</span> based on a validation set (ie data that are not used to create the prediction model)</p>
+<ol type="1">
+<li>Use the <em>training</em> data to build a prediction model</li>
+<li>Evaluate the prediction model on the <em>validation</em> data</li>
+</ol>
+
+<img data-src="intro_ML_files/figure-revealjs/unnamed-chunk-16-1.png" width="960" class="r-stretch"></section>
+<section id="parameter-tuning-in-the-ideal-situation" class="slide level2 smaller">
+<h2>Parameter tuning (in the ideal situation)</h2>
+<p>We tune <span class="math inline">\(k\)</span> based on a validation set (ie data that are not used to create the prediction model)</p>
+<ol type="1">
+<li>Use the <em>training</em> data to build a prediction model</li>
+<li>Evaluate the prediction model on the <em>validation</em> data</li>
+<li>Choose the parameter that gives less error on the validation set.</li>
+</ol>
+
+<img data-src="intro_ML_files/figure-revealjs/unnamed-chunk-17-1.png" width="960" class="r-stretch"></section>
+<section id="parameter-tuning-in-the-ideal-situation-1" class="slide level2 smaller">
+<h2>Parameter tuning (in the ideal situation)</h2>
+<p>We tune <span class="math inline">\(k\)</span> based on a validation set (ie data that are not used to create the prediction model)</p>
+<ol type="1">
+<li>Use the <em>training</em> data to build a prediction model</li>
+<li>Evaluate the prediction model on the <em>validation</em> data</li>
+<li>Choose the parameter that gives less error on the validation set.</li>
+<li>Use a new, independent, <em>test</em> set to evaluate the capacity of the model to do predictions.</li>
+</ol>
 <div class="fragment">
-<p>What they have in common:</p>
-<ul>
-<li>Clear model assumptions</li>
-<li>Simple and rigid relation between covariates and response</li>
-<li>Few parameters ( #covariates <span class="math inline">\(\ll\)</span> #observations)</li>
-<li>The parameters are interpretable</li>
-</ul>
+<p><strong>Group discussion</strong> Answer to the question on part 3 of the handout.</p>
 </div>
 </section>
-<section id="what-comes-in-the-next-weeks" class="slide level2">
-<h2>What comes in the next weeks</h2>
-<p><strong>Machine Learning Models</strong></p>
+<section id="cross-validation" class="slide level2">
+<h2>Cross-validation</h2>
+<p><strong>Idea:</strong> Train on part of the data and test on data not used for training.</p>
+
+<img data-src="images/clipboard-1368407523.png" class="r-stretch"><p>Note: Names can be sometimes confusing…</p>
+</section>
+<section id="k-fold-cross-validation" class="slide level2">
+<h2>k-fold Cross Validation</h2>
+<p>Repeat the train/test split several times and average the results.</p>
+
+<img data-src="images/clipboard-1145391843.png" class="r-stretch"></section>
+<section id="take-home-messages-from-today" class="slide level2">
+<h2>Take home messages from today</h2>
 <ul>
-<li>(Much) More flexible models</li>
-<li>Many more parameters</li>
-<li>More fuzzy relationship between covariates and responses</li>
+<li>Different models make different assumptions about the data.</li>
+<li>Too simple models may underfit and very flexible models may overfit.</li>
+<li>We want models that generalize well to new observations.</li>
+<li>Model parameters (such as <span class="math inline">\(k\)</span> in k-NN) can be tuned using cross-validation.</li>
+<li>Our goal is not to fit the training data perfectly but to make accurate predictions on data we have not seen before.</li>
 </ul>
 
 </section>
@@ -524,19 +369,19 @@ y = \beta_0 + \beta_1x + \epsilon
 </div></div>
 
   <script>window.backupDefine = window.define; window.define = undefined;</script>
-  <script src="logistic_regression_files/libs/revealjs/dist/reveal.js"></script>
+  <script src="intro_ML_files/libs/revealjs/dist/reveal.js"></script>
   <!-- reveal.js plugins -->
-  <script src="logistic_regression_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
-  <script src="logistic_regression_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
-  <script src="logistic_regression_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
-  <script src="logistic_regression_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
-  <script src="logistic_regression_files/libs/revealjs/plugin/quarto-support/support.js"></script>
+  <script src="intro_ML_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="intro_ML_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="intro_ML_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="intro_ML_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="intro_ML_files/libs/revealjs/plugin/quarto-support/support.js"></script>
   
 
-  <script src="logistic_regression_files/libs/revealjs/plugin/notes/notes.js"></script>
-  <script src="logistic_regression_files/libs/revealjs/plugin/search/search.js"></script>
-  <script src="logistic_regression_files/libs/revealjs/plugin/zoom/zoom.js"></script>
-  <script src="logistic_regression_files/libs/revealjs/plugin/math/math.js"></script>
+  <script src="intro_ML_files/libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="intro_ML_files/libs/revealjs/plugin/search/search.js"></script>
+  <script src="intro_ML_files/libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="intro_ML_files/libs/revealjs/plugin/math/math.js"></script>
   <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
 
   <script>
