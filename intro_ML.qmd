@@ -291,7 +291,7 @@ ggplot(df, aes(x, y)) +
 
 . . .
 
-This model is too simple (it does not capture enough caracteristics of the data). We say that it **underfits**
+This model is too simple (it does not capture enough caracteristics of the data). We say that it **underfits**.
 
 ## What do we want from a model? {.smaller}
 
@@ -306,7 +306,7 @@ This model is too simple (it does not capture enough caracteristics of the data)
 
 . . .
 
-This model seems to capture the right about of information
+This model seems to capture the right amount of information.
 
 ## What do we want from a model? {.smaller}
 
