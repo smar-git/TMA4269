@@ -9,6 +9,19 @@ execute:
   echo: false
 ---
 
+## Time table {.smaller}
+
+| Week | Date | Planned Activity | Delivery |
+|-----------------|:----------------|----------------:|:---------------------:|
+| ~~*41*~~ | ~~*Wed 07.10*~~ | ~~*Project 1*~~ | ~~*Final Hand-in*~~ |
+|  | *Fri 09.10* | Presentation of projects and new topic: logistic regression | Assignment, 5 points |
+| *42* | *Wed 07.10* | Intro to ML | Assignement 5 points |
+|      | *Fri 14.10* | Tree based methods | Assignement 5 points |
+| *43* | *Wed 21.10* | Neural Networks |  |
+|      | *Fri 13.10* |  |  |
+
+
+
 ## 
 
 ![](images/clipboard-2133479479.png){width="100"}
@@ -33,7 +46,7 @@ $$
 
 > If age uncreases by one year, keeping all other predictors constant, the mean slept hours decreases by $\beta$
 
-## How do we estimate the parameters?{.smaller}
+## How do we estimate the parameters? {.smaller}
 
 ```{r}
 library(tidyverse)
@@ -104,10 +117,9 @@ ggplot(df, aes(x, y)) +
   theme_minimal(base_size = 14)
 ```
 
-- We find the parameters that minimize the **loss function**:
-$$
-\sum_{i =1 }^n(y_i-\hat{y}_i)^2 = \sum_{i =1 }^n(y_i-\beta_0-\beta_1x_i-\dots)^2
-$$
+- We find the parameters that minimize the **loss function**: $$
+  \sum_{i =1 }^n(y_i-\hat{y}_i)^2 = \sum_{i =1 }^n(y_i-\beta_0-\beta_1x_i-\dots)^2
+  $$
 - **Note** The model has strict assumption regarding parameters, linearity, independence
 
 ## Group Discussion {.smaller}
@@ -254,7 +266,7 @@ Assume we have 100 childred, 20 sleep less than hours are 80 more.
 
 - What is the probability that a randomly selected child sleeps less than 9 hours?
 
-## From probabilities to odds{.smaller}
+## From probabilities to odds {.smaller}
 
 > Odds are just another way to express probabilities!
 
@@ -280,25 +292,23 @@ $$
 \text{Odds} = \frac{\text{number of events}}{\text{number of non-events}} = \frac{p}{1-p}
 $$
 
-
 | Probability | Odds |
 |-------------|------|
 | 0.5         |      |
 | 0.1         |      |
 | 0.9         |      |
 
-
 - What do odds equal to 4 mean?
 
 ## Compute the odds
 
-| Probability | Odds |
-|-------------|------|
-| 0.5         |   1   |
-| 0.1         |   0.111   |
-| 0.9         |    9   |
+| Probability | Odds  |
+|-------------|-------|
+| 0.5         | 1     |
+| 0.1         | 0.111 |
+| 0.9         | 9     |
 
-- For each child sleeping less than 9 hours there are four   who sleep at least 9 hours.
+- For each child sleeping less than 9 hours there are four who sleep at least 9 hours.
 
 ## Odds and probability
 
@@ -317,7 +327,6 @@ ggplot(aes(prob, odds)) +
   )
 ```
 
-
 ## Log Odds and probability
 
 ```{r}
@@ -335,12 +344,6 @@ ggplot(aes(prob, odds)) +
   )
 ```
 
-
-
-
-
-
- 
 ## Logistic regression
 
 Logistic regression models log odds:
@@ -359,8 +362,7 @@ A one-unit increase in $x$
 
 Unfortunately, log-odds are not very intuitive.
 
-## Parameter Interpretation{.smaller}
-
+## Parameter Interpretation {.smaller}
 
 Instead, we exponentiate the coefficient
 
@@ -372,7 +374,7 @@ where $OR$ is an **odds ratio**.
 
 . . .
 
-**Example: ** Suppose
+**Example:** Suppose
 
 $$
 \log\left(\frac{p}{1-p}\right)
@@ -390,24 +392,20 @@ $$
 
 **Interpretation**
 
-For each additional hour of smartphone use,
-the odds of sleeping less than 9 hours are multiplied by **1.49**
-(approximately a **49% increase in odds**).
+For each additional hour of smartphone use, the odds of sleeping less than 9 hours are multiplied by **1.49** (approximately a **49% increase in odds**).
 
-
-## Interpreting Odds Ratios{.smaller}
+## Interpreting Odds Ratios {.smaller}
 
 What do the following odds ratios mean?
 
 | Odds Ratio | Interpretation |
-|------------|---------------|
-| 1.0 | ? |
-| 1.3 | ? |
-| 2.0 | ? |
-| 0.7 | ? |
+|------------|----------------|
+| 1.0        | ?              |
+| 1.3        | ?              |
+| 2.0        | ?              |
+| 0.7        | ?              |
 
 . . .
-
 
 **Answers**
 
@@ -420,8 +418,8 @@ What do the following odds ratios mean?
 
 We want to use logistic regression to predict (classify) new observation
 
- The model output is "probabilities" for example 
- 
+The model output is "probabilities" for example
+
 > The probability that a child using the mobile 6 hours a day sleeps less than 9 hours is 0.3
 
 **Discussion**: How do you use this to predict if a child sleep less than 9 hours or not?
@@ -429,10 +427,10 @@ We want to use logistic regression to predict (classify) new observation
 ## Predicting with logistic regression
 
 <!-- - prediction and classification -->
+
 <!-- - model gives probabilities...how to you predciton? -->
+
 <!-- - false positive false negative -->
-
-
 
 ```{r}
 
@@ -535,19 +533,13 @@ ggplot() +
 
 ```
 
-
-
-
-
-
-
 ## Predicting with logistic regression
 
 <!-- - prediction and classification -->
+
 <!-- - model gives probabilities...how to you predciton? -->
+
 <!-- - false positive false negative -->
-
-
 
 ```{r}
 
@@ -628,15 +620,16 @@ ggplot() +
 
 
 ```
+
 False Negative: predicted to be 0, observed to be 1
 
 ## Predicting with logistic regression
 
 <!-- - prediction and classification -->
+
 <!-- - model gives probabilities...how to you predciton? -->
+
 <!-- - false positive false negative -->
-
-
 
 ```{r}
 
@@ -717,33 +710,24 @@ ggplot() +
 
 
 ```
+
 False Positive: predicted to be 1, observed to be 0
 
-
-
-
-
-
-
-## Linear and logistic regression{.smaller}
+## Linear and logistic regression {.smaller}
 
 ::::: columns
 ::: {.column width="50%"}
-Linear Regression
-$$
+Linear Regression $$
 y = \beta_0 + \beta_1x + \epsilon
 $$
 
 - Response is continuous
 
 - Covariates act linearly on the mean
-
 :::
 
 ::: {.column width="50%"}
-
-Logistic Regression
-$$
+Logistic Regression $$
 \log\left(\frac{p}{1-p}\right) = \beta_0 + \beta_1x 
 $$
 
@@ -761,12 +745,10 @@ What they have in common:
 - Few parameters ( #covariates $\ll$ #observations)
 - The parameters are interpretable
 
-
-## What comes in the next weeks 
+## What comes in the next weeks
 
 **Machine Learning Models**
 
 - (Much) More flexible models
 - Many more parameters
 - More fuzzy relationship between covariates and responses
-

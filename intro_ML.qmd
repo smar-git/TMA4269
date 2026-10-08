@@ -9,6 +9,24 @@ execute:
   echo: false
 ---
 
+
+
+
+## Time table {.smaller}
+
+| Week | Date | Planned Activity | Delivery |
+|-----------------|:----------------|----------------:|:---------------------:|
+|  | ~~*Fri 09.10*~~ | ~~Presentation of projects and new topic: logistic regression~~ | ~~Assignment, 5 points~~ |
+| *42* | *Wed 07.10* | Intro to ML | Assignement 5 points |
+|      | *Fri 14.10* | Tree based methods | Assignement 5 points |
+| *43* | *Wed 21.10* | Neural Networks |  |
+|      | *Fri 13.10* |  |  |
+
+. . .
+
+Before we start: A small survey!
+
+
 ## From regression to machine learning
 
 Imagine we want to create a predictive model for these data
