@@ -393,9 +393,4 @@ cv_errors |>
 
 ```
 
-## Cross-validation
-
-**Idea** Train on part of the data and test on data not used for
-training
-
-![](images/clipboard-1368407523.png)
+## 

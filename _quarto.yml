@@ -15,6 +15,7 @@ project:
     - project1_pt2.qmd
     - project1_pt2_finalday.qmd
     - logistic_regression.qmd
+    - intro_ML.qmd
 
 
     
@@ -57,6 +58,9 @@ website:
             href: project1_pt2_finalday.html
           - text: Slides logitic regression
             href: logistic_regression.html
+          - text: Slides intrduction to ML
+            href: intro_ML.html
+
 
 
 format:
