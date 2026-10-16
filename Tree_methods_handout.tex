@@ -1,0 +1,376 @@
+% Options for packages loaded elsewhere
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+\PassOptionsToPackage{dvipsnames,svgnames,x11names}{xcolor}
+%
+\documentclass[
+  a4paper,
+  DIV=11,
+  numbers=noendperiod]{scrartcl}
+\usepackage{xcolor}
+\usepackage[margin=2cm]{geometry}
+\usepackage{amsmath,amssymb}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+% Make \paragraph and \subparagraph free-standing
+\makeatletter
+\ifx\paragraph\undefined\else
+  \let\oldparagraph\paragraph
+  \renewcommand{\paragraph}{
+    \@ifstar
+      \xxxParagraphStar
+      \xxxParagraphNoStar
+  }
+  \newcommand{\xxxParagraphStar}[1]{\oldparagraph*{#1}\mbox{}}
+  \newcommand{\xxxParagraphNoStar}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+  \let\oldsubparagraph\subparagraph
+  \renewcommand{\subparagraph}{
+    \@ifstar
+      \xxxSubParagraphStar
+      \xxxSubParagraphNoStar
+  }
+  \newcommand{\xxxSubParagraphStar}[1]{\oldsubparagraph*{#1}\mbox{}}
+  \newcommand{\xxxSubParagraphNoStar}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+\makeatother
+
+
+\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx}
+\makeatletter
+\newsavebox\pandoc@box
+\newcommand*\pandocbounded[1]{% scales image to fit in text height/width
+  \sbox\pandoc@box{#1}%
+  \Gscale@div\@tempa{\textheight}{\dimexpr\ht\pandoc@box+\dp\pandoc@box\relax}%
+  \Gscale@div\@tempb{\linewidth}{\wd\pandoc@box}%
+  \ifdim\@tempb\p@<\@tempa\p@\let\@tempa\@tempb\fi% select the smaller of both
+  \ifdim\@tempa\p@<\p@\scalebox{\@tempa}{\usebox\pandoc@box}%
+  \else\usebox{\pandoc@box}%
+  \fi%
+}
+% Set default figure placement to htbp
+\def\fps@figure{htbp}
+\makeatother
+
+
+
+
+
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+
+
+ 
+
+
+\KOMAoption{captions}{tableheading}
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\AtBeginDocument{%
+\ifdefined\contentsname
+  \renewcommand*\contentsname{Table of contents}
+\else
+  \newcommand\contentsname{Table of contents}
+\fi
+\ifdefined\listfigurename
+  \renewcommand*\listfigurename{List of Figures}
+\else
+  \newcommand\listfigurename{List of Figures}
+\fi
+\ifdefined\listtablename
+  \renewcommand*\listtablename{List of Tables}
+\else
+  \newcommand\listtablename{List of Tables}
+\fi
+\ifdefined\figurename
+  \renewcommand*\figurename{Figure}
+\else
+  \newcommand\figurename{Figure}
+\fi
+\ifdefined\tablename
+  \renewcommand*\tablename{Table}
+\else
+  \newcommand\tablename{Table}
+\fi
+}
+\@ifpackageloaded{float}{}{\usepackage{float}}
+\floatstyle{ruled}
+\@ifundefined{c@chapter}{\newfloat{codelisting}{h}{lop}}{\newfloat{codelisting}{h}{lop}[chapter]}
+\floatname{codelisting}{Listing}
+\newcommand*\listoflistings{\listof{codelisting}{List of Listings}}
+\makeatother
+\makeatletter
+\makeatother
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\@ifpackageloaded{subcaption}{}{\usepackage{subcaption}}
+\makeatother
+\usepackage{bookmark}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  pdftitle={Tree based methods},
+  colorlinks=true,
+  linkcolor={blue},
+  filecolor={Maroon},
+  citecolor={Blue},
+  urlcolor={Blue},
+  pdfcreator={LaTeX via pandoc}}
+
+
+\title{Tree based methods}
+\author{}
+\date{}
+\begin{document}
+\maketitle
+
+
+\subsection{Part 1 - Getting to know the
+data}\label{part-1---getting-to-know-the-data}
+
+Run the python code in Part 1 and answer the following questions
+
+1.1 How many predictors and how many data points does the dataset have?
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+1.2 The response variable is \texttt{Class}, how many categories does it
+have?Is the dataset balanced?
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+1.3 Why does it matter if the dataset is balenced or not? What could
+happen with a very unbalanced dataset?
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+1.4 Looking at the generated plots, which variables seem most useful?
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsection{Part 2: A first, simple
+tree}\label{part-2-a-first-simple-tree}
+
+2.1 Which variable is used to split the data? What is the threshold
+value used in the split and what does this threshold mean in practice?
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+2.2 How would you explain this model to someone with no statistics
+background?
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+2.3 A bean has Area = 50,000. What is the predicted bean variety?
+Another bean has Area = 80,000. What is the predicted bean variety? What
+happens if two beans have the same value of Area but very different
+values of Compactness?
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsection{2.4 How, do you think, the tree produces prediction for each
+group?}\label{how-do-you-think-the-tree-produces-prediction-for-each-group}
+
+2.5 Do you think that the model is overfitting or underfitting?
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsection{Part 3: A deeper tree}\label{part-3-a-deeper-tree}
+
+3.1 Predict the class for the following beans based on the tree with
+depth = 6 created in Part 3 of the code:
+
+\subsubsection{Bean A}\label{bean-a}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Area:} 40,000
+\item
+  \textbf{Perimeter:} 800
+\item
+  \textbf{MajorAxisLength:} 300
+\item
+  \textbf{MinorAxisLength:} 180
+\item
+  \textbf{Compactness:} 0.75
+\end{itemize}
+
+\textbf{Predicted variety:} \_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+\subsubsection{Bean B}\label{bean-b}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Area:} 90,000
+\item
+  \textbf{Perimeter:} 1200
+\item
+  \textbf{MajorAxisLength:} 450
+\item
+  \textbf{MinorAxisLength:} 250
+\item
+  \textbf{Compactness:} 0.85
+\end{itemize}
+
+\textbf{Predicted variety:} \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+\textbf{Predicted species:} \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+3.2 Which variable appears most often in the splitting rules? What does
+this suggest about its usefulness for classifying bean species?
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+3.3 Do you think this tree can be generalized on new bean data? Explain
+your reasoning and discuss whether the tree might be overfitting.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsection{Part 4 - Tuning the tree
+depth}\label{part-4---tuning-the-tree-depth}
+
+In part 4 the code performs a cross-validation experiment to tune the
+tree depth parameter.
+
+4.1 How many folds are used in the cross-validation procedure? How can
+you tell from the code?
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+The table produced reports the mean accuracy for each value of the tree
+depth. The accuracy is defined as: \[
+\text{Accuracy} = \frac{\text{Number of correct predictions}}{\text{Total numnef of predictions}}
+\]
+
+4.2 Why does the output report the ``Mean CV Accuracy'' rather than a
+single accuracy value? What does the reported standard deviation tell
+us?
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+4.3 Does performance improve indefinitely as depth increases? Why might
+very deep trees perform worse than shallow tree? Which depth value would
+you choose?
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsection{Part 5 - Fitting a Randon
+Forest}\label{part-5---fitting-a-randon-forest}
+
+Run part of the Python code. Here we fit a random forest to the beans
+data.
+
+5.1 How many trees are included in this random forest? How can you tell
+from the code?
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+5.2 Before evaluating the model, would you expect the random forest to
+perform better or worse than a single decision tree? Explain your
+reasoning.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+5.3 What is one advantage and one disadvantage of a random forest
+compared with a single decision tree?
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsection{Part 6: Cross validation for random
+forests}\label{part-6-cross-validation-for-random-forests}
+
+Run the code in Part 6. This is a 5-fold cross validation to tune two of
+the main parameters in a random forest: the tree depth and the number of
+trees in the forest.
+
+Note: the code takes some seconds to be finished.
+
+6.1 Based on these results, what values of \texttt{n\_estimators} and
+\texttt{max\_depth} would you choose for the final model?
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsection{Part 7: Testing on the test
+set}\label{part-7-testing-on-the-test-set}
+
+7.1 If your goal were prediction, which model would you choose: the best
+decision tree or the best random forest? Explain your answer using the
+test-set results.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+7.2 What is the accuracy of the selected model on the test set? How does
+this compare with the cross-validation accuracy obtained during model
+selection?
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+7.3 If your goal were interpretability, which model would you choose?
+Why?
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+7.4 Examine the confusion matrix.
+
+\begin{itemize}
+\tightlist
+\item
+  Which bean variety is most often classified correctly?
+\item
+  Which bean variety is most often misclassified?
+\item
+  Which pair of bean varieties appears most difficult to distinguish?
+\end{itemize}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+
+
+
+\end{document}

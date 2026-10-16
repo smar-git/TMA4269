@@ -1559,5 +1559,12 @@
     "title": "Logistic Regression",
     "section": "What comes in the next weeks",
     "text": "What comes in the next weeks\nMachine Learning Models\n\n(Much) More flexible models\nMany more parameters\nMore fuzzy relationship between covariates and responses"
+  },
+  {
+    "objectID": "intro_ML.html#survey",
+    "href": "intro_ML.html#survey",
+    "title": "Introduction to machine learning",
+    "section": "Survey",
+    "text": "Survey"
   }
 ]
