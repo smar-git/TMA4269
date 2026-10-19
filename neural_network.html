@@ -235,12 +235,12 @@
 <img data-src="images/clipboard-275188323.png" class="r-stretch"></section>
 <section id="mnist-database-our-goal-today" class="slide level2">
 <h2>MNIST Database: Our goal today</h2>
-<p>Using <em>training</em> data, 7500 images with digit ‘instructions’ (X,y), create <strong>prediction models</strong> that take in an image and return a prediction: 0, 1, 2, 4, 5, 6, 7, 8 or 9</p>
+<p>Using <em>training</em> data, 200 images with digit ‘instructions’ (X,y), create <strong>prediction models</strong> that take in an image and return a prediction: 0, 1, 2, 4, 5, 6, 7, 8 or 9</p>
 <div class="fragment">
-<p>Evaluate the different models on a <em>validation</em> set; 1500 images, (X,y), and select the ‘best’</p>
+<p>Evaluate the different models on a <em>validation</em> set; 500 images, (X,y), and select the ‘best’</p>
 </div>
 <div class="fragment">
-<p>Final evaluation of the chosen model on a <em>test</em> set: another set 1500 images, (X,y).</p>
+<p>Final evaluation of the chosen model on a <em>test</em> set: another set 500 images, (X,y).</p>
 </div>
 </section>
 <section id="multiclass-prediction" class="slide level2">
@@ -497,17 +497,12 @@ z_k = \sum_i v_i h_i + c_k, \, \, \widehat{p}_k = \frac{e^{z_k}}{\sum_{j=0}^9 e^
 <p>Then using <em>validation data</em>, (or cross-validation) we compare the trained models and make choices.</p>
 </div>
 </section>
-<section id="group-work-neural-networks" class="slide level2">
-<h2>Group work: neural networks</h2>
-<p>We have seen an example of a neural network with one hidden layer with 32 nodes and the ReLU activation function. In canvas you will find code for this.</p>
-<p>Decide on two other architectures:</p>
-<ul>
-<li><p>Adding a second hidden layer?</p></li>
-<li><p>Changing the number of nodes in the hidden layer(s)?</p></li>
-<li><p>A different activation function? (ReLU, sigmoid or tanh)</p></li>
-</ul>
-<p>Run all three using the test set and calculate the accuracy on the validation set. Choose one method and write it down.</p>
-<p>Finally, calculate the accuracy on the test set.</p>
+<section id="group-work-neural-networks---do-it-yourselves" class="slide level2">
+<h2>Group work: neural networks - do it yourselves</h2>
+<p>Have one group member download files from canvas and run Python (share screen).</p>
+<p>NTNU Jupyterhub might be slow but we have made quite small datasets for this reason.</p>
+<p>We are not doing cross-validation (due to time) but have a dedicated validation set.</p>
+<p>Instructions otherwise given on work sheet.</p>
 
 </section>
     </div>
