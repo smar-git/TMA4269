@@ -57,11 +57,11 @@ website:
             href: project1_pt2.html
           - text: Slides Project 1 Hand-in
             href: project1_pt2_finalday.html
-          - text: Slides logitic regression
+          - text: Slides Logistic Regression
             href: logistic_regression.html
-          - text: Slides intrduction to ML
+          - text: Slides Introduction to ML
             href: intro_ML.html
-          - text: Slides tree based methods
+          - text: Slides Tree Based Methods
             href: tree_random_forest.html
 
 

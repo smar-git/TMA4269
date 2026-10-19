@@ -9,44 +9,32 @@ execute:
   echo: true
 ---
 
-## Instructions for today
-
-- Log into Canvas
-- Click on **People** on the right side of the page
-- Click on **Group**
-- Scroll to the group with the number on your desk and enroll yourself in the group (Tree based methods)
-- Download the python code and upload it into Jupiter Hub
-
 ## Time table {.smaller}
 
 | Week | Date | Planned Activity | Delivery |
-|-----------------|:----------------|----------------:|:-------------------:|
-|  | ~~*Fri 09.10*~~ | ~~Presentation of projects and new topic: logistic regression~~ | ~~Assignment, 5 points~~ |
-| ~~*42*~~ | ~~*Wed 07.10*~~ | ~~Intro to ML~~ | ~~Assignement 5 points~~ |
-|  | *Fri 14.10* | Tree based methods | Assignement 5 points |
+|----|:-------|--------------------:|:---------------:|
+|  | ~~*Fri 09.10*~~ | ~~Logistic regression~~ | ~~Assignment, 5 points~~ |
+| ~~*42*~~ | ~~*Wed 07.10*~~ | ~~Intro to ML~~ | ~~Assignment 5 points~~ |
+|  | *Fri 14.10* | Tree based methods | Assignment 5 points |
 | *43* | *Wed 21.10* | Neural Networks |  |
-|  | *Fri 13.10* |  |  |
+|  | *Fri 23.10* | CANCELLED |  |
 
 
-
-## Plan for  today
-
+## Plan for today
 
 We are going to learn about trees
 
-- what is a  decision tree 
-- how do  trees make predictions
-- advantages and disadvantages of trees
-- What is the intuition behind random forests
-- Compare a single tree with a random forest
+-   what is a decision tree
+-   how do trees make predictions
+-   advantages and disadvantages of trees
+-   What is the intuition behind random forests
+-   Compare a single tree with a random forest
 
-
-
-## Motivation{.smaller}
+## Motivation {.smaller}
 
 Can we predict the type of bean from some measurement?
 
-::: {layout-ncol=3}
+::: {layout-ncol="3"}
 ![Bombay](Bombay.png){#fig-first}
 
 ![Seker](seker.png){#fig-second}
@@ -54,44 +42,37 @@ Can we predict the type of bean from some measurement?
 ![Barbunya](Barbunya.png){#fig-third}
 :::
 
-
 Available information:
 
-- Area, Perimeter,  MajorAxisLength,  MinorAxisLength,  Compactness
-
+-   Area, Perimeter, MajorAxisLength, MinorAxisLength, Compactness
 
 . . .
 
-
-
 [**Group Work:** Run Part 1 of the code and answer to the questions in Part 1 of the handout]{style="color:red;"}
 
-
-
-## Motivation{.smaller}
+## Motivation {.smaller}
 
 Can we predict the type of bean from some measurement?
 
-::: {layout-ncol=3}
-![Bombay](Bombay.png){#fig-first}
+::: {layout-ncol="3"}
+![Bombay](Bombay.png)
 
-![Seker](seker.png){#fig-second}
+![Seker](seker.png)
 
-![Barbunya](Barbunya.png){#fig-third}
+![Barbunya](Barbunya.png)
 :::
 
 **Goal** Predict the class of beans from some measurement.
 
 This is a **classification** problem - the respons is categorical and not continuous.
 
-
 ## Classification
 
 We have already seen other techniques to solve this problem
 
-- Regression (yes, it is possible to have regression for multinomial data)
+-   Regression (yes, it is possible to have regression for multinomial data)
 
-- kNN
+-   kNN
 
 . . .
 
@@ -99,48 +80,41 @@ Today we are going to learn about **tree based methods**
 
 ## What Is a Decision Tree?
 
-![](tree.png)
+Add FIGURE HERE!!
 
 **Key Idea** The tree repeatedly divides the data into more homogeneous groups.
 
-
 ## How does a tree learn?
 
+1.  Take all the (training) data
+2.  Try different splits
+3.  For every split measure how different the two groups are
+4.  Choose the split that most separates the groups
+5.  Repeat for each group
 
-1. Take all the (training) data
-2. Try different splits
-3. For every split measure how different the two groups are
-4. Choose the split that most separates the groups
-5. Repeat for each group
-
-
-. . . 
+. . .
 
 Tree learns by finding the splits that best separate the classes in the training data, using simple and interpretable set fo rules.
-
 
 ## A first, simple tree
 
 [**Group Work** Run the code and answer **Part 2** of the handout]{style="color:red;"}
 
-
 ## Trees - Some vocabulary
 
-![](tree.png)
+IMAGE WITH SPLIT, BRANCHES, LEAVES
 
 ## A first, simple tree
 
+IMAGE HERE (Three with one split)
 
-
-
-How does a tree makes a prediction in each group? 
+How does a tree makes a prediction in each group?
 
 A leaf contains training examples that reached that same point in the tree.
 
-- For _classification_ the tree typically predicts the most common class among those examples.
+-   For *classification* the tree typically predicts the most common class among those examples.
 
-- For _regression_ the tree typically predicts the mean among those examples.
-
+-   For *regression* the tree typically predicts the mean among those examples.
 
 ## Interpreting a tree
 
@@ -152,28 +126,19 @@ Example:
 
 No statistics background is needed.
 
-
 . . .
 
-
-:::: {.columns}
-
+::::: columns
 ::: {.column width="50%"}
-**Advantages**
-- Easy to explain and interpret
-
+**Advantages** - Easy to explain and interpret
 :::
 
 ::: {.column width="50%"}
-**Disadvantages**
-- Usually too simple
+**Disadvantages** - Usually too simple
 :::
-
-::::
-
+:::::
 
 ## A deeper tree
-
 
 One parameter of the tree is the `depth`.
 
@@ -181,16 +146,15 @@ Our tree had depth 1, what happens if we allow the tree to grow deeper?
 
 [**Group Work** Run the code and answer to the questions in **Part 3**]{style="color:red;"}
 
-
 ## Logistic regression vs regression trees
 
 We fit two models to a simulated dataset.
 
-1.
-$$
-\log{\frac{p}{1-p}} = \beta_0 + \beta_1x_1 + \beta_2 x_2
-$$
-2. 
+1.  $$
+    \log{\frac{p}{1-p}} = \beta_0 + \beta_1x_1 + \beta_2 x_2
+    $$
+2.  
+
 ```{r}
 #| echo: false
 library(rpart)
@@ -279,8 +243,8 @@ rpart.plot(
 )
 ```
 
+## Logistic regression vs regression trees
 
-##  Logistic regression vs regression trees
 Prediction surfaces
 
 ```{r}
@@ -292,84 +256,61 @@ p1 + p2 +
 
 ```
 
+## How deep should a tree be? Underfitting vs Overfitting.
 
-## How deep should a tree be?\ Underfitting vs Overfitting.{}
+The main parameter to *tune* is the tree dept.
 
-The main parameter to _tune_ is the tree dept.
-
-
-
-:::: {.columns}
-
+::::: columns
 ::: {.column width="50%"}
-
 **Too Shallow**
 
-- Misses patterns
-- High bias
-- **Underfitting**
+-   Misses patterns
+-   High bias
+-   **Underfitting**
 :::
 
 ::: {.column width="50%"}
-
 **Too Deep**
 
-- Learns noise
-- Memorizes training data
-- **Overfitting**
+-   Learns noise
+-   Memorizes training data
+-   **Overfitting**
 :::
-
-::::
-
-
-
-
+:::::
 
 Goal - Find a depth that generalizes well.
 
 . . .
 
-
 [**Group Work** Run the code and answer to the questions in **Part 4**]{style="color:red;"}
 
+## Decision Tree Summary {.smaller}
 
-
-##  Decision Tree Summary{.smaller}
-
-:::: {.columns}
-
+::::: columns
 ::: {.column width="50%"}
-
 **Advantages**
 
-- Easy to interpret
+-   Easy to interpret
 
-- Easy to visualize
+-   Easy to visualize
 
-- Require little preprocessing
+-   Require little preprocessing
 
-- Can model nonlinear relationships
+-   Can model nonlinear relationships
 :::
 
 ::: {.column width="50%"}
-
 **Disdvantages**
 
-- Overfitting: A tree can soon become too complex and learn noise 
+-   Overfitting: A tree can soon become too complex and learn noise
 
+-   High variance: Small changes in the training data can produce a very different tree
 
+-   Greedy decisions: At each split, the tree chooses the best option locally, which may not lead to the best overall tree.
 
-- High variance: Small changes in the training data can produce a very different tree
-
-
-- Greedy decisions: At each split, the tree chooses the best option locally, which may not lead to the best overall tree.
-
-
-
-- Limited predictive stability: A single tree may not capture complex patterns reliably, especially when the data is noisy.
+-   Limited predictive stability: A single tree may not capture complex patterns reliably, especially when the data is noisy.
 :::
-::::
-
+:::::
 
 ## From One Tree to a Forest
 
@@ -377,116 +318,93 @@ To make predictions more stable we can use a random forest
 
 Instead of relying on one tree
 
-- Build hundreds of trees on slightly different datasets
+-   Build hundreds of trees on slightly different datasets
 
-- Combine their predictions
+-   Combine their predictions
 
 This is a **Random Forest**
 
+## 
 
-##
-
-![](How Random Forest Works.png)
-. . .
+![](How%20Random%20Forest%20Works.png) . . .
 
 [**Group Work** Run the code and answer the questions in **Part 5**]{style="color:red;"}
 
-##  Random Forests
+## Random Forests
 
-
-::: {.columns}
-
+::::: columns
 ::: {.column width="50%"}
-
 **Advantages**
 
+-   Better predictive accuracy
 
-- Better predictive accuracy
+-   Less overfitting
 
-- Less overfitting
-
-- More stable than a single tree
-
-
+-   More stable than a single tree
 :::
 
 ::: {.column width="50%"}
-
-
 **Disadvantages**
 
-- Harder to explain
+-   Harder to explain
 
-- Slower
+-   Slower
 
-- No simple set of decision rules
-
-
+-   No simple set of decision rules
 :::
 :::::
 
-
 ## Tuning parameters in a Random Forest
-
 
 We consider two important parameters (there are more one could tune)
 
-- `n_estimators`: Number of trees in the forest
-- `max_depth`: Maximum depth of each tree
-
+-   `n_estimators`: Number of trees in the forest
+-   `max_depth`: Maximum depth of each tree
 
 We use 5-fold cross-validation to tune them.
 
-[**Group Work**  Run Part 6 code and answer Question 6.1]{style="color:red;"}
+[**Group Work** Run Part 6 code and answer Question 6.1]{style="color:red;"}
 
+## Evaluating the models on the test set {.smaller}
 
-## Evaluating the models on the test set{.smaller}
-
-Part of the data was set apart as _test_ set. 
-
-We want to evaluate the best tree and the best random forest based on two metrics:
-
-- Accuracy
-- Confusion Matrix
-
-
-
-## Evaluating the models on the test set{.smaller}
-
-Part of the data was set apart as _test_ set. 
+Part of the data was set apart as *test* set.
 
 We want to evaluate the best tree and the best random forest based on two metrics:
 
-- Accuracy
-$$
-\text{Accuracy} = \frac{\text{Correct Predictions}}{\text{Total Predictions}}
-$$
-- Confusion Matrix
+-   Accuracy
+-   Confusion Matrix
 
+## Evaluating the models on the test set {.smaller}
 
-## Evaluating the models on the test set{.smaller}
-
-Part of the data was set apart as _test_ set. 
+Part of the data was set apart as *test* set.
 
 We want to evaluate the best tree and the best random forest based on two metrics:
 
-- Accuracy
-$$
-\text{Accuracy} = \frac{\text{Correct Predictions}}{\text{Total Predictions}}
-$$
-- Confusion Matrix
+-   Accuracy $$
+    \text{Accuracy} = \frac{\text{Correct Predictions}}{\text{Total Predictions}}
+    $$
+-   Confusion Matrix
 
+## Evaluating the models on the test set {.smaller}
 
-  - **Rows**: Actual class
-  - **Columns**: Predicted class
-  
-  This tells us much more than a single accuracy value
+Part of the data was set apart as *test* set.
 
+We want to evaluate the best tree and the best random forest based on two metrics:
+
+-   Accuracy $$
+    \text{Accuracy} = \frac{\text{Correct Predictions}}{\text{Total Predictions}}
+    $$
+
+-   Confusion Matrix
+
+    -   **Rows**: Actual class
+    -   **Columns**: Predicted class
+
+    This tells us much more than a single accuracy value
 
 . . .
 
 [**Group work** Run the code and answer to the questions in **Part 7**]{style="color:red;"}
-
 
 ## So...Which Model Would You Choose?
 
@@ -496,18 +414,16 @@ If your goal is prediction probably Random Forest!
 
 If your goal is explanation probably Decision Tree!
 
-
 ## Summary
 
+-   Decision trees make predictions using simple rules
 
-- Decision trees make predictions using simple rules
+-   Shallow tree underfit and deep trees often overfit
 
-- Shallow tree underfit and deep trees often overfit
+-   Cross-validation helps tuning model parameters
 
-- Cross-validation helps tuning model parameters
+-   Random forests combine many trees
 
-- Random forests combine many trees
+-   Random forests usually improve prediction
 
-- Random forests usually improve prediction
-
-- Interpretability and accuracy often compete
+-   Interpretability and accuracy often compete

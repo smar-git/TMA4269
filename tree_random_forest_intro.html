@@ -6,8 +6,8 @@
 <script src="tree_random_forest_intro_files/libs/quarto-html/tippy.umd.min.js"></script>
 <link href="tree_random_forest_intro_files/libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="tree_random_forest_intro_files/libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="tree_random_forest_intro_files/libs/quarto-html/quarto-syntax-highlighting-dc55a5b9e770e841cd82e46aadbfb9b0.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.8.24">
+<link href="tree_random_forest_intro_files/libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.7.32">
 
   <title>Tree-Based Methods and Random Forests</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -28,7 +28,7 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="tree_random_forest_intro_files/libs/revealjs/dist/theme/quarto-534cd8e3a96973385dffff3f4709048d.css">
+  <link rel="stylesheet" href="tree_random_forest_intro_files/libs/revealjs/dist/theme/quarto-f563837468303362081e247dddd440d0.css">
   <link href="tree_random_forest_intro_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="tree_random_forest_intro_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="tree_random_forest_intro_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -132,24 +132,14 @@
 </div>
 
 </section>
-<section id="instructions-for-today" class="slide level2">
-<h2>Instructions for today</h2>
-<ul>
-<li>Log into Canvas</li>
-<li>Click on <strong>People</strong> on the right side of the page</li>
-<li>Click on <strong>Group</strong></li>
-<li>Scroll to the group with the number on your desk and enroll yourself in the group (Tree based methods)</li>
-<li>Download the python code and upload it into Jupiter Hub</li>
-</ul>
-</section>
 <section id="time-table" class="slide level2 smaller">
 <h2>Time table</h2>
 <table class="caption-top">
 <colgroup>
-<col style="width: 23%">
-<col style="width: 23%">
-<col style="width: 23%">
-<col style="width: 29%">
+<col style="width: 8%">
+<col style="width: 16%">
+<col style="width: 42%">
+<col style="width: 34%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -163,20 +153,20 @@
 <tr class="odd">
 <td></td>
 <td style="text-align: left;"><del><em>Fri 09.10</em></del></td>
-<td style="text-align: right;"><del>Presentation of projects and new topic: logistic regression</del></td>
+<td style="text-align: right;"><del>Logistic regression</del></td>
 <td style="text-align: center;"><del>Assignment, 5 points</del></td>
 </tr>
 <tr class="even">
 <td><del><em>42</em></del></td>
 <td style="text-align: left;"><del><em>Wed 07.10</em></del></td>
 <td style="text-align: right;"><del>Intro to ML</del></td>
-<td style="text-align: center;"><del>Assignement 5 points</del></td>
+<td style="text-align: center;"><del>Assignment 5 points</del></td>
 </tr>
 <tr class="odd">
 <td></td>
 <td style="text-align: left;"><em>Fri 14.10</em></td>
 <td style="text-align: right;">Tree based methods</td>
-<td style="text-align: center;">Assignement 5 points</td>
+<td style="text-align: center;">Assignment 5 points</td>
 </tr>
 <tr class="even">
 <td><em>43</em></td>
@@ -186,8 +176,8 @@
 </tr>
 <tr class="odd">
 <td></td>
-<td style="text-align: left;"><em>Fri 13.10</em></td>
-<td style="text-align: right;"></td>
+<td style="text-align: left;"><em>Fri 23.10</em></td>
+<td style="text-align: right;">CANCELLED</td>
 <td style="text-align: center;"></td>
 </tr>
 </tbody>
@@ -261,38 +251,26 @@ Figure&nbsp;3: Barbunya
 <div class="quarto-layout-panel" data-layout-ncol="3">
 <div class="quarto-layout-row">
 <div class="quarto-layout-cell" style="flex-basis: 33.3%;justify-content: flex-start;">
-<div id="fig-first" class="quarto-float quarto-figure quarto-figure-center">
-<figure class="quarto-float quarto-float-fig">
-<div aria-describedby="fig-first-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img data-src="Bombay.png">
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-first-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;4: Bombay
-</figcaption>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="Bombay.png"></p>
+<figcaption>Bombay</figcaption>
 </figure>
 </div>
 </div>
 <div class="quarto-layout-cell" style="flex-basis: 33.3%;justify-content: flex-start;">
-<div id="fig-second" class="quarto-float quarto-figure quarto-figure-center">
-<figure class="quarto-float quarto-float-fig">
-<div aria-describedby="fig-second-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img data-src="seker.png">
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-second-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;5: Seker
-</figcaption>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="seker.png"></p>
+<figcaption>Seker</figcaption>
 </figure>
 </div>
 </div>
 <div class="quarto-layout-cell" style="flex-basis: 33.3%;justify-content: flex-start;">
-<div id="fig-third" class="quarto-float quarto-figure quarto-figure-center">
-<figure class="quarto-float quarto-float-fig">
-<div aria-describedby="fig-third-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img data-src="Barbunya.png">
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-third-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;6: Barbunya
-</figcaption>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="Barbunya.png"></p>
+<figcaption>Barbunya</figcaption>
 </figure>
 </div>
 </div>
@@ -721,7 +699,7 @@ Figure&nbsp;6: Barbunya
         margin: 0.1,
 
         math: {
-          mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@2.7.9/MathJax.js',
+          mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js',
           config: 'TeX-AMS_HTML-full',
           tex2jax: {
             inlineMath: [['\\(','\\)']],
@@ -833,14 +811,13 @@ Figure&nbsp;6: Barbunya
           e.clearSelection();
         }
         const getTextToCopy = function(trigger) {
-          const outerScaffold = trigger.parentElement.cloneNode(true);
-          const codeEl = outerScaffold.querySelector('code');
-          for (const childEl of codeEl.children) {
-            if (isCodeAnnotation(childEl)) {
-              childEl.remove();
+            const codeEl = trigger.previousElementSibling.cloneNode(true);
+            for (const childEl of codeEl.children) {
+              if (isCodeAnnotation(childEl)) {
+                childEl.remove();
+              }
             }
-          }
-          return codeEl.innerText;
+            return codeEl.innerText;
         }
         const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
           text: getTextToCopy
