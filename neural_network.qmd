@@ -4,21 +4,46 @@ format: revealjs
 editor: visual
 ---
 
-## Timetable
+## Time table {.smaller}
 
-xxxx
+| Week | Date | Planned Activity | Delivery |
+|----------------|:---------------|---------------------:|:----------------:|
+|  | ~~*Fri 09.10*~~ | ~~Logistic regression~~ | ~~Assignment 5 points~~ |
+| ~~*42*~~ | ~~*Wed 07.10*~~ | ~~Intro to ML~~ | ~~Assignment 5 points~~ |
+|  | ~~*Fri 14.10*~~ | ~~Tree based methods~~ | ~~Assignment 5 points~~ |
+| *43* | *Wed 21.10* | Neural Networks |  |
+|  | *Fri 23.10* | CANCELLED |  |
+| *44* | *Wed 28.10* | Model evaluation and feature importance |  |
+|  | *Fri 30.10* | Science practice | Assignment 5 points |
+| *45* | *Wed 4.11* | Project 2 starts |  |
 
-## General topics so far
+## ML models so far {.smaller}
 
-xxxx
+-   Logistic regression (modelling a 0/1 response with a regression model)
+
+    -   Estimation of parameters (beta-s), 'maximum likelihood'
+
+-   K-nearest neighbor
+
+    -   Predict for a new x\* the response y\* using the *k* nearest neighbors (neighbors of x\*)
+
+    -   *k* was called a hyperparameter
+
+-   Decision trees and random forests
+
+    -   Predict for a new x\* the response y\* using the decision rule of one tree or a forest of trees
+
+    -   Hyperparameters: the number of trees and the maximum depth of each tree
+
+-   **Today: Neural networks**
 
 ## MNIST Database {.smaller}
 
 ![](images/clipboard-3047042200.png)
 
-Response **y** (what we want to predict): the true digit (what the person intended to write)
+Response **y** : the true digit, i.i what the person intended to write
 
-Features / covariates / predictors **X**: "the image" (what the person wrote)
+Features / covariates / predictors **X**: "the image", i.e. what the person wrote
 
 ## MNIST Database: Example {.smaller}
 
@@ -26,23 +51,19 @@ y = 8
 
 x = pixel values (0-1) for each of these 28x28 = 784 grid points
 
-First values of x is all zeros because all grid points are black:
-
-x = (0,0,0,0,0,0, ... {something closer to 1}, ...)
-
 ![](images/clipboard-275188323.png)
 
-## MNIST Database: Our goal
+## MNIST Database: Our goal today
 
 Using *training* data, 7500 images with digit 'instructions' (X,y), create **prediction models** that take in an image and return a prediction: 0, 1, 2, 4, 5, 6, 7, 8 or 9
 
 . . .
 
-Evaluate the different models on a *validation* set; 1500 images, (X,y), Select the 'best'
+Evaluate the different models on a *validation* set; 1500 images, (X,y), and select the 'best'
 
 . . .
 
-Final evaluation of the chosen model on a *test* set: another set 1500 images, (X,y),
+Final evaluation of the chosen model on a *test* set: another set 1500 images, (X,y).
 
 ## Multiclass prediction
 
@@ -100,8 +121,6 @@ Discuss: What is a good "black box" in this case (for the MNIST data)?
 
 Come up with a description both in terms of the class probabilities $\widehat{p}$-s and the final digit predictions $\widehat{y}$.
 
-<!-- Our black box will not actually give 10 probabilities, it will give 10 scores that are not numbers between 0 and 1 and do not sum to one. To make sure we actually get class probabilities we need to do a transformation of these output scores, and the typical choice is the softmax function. -->
-
 <!-- We ultimately want a prediction method that predicts 9 when the intended digit was actually 9 (yhat = y). But we also want a prediction method that gives a high probability for the correct digit.  -->
 
 ## Multiclass prediction
@@ -126,7 +145,7 @@ What is a good prediction method?
 
 . . .
 
-If the true digit is $y = 3$ then the loss is:
+Example: If the true digit is $y = 3$ then the loss is:
 
 $$
 L = -\log (\widehat{p}_3)
@@ -300,21 +319,20 @@ Answer: $z_9 = 1.0$ and $\widehat{p}_9 = 0.17$.
 
 Now we have 25 450 unknown parameters (weights and biases) that we must estimate from our training data (7500 images (x) and corresponding true digits (y)).
 
-## Neural networks: Group task {.smaller}
+## Neural networks: Group task
 
 **How can we find good values of all those weights and biases?**
 
 -   We randomly choose values for our 25 450 parameters.
+
+. . .
+
 -   We run some training images through the network and calculate the loss (recall: cross-entropy, rewards putting high probability on the true class).
+
+. . .
+
 -   The loss is high. What should we do next?
 
-a.  Choose 25 450 completely new random values and try again.
-
-b.  Change each parameter a little and determine whether increasing or decreasing it would reduce the loss.
-
-c.  Keep the parameters because the network will improve if we simply show it more images.
-
-Which strategy seems most sensible?
 
 ## Neural networks: Gradient descent {.smaller}
 
@@ -322,49 +340,45 @@ To find the parameter values that minimize the loss over the training data we wa
 
 . . .
 
-**Gradient descent** (very informally!): 
+**Gradient descent** (very informally!):
 
- - Current parameters
- - Make predictions and calculate loss
- - How would changing each parameter affect the loss?
- - Update/change parameters in a direction that lowers the loss
- - Repeat
+-   Current parameters: Make predictions and calculate loss
+-   Check: How would changing each parameter affect the loss?
+-   Update/change parameters in a direction that lowers the loss
+-   Repeat
 
 . . .
 
 **Backpropagation** is the procedure neural networks use to work out how the parameters contributed to the loss.
 
-. . . 
+. . .
 
 **Stopping criterion:** When should we stop updating parameters?
 
- - When we have reached a maximum number of iterations
- - When the loss is no longer improving substantially
- - ...
- 
- 
- 
+-   When we have reached a maximum number of iterations
+-   When the loss is no longer improving substantially
+-   ...
+
 ## Neural networks: Hyperparameter tuning {.smaller}
 
-For our specified network: 
+For our specified network:
 
- - 1 hidden layer,
- - 32 hidden nodes,
- - ReLU activation,
- - etc,
- 
-we use training data to estimate 25 450 unknown parameters (weights and biases). 
+-   1 hidden layer,
+-   32 hidden nodes,
+-   ReLU activation,
+-   etc,
+
+we use training data to estimate 25 450 unknown parameters (weights and biases).
 
 . . .
 
-But why 1 hidden layer, 32 nodes and ReLU? These are *hyperparameters*, and we might want to consider other choices (architectures). 
+But why 1 hidden layer, 32 nodes and ReLU? These are *hyperparameters*, and we might want to consider other choices ("architectures").
 
 . . .
 
 For each architecture, we train the network using the training data.
 
-Then using *validation data* we compare the trained models and make modelling choices.
-
+Then using *validation data*, (or cross-validation) we compare the trained models and make choices.
 
 ## Group work: neural networks
 
@@ -378,6 +392,6 @@ Decide on two other architectures:
 
 -   A different activation function? (ReLU, sigmoid or tanh)
 
-Run all three using the test set and calculate the accuracy on the verication set. Choose one method and write it down.
+Run all three using the test set and calculate the accuracy on the validation set. Choose one method and write it down.
 
 Finally, calculate the accuracy on the test set.

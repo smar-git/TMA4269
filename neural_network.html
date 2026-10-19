@@ -132,36 +132,115 @@
 </div>
 
 </section>
-<section id="timetable" class="slide level2">
-<h2>Timetable</h2>
-<p>xxxx</p>
+<section id="time-table" class="slide level2 smaller">
+<h2>Time table</h2>
+<table class="caption-top">
+<colgroup>
+<col style="width: 22%">
+<col style="width: 22%">
+<col style="width: 30%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Week</th>
+<th style="text-align: left;">Date</th>
+<th style="text-align: right;">Planned Activity</th>
+<th style="text-align: center;">Delivery</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td></td>
+<td style="text-align: left;"><del><em>Fri 09.10</em></del></td>
+<td style="text-align: right;"><del>Logistic regression</del></td>
+<td style="text-align: center;"><del>Assignment 5 points</del></td>
+</tr>
+<tr class="even">
+<td><del><em>42</em></del></td>
+<td style="text-align: left;"><del><em>Wed 07.10</em></del></td>
+<td style="text-align: right;"><del>Intro to ML</del></td>
+<td style="text-align: center;"><del>Assignment 5 points</del></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td style="text-align: left;"><del><em>Fri 14.10</em></del></td>
+<td style="text-align: right;"><del>Tree based methods</del></td>
+<td style="text-align: center;"><del>Assignment 5 points</del></td>
+</tr>
+<tr class="even">
+<td><em>43</em></td>
+<td style="text-align: left;"><em>Wed 21.10</em></td>
+<td style="text-align: right;">Neural Networks</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td style="text-align: left;"><em>Fri 23.10</em></td>
+<td style="text-align: right;">CANCELLED</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="even">
+<td><em>44</em></td>
+<td style="text-align: left;"><em>Wed 28.10</em></td>
+<td style="text-align: right;">Model evaluation and feature importance</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td style="text-align: left;"><em>Fri 30.10</em></td>
+<td style="text-align: right;">Science practice</td>
+<td style="text-align: center;">Assignment 5 points</td>
+</tr>
+<tr class="even">
+<td><em>45</em></td>
+<td style="text-align: left;"><em>Wed 4.11</em></td>
+<td style="text-align: right;">Project 2 starts</td>
+<td style="text-align: center;"></td>
+</tr>
+</tbody>
+</table>
 </section>
-<section id="general-topics-so-far" class="slide level2">
-<h2>General topics so far</h2>
-<p>xxxx</p>
+<section id="ml-models-so-far" class="slide level2 smaller">
+<h2>ML models so far</h2>
+<ul>
+<li><p>Logistic regression (modelling a 0/1 response with a regression model)</p>
+<ul>
+<li>Estimation of parameters (beta-s), ‘maximum likelihood’</li>
+</ul></li>
+<li><p>K-nearest neighbor</p>
+<ul>
+<li><p>Predict for a new x* the response y* using the <em>k</em> nearest neighbors (neighbors of x*)</p></li>
+<li><p><em>k</em> was called a hyperparameter</p></li>
+</ul></li>
+<li><p>Decision trees and random forests</p>
+<ul>
+<li><p>Predict for a new x* the response y* using the decision rule of one tree or a forest of trees</p></li>
+<li><p>Hyperparameters: the number of trees and the maximum depth of each tree</p></li>
+</ul></li>
+<li><p><strong>Today: Neural networks</strong></p></li>
+</ul>
 </section>
 <section id="mnist-database" class="slide level2 smaller">
 <h2>MNIST Database</h2>
 
-<img data-src="images/clipboard-3047042200.png" class="r-stretch"><p>Response <strong>y</strong> (what we want to predict): the true digit (what the person intended to write)</p>
-<p>Features / covariates / predictors <strong>X</strong>: “the image” (what the person wrote)</p>
+<img data-src="images/clipboard-3047042200.png" class="r-stretch"><p>Response <strong>y</strong> : the true digit, i.i what the person intended to write</p>
+<p>Features / covariates / predictors <strong>X</strong>: “the image”, i.e.&nbsp;what the person wrote</p>
 </section>
 <section id="mnist-database-example" class="slide level2 smaller">
 <h2>MNIST Database: Example</h2>
 <p>y = 8</p>
 <p>x = pixel values (0-1) for each of these 28x28 = 784 grid points</p>
-<p>First values of x is all zeros because all grid points are black:</p>
-<p>x = (0,0,0,0,0,0, … {something closer to 1}, …)</p>
 
 <img data-src="images/clipboard-275188323.png" class="r-stretch"></section>
-<section id="mnist-database-our-goal" class="slide level2">
-<h2>MNIST Database: Our goal</h2>
+<section id="mnist-database-our-goal-today" class="slide level2">
+<h2>MNIST Database: Our goal today</h2>
 <p>Using <em>training</em> data, 7500 images with digit ‘instructions’ (X,y), create <strong>prediction models</strong> that take in an image and return a prediction: 0, 1, 2, 4, 5, 6, 7, 8 or 9</p>
 <div class="fragment">
-<p>Evaluate the different models on a <em>validation</em> set; 1500 images, (X,y), Select the ‘best’</p>
+<p>Evaluate the different models on a <em>validation</em> set; 1500 images, (X,y), and select the ‘best’</p>
 </div>
 <div class="fragment">
-<p>Final evaluation of the chosen model on a <em>test</em> set: another set 1500 images, (X,y),</p>
+<p>Final evaluation of the chosen model on a <em>test</em> set: another set 1500 images, (X,y).</p>
 </div>
 </section>
 <section id="multiclass-prediction" class="slide level2">
@@ -208,7 +287,6 @@
 <img data-src="images/clipboard-3163756644.png" class="r-stretch"><div class="fragment">
 <p>Discuss: What is a good “black box” in this case (for the MNIST data)?</p>
 <p>Come up with a description both in terms of the class probabilities <span class="math inline">\(\widehat{p}\)</span>-s and the final digit predictions <span class="math inline">\(\widehat{y}\)</span>.</p>
-<!-- Our black box will not actually give 10 probabilities, it will give 10 scores that are not numbers between 0 and 1 and do not sum to one. To make sure we actually get class probabilities we need to do a transformation of these output scores, and the typical choice is the softmax function. -->
 <!-- We ultimately want a prediction method that predicts 9 when the intended digit was actually 9 (yhat = y). But we also want a prediction method that gives a high probability for the correct digit.  -->
 </div>
 </section>
@@ -228,7 +306,7 @@
 <p>What is a good prediction method?</p>
 <p><strong>Loss function</strong> for us today: cross-entropy</p>
 <div class="fragment">
-<p>If the true digit is <span class="math inline">\(y = 3\)</span> then the loss is:</p>
+<p>Example: If the true digit is <span class="math inline">\(y = 3\)</span> then the loss is:</p>
 <p><span class="math display">\[
 L = -\log (\widehat{p}_3)
 \]</span></p>
@@ -360,20 +438,22 @@ z_k = \sum_i v_i h_i + c_k, \, \, \widehat{p}_k = \frac{e^{z_k}}{\sum_{j=0}^9 e^
 
 <img data-src="images/clipboard-3699038552.png" class="r-stretch"><p>Now we have 25 450 unknown parameters (weights and biases) that we must estimate from our training data (7500 images (x) and corresponding true digits (y)).</p>
 </section>
-<section id="neural-networks-group-task-3" class="slide level2 smaller">
+<section id="neural-networks-group-task-3" class="slide level2">
 <h2>Neural networks: Group task</h2>
 <p><strong>How can we find good values of all those weights and biases?</strong></p>
 <ul>
 <li>We randomly choose values for our 25 450 parameters.</li>
+</ul>
+<div class="fragment">
+<ul>
 <li>We run some training images through the network and calculate the loss (recall: cross-entropy, rewards putting high probability on the true class).</li>
+</ul>
+</div>
+<div class="fragment">
+<ul>
 <li>The loss is high. What should we do next?</li>
 </ul>
-<ol type="a">
-<li><p>Choose 25 450 completely new random values and try again.</p></li>
-<li><p>Change each parameter a little and determine whether increasing or decreasing it would reduce the loss.</p></li>
-<li><p>Keep the parameters because the network will improve if we simply show it more images.</p></li>
-</ol>
-<p>Which strategy seems most sensible?</p>
+</div>
 </section>
 <section id="neural-networks-gradient-descent" class="slide level2 smaller">
 <h2>Neural networks: Gradient descent</h2>
@@ -381,9 +461,8 @@ z_k = \sum_i v_i h_i + c_k, \, \, \widehat{p}_k = \frac{e^{z_k}}{\sum_{j=0}^9 e^
 <div class="fragment">
 <p><strong>Gradient descent</strong> (very informally!):</p>
 <ul>
-<li>Current parameters</li>
-<li>Make predictions and calculate loss</li>
-<li>How would changing each parameter affect the loss?</li>
+<li>Current parameters: Make predictions and calculate loss</li>
+<li>Check: How would changing each parameter affect the loss?</li>
 <li>Update/change parameters in a direction that lowers the loss</li>
 <li>Repeat</li>
 </ul>
@@ -411,11 +490,11 @@ z_k = \sum_i v_i h_i + c_k, \, \, \widehat{p}_k = \frac{e^{z_k}}{\sum_{j=0}^9 e^
 </ul>
 <p>we use training data to estimate 25 450 unknown parameters (weights and biases).</p>
 <div class="fragment">
-<p>But why 1 hidden layer, 32 nodes and ReLU? These are <em>hyperparameters</em>, and we might want to consider other choices (architectures).</p>
+<p>But why 1 hidden layer, 32 nodes and ReLU? These are <em>hyperparameters</em>, and we might want to consider other choices (“architectures”).</p>
 </div>
 <div class="fragment">
 <p>For each architecture, we train the network using the training data.</p>
-<p>Then using <em>validation data</em> we compare the trained models and make modelling choices.</p>
+<p>Then using <em>validation data</em>, (or cross-validation) we compare the trained models and make choices.</p>
 </div>
 </section>
 <section id="group-work-neural-networks" class="slide level2">
@@ -427,7 +506,7 @@ z_k = \sum_i v_i h_i + c_k, \, \, \widehat{p}_k = \frac{e^{z_k}}{\sum_{j=0}^9 e^
 <li><p>Changing the number of nodes in the hidden layer(s)?</p></li>
 <li><p>A different activation function? (ReLU, sigmoid or tanh)</p></li>
 </ul>
-<p>Run all three using the test set and calculate the accuracy on the verication set. Choose one method and write it down.</p>
+<p>Run all three using the test set and calculate the accuracy on the validation set. Choose one method and write it down.</p>
 <p>Finally, calculate the accuracy on the test set.</p>
 
 </section>
