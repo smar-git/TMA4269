@@ -7,6 +7,13 @@
     "text": "Time table\n\n\n\n\n\n\n\n\n\nWeek\nDate\nPlanned Activity\nDelivery\n\n\n\n\n\nFri 09.10\nPresentation of projects and new topic: logistic regression\nAssignment, 5 points\n\n\n42\nWed 07.10\nIntro to ML\nAssignement 5 points\n\n\n\nFri 14.10\nTree based methods\nAssignement 5 points\n\n\n43\nWed 21.10\nNeural Networks\n\n\n\n\nFri 13.10\n\n\n\n\n\n\nBefore we start: A small survey!"
   },
   {
+    "objectID": "intro_ML.html#survey",
+    "href": "intro_ML.html#survey",
+    "title": "Introduction to machine learning",
+    "section": "Survey",
+    "text": "Survey"
+  },
+  {
     "objectID": "intro_ML.html#from-regression-to-machine-learning",
     "href": "intro_ML.html#from-regression-to-machine-learning",
     "title": "Introduction to machine learning",
@@ -1559,12 +1566,5 @@
     "title": "Logistic Regression",
     "section": "What comes in the next weeks",
     "text": "What comes in the next weeks\nMachine Learning Models\n\n(Much) More flexible models\nMany more parameters\nMore fuzzy relationship between covariates and responses"
-  },
-  {
-    "objectID": "intro_ML.html#survey",
-    "href": "intro_ML.html#survey",
-    "title": "Introduction to machine learning",
-    "section": "Survey",
-    "text": "Survey"
   }
 ]

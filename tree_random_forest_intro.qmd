@@ -99,8 +99,7 @@ Today we are going to learn about **tree based methods**
 
 ## What Is a Decision Tree?
 
-Add FIGURE HERE!!
-
+![](tree.png)
 
 **Key Idea** The tree repeatedly divides the data into more homogeneous groups.
 
@@ -127,12 +126,11 @@ Tree learns by finding the splits that best separate the classes in the training
 
 ## Trees - Some vocabulary
 
-IMAGE WITH SPLIT, BRANCHES, LEAVES
+![](tree.png)
 
 ## A first, simple tree
 
 
-IMAGE HERE (Three with one split)
 
 
 How does a tree makes a prediction in each group? 
