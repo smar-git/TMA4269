@@ -16,7 +16,7 @@ project:
     - project1_pt2_finalday.qmd
     - logistic_regression.qmd
     - intro_ML.qmd
-    - tree_random_forest.qmd
+    - tree_random_forest_intro.qmd
 
 
     
@@ -62,7 +62,7 @@ website:
           - text: Slides Introduction to ML
             href: intro_ML.html
           - text: Slides Tree Based Methods
-            href: tree_random_forest.html
+            href: tree_random_forest_intro.html
 
 
 
