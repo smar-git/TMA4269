@@ -4,7 +4,7 @@ format: html
 editor: visual
 ---
 
-### Multiclass prediction (1)
+### Multiclass prediction
 
 **How do we go from a list of probabilities to an actual prediction?**
 
@@ -38,27 +38,7 @@ Answer:
 
 ------------------------------------------------------------------------
 
-### Multiclass prediction (2)
 
-Discuss: What is a good "black box" in this case (for the MNIST data)?
-
-Come up with a description both in terms of the class probabilities $\widehat{p}$-s and the final digit predictions $\widehat{y}$.
-
-Answer:
-
-------------------------------------------------------------------------
-
-------------------------------------------------------------------------
-
-------------------------------------------------------------------------
-
-------------------------------------------------------------------------
-
-------------------------------------------------------------------------
-
-------------------------------------------------------------------------
-
-------------------------------------------------------------------------
 
 ### Neural networks (1)
 
@@ -130,7 +110,7 @@ $$
 v_1 = 1.0, \, v_2 = 0.4, \, b = 0.0.
 $$
 
-Use the following 9 output scores for the digits 0, 1, to 8: 
+Use the following 9 output scores for the digits 0, 1, to 8:
 
 $$
 z_0=0.2, \, z_1=0.5, \, z_2=−0.4, \, z_3=0.8, \, z_4=0.1, 
@@ -139,7 +119,6 @@ $$
 $$
 z_5=0.6, \, z_6=−0.2, \, z_7=0.3, \, z_8=0.7.
 $$
-
 
 Answer:
 
@@ -157,7 +136,6 @@ Answer:
 
 ------------------------------------------------------------------------
 
-
 ### Neural networks in Python
 
 We have seen an example of a neural network with one hidden layer with 32 nodes and the ReLU activation function. In canvas you will find python code for this.
@@ -168,9 +146,9 @@ Download 4 files from canvas: the notebook mnist_neuralnet.ipynb and 3 datasets 
 
 Use the NTNU jupyterhub (jupyter.ntnu.no), or run python locally (might be faster).
 
-Run the code that is given, which uses 20 iterations as a stopping criterion. Why do you get a warning?
+Run the code that is given, which uses 20 iterations as a stopping criterion. Do you get a warning, and can you interpret what it means?
 
-What is the accuracy on the* **training set** and what is the accuracy on the **validation set**?
+What is the accuracy on the **training set** and what is the accuracy on the **validation set**?
 
 Answer:
 
@@ -196,12 +174,11 @@ Decide on **two** other architectures:
 
 -   Changing the number of nodes in the hidden layer(s)?
 
--   A different activation function? (ReLU, sigmoid or tanh)
+-   A different activation function?
 
 What are your architectures?
 
 What are their accuracies on the **validation set**?
-
 
 Answer:
 
@@ -219,12 +196,11 @@ Answer:
 
 ------------------------------------------------------------------------
 
-
 ### Step 3
 
 Choose one model, which one? How did you choose?
 
-Report the accuracy of your chosen model on the **test set**. 
+Report the accuracy of your chosen model on the **test set**.
 
 Plot the confusion matrix for the **test set**. Which digit was most difficult for the model to predict correctly? What did the model predict instead?
 
@@ -243,4 +219,3 @@ Answer:
 ------------------------------------------------------------------------
 
 ------------------------------------------------------------------------
-

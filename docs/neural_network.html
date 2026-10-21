@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html lang="en"><head>
-<script src="neural_network_files/libs/clipboard/clipboard.min.js"></script>
-<script src="neural_network_files/libs/quarto-html/tabby.min.js"></script>
-<script src="neural_network_files/libs/quarto-html/popper.min.js"></script>
-<script src="neural_network_files/libs/quarto-html/tippy.umd.min.js"></script>
-<link href="neural_network_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="neural_network_files/libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="neural_network_files/libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-html/tabby.min.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.7.32">
 
-  <title>Neural networks and multiclass prediction</title>
+  <title>TMA4269 – Neural networks and multiclass prediction</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
-  <link rel="stylesheet" href="neural_network_files/libs/revealjs/dist/reset.css">
-  <link rel="stylesheet" href="neural_network_files/libs/revealjs/dist/reveal.css">
+  <link rel="stylesheet" href="site_libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="site_libs/revealjs/dist/reveal.css">
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
@@ -28,11 +28,11 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="neural_network_files/libs/revealjs/dist/theme/quarto-f563837468303362081e247dddd440d0.css">
-  <link href="neural_network_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
-  <link href="neural_network_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
-  <link href="neural_network_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
-  <link href="neural_network_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <link rel="stylesheet" href="site_libs/revealjs/dist/theme/quarto-f563837468303362081e247dddd440d0.css">
+  <link href="site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="site_libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
   <style type="text/css">
     .reveal div.sourceCode {
       margin: 0;
@@ -235,7 +235,7 @@
 <img data-src="images/clipboard-275188323.png" class="r-stretch"></section>
 <section id="mnist-database-our-goal-today" class="slide level2">
 <h2>MNIST Database: Our goal today</h2>
-<p>Using <em>training</em> data, 200 images with digit ‘instructions’ (X,y), create <strong>prediction models</strong> that take in an image and return a prediction: 0, 1, 2, 4, 5, 6, 7, 8 or 9</p>
+<p>Using <em>training</em> data, 2000 images with digit ‘instructions’ (X,y), create <strong>prediction models</strong> that take in an image and return a prediction: 0, 1, 2, 4, 5, 6, 7, 8 or 9</p>
 <div class="fragment">
 <p>Evaluate the different models on a <em>validation</em> set; 500 images, (X,y), and select the ‘best’</p>
 </div>
@@ -281,22 +281,15 @@
 \widehat{y} = \arg\max_{k \in \{0,\ldots,9\}} \widehat{p}_k
 \]</span></p>
 </section>
-<section id="multiclass-prediction-group-task-1" class="slide level2 smaller">
-<h2>Multiclass prediction: Group task</h2>
-
-<img data-src="images/clipboard-3163756644.png" class="r-stretch"><div class="fragment">
-<p>Discuss: What is a good “black box” in this case (for the MNIST data)?</p>
-<p>Come up with a description both in terms of the class probabilities <span class="math inline">\(\widehat{p}\)</span>-s and the final digit predictions <span class="math inline">\(\widehat{y}\)</span>.</p>
-<!-- We ultimately want a prediction method that predicts 9 when the intended digit was actually 9 (yhat = y). But we also want a prediction method that gives a high probability for the correct digit.  -->
-</div>
-</section>
 <section id="multiclass-prediction-4" class="slide level2">
 <h2>Multiclass prediction</h2>
 <p>What is a good prediction method?</p>
+<div class="fragment">
 <p><strong>Accuracy of predictions on test data</strong>:</p>
 <p><span class="math display">\[
 \text{accuracy} = \frac{\text{number of correct predictions}}{\text{total number of predictions}}
 \]</span></p>
+</div>
 <div class="fragment">
 <p>But in the model building phase (training data) we will work with minimizing some <em>loss function</em>.</p>
 </div>
@@ -504,6 +497,7 @@ z_k = \sum_i v_i h_i + c_k, \, \, \widehat{p}_k = \frac{e^{z_k}}{\sum_{j=0}^9 e^
 <p>We are not doing cross-validation (due to time) but have a dedicated validation set.</p>
 <p>Instructions otherwise given on work sheet.</p>
 
+
 </section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
@@ -513,19 +507,19 @@ z_k = \sum_i v_i h_i + c_k, \, \, \widehat{p}_k = \frac{e^{z_k}}{\sum_{j=0}^9 e^
 </div></div>
 
   <script>window.backupDefine = window.define; window.define = undefined;</script>
-  <script src="neural_network_files/libs/revealjs/dist/reveal.js"></script>
+  <script src="site_libs/revealjs/dist/reveal.js"></script>
   <!-- reveal.js plugins -->
-  <script src="neural_network_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
-  <script src="neural_network_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
-  <script src="neural_network_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
-  <script src="neural_network_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
-  <script src="neural_network_files/libs/revealjs/plugin/quarto-support/support.js"></script>
+  <script src="site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="site_libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="site_libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="site_libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="site_libs/revealjs/plugin/quarto-support/support.js"></script>
   
 
-  <script src="neural_network_files/libs/revealjs/plugin/notes/notes.js"></script>
-  <script src="neural_network_files/libs/revealjs/plugin/search/search.js"></script>
-  <script src="neural_network_files/libs/revealjs/plugin/zoom/zoom.js"></script>
-  <script src="neural_network_files/libs/revealjs/plugin/math/math.js"></script>
+  <script src="site_libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="site_libs/revealjs/plugin/search/search.js"></script>
+  <script src="site_libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="site_libs/revealjs/plugin/math/math.js"></script>
   <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
 
   <script>
@@ -789,7 +783,7 @@ z_k = \sum_i v_i h_i + c_k, \, \, \widehat{p}_k = \frac{e^{z_k}}{\sum_{j=0}^9 e^
         }
           var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
           var mailtoRegex = new RegExp(/^mailto:/);
-            var filterRegex = new RegExp('/' + window.location.host + '/');
+            var filterRegex = new RegExp("https:\/\/smar-git\.github\.io\/TMA4269\/");
           var isInternal = (href) => {
               return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
           }

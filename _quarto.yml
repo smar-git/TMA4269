@@ -17,6 +17,7 @@ project:
     - logistic_regression.qmd
     - intro_ML.qmd
     - tree_random_forest.qmd
+    - neural_network.qmd
 
 
     
@@ -63,6 +64,8 @@ website:
             href: intro_ML.html
           - text: Slides Tree Based Methods
             href: tree_random_forest.html
+          - text: Slides Neural Networds
+            href: neural_network.html
 
 
 

@@ -92,8 +92,8 @@ window.Quarto = {
 </header>
 
 
-<section id="multiclass-prediction-1" class="level3">
-<h3 class="anchored" data-anchor-id="multiclass-prediction-1">Multiclass prediction (1)</h3>
+<section id="multiclass-prediction" class="level3">
+<h3 class="anchored" data-anchor-id="multiclass-prediction">Multiclass prediction</h3>
 <p><strong>How do we go from a list of probabilities to an actual prediction?</strong></p>
 <p>Discuss: What should be our predicted digit if our “black box” returns:</p>
 <ol type="a">
@@ -106,19 +106,6 @@ window.Quarto = {
 </ol>
 <p><code>Digit:         0   1   2   3   4   5   6   7   8   9</code></p>
 <p><code>Probability: .03 .02 .05 .29 .02 .27 .03 .04 .18 .07</code></p>
-<p>Answer:</p>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-</section>
-<section id="multiclass-prediction-2" class="level3">
-<h3 class="anchored" data-anchor-id="multiclass-prediction-2">Multiclass prediction (2)</h3>
-<p>Discuss: What is a good “black box” in this case (for the MNIST data)?</p>
-<p>Come up with a description both in terms of the class probabilities <span class="math inline">\(\widehat{p}\)</span>-s and the final digit predictions <span class="math inline">\(\widehat{y}\)</span>.</p>
 <p>Answer:</p>
 <hr>
 <hr>
@@ -197,8 +184,8 @@ z_5=0.6, \, z_6=−0.2, \, z_7=0.3, \, z_8=0.7.
 <h3 class="anchored" data-anchor-id="step-1">Step 1</h3>
 <p>Download 4 files from canvas: the notebook mnist_neuralnet.ipynb and 3 datasets mnist_train.npz, mnist_validation.npz, mnist_test.npz.</p>
 <p>Use the NTNU jupyterhub (jupyter.ntnu.no), or run python locally (might be faster).</p>
-<p>Run the code that is given, which uses 20 iterations as a stopping criterion. Why do you get a warning?</p>
-<p>What is the accuracy on the* <strong>training set</strong> and what is the accuracy on the <strong>validation set</strong>?</p>
+<p>Run the code that is given, which uses 20 iterations as a stopping criterion. Do you get a warning, and can you interpret what it means?</p>
+<p>What is the accuracy on the <strong>training set</strong> and what is the accuracy on the <strong>validation set</strong>?</p>
 <p>Answer:</p>
 <hr>
 <hr>
@@ -214,7 +201,7 @@ z_5=0.6, \, z_6=−0.2, \, z_7=0.3, \, z_8=0.7.
 <ul>
 <li><p>Adding a second hidden layer?</p></li>
 <li><p>Changing the number of nodes in the hidden layer(s)?</p></li>
-<li><p>A different activation function? (ReLU, sigmoid or tanh)</p></li>
+<li><p>A different activation function?</p></li>
 </ul>
 <p>What are your architectures?</p>
 <p>What are their accuracies on the <strong>validation set</strong>?</p>

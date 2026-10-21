@@ -55,7 +55,7 @@ x = pixel values (0-1) for each of these 28x28 = 784 grid points
 
 ## MNIST Database: Our goal today
 
-Using *training* data, 200 images with digit 'instructions' (X,y), create **prediction models** that take in an image and return a prediction: 0, 1, 2, 4, 5, 6, 7, 8 or 9
+Using *training* data, 2000 images with digit 'instructions' (X,y), create **prediction models** that take in an image and return a prediction: 0, 1, 2, 4, 5, 6, 7, 8 or 9
 
 . . .
 
@@ -111,21 +111,11 @@ $$
 \widehat{y} = \arg\max_{k \in \{0,\ldots,9\}} \widehat{p}_k
 $$
 
-## Multiclass prediction: Group task {.smaller}
-
-![](images/clipboard-3163756644.png)
-
-. . .
-
-Discuss: What is a good "black box" in this case (for the MNIST data)?
-
-Come up with a description both in terms of the class probabilities $\widehat{p}$-s and the final digit predictions $\widehat{y}$.
-
-<!-- We ultimately want a prediction method that predicts 9 when the intended digit was actually 9 (yhat = y). But we also want a prediction method that gives a high probability for the correct digit.  -->
-
 ## Multiclass prediction
 
 What is a good prediction method?
+
+. . .
 
 **Accuracy of predictions on test data**:
 
