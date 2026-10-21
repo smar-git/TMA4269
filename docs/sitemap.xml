@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+<<<<<<< HEAD
     <loc>https://smar-git.github.io/TMA4269/neural_network.html</loc>
     <lastmod>2026-10-20T18:20:29.186Z</lastmod>
   </url>
@@ -59,5 +60,65 @@
   <url>
     <loc>https://smar-git.github.io/TMA4269/intro_ML.html</loc>
     <lastmod>2026-10-19T06:45:18.344Z</lastmod>
+=======
+    <loc>https://smar-git.github.io/TMA4269/tree_random_forest_intro.html</loc>
+    <lastmod>2026-10-20T10:29:29.045Z</lastmod>
+  </url>
+  <url>
+    <loc>https://smar-git.github.io/TMA4269/logistic_regression.html</loc>
+    <lastmod>2026-10-08T10:01:15.436Z</lastmod>
+  </url>
+  <url>
+    <loc>https://smar-git.github.io/TMA4269/project1_pt2.html</loc>
+    <lastmod>2026-10-01T07:55:26.594Z</lastmod>
+  </url>
+  <url>
+    <loc>https://smar-git.github.io/TMA4269/project1_pt1.html</loc>
+    <lastmod>2026-09-24T16:29:57.088Z</lastmod>
+  </url>
+  <url>
+    <loc>https://smar-git.github.io/TMA4269/regression2_v2.html</loc>
+    <lastmod>2026-09-18T07:09:11.430Z</lastmod>
+  </url>
+  <url>
+    <loc>https://smar-git.github.io/TMA4269/Data_visualization2.html</loc>
+    <lastmod>2026-09-02T11:32:10.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://smar-git.github.io/TMA4269/Data_visualization.html</loc>
+    <lastmod>2026-08-26T07:27:54.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://smar-git.github.io/TMA4269/index.html</loc>
+    <lastmod>2026-10-20T10:33:58.610Z</lastmod>
+  </url>
+  <url>
+    <loc>https://smar-git.github.io/TMA4269/intro.html</loc>
+    <lastmod>2026-08-24T10:56:22.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://smar-git.github.io/TMA4269/telling_stories.html</loc>
+    <lastmod>2026-10-01T07:56:14.825Z</lastmod>
+  </url>
+  <url>
+    <loc>https://smar-git.github.io/TMA4269/regression1.html</loc>
+    <lastmod>2026-09-10T08:04:23.108Z</lastmod>
+  </url>
+  <url>
+    <loc>https://smar-git.github.io/TMA4269/regression3.html</loc>
+    <lastmod>2026-09-18T11:06:40.318Z</lastmod>
+  </url>
+  <url>
+    <loc>https://smar-git.github.io/TMA4269/project1_pt1_day2.html</loc>
+    <lastmod>2026-10-01T07:55:26.579Z</lastmod>
+  </url>
+  <url>
+    <loc>https://smar-git.github.io/TMA4269/project1_pt2_finalday.html</loc>
+    <lastmod>2026-10-08T10:53:35.821Z</lastmod>
+  </url>
+  <url>
+    <loc>https://smar-git.github.io/TMA4269/intro_ML.html</loc>
+    <lastmod>2026-10-14T08:01:52.777Z</lastmod>
+>>>>>>> cfce1667e870e3ac13cf549f5202b3bc3105656f
   </url>
 </urlset>

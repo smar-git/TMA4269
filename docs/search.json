@@ -1,5 +1,6 @@
 [
   {
+<<<<<<< HEAD
     "objectID": "neural_network.html#time-table",
     "href": "neural_network.html#time-table",
     "title": "Neural networks and multiclass prediction",
@@ -222,6 +223,181 @@
     "title": "Neural networks and multiclass prediction",
     "section": "Group work: neural networks - do it yourselves",
     "text": "Group work: neural networks - do it yourselves\nHave one group member download files from canvas and run Python (share screen).\nNTNU Jupyterhub might be slow but we have made quite small datasets for this reason.\nWe are not doing cross-validation (due to time) but have a dedicated validation set.\nInstructions otherwise given on work sheet."
+=======
+    "objectID": "tree_random_forest_intro.html#time-table",
+    "href": "tree_random_forest_intro.html#time-table",
+    "title": "Tree-Based Methods and Random Forests",
+    "section": "Time table",
+    "text": "Time table\n\n\n\n\n\n\n\n\n\nWeek\nDate\nPlanned Activity\nDelivery\n\n\n\n\n\nFri 09.10\nLogistic regression\nAssignment, 5 points\n\n\n42\nWed 07.10\nIntro to ML\nAssignment 5 points\n\n\n\nFri 14.10\nTree based methods\nAssignment 5 points\n\n\n43\nWed 21.10\nNeural Networks\n\n\n\n\nFri 23.10\nCANCELLED"
+  },
+  {
+    "objectID": "tree_random_forest_intro.html#plan-for-today",
+    "href": "tree_random_forest_intro.html#plan-for-today",
+    "title": "Tree-Based Methods and Random Forests",
+    "section": "Plan for today",
+    "text": "Plan for today\nWe are going to learn about trees\n\nwhat is a decision tree\nhow do trees make predictions\nadvantages and disadvantages of trees\nWhat is the intuition behind random forests\nCompare a single tree with a random forest"
+  },
+  {
+    "objectID": "tree_random_forest_intro.html#motivation",
+    "href": "tree_random_forest_intro.html#motivation",
+    "title": "Tree-Based Methods and Random Forests",
+    "section": "Motivation",
+    "text": "Motivation\nCan we predict the type of bean from some measurement?\n\n\n\n\n\n\n\n\n\nFigure 1: Bombay\n\n\n\n\n\n\n\n\n\n\n\nFigure 2: Seker\n\n\n\n\n\n\n\n\n\n\n\nFigure 3: Barbunya\n\n\n\n\n\n\nAvailable information:\n\nArea, Perimeter, MajorAxisLength, MinorAxisLength, Compactness\n\n\nGroup Work: Run Part 1 of the code and answer to the questions in Part 1 of the handout"
+  },
+  {
+    "objectID": "tree_random_forest_intro.html#motivation-1",
+    "href": "tree_random_forest_intro.html#motivation-1",
+    "title": "Tree-Based Methods and Random Forests",
+    "section": "Motivation",
+    "text": "Motivation\nCan we predict the type of bean from some measurement?\n\n\n\n\n\n\nBombay\n\n\n\n\n\n\n\nSeker\n\n\n\n\n\n\n\nBarbunya\n\n\n\n\n\nGoal Predict the class of beans from some measurement.\nThis is a classification problem - the respons is categorical and not continuous."
+  },
+  {
+    "objectID": "tree_random_forest_intro.html#classification",
+    "href": "tree_random_forest_intro.html#classification",
+    "title": "Tree-Based Methods and Random Forests",
+    "section": "Classification",
+    "text": "Classification\nWe have already seen other techniques to solve this problem\n\nRegression (yes, it is possible to have regression for multinomial data)\nkNN\n\n\nToday we are going to learn about tree based methods"
+  },
+  {
+    "objectID": "tree_random_forest_intro.html#what-is-a-decision-tree",
+    "href": "tree_random_forest_intro.html#what-is-a-decision-tree",
+    "title": "Tree-Based Methods and Random Forests",
+    "section": "What Is a Decision Tree?",
+    "text": "What Is a Decision Tree?\nAdd FIGURE HERE!!\nKey Idea The tree repeatedly divides the data into more homogeneous groups."
+  },
+  {
+    "objectID": "tree_random_forest_intro.html#how-does-a-tree-learn",
+    "href": "tree_random_forest_intro.html#how-does-a-tree-learn",
+    "title": "Tree-Based Methods and Random Forests",
+    "section": "How does a tree learn?",
+    "text": "How does a tree learn?\n\nTake all the (training) data\nTry different splits\nFor every split measure how different the two groups are\nChoose the split that most separates the groups\nRepeat for each group\n\n\nTree learns by finding the splits that best separate the classes in the training data, using simple and interpretable set fo rules."
+  },
+  {
+    "objectID": "tree_random_forest_intro.html#a-first-simple-tree",
+    "href": "tree_random_forest_intro.html#a-first-simple-tree",
+    "title": "Tree-Based Methods and Random Forests",
+    "section": "A first, simple tree",
+    "text": "A first, simple tree\nGroup Work Run the code and answer Part 2 of the handout"
+  },
+  {
+    "objectID": "tree_random_forest_intro.html#trees---some-vocabulary",
+    "href": "tree_random_forest_intro.html#trees---some-vocabulary",
+    "title": "Tree-Based Methods and Random Forests",
+    "section": "Trees - Some vocabulary",
+    "text": "Trees - Some vocabulary\nIMAGE WITH SPLIT, BRANCHES, LEAVES"
+  },
+  {
+    "objectID": "tree_random_forest_intro.html#a-first-simple-tree-1",
+    "href": "tree_random_forest_intro.html#a-first-simple-tree-1",
+    "title": "Tree-Based Methods and Random Forests",
+    "section": "A first, simple tree",
+    "text": "A first, simple tree\nIMAGE HERE (Three with one split)\nHow does a tree makes a prediction in each group?\nA leaf contains training examples that reached that same point in the tree.\n\nFor classification the tree typically predicts the most common class among those examples.\nFor regression the tree typically predicts the mean among those examples."
+  },
+  {
+    "objectID": "tree_random_forest_intro.html#interpreting-a-tree",
+    "href": "tree_random_forest_intro.html#interpreting-a-tree",
+    "title": "Tree-Based Methods and Random Forests",
+    "section": "Interpreting a tree",
+    "text": "Interpreting a tree\nA tree can be explained as a set of rules.\nExample:\n\nIf Area is below a threshold, predict Seker Otherwise predict Bombay\n\nNo statistics background is needed.\n\n\n\nAdvantages - Easy to explain and interpret\n\nDisadvantages - Usually too simple"
+  },
+  {
+    "objectID": "tree_random_forest_intro.html#a-deeper-tree",
+    "href": "tree_random_forest_intro.html#a-deeper-tree",
+    "title": "Tree-Based Methods and Random Forests",
+    "section": "A deeper tree",
+    "text": "A deeper tree\nOne parameter of the tree is the depth.\nOur tree had depth 1, what happens if we allow the tree to grow deeper?\nGroup Work Run the code and answer to the questions in Part 3"
+  },
+  {
+    "objectID": "tree_random_forest_intro.html#logistic-regression-vs-regression-trees",
+    "href": "tree_random_forest_intro.html#logistic-regression-vs-regression-trees",
+    "title": "Tree-Based Methods and Random Forests",
+    "section": "Logistic regression vs regression trees",
+    "text": "Logistic regression vs regression trees\nWe fit two models to a simulated dataset.\n\n\\[\n\\log{\\frac{p}{1-p}} = \\beta_0 + \\beta_1x_1 + \\beta_2 x_2\n\\]"
+  },
+  {
+    "objectID": "tree_random_forest_intro.html#logistic-regression-vs-regression-trees-1",
+    "href": "tree_random_forest_intro.html#logistic-regression-vs-regression-trees-1",
+    "title": "Tree-Based Methods and Random Forests",
+    "section": "Logistic regression vs regression trees",
+    "text": "Logistic regression vs regression trees\nPrediction surfaces"
+  },
+  {
+    "objectID": "tree_random_forest_intro.html#how-deep-should-a-tree-be-underfitting-vs-overfitting.",
+    "href": "tree_random_forest_intro.html#how-deep-should-a-tree-be-underfitting-vs-overfitting.",
+    "title": "Tree-Based Methods and Random Forests",
+    "section": "How deep should a tree be? Underfitting vs Overfitting.",
+    "text": "How deep should a tree be? Underfitting vs Overfitting.\nThe main parameter to tune is the tree dept.\n\n\nToo Shallow\n\nMisses patterns\nHigh bias\nUnderfitting\n\n\nToo Deep\n\nLearns noise\nMemorizes training data\nOverfitting\n\n\nGoal - Find a depth that generalizes well.\n\nGroup Work Run the code and answer to the questions in Part 4"
+  },
+  {
+    "objectID": "tree_random_forest_intro.html#decision-tree-summary",
+    "href": "tree_random_forest_intro.html#decision-tree-summary",
+    "title": "Tree-Based Methods and Random Forests",
+    "section": "Decision Tree Summary",
+    "text": "Decision Tree Summary\n\n\nAdvantages\n\nEasy to interpret\nEasy to visualize\nRequire little preprocessing\nCan model nonlinear relationships\n\n\nDisdvantages\n\nOverfitting: A tree can soon become too complex and learn noise\nHigh variance: Small changes in the training data can produce a very different tree\nGreedy decisions: At each split, the tree chooses the best option locally, which may not lead to the best overall tree.\nLimited predictive stability: A single tree may not capture complex patterns reliably, especially when the data is noisy."
+  },
+  {
+    "objectID": "tree_random_forest_intro.html#from-one-tree-to-a-forest",
+    "href": "tree_random_forest_intro.html#from-one-tree-to-a-forest",
+    "title": "Tree-Based Methods and Random Forests",
+    "section": "From One Tree to a Forest",
+    "text": "From One Tree to a Forest\nTo make predictions more stable we can use a random forest\nInstead of relying on one tree\n\nBuild hundreds of trees on slightly different datasets\nCombine their predictions\n\nThis is a Random Forest"
+  },
+  {
+    "objectID": "tree_random_forest_intro.html#section",
+    "href": "tree_random_forest_intro.html#section",
+    "title": "Tree-Based Methods and Random Forests",
+    "section": "",
+    "text": ". . .\nGroup Work Run the code and answer the questions in Part 5"
+  },
+  {
+    "objectID": "tree_random_forest_intro.html#random-forests",
+    "href": "tree_random_forest_intro.html#random-forests",
+    "title": "Tree-Based Methods and Random Forests",
+    "section": "Random Forests",
+    "text": "Random Forests\n\n\nAdvantages\n\nBetter predictive accuracy\nLess overfitting\nMore stable than a single tree\n\n\nDisadvantages\n\nHarder to explain\nSlower\nNo simple set of decision rules"
+  },
+  {
+    "objectID": "tree_random_forest_intro.html#tuning-parameters-in-a-random-forest",
+    "href": "tree_random_forest_intro.html#tuning-parameters-in-a-random-forest",
+    "title": "Tree-Based Methods and Random Forests",
+    "section": "Tuning parameters in a Random Forest",
+    "text": "Tuning parameters in a Random Forest\nWe consider two important parameters (there are more one could tune)\n\nn_estimators: Number of trees in the forest\nmax_depth: Maximum depth of each tree\n\nWe use 5-fold cross-validation to tune them.\nGroup Work Run Part 6 code and answer Question 6.1"
+  },
+  {
+    "objectID": "tree_random_forest_intro.html#evaluating-the-models-on-the-test-set",
+    "href": "tree_random_forest_intro.html#evaluating-the-models-on-the-test-set",
+    "title": "Tree-Based Methods and Random Forests",
+    "section": "Evaluating the models on the test set",
+    "text": "Evaluating the models on the test set\nPart of the data was set apart as test set.\nWe want to evaluate the best tree and the best random forest based on two metrics:\n\nAccuracy\nConfusion Matrix"
+  },
+  {
+    "objectID": "tree_random_forest_intro.html#evaluating-the-models-on-the-test-set-1",
+    "href": "tree_random_forest_intro.html#evaluating-the-models-on-the-test-set-1",
+    "title": "Tree-Based Methods and Random Forests",
+    "section": "Evaluating the models on the test set",
+    "text": "Evaluating the models on the test set\nPart of the data was set apart as test set.\nWe want to evaluate the best tree and the best random forest based on two metrics:\n\nAccuracy \\[\n\\text{Accuracy} = \\frac{\\text{Correct Predictions}}{\\text{Total Predictions}}\n\\]\nConfusion Matrix"
+  },
+  {
+    "objectID": "tree_random_forest_intro.html#evaluating-the-models-on-the-test-set-2",
+    "href": "tree_random_forest_intro.html#evaluating-the-models-on-the-test-set-2",
+    "title": "Tree-Based Methods and Random Forests",
+    "section": "Evaluating the models on the test set",
+    "text": "Evaluating the models on the test set\nPart of the data was set apart as test set.\nWe want to evaluate the best tree and the best random forest based on two metrics:\n\nAccuracy \\[\n\\text{Accuracy} = \\frac{\\text{Correct Predictions}}{\\text{Total Predictions}}\n\\]\nConfusion Matrix\n\nRows: Actual class\nColumns: Predicted class\n\nThis tells us much more than a single accuracy value\n\n\nGroup work Run the code and answer to the questions in Part 7"
+  },
+  {
+    "objectID": "tree_random_forest_intro.html#sowhich-model-would-you-choose",
+    "href": "tree_random_forest_intro.html#sowhich-model-would-you-choose",
+    "title": "Tree-Based Methods and Random Forests",
+    "section": "So…Which Model Would You Choose?",
+    "text": "So…Which Model Would You Choose?\nThere is rarely one “best” model. The right choice depends on the problem.\nIf your goal is prediction probably Random Forest!\nIf your goal is explanation probably Decision Tree!"
+  },
+  {
+    "objectID": "tree_random_forest_intro.html#summary",
+    "href": "tree_random_forest_intro.html#summary",
+    "title": "Tree-Based Methods and Random Forests",
+    "section": "Summary",
+    "text": "Summary\n\nDecision trees make predictions using simple rules\nShallow tree underfit and deep trees often overfit\nCross-validation helps tuning model parameters\nRandom forests combine many trees\nRandom forests usually improve prediction\nInterpretability and accuracy often compete"
+>>>>>>> cfce1667e870e3ac13cf549f5202b3bc3105656f
   },
   {
     "objectID": "logistic_regression.html#time-table",
