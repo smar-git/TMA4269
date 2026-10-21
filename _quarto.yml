@@ -16,16 +16,10 @@ project:
     - project1_pt2_finalday.qmd
     - logistic_regression.qmd
     - intro_ML.qmd
-<<<<<<< HEAD
-    - tree_random_forest.qmd
-    - neural_network.qmd
-=======
     - tree_random_forest_intro.qmd
->>>>>>> cfce1667e870e3ac13cf549f5202b3bc3105656f
-
+    - neural_network.qmd
 
     
-
 website:
   title: TMA4269
   site-url: https://smar-git.github.io/TMA4269/
@@ -67,15 +61,10 @@ website:
           - text: Slides Introduction to ML
             href: intro_ML.html
           - text: Slides Tree Based Methods
-<<<<<<< HEAD
-            href: tree_random_forest.html
+            href: tree_random_forest_intro.html
           - text: Slides Neural Networds
             href: neural_network.html
-=======
-            href: tree_random_forest_intro.html
->>>>>>> cfce1667e870e3ac13cf549f5202b3bc3105656f
-
-
+            
 
 format:
   html:
