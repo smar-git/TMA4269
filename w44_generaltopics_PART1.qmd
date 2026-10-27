@@ -1,0 +1,237 @@
+---
+title: "Week 44: General concepts in machine learning: Part 1"
+format: html
+editor: visual
+---
+
+## TASK 1
+
+### TASK 1A:
+
+1.If P(event) = 0.5 and we always predict "no event", what will our accuracy be?
+
+Ans:\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+2.If P(event) = 0.05 and we always predict "no event", what will our accuracy be?
+
+Ans:\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+### TASK 1B:
+
+Consider prediction of an event: 1 = event (positive), 0 = no event (negative).
+
+Use the general confusion matrix:
+
+|   | **Predicted positive** | **Predicted negative** |
+|:--------------------|:------------------------:|:------------------------:|
+| **Actual positive** | [**True Positive (TP)**]{style="color: #21803a;"} | [**False Negative (FN)**]{style="color: #c0392b;"} |
+| **Actual negative** | [**False Positive (FP)**]{style="color: #c0392b;"} | [**True Negative (TN)**]{style="color: #21803a;"} |
+
+We have already seen that
+
+$$
+\text{Accuracy} = \frac{TP+TN}{TP+TN+FP+FN}
+$$
+
+What are the corresponding equations for sensitivity (recall), specificity and precision?
+
+Answer:
+
+------------------------------------------------------------------------
+
+------------------------------------------------------------------------
+
+------------------------------------------------------------------------
+
+------------------------------------------------------------------------
+
+------------------------------------------------------------------------
+
+------------------------------------------------------------------------
+
+------------------------------------------------------------------------
+
+------------------------------------------------------------------------
+
+------------------------------------------------------------------------
+
+### TASK 1C:
+
+Which of the four classification models A, B, C or D is best?
+
+Ans:\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+### TASK 1D:
+
+What are the benefits of choosing thresholds corresponding to A, B or C?
+
+Ans:\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+### TASK 1E:
+
+1.  Calculate the true positive rate (sensitivity, recall) and the false positive rate (1 - specificity).
+
+Ans:\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+2.  Place the model in ROC-space, does it look good?
+
+Ans:\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+Draw here:
+
+------------------------------------------------------------------------
+
+------------------------------------------------------------------------
+
+------------------------------------------------------------------------
+
+------------------------------------------------------------------------
+
+------------------------------------------------------------------------
+
+------------------------------------------------------------------------
+
+------------------------------------------------------------------------
+
+------------------------------------------------------------------------
+
+------------------------------------------------------------------------
+
+3.  Calculate the *precision* of the model: of all predicted positives, how many were correct?
+
+Ans:\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+## TASK 2: Science practice
+
+Goal: try to understand the main aspects of what the paper presents using your current knowledge.
+
+Scientific paper: *From pictures to numbers: Multi-species seabird surveys using drone imagery and neural networks* https://doi.org/10.1016/j.ecoinf.2025.103583
+
+### TASK 2A
+
+Read the **abstract** and identify:
+
+Type of prediction model:
+
+Ans:\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+Size of training data (number of colonies):
+
+Ans:\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+Size of test data (number of colonies):
+
+Ans:\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+Why do you think the training and test data was "from geographically distinct colonies"?
+
+Ans:\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+### TASK 2B
+
+The model is trained to predict where (bounding boxes), which species, and to give associated *confidence scores*.
+
+For example, the model might output:
+
+-   Bounding box: Location of the detected bird
+
+-   Predicted object: Common gull
+
+-   Confidence score: 0.85
+
+Figure 4 presents the different prediction errors that could be made. Using this figure, discuss:
+
+What is a true positive? \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+What is a false negative? \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+What is a false positive? \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+Read the last paragraph of section 2, starting with "*We adopted a conservative thresholding approach that prioritized...*"
+
+Why were false positives considered more problematic than false negatives?
+
+Answer:
+
+------------------------------------------------------------------------
+
+------------------------------------------------------------------------
+
+------------------------------------------------------------------------
+
+------------------------------------------------------------------------
+
+------------------------------------------------------------------------
+
+### TASK 2C
+
+A species classification was only accepted if the confidence score was above 0.7. The effect of choosing this threshold is presented in Figure 3. Precision and recall for each species is presented in Table 3.
+
+Consider Figure 3 and the predictions of **Common Gull** (top right corner).
+
+Describe how Figure 3 relates to the **precision** for Common Gull reported in Table 3.
+
+Answer:
+
+------------------------------------------------------------------------
+
+------------------------------------------------------------------------
+
+------------------------------------------------------------------------
+
+Using the confusion matrix (figure 4) identify which species is often misclassified as the Common Gull.
+
+Answer:
+
+------------------------------------------------------------------------
+
+Discuss the species **Eider** in Figure 3:
+
+What would be the effect of a lower confidence threshold? 
+
+Answer:
+
+------------------------------------------------------------------------
+
+------------------------------------------------------------------------
+
+------------------------------------------------------------------------
+
+### TASK 2D
+
+The paper presents the metrics precision, recall and F1 score. 
+
+What is the F1 score? Why do you think this is used?
+
+Answer:
+
+------------------------------------------------------------------------
+
+------------------------------------------------------------------------
+
+------------------------------------------------------------------------
+
+------------------------------------------------------------------------
+
+In the abstract, what does the reported macro F1-score of 0.88 tell us? Can you reproduce this number from Table 3?
+
+Answer:
+
+------------------------------------------------------------------------
+
+------------------------------------------------------------------------
+
+------------------------------------------------------------------------
+
+------------------------------------------------------------------------
+
+Answer:
+
+The goal of the project is not only bird classification, but seabird population monitoring. What do you think, is this use of ML methods useful for the purpose?
+
+------------------------------------------------------------------------
+
+------------------------------------------------------------------------
+
+------------------------------------------------------------------------
+

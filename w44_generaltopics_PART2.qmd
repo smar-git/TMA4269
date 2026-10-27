@@ -1,0 +1,149 @@
+---
+title: "Week 44: General concepts in machine learning: Part 2"
+format: html
+editor: visual
+---
+
+
+## TASK 3: Science practice
+
+Goal: try to understand the main aspects of what the paper presents using your current knowledge.
+
+Scientific paper: *A Global and Local SHAP-Driven Interpretable Framework for Early Hospital Admission Prediction With Machine Learning at Emergency Department Triage* https://doi.org/10.7759/cureus.111163
+
+### TASK 3A
+
+Read the **abstract** and identify:
+
+What is the binary outcome that the authors want to predict?
+
+Ans:\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+How many ML prediction models did they try?
+
+Ans:\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+Which models "won"?
+
+Ans:\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+Do a quick search, what type of ML model from our course are CatBoost and XGBoost related to?
+
+Ans:\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+By which metric are CatBoost and XGBoost compared in the abstract? 
+
+Ans:\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+Do a quick search, what is a Brier score and how would you calculate it?
+
+Ans:\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+### TASK 3B
+
+From the section on Materials and Methods: 
+
+How many features did the authors include for the ML models?
+
+Ans:\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+How did they split data into training and test sets?
+
+And how did they split the training data into training and validation sets?
+
+Answer:
+
+------------------------------------------------------------------------
+
+------------------------------------------------------------------------
+
+------------------------------------------------------------------------
+
+The authors considers probabilistic prediction (the models output a probability). 
+What metric was used to define a prediction threshold? Write out the formula for this metric using your notes from PART1 (Wednesday) or a quick search. 
+
+Answer:
+
+------------------------------------------------------------------------
+
+------------------------------------------------------------------------
+
+------------------------------------------------------------------------
+
+
+### TASK 3C
+
+What is presented in Table 1?
+
+Can you identify 3 features that you believe will be important for prediction admission?
+
+Answer:
+
+------------------------------------------------------------------------
+
+------------------------------------------------------------------------
+
+------------------------------------------------------------------------
+
+
+Using Table 2 and the first 5 columns, is CatBoost performing best with respect to all metrics?
+
+In your opinion, is sensitivity or specificity more important for this prediction task? Discuss what these metrics mean in this setting.
+
+Answer:
+
+------------------------------------------------------------------------
+
+------------------------------------------------------------------------
+
+------------------------------------------------------------------------
+
+------------------------------------------------------------------------
+
+
+From Figure 1, what models perform the worst? Why could that be?
+
+Answer:
+
+------------------------------------------------------------------------
+
+------------------------------------------------------------------------
+
+------------------------------------------------------------------------
+
+------------------------------------------------------------------------
+
+
+
+### TASK 3D
+
+Look at and discuss Figure 2, showing global feature importance. Explain how the three ESI levels contributed to predictions. Explain how a persons age contributed to the prediction.  
+
+Answer:
+
+------------------------------------------------------------------------
+
+------------------------------------------------------------------------
+
+------------------------------------------------------------------------
+
+------------------------------------------------------------------------
+
+Consider the local feature importance plots presented in Figure 4 and 5. 
+
+What was the predicted probability of hospital admission for these two patients?
+
+Ans:\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+What where the main features contributing to these predictions? How do these relate to the ranking in the global feature importance plot (Figure 3)?
+
+
+Answer:
+
+------------------------------------------------------------------------
+
+------------------------------------------------------------------------
+
+------------------------------------------------------------------------
+
+------------------------------------------------------------------------

@@ -7,7 +7,7 @@ editor: visual
 ## Time table {.smaller}
 
 | Week | Date | Planned Activity | Delivery |
-|----------------|:---------------|---------------------:|:----------------:|
+|-----------------|:----------------|--------------------:|:---------------:|
 |  | ~~*Fri 09.10*~~ | ~~Logistic regression~~ | ~~Assignment 5 points~~ |
 | ~~*42*~~ | ~~*Wed 07.10*~~ | ~~Intro to ML~~ | ~~Assignment 5 points~~ |
 |  | ~~*Fri 14.10*~~ | ~~Tree based methods~~ | ~~Assignment 5 points~~ |
@@ -323,7 +323,6 @@ Now we have 25 450 unknown parameters (weights and biases) that we must estimate
 
 -   The loss is high. What should we do next?
 
-
 ## Neural networks: Gradient descent {.smaller}
 
 To find the parameter values that minimize the loss over the training data we want to know which direction to change each parameter to reduce the loss.
@@ -374,11 +373,8 @@ Then using *validation data*, (or cross-validation) we compare the trained model
 
 Have one group member download files from canvas and run Python (share screen).
 
-NTNU Jupyterhub might be slow but we have made quite small datasets for this reason. 
+NTNU Jupyterhub might be slow but we have made quite small datasets for this reason.
 
-We are not doing cross-validation (due to time) but have a dedicated validation set. 
+We are not doing cross-validation (due to time) but have a dedicated validation set.
 
 Instructions otherwise given on work sheet.
-
-
-
