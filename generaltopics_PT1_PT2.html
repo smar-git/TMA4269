@@ -152,35 +152,6 @@
 <p>Outcome (Y): what we want to predict</p>
 </blockquote>
 <div class="fragment">
-<p>Examples:</p>
-<table class="caption-top">
-<colgroup>
-<col style="width: 50%">
-<col style="width: 50%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Features</th>
-<th>Outcome</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Childrens’ age, smartphone ownership, etc</td>
-<td>Hours of sleep</td>
-</tr>
-<tr class="even">
-<td>Area, Perimeter, MajorAxisLength, MinorAxisLength, Compactness</td>
-<td>Type of bean</td>
-</tr>
-<tr class="odd">
-<td>Pixel values</td>
-<td>Digit (0–9)</td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="fragment">
 <p>Goal:</p>
 <blockquote>
 <p>Accurate predictions for new observations.</p>
@@ -248,15 +219,11 @@
 <div class="fragment">
 <ul>
 <li>Random splitting may give observations from one person in both training and test</li>
-</ul>
-</div>
-<div class="fragment">
-<ul>
 <li>“Data leakage”: We use information that would not be available when making predictions. Leads to overly optimistic estimates of model performance.</li>
 </ul>
 </div>
 </section>
-<section id="sample-splitting-what-is-that-we-want-to-evaluate-on-the-test-set" class="slide level2">
+<section id="sample-splitting-what-is-that-we-want-to-evaluate-on-the-test-set" class="slide level2 smaller">
 <h2>Sample splitting: What is that we want to evaluate on the test set?</h2>
 <div class="fragment">
 <p><span class="math display">\[
@@ -271,38 +238,30 @@
 </ol>
 </div>
 </section>
-<section id="sample-splitting-what-is-that-we-want-to-evaluate-on-the-test-set-1" class="slide level2">
+<section id="sample-splitting-what-is-that-we-want-to-evaluate-on-the-test-set-1" class="slide level2 smaller">
 <h2>Sample splitting: What is that we want to evaluate on the test set?</h2>
-<div class="fragment">
 <p><span class="math display">\[
 \text{accuracy} = \frac{\text{number of correct predictions}}{\text{total number of predictions}}
 \]</span></p>
-</div>
-<div class="fragment">
-<p>Example: We predict an event: 0 = no event, 1 = event</p>
+<p><strong>TASK 1A</strong>: We aim to predict an event</p>
 <ol type="1">
 <li>If P(event) = 0.5 and we always predict “no event”, what will our accuracy be?</li>
 </ol>
-<blockquote>
-<p>Ans: We will be correct 50% of the time, so accuracy = 0.5</p>
-</blockquote>
+<p><strong>Ans</strong>: We will be correct 50% of the time, so accuracy = 0.5</p>
 <ol start="2" type="1">
 <li>If P(event) = 0.05 and we always predict “no event”, what will our accuracy be?</li>
 </ol>
-<blockquote>
-<p>Ans: We will be correct 05% of the time, so accuracy = 0.95</p>
-</blockquote>
-</div>
+<p><strong>Ans</strong>: We will be correct 05% of the time, so accuracy = 0.95</p>
 <div class="fragment">
 <p>Accuracy depends on the class probabilities, and even a trivial classifier can achieve high accuracy on imbalanced data.</p>
 </div>
 </section>
 <section id="confusion-matrix" class="slide level2">
 <h2>Confusion matrix</h2>
-<table class="caption-top" style="width:100%;">
+<table class="caption-top">
 <colgroup>
-<col style="width: 28%">
-<col style="width: 35%">
+<col style="width: 30%">
+<col style="width: 34%">
 <col style="width: 35%">
 </colgroup>
 <thead>
@@ -336,10 +295,10 @@
 </section>
 <section id="classification-metrics" class="slide level2">
 <h2>Classification metrics</h2>
-<table class="caption-top" style="width:100%;">
+<table class="caption-top">
 <colgroup>
-<col style="width: 28%">
-<col style="width: 35%">
+<col style="width: 30%">
+<col style="width: 34%">
 <col style="width: 35%">
 </colgroup>
 <thead>
@@ -406,7 +365,7 @@
 <!-- \text{Specificity} = \frac{TN}{FP+TN} -->
 <!-- $$ -->
 </section>
-<section id="classification-metrics-1" class="slide level2">
+<section id="classification-metrics-1" class="slide level2 smaller">
 <h2>Classification metrics</h2>
 <table class="caption-top">
 <colgroup>
@@ -442,7 +401,7 @@
 </tr>
 </tbody>
 </table>
-<p><strong>TASK 1B:</strong> Find the formulas, using the confusion matrix, for accuracy, recall, specificity and precision.</p>
+<p><strong>TASK 1B:</strong> Find the formulas, using the confusion matrix, for accuracy, sensitivity, specificity and precision.</p>
 </section>
 <section id="classification-metrics-2" class="slide level2 smaller">
 <h2>Classification metrics</h2>
@@ -489,7 +448,7 @@
 <h2>Classification metrics</h2>
 <p><em>Note:</em> Often these metrics will depend on a <strong>threshold</strong> that we choose.</p>
 <div class="fragment">
-<p><strong>Prediction task:</strong> Will a person commit another crime within 2 years? Yes / No.</p>
+<p><strong>Prediction task:</strong> Will a person commit a crime within 2 years? Yes / No.</p>
 </div>
 <div class="fragment">
 <p><strong>Probabilistic prediction</strong> (e.g.&nbsp;random forest, neural network): Model outputs class probabilities: <em>P(Yes)</em></p>
@@ -518,27 +477,25 @@
 <img data-src="images/clipboard-248308213.png" class="r-stretch"><p><strong>TASK 1C:</strong> Which of the four classification models A, B, C or D is best?</p>
 </section>
 <section id="probabilistic-predictions-roc-curves" class="slide level2 smaller">
-<h2>Probabilistic predictions, ROC-curves</h2>
+<h2>Probabilistic predictions: ROC-curves</h2>
 
-<img data-src="images/clipboard-657658900.png" class="r-stretch"><div class="fragment">
-<blockquote>
+<img data-src="images/clipboard-657658900.png" class="r-stretch"><blockquote>
 <p>By plotting a probabilistic prediction models’ metrics in the ROC space for all values of a threshold <em>k</em> we get a curve</p>
 </blockquote>
-</div>
 </section>
 <section id="probabilistic-predictions-roc-curves-1" class="slide level2 smaller">
-<h2>Probabilistic predictions, ROC-curves</h2>
+<h2>Probabilistic predictions: ROC-curves</h2>
 
 <img data-src="images/clipboard-17864620.png" class="r-stretch"><p><strong>TASK 1D:</strong> What are the benefits of choosing thresholds corresponding to A, B or C?</p>
 </section>
-<section id="probabilistic-predictions-roc-curves-2" class="slide level2">
-<h2>Probabilistic predictions, ROC-curves</h2>
+<section id="probabilistic-predictions-roc-auc" class="slide level2">
+<h2>Probabilistic predictions: ROC-AUC</h2>
 
 <img data-src="images/clipboard-2379160113.png" class="r-stretch"></section>
-<section id="probabilistic-predictions-roc-curves-3" class="slide level2 smaller">
-<h2>Probabilistic predictions, ROC-curves</h2>
+<section id="probabilistic-predictions-roc-auc-1" class="slide level2 smaller">
+<h2>Probabilistic predictions: ROC-AUC</h2>
 
-<img data-src="images/clipboard-994066688.png" class="r-stretch"><p>Given a true positive (person did commit a new crime) and a true negative (person did not commit a new crime), the purple model is better than a random guess at <em>discriminating</em> between these two classes.</p>
+<img data-src="images/clipboard-994066688.png" class="r-stretch"><p>Given a true positive (person did commit a crime) and a true negative (person did not commit a crime), the purple model is better than a random guess at <em>discriminating</em> between these two classes.</p>
 </section>
 <section id="probabilistic-predictions" class="slide level2 smaller">
 <h2>Probabilistic predictions</h2>

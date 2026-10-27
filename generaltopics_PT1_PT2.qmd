@@ -21,16 +21,6 @@ Machine learning uses data to *learn* relationships between:
 
 . . .
 
-Examples:
-
-| Features | Outcome |
-|------------------------------------|------------------------------------|
-| Childrens' age, smartphone ownership, etc | Hours of sleep |
-| Area, Perimeter, MajorAxisLength, MinorAxisLength, Compactness | Type of bean |
-| Pixel values | Digit (0–9) |
-
-. . .
-
 Goal:
 
 > Accurate predictions for new observations.
@@ -166,12 +156,9 @@ When we split the data, should we split randomly?
 . . .
 
 -   Random splitting may give observations from one person in both training and test
-
-. . .
-
 -   "Data leakage": We use information that would not be available when making predictions. Leads to overly optimistic estimates of model performance.
 
-## Sample splitting: What is that we want to evaluate on the test set?
+## Sample splitting: What is that we want to evaluate on the test set? {.smaller}
 
 . . .
 
@@ -186,25 +173,21 @@ $$
 1.  If P(event) = 0.5 and we always predict "no event", what will our accuracy be?
 2.  If P(event) = 0.05 and we always predict "no event", what will our accuracy be?
 
-## Sample splitting: What is that we want to evaluate on the test set?
-
-. . .
+## Sample splitting: What is that we want to evaluate on the test set? {.smaller}
 
 $$ 
 \text{accuracy} = \frac{\text{number of correct predictions}}{\text{total number of predictions}}
 $$
 
-. . .
+**TASK 1A**: We aim to predict an event
 
-Example: We predict an event: 0 = no event, 1 = event
+1.  If P(event) = 0.5 and we always predict "no event", what will our accuracy be? 
 
-1.  If P(event) = 0.5 and we always predict "no event", what will our accuracy be?
+**Ans**: We will be correct 50% of the time, so accuracy = 0.5
 
-> Ans: We will be correct 50% of the time, so accuracy = 0.5
+2.  If P(event) = 0.05 and we always predict "no event", what will our accuracy be? 
 
-2.  If P(event) = 0.05 and we always predict "no event", what will our accuracy be?
-
-> Ans: We will be correct 05% of the time, so accuracy = 0.95
+**Ans**: We will be correct 05% of the time, so accuracy = 0.95
 
 . . .
 
@@ -213,7 +196,7 @@ Accuracy depends on the class probabilities, and even a trivial classifier can a
 ## Confusion matrix
 
 |   | **Predicted positive** | **Predicted negative** |
-|:--------------------|:------------------------:|:------------------------:|
+|:----------------------|:------------------------:|:-------------------------:|
 | **Actual positive** | [**True Positive (TP)**]{style="color: #21803a;"} | [**False Negative (FN)**]{style="color: #c0392b;"} |
 | **Actual negative** | [**False Positive (FP)**]{style="color: #c0392b;"} | [**True Negative (TN)**]{style="color: #21803a;"} |
 
@@ -227,7 +210,7 @@ Accuracy depends on the class probabilities, and even a trivial classifier can a
 ## Classification metrics
 
 |   | **Predicted positive** | **Predicted negative** |
-|:--------------------|:------------------------:|:------------------------:|
+|:----------------------|:------------------------:|:-------------------------:|
 | **Actual positive** | [**True Positive (TP)**]{style="color: #21803a;"} | [**False Negative (FN)**]{style="color: #c0392b;"} |
 | **Actual negative** | [**False Positive (FP)**]{style="color: #c0392b;"} | [**True Negative (TN)**]{style="color: #21803a;"} |
 
@@ -315,7 +298,7 @@ $$
 
 <!-- $$ -->
 
-## Classification metrics
+## Classification metrics {.smaller}
 
 | Metric | Question |
 |--------------------------------|----------------------------------------|
@@ -325,7 +308,7 @@ $$
 | **Precision** | Of the predicted positives, how many were actually positive? |
 |  |  |
 
-**TASK 1B:** Find the formulas, using the confusion matrix, for accuracy, recall, specificity and precision.
+**TASK 1B:** Find the formulas, using the confusion matrix, for accuracy, sensitivity, specificity and precision.
 
 ## Classification metrics {.smaller}
 
@@ -356,7 +339,7 @@ $$
 
 . . .
 
-**Prediction task:** Will a person commit another crime within 2 years? Yes / No.
+**Prediction task:** Will a person commit a crime within 2 years? Yes / No.
 
 . . .
 
@@ -383,29 +366,28 @@ ROC space = Receiver Operating Characteristic space
 
 **TASK 1C:** Which of the four classification models A, B, C or D is best?
 
-## Probabilistic predictions, ROC-curves {.smaller}
+## Probabilistic predictions: ROC-curves {.smaller}
 
 ![](images/clipboard-657658900.png)
 
-. . .
 
 > By plotting a probabilistic prediction models' metrics in the ROC space for all values of a threshold *k* we get a curve
 
-## Probabilistic predictions, ROC-curves {.smaller}
+## Probabilistic predictions: ROC-curves {.smaller}
 
 ![](images/clipboard-17864620.png)
 
 **TASK 1D:** What are the benefits of choosing thresholds corresponding to A, B or C?
 
-## Probabilistic predictions, ROC-curves
+## Probabilistic predictions: ROC-AUC
 
 ![](images/clipboard-2379160113.png)
 
-## Probabilistic predictions, ROC-curves {.smaller}
+## Probabilistic predictions: ROC-AUC {.smaller}
 
 ![](images/clipboard-994066688.png)
 
-Given a true positive (person did commit a new crime) and a true negative (person did not commit a new crime), the purple model is better than a random guess at *discriminating* between these two classes.
+Given a true positive (person did commit a crime) and a true negative (person did not commit a crime), the purple model is better than a random guess at *discriminating* between these two classes.
 
 ## Probabilistic predictions {.smaller}
 
