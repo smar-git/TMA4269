@@ -7,7 +7,7 @@ editor: visual
 ## Time table {.smaller}
 
 | Week | Date | Planned Activity | Delivery |
-|-----------------|:----------------|--------------------:|:---------------:|
+|-----------------|:----------------|-------------------:|:---------------:|
 |  | ~~*Fri 09.10*~~ | ~~Logistic regression~~ | ~~Assignment 5 points~~ |
 | ~~*42*~~ | ~~*Wed 07.10*~~ | ~~Intro to ML~~ | ~~Assignment 5 points~~ |
 |  | ~~*Fri 14.10*~~ | ~~Tree based methods~~ | ~~Assignment 5 points~~ |

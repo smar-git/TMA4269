@@ -18,6 +18,7 @@ project:
     - intro_ML.qmd
     - tree_random_forest_intro.qmd
     - neural_network.qmd
+    - generaltopics_PT1_PT2.qmd
 
     
 website:
@@ -64,6 +65,8 @@ website:
             href: tree_random_forest_intro.html
           - text: Slides Neural Networds
             href: neural_network.html
+          - text: Slides Model Evaluation
+            href: generaltopics_PT1_PT2.qmd
             
 
 format:

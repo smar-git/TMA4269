@@ -8,7 +8,7 @@ editor: visual
 ## Time table {.smaller}
 
 | Week | Date | Planned Activity | Delivery |
-|------------------|:-----------------|-------------------:|:----------------:|
+|----|:---|---:|:--:|
 |  | ~~*Fri 09.10*~~ | ~~Logistic regression~~ | ~~Assignment 5 points~~ |
 | ~~*42*~~ | ~~*Wed 07.10*~~ | ~~Intro to ML~~ | ~~Assignment 5 points~~ |
 |  | ~~*Fri 14.10*~~ | ~~Tree based methods~~ | ~~Assignment 5 points~~ |
@@ -137,8 +137,6 @@ p1 | p2 | p3
 
 ## Sample splitting
 
-## Sample splitting
-
 When we split the data, should we split randomly?
 
 . . .
@@ -150,8 +148,6 @@ When we split the data, should we split randomly?
 **Rare event prediction**: Predict a rare event, P(event) = 0.1
 
 -   Random sampling may give no events in one set
-
-. . .
 
 -   Split e.g. so that both training and test contains 10% events
 
@@ -205,10 +201,10 @@ $$
 
 Accuracy depends on the class probabilities, and even a trivial classifier can achieve high accuracy on imbalanced data.
 
-## Confusion matrix
+## Classification metrics
 
 |   | **Predicted positive** | **Predicted negative** |
-|:---------------------|:-----------------------:|:------------------------:|
+|:---|:--:|:--:|
 | **Actual positive** | [**True Positive (TP)**]{style="color: #21803a;"} | [**False Negative (FN)**]{style="color: #c0392b;"} |
 | **Actual negative** | [**False Positive (FP)**]{style="color: #c0392b;"} | [**True Negative (TN)**]{style="color: #21803a;"} |
 
@@ -222,7 +218,7 @@ Accuracy depends on the class probabilities, and even a trivial classifier can a
 ## Classification metrics
 
 |   | **Predicted positive** | **Predicted negative** |
-|:---------------------|:-----------------------:|:------------------------:|
+|:---|:--:|:--:|
 | **Actual positive** | [**True Positive (TP)**]{style="color: #21803a;"} | [**False Negative (FN)**]{style="color: #c0392b;"} |
 | **Actual negative** | [**False Positive (FP)**]{style="color: #c0392b;"} | [**True Negative (TN)**]{style="color: #21803a;"} |
 
@@ -313,7 +309,7 @@ $$
 ## Classification metrics {.smaller}
 
 | Metric | Question |
-|--------------------------------|----------------------------------------|
+|----|----|
 | **Accuracy** | Of all predictions, how many were correct? |
 | **Sensitivity / Recall / True positive rate** | Of the actual positives, how many did we identify? |
 | **Specificity / True negative rate** | Of the actual negatives, how many did we identify? |
@@ -325,7 +321,7 @@ $$
 ## Classification metrics {.smaller}
 
 |   | **Predicted positive** | **Predicted negative** |
-|:--------------------|:------------------------:|:------------------------:|
+|:---|:--:|:--:|
 | **Actual positive** | [**True Positive (TP)**]{style="color: #21803a;"} | [**False Negative (FN)**]{style="color: #c0392b;"} |
 | **Actual negative** | [**False Positive (FP)**]{style="color: #c0392b;"} | [**True Negative (TN)**]{style="color: #21803a;"} |
 
@@ -432,7 +428,7 @@ PR-curve: **P**recision vs **R**ecall
 Both ROC and PR curves are constructed by varying the classification threshold.
 
 | ROC curve | PR curve |
-|------------------------------------|------------------------------------|
+|----|----|
 | x-axis: False positive rate | x-axis: Recall |
 | y-axis: True positive rate (recall) | y-axis: Precision |
 | Shows discrimination between classes | Shows the trade-off between recall and precision |
@@ -488,7 +484,7 @@ AI can bring substantial benefits, but also pose risks and have negative impacts
 . . .
 
 | Model | Information used | Accuracy |
-|------------------------|------------------------|------------------------|
+|----|----|----|
 | **COMPAS** (commercial tool) | 137 features; proprietary algorithm | ≈ 65% |
 | **Humans** (average of 20 opinions) | 7 features, including age, sex and criminal history | ≈ 67% |
 | **Logistic regression** | 2 features: age and number of prior convictions | ≈ 67% |
@@ -562,7 +558,7 @@ Idea: If a feature is important for the model, randomly shuffling its values sho
 
 ![](images/clipboard-874815363.png)
 
-# Feature importance: Global {.smaller}
+## Feature importance: Global {.smaller}
 
 **Question:** How does a feature (e.g., age) affect the model's predictions?
 

@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html lang="en"><head>
-<script src="generaltopics_PT1_PT2_files/libs/clipboard/clipboard.min.js"></script>
-<script src="generaltopics_PT1_PT2_files/libs/quarto-html/tabby.min.js"></script>
-<script src="generaltopics_PT1_PT2_files/libs/quarto-html/popper.min.js"></script>
-<script src="generaltopics_PT1_PT2_files/libs/quarto-html/tippy.umd.min.js"></script>
-<link href="generaltopics_PT1_PT2_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="generaltopics_PT1_PT2_files/libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="generaltopics_PT1_PT2_files/libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-html/tabby.min.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.7.32">
 
-  <title>General Concepts in Machine Learning</title>
+  <title>TMA4269 – General Concepts in Machine Learning</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
-  <link rel="stylesheet" href="generaltopics_PT1_PT2_files/libs/revealjs/dist/reset.css">
-  <link rel="stylesheet" href="generaltopics_PT1_PT2_files/libs/revealjs/dist/reveal.css">
+  <link rel="stylesheet" href="site_libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="site_libs/revealjs/dist/reveal.css">
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
@@ -28,11 +28,11 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="generaltopics_PT1_PT2_files/libs/revealjs/dist/theme/quarto-f563837468303362081e247dddd440d0.css">
-  <link href="generaltopics_PT1_PT2_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
-  <link href="generaltopics_PT1_PT2_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
-  <link href="generaltopics_PT1_PT2_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
-  <link href="generaltopics_PT1_PT2_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <link rel="stylesheet" href="site_libs/revealjs/dist/theme/quarto-f563837468303362081e247dddd440d0.css">
+  <link href="site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="site_libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
   <style type="text/css">
     .reveal div.sourceCode {
       margin: 0;
@@ -137,10 +137,10 @@
 <h2>Time table</h2>
 <table class="caption-top">
 <colgroup>
-<col style="width: 24%">
-<col style="width: 24%">
-<col style="width: 27%">
-<col style="width: 24%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -254,9 +254,6 @@
 <img data-src="images/clipboard-1955347083.png" class="r-stretch"></section>
 <section id="sample-splitting-5" class="slide level2">
 <h2>Sample splitting</h2>
-</section>
-<section id="sample-splitting-6" class="slide level2">
-<h2>Sample splitting</h2>
 <p>When we split the data, should we split randomly?</p>
 <div class="fragment">
 <p><strong>MNIST:</strong> Similar frequencies of digits in each split</p>
@@ -264,16 +261,12 @@
 <div class="fragment">
 <p><strong>Rare event prediction</strong>: Predict a rare event, P(event) = 0.1</p>
 <ul>
-<li>Random sampling may give no events in one set</li>
-</ul>
-</div>
-<div class="fragment">
-<ul>
-<li>Split e.g.&nbsp;so that both training and test contains 10% events</li>
+<li><p>Random sampling may give no events in one set</p></li>
+<li><p>Split e.g.&nbsp;so that both training and test contains 10% events</p></li>
 </ul>
 </div>
 </section>
-<section id="sample-splitting-7" class="slide level2">
+<section id="sample-splitting-6" class="slide level2">
 <h2>Sample splitting</h2>
 <p>When we split the data, should we split randomly?</p>
 <p><strong>MNIST:</strong> Similar frequencies of digits in each split</p>
@@ -319,13 +312,13 @@
 <p>Accuracy depends on the class probabilities, and even a trivial classifier can achieve high accuracy on imbalanced data.</p>
 </div>
 </section>
-<section id="confusion-matrix" class="slide level2">
-<h2>Confusion matrix</h2>
-<table class="caption-top" style="width:100%;">
+<section id="classification-metrics" class="slide level2">
+<h2>Classification metrics</h2>
+<table class="caption-top">
 <colgroup>
-<col style="width: 30%">
-<col style="width: 34%">
-<col style="width: 35%">
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -356,13 +349,13 @@
 </ul>
 </div>
 </section>
-<section id="classification-metrics" class="slide level2">
+<section id="classification-metrics-1" class="slide level2">
 <h2>Classification metrics</h2>
-<table class="caption-top" style="width:100%;">
+<table class="caption-top">
 <colgroup>
-<col style="width: 30%">
-<col style="width: 34%">
-<col style="width: 35%">
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -428,12 +421,12 @@
 <!-- \text{Specificity} = \frac{TN}{FP+TN} -->
 <!-- $$ -->
 </section>
-<section id="classification-metrics-1" class="slide level2 smaller">
+<section id="classification-metrics-2" class="slide level2 smaller">
 <h2>Classification metrics</h2>
 <table class="caption-top">
 <colgroup>
-<col style="width: 44%">
-<col style="width: 55%">
+<col style="width: 50%">
+<col style="width: 50%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -466,13 +459,13 @@
 </table>
 <p><strong>TASK 1B:</strong> Find the formulas, using the confusion matrix, for accuracy, sensitivity, specificity and precision.</p>
 </section>
-<section id="classification-metrics-2" class="slide level2 smaller">
+<section id="classification-metrics-3" class="slide level2 smaller">
 <h2>Classification metrics</h2>
-<table class="caption-top" style="width:100%;">
+<table class="caption-top">
 <colgroup>
-<col style="width: 28%">
-<col style="width: 35%">
-<col style="width: 35%">
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -507,7 +500,7 @@
 \text{Precision} = \frac{TP}{TP+FP}
 \]</span></p>
 </section>
-<section id="classification-metrics-3" class="slide level2">
+<section id="classification-metrics-4" class="slide level2">
 <h2>Classification metrics</h2>
 <p><em>Note:</em> Often these metrics will depend on a <strong>threshold</strong> that we choose.</p>
 <div class="fragment">
@@ -788,10 +781,9 @@
 <div class="fragment">
 <p><img data-src="images/clipboard-874815363.png"></p>
 </div>
-</section></section>
-<section>
-<section id="feature-importance-global-2" class="title-slide slide level1 smaller center">
-<h1>Feature importance: Global</h1>
+</section>
+<section id="feature-importance-global-2" class="slide level2 smaller">
+<h2>Feature importance: Global</h2>
 <p><strong>Question:</strong> How does a feature (e.g., age) affect the model’s predictions?</p>
 <p><strong>Partial dependence plots (PDP):</strong></p>
 <ol type="1">
@@ -842,6 +834,7 @@
 <h2>Science practice</h2>
 
 
+
 <img data-src="images/clipboard-3150924149.png" class="r-stretch"></section></section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
@@ -851,19 +844,19 @@
 </div></div>
 
   <script>window.backupDefine = window.define; window.define = undefined;</script>
-  <script src="generaltopics_PT1_PT2_files/libs/revealjs/dist/reveal.js"></script>
+  <script src="site_libs/revealjs/dist/reveal.js"></script>
   <!-- reveal.js plugins -->
-  <script src="generaltopics_PT1_PT2_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
-  <script src="generaltopics_PT1_PT2_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
-  <script src="generaltopics_PT1_PT2_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
-  <script src="generaltopics_PT1_PT2_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
-  <script src="generaltopics_PT1_PT2_files/libs/revealjs/plugin/quarto-support/support.js"></script>
+  <script src="site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="site_libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="site_libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="site_libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="site_libs/revealjs/plugin/quarto-support/support.js"></script>
   
 
-  <script src="generaltopics_PT1_PT2_files/libs/revealjs/plugin/notes/notes.js"></script>
-  <script src="generaltopics_PT1_PT2_files/libs/revealjs/plugin/search/search.js"></script>
-  <script src="generaltopics_PT1_PT2_files/libs/revealjs/plugin/zoom/zoom.js"></script>
-  <script src="generaltopics_PT1_PT2_files/libs/revealjs/plugin/math/math.js"></script>
+  <script src="site_libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="site_libs/revealjs/plugin/search/search.js"></script>
+  <script src="site_libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="site_libs/revealjs/plugin/math/math.js"></script>
   <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
 
   <script>
@@ -1165,7 +1158,7 @@
         }
           var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
           var mailtoRegex = new RegExp(/^mailto:/);
-            var filterRegex = new RegExp('/' + window.location.host + '/');
+            var filterRegex = new RegExp("https:\/\/smar-git\.github\.io\/TMA4269\/");
           var isInternal = (href) => {
               return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
           }
