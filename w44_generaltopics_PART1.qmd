@@ -1,5 +1,5 @@
 ---
-title: "Week 44: General concepts in machine learning: Part 1"
+title: "General concepts in machine learning: Part 1"
 format: html
 editor: visual
 ---
@@ -8,11 +8,11 @@ editor: visual
 
 ### TASK 1A:
 
-1.If P(event) = 0.5 and we always predict "no event", what will our accuracy be?
+1.  If 50% of individuals in the population experience the event, and our model always predicts "no event", what is the expected accuracy?
 
 Ans:\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 
-2.If P(event) = 0.05 and we always predict "no event", what will our accuracy be?
+2.  If 5% of individuals in the population experience the event, and our model always predicts "no event", what is the expected accuracy?
 
 Ans:\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 
@@ -23,7 +23,7 @@ Consider prediction of an event: 1 = event (positive), 0 = no event (negative).
 Use the general confusion matrix:
 
 |   | **Predicted positive** | **Predicted negative** |
-|:---|:--:|:--:|
+|:--------------------|:------------------------:|:------------------------:|
 | **Actual positive** | [**True Positive (TP)**]{style="color: #21803a;"} | [**False Negative (FN)**]{style="color: #c0392b;"} |
 | **Actual negative** | [**False Positive (FP)**]{style="color: #c0392b;"} | [**True Negative (TN)**]{style="color: #21803a;"} |
 
@@ -36,6 +36,8 @@ $$
 What are the corresponding equations for sensitivity (recall), specificity and precision?
 
 Answer:
+
+------------------------------------------------------------------------
 
 ------------------------------------------------------------------------
 
@@ -97,6 +99,8 @@ Draw here:
 
 ------------------------------------------------------------------------
 
+------------------------------------------------------------------------
+
 3.  Calculate the *precision* of the model: of all predicted positives, how many were correct?
 
 Ans:\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
@@ -129,7 +133,7 @@ Ans:\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 
 ### TASK 2B
 
-The model is trained to predict where (bounding boxes), which species, and to give associated *confidence scores*.
+The model is trained to identify the location of a bird (bounding boxes), which species it is, and to give associated *confidence scores*.
 
 For example, the model might output:
 
@@ -185,9 +189,10 @@ Answer:
 
 ------------------------------------------------------------------------
 
-Discuss the species **Eider** in Figure 3:
+Discuss the species **Eider**:
 
-What would be the effect of a lower confidence threshold?
+What would be the effect of a lower confidence threshold? What seems to be the 
+difficulty in predicting this type of bird?
 
 Answer:
 
@@ -196,6 +201,7 @@ Answer:
 ------------------------------------------------------------------------
 
 ------------------------------------------------------------------------
+
 
 ### TASK 2D
 

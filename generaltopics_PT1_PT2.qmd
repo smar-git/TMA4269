@@ -5,6 +5,18 @@ format: revealjs
 editor: visual
 ---
 
+## Time table {.smaller}
+
+| Week | Date | Planned Activity | Delivery |
+|------------------|:-----------------|-------------------:|:----------------:|
+|  | ~~*Fri 09.10*~~ | ~~Logistic regression~~ | ~~Assignment 5 points~~ |
+| ~~*42*~~ | ~~*Wed 07.10*~~ | ~~Intro to ML~~ | ~~Assignment 5 points~~ |
+|  | ~~*Fri 14.10*~~ | ~~Tree based methods~~ | ~~Assignment 5 points~~ |
+| ~~*43*~~ | ~~*Wed 21.10*~~ | ~~Neural Networks~~ |  |
+| *44* | *Wed 28.10* | Model evaluation and science practice PT 1 |  |
+|  | *Fri 30.10* | Model evaluation and science practice PT 2 | Assignment 5 points |
+| *45* | *Wed 4.11* | Project 2 starts |  |
+
 # Part 1
 
 ## General question
@@ -170,8 +182,8 @@ $$
 
 **TASK 1A**: We aim to predict an event
 
-1.  If P(event) = 0.5 and we always predict "no event", what will our accuracy be?
-2.  If P(event) = 0.05 and we always predict "no event", what will our accuracy be?
+1.  If 50% of individuals in the population experience the event, and our model always predicts "no event", what is the expected accuracy?
+2.  If 5% of individuals in the population experience the event, and our model always predicts "no event", what is the expected accuracy?
 
 ## Sample splitting: What is that we want to evaluate on the test set? {.smaller}
 
@@ -181,13 +193,13 @@ $$
 
 **TASK 1A**: We aim to predict an event
 
-1.  If P(event) = 0.5 and we always predict "no event", what will our accuracy be? 
+1.  If 50% of individuals in the population experience the event, and our model always predicts "no event", what is the expected accuracy?
 
 **Ans**: We will be correct 50% of the time, so accuracy = 0.5
 
-2.  If P(event) = 0.05 and we always predict "no event", what will our accuracy be? 
+2.  If 5% of individuals in the population experience the event, and our model always predicts "no event", what is the expected accuracy?
 
-**Ans**: We will be correct 05% of the time, so accuracy = 0.95
+**Ans**: We will be correct 5% of the time, so accuracy = 0.95
 
 . . .
 
@@ -196,7 +208,7 @@ Accuracy depends on the class probabilities, and even a trivial classifier can a
 ## Confusion matrix
 
 |   | **Predicted positive** | **Predicted negative** |
-|:----------------------|:------------------------:|:-------------------------:|
+|:---------------------|:-----------------------:|:------------------------:|
 | **Actual positive** | [**True Positive (TP)**]{style="color: #21803a;"} | [**False Negative (FN)**]{style="color: #c0392b;"} |
 | **Actual negative** | [**False Positive (FP)**]{style="color: #c0392b;"} | [**True Negative (TN)**]{style="color: #21803a;"} |
 
@@ -210,7 +222,7 @@ Accuracy depends on the class probabilities, and even a trivial classifier can a
 ## Classification metrics
 
 |   | **Predicted positive** | **Predicted negative** |
-|:----------------------|:------------------------:|:-------------------------:|
+|:---------------------|:-----------------------:|:------------------------:|
 | **Actual positive** | [**True Positive (TP)**]{style="color: #21803a;"} | [**False Negative (FN)**]{style="color: #c0392b;"} |
 | **Actual negative** | [**False Positive (FP)**]{style="color: #c0392b;"} | [**True Negative (TN)**]{style="color: #21803a;"} |
 
@@ -369,7 +381,6 @@ ROC space = Receiver Operating Characteristic space
 ## Probabilistic predictions: ROC-curves {.smaller}
 
 ![](images/clipboard-657658900.png)
-
 
 > By plotting a probabilistic prediction models' metrics in the ROC space for all values of a threshold *k* we get a curve
 

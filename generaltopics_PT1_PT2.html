@@ -133,6 +133,69 @@
 </div>
 
 </section>
+<section id="time-table" class="slide level2 smaller">
+<h2>Time table</h2>
+<table class="caption-top">
+<colgroup>
+<col style="width: 24%">
+<col style="width: 24%">
+<col style="width: 27%">
+<col style="width: 24%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Week</th>
+<th style="text-align: left;">Date</th>
+<th style="text-align: right;">Planned Activity</th>
+<th style="text-align: center;">Delivery</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td></td>
+<td style="text-align: left;"><del><em>Fri 09.10</em></del></td>
+<td style="text-align: right;"><del>Logistic regression</del></td>
+<td style="text-align: center;"><del>Assignment 5 points</del></td>
+</tr>
+<tr class="even">
+<td><del><em>42</em></del></td>
+<td style="text-align: left;"><del><em>Wed 07.10</em></del></td>
+<td style="text-align: right;"><del>Intro to ML</del></td>
+<td style="text-align: center;"><del>Assignment 5 points</del></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td style="text-align: left;"><del><em>Fri 14.10</em></del></td>
+<td style="text-align: right;"><del>Tree based methods</del></td>
+<td style="text-align: center;"><del>Assignment 5 points</del></td>
+</tr>
+<tr class="even">
+<td><del><em>43</em></del></td>
+<td style="text-align: left;"><del><em>Wed 21.10</em></del></td>
+<td style="text-align: right;"><del>Neural Networks</del></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="odd">
+<td><em>44</em></td>
+<td style="text-align: left;"><em>Wed 28.10</em></td>
+<td style="text-align: right;">Model evaluation and science practice PT 1</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="even">
+<td></td>
+<td style="text-align: left;"><em>Fri 30.10</em></td>
+<td style="text-align: right;">Model evaluation and science practice PT 2</td>
+<td style="text-align: center;">Assignment 5 points</td>
+</tr>
+<tr class="odd">
+<td><em>45</em></td>
+<td style="text-align: left;"><em>Wed 4.11</em></td>
+<td style="text-align: right;">Project 2 starts</td>
+<td style="text-align: center;"></td>
+</tr>
+</tbody>
+</table>
+</section>
 <section>
 <section id="part-1" class="title-slide slide level1 center">
 <h1>Part 1</h1>
@@ -233,8 +296,8 @@
 <div class="fragment">
 <p><strong>TASK 1A</strong>: We aim to predict an event</p>
 <ol type="1">
-<li>If P(event) = 0.5 and we always predict “no event”, what will our accuracy be?</li>
-<li>If P(event) = 0.05 and we always predict “no event”, what will our accuracy be?</li>
+<li>If 50% of individuals in the population experience the event, and our model always predicts “no event”, what is the expected accuracy?</li>
+<li>If 5% of individuals in the population experience the event, and our model always predicts “no event”, what is the expected accuracy?</li>
 </ol>
 </div>
 </section>
@@ -245,20 +308,20 @@
 \]</span></p>
 <p><strong>TASK 1A</strong>: We aim to predict an event</p>
 <ol type="1">
-<li>If P(event) = 0.5 and we always predict “no event”, what will our accuracy be?</li>
+<li>If 50% of individuals in the population experience the event, and our model always predicts “no event”, what is the expected accuracy?</li>
 </ol>
 <p><strong>Ans</strong>: We will be correct 50% of the time, so accuracy = 0.5</p>
 <ol start="2" type="1">
-<li>If P(event) = 0.05 and we always predict “no event”, what will our accuracy be?</li>
+<li>If 5% of individuals in the population experience the event, and our model always predicts “no event”, what is the expected accuracy?</li>
 </ol>
-<p><strong>Ans</strong>: We will be correct 05% of the time, so accuracy = 0.95</p>
+<p><strong>Ans</strong>: We will be correct 5% of the time, so accuracy = 0.95</p>
 <div class="fragment">
 <p>Accuracy depends on the class probabilities, and even a trivial classifier can achieve high accuracy on imbalanced data.</p>
 </div>
 </section>
 <section id="confusion-matrix" class="slide level2">
 <h2>Confusion matrix</h2>
-<table class="caption-top">
+<table class="caption-top" style="width:100%;">
 <colgroup>
 <col style="width: 30%">
 <col style="width: 34%">
@@ -295,7 +358,7 @@
 </section>
 <section id="classification-metrics" class="slide level2">
 <h2>Classification metrics</h2>
-<table class="caption-top">
+<table class="caption-top" style="width:100%;">
 <colgroup>
 <col style="width: 30%">
 <col style="width: 34%">
