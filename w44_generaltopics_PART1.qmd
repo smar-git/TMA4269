@@ -23,7 +23,7 @@ Consider prediction of an event: 1 = event (positive), 0 = no event (negative).
 Use the general confusion matrix:
 
 |   | **Predicted positive** | **Predicted negative** |
-|:--------------------|:------------------------:|:------------------------:|
+|:---|:--:|:--:|
 | **Actual positive** | [**True Positive (TP)**]{style="color: #21803a;"} | [**False Negative (FN)**]{style="color: #c0392b;"} |
 | **Actual negative** | [**False Positive (FP)**]{style="color: #c0392b;"} | [**True Negative (TN)**]{style="color: #21803a;"} |
 
@@ -191,8 +191,7 @@ Answer:
 
 Discuss the species **Eider**:
 
-What would be the effect of a lower confidence threshold? What seems to be the 
-difficulty in predicting this type of bird?
+What would be the effect of a lower confidence threshold? What seems to be the difficulty in predicting this type of bird?
 
 Answer:
 
@@ -201,7 +200,6 @@ Answer:
 ------------------------------------------------------------------------
 
 ------------------------------------------------------------------------
-
 
 ### TASK 2D
 

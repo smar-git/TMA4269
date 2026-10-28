@@ -63,7 +63,7 @@ If you need more fundamental/theoretical knowledge you should rather consider
 
     -   Project 1: 2 hand-ins, at most 30 points (mandatory)
 
-    -   Project 2: 3 hand-ins, at most 50 points (mandatory)
+    -   Project 2: 3 hand-ins, at most 40 points (mandatory)
 
 -   Everything will be delivered in Canvas **during class hours**
 
