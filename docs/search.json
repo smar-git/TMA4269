@@ -193,7 +193,7 @@
     "href": "generaltopics_PT1_PT2.html#machine-learning-and-black-boxes",
     "title": "General Concepts in Machine Learning",
     "section": "Machine learning and “black boxes”",
-    "text": "Machine learning and “black boxes”\n\nLinear and logistic regression:\n\nWe specify a mathematical relationship between the features and the response.\nModel coefficients can often be interpreted directly.\nComplex nonlinear relationships and interactions may be difficult to specify and interpret.\n\nMachine learning models (e.g., random forests and neural networks):\n\nCan learn complex, nonlinear relationships and interactions from data.\nThe fitted relationship between features and predictions is often difficult to interpret directly.\nOften described as “black-box” models."
+    "text": "Machine learning and “black boxes”\n\nLinear and logistic regression:\n\nWe specify a mathematical relationship between the features and the response.\nModel coefficients can often be interpreted directly.\nComplex nonlinear relationships and interactions may be difficult to specify and interpret.\n\n\n\n\nMachine learning models (e.g., random forests and neural networks):\n\nCan learn complex, nonlinear relationships and interactions from data.\nThe fitted relationship between features and predictions is often difficult to interpret directly.\nOften described as “black-box” models."
   },
   {
     "objectID": "generaltopics_PT1_PT2.html#machine-learning-and-black-boxes-1",
@@ -206,8 +206,8 @@
     "objectID": "generaltopics_PT1_PT2.html#case-study-1",
     "href": "generaltopics_PT1_PT2.html#case-study-1",
     "title": "General Concepts in Machine Learning",
-    "section": "Case study 1",
-    "text": "Case study 1\n\nRecidivism: relapse into criminal behavior, rearrest, reconviction, or return to prison after serving a prior sentence"
+    "section": "Case study",
+    "text": "Case study\nPrediction task: Will a person commit another crime within 2 years? Yes / No\n\n\n\n\n\n\n\n\n\nModel\nInformation used\nAccuracy\n\n\n\n\nCOMPAS (commercial tool)\n137 features; proprietary algorithm\n≈ 65%\n\n\nHumans (average of 20 opinions)\n7 features, including age, sex and criminal history\n≈ 67%\n\n\nLogistic regression\n2 features: age and number of prior convictions\n≈ 67%\n\n\n\n\n\n\n\n\n\n\nArea under the ROC curve (AUC-ROC):\n\nHumans: 0.71 ± 0.03\nCOMPAS: 0.70 ± 0.04\n\n\n\n\nUse ML and other complex models only when it actually adds value"
   },
   {
     "objectID": "generaltopics_PT1_PT2.html#case-study-1-1",
@@ -242,28 +242,28 @@
     "href": "generaltopics_PT1_PT2.html#feature-importance-global-2",
     "title": "General Concepts in Machine Learning",
     "section": "Feature importance: Global",
-    "text": "Feature importance: Global\nQuestion: How does a feature (e.g., age) affect the model’s predictions?\nPartial dependence plots (PDP):\n\nSet everyone’s age to 20 → compute the average prediction.\nSet everyone’s age to 30 → compute the average prediction.\nRepeat for different ages and plot the results.\n\nProblem: We may create unrealistic combinations of features (e.g., a 20-year-old with 30 years of work experience).\n\nAccumulated Local Effects (ALE) plots:\n\nSimilar purpose, but examine changes in predictions within small intervals of observed feature values.\nBetter suited for correlated features."
+    "text": "Feature importance: Global\nQuestion: How does a feature (e.g., age) affect the model’s predictions?\nPartial dependence plots (PDP):"
   },
   {
     "objectID": "generaltopics_PT1_PT2.html#feature-importance-shap",
     "href": "generaltopics_PT1_PT2.html#feature-importance-shap",
     "title": "General Concepts in Machine Learning",
     "section": "Feature importance: SHAP",
-    "text": "Feature importance: SHAP\n\nHow to read the beeswarm plot:\n\nEach dot represents one person; each row represents one feature.\nRight (positive SHAP): higher predicted risk, Left (negative SHAP): lower predicted risk.\nColour: Red = high feature value; blue = low feature value.\nFeature order: Most important features at the top."
+    "text": "Feature importance: SHAP"
   },
   {
     "objectID": "generaltopics_PT1_PT2.html#feature-importance-shap-1",
     "href": "generaltopics_PT1_PT2.html#feature-importance-shap-1",
     "title": "General Concepts in Machine Learning",
     "section": "Feature importance: SHAP",
-    "text": "Feature importance: SHAP\n\nGlobal interpretation:\n\nThe beeswarm plot combines SHAP values from many individuals.\nShows which features are important overall and how they contribute to predictions."
+    "text": "Feature importance: SHAP\n\nHow to read the beeswarm plot:\n\nEach dot represents one person; each row represents one feature.\nRight (positive SHAP): higher predicted risk, Left (negative SHAP): lower predicted risk.\nColour: Red = high feature value; blue = low feature value.\nFeature order: Most important features at the top."
   },
   {
     "objectID": "generaltopics_PT1_PT2.html#feature-importance-shap-2",
     "href": "generaltopics_PT1_PT2.html#feature-importance-shap-2",
     "title": "General Concepts in Machine Learning",
     "section": "Feature importance: SHAP",
-    "text": "Feature importance: SHAP\n\nLocal interpretation:\n\nEach person has their own SHAP value for every feature.\nSelect one person and examine their SHAP values across all features.\nExplains why the model’s prediction for this person differs from the baseline prediction."
+    "text": "Feature importance: SHAP\n\nGlobal interpretation:\n\nThe beeswarm plot combines SHAP values from many individuals.\nShows which features are important overall and how they contribute to predictions."
   },
   {
     "objectID": "generaltopics_PT1_PT2.html#science-practice-1",
@@ -2238,5 +2238,33 @@
     "title": "Neural networks and multiclass prediction",
     "section": "Group work: neural networks - do it yourselves",
     "text": "Group work: neural networks - do it yourselves\nHave one group member download files from canvas and run Python (share screen).\nNTNU Jupyterhub might be slow but we have made quite small datasets for this reason.\nWe are not doing cross-validation (due to time) but have a dedicated validation set.\nInstructions otherwise given on work sheet."
+  },
+  {
+    "objectID": "generaltopics_PT1_PT2.html#time-table-1",
+    "href": "generaltopics_PT1_PT2.html#time-table-1",
+    "title": "General Concepts in Machine Learning",
+    "section": "Time table",
+    "text": "Time table\n\n\n\n\n\n\n\n\n\nWeek\nDate\nPlanned Activity\nDelivery\n\n\n\n\n\nFri 09.10\nLogistic regression\nAssignment 5 points\n\n\n42\nWed 07.10\nIntro to ML\nAssignment 5 points\n\n\n\nFri 14.10\nTree based methods\nAssignment 5 points\n\n\n43\nWed 21.10\nNeural Networks\n\n\n\n44\nWed 28.10\nModel evaluation and science practice PT 1\n\n\n\n\nFri 30.10\nModel evaluation and science practice PT 2\nAssignment 5 points\n\n\n45\nWed 4.11\nProject 2 starts"
+  },
+  {
+    "objectID": "generaltopics_PT1_PT2.html#case-study",
+    "href": "generaltopics_PT1_PT2.html#case-study",
+    "title": "General Concepts in Machine Learning",
+    "section": "Case study",
+    "text": "Case study\n\nRecidivism: relapse into criminal behavior, rearrest, reconviction, or return to prison after serving a prior sentence"
+  },
+  {
+    "objectID": "generaltopics_PT1_PT2.html#feature-importance-global-3",
+    "href": "generaltopics_PT1_PT2.html#feature-importance-global-3",
+    "title": "General Concepts in Machine Learning",
+    "section": "Feature importance: Global",
+    "text": "Feature importance: Global\nQuestion: How does a feature (e.g., age) affect the model’s predictions?\nPartial dependence plots (PDP):\n\nSet everyone’s age to 20 → compute the average prediction.\nSet everyone’s age to 30 → compute the average prediction.\nRepeat for different ages and plot the results.\n\nProblem: We may create unrealistic combinations of features (e.g., a 20-year-old with 30 years of work experience).\n\nAccumulated Local Effects (ALE) plots:\n\nSimilar purpose, but examine changes in predictions within small intervals of observed feature values.\nBetter suited for correlated features."
+  },
+  {
+    "objectID": "generaltopics_PT1_PT2.html#feature-importance-shap-3",
+    "href": "generaltopics_PT1_PT2.html#feature-importance-shap-3",
+    "title": "General Concepts in Machine Learning",
+    "section": "Feature importance: SHAP",
+    "text": "Feature importance: SHAP\n\nLocal interpretation:\n\nEach person has their own SHAP value for every feature.\nSelect one person and examine their SHAP values across all features.\nExplains why the model’s prediction for this person differs from the baseline prediction."
   }
 ]

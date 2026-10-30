@@ -640,6 +640,69 @@
 <h1>Part 2</h1>
 
 </section>
+<section id="time-table-1" class="slide level2 smaller">
+<h2>Time table</h2>
+<table class="caption-top">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Week</th>
+<th style="text-align: left;">Date</th>
+<th style="text-align: right;">Planned Activity</th>
+<th style="text-align: center;">Delivery</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td></td>
+<td style="text-align: left;"><del><em>Fri 09.10</em></del></td>
+<td style="text-align: right;"><del>Logistic regression</del></td>
+<td style="text-align: center;"><del>Assignment 5 points</del></td>
+</tr>
+<tr class="even">
+<td><del><em>42</em></del></td>
+<td style="text-align: left;"><del><em>Wed 07.10</em></del></td>
+<td style="text-align: right;"><del>Intro to ML</del></td>
+<td style="text-align: center;"><del>Assignment 5 points</del></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td style="text-align: left;"><del><em>Fri 14.10</em></del></td>
+<td style="text-align: right;"><del>Tree based methods</del></td>
+<td style="text-align: center;"><del>Assignment 5 points</del></td>
+</tr>
+<tr class="even">
+<td><del><em>43</em></del></td>
+<td style="text-align: left;"><del><em>Wed 21.10</em></del></td>
+<td style="text-align: right;"><del>Neural Networks</del></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="odd">
+<td><del><em>44</em></del></td>
+<td style="text-align: left;"><del><em>Wed 28.10</em></del></td>
+<td style="text-align: right;"><del>Model evaluation and science practice PT 1</del></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="even">
+<td></td>
+<td style="text-align: left;"><em>Fri 30.10</em></td>
+<td style="text-align: right;">Model evaluation and science practice PT 2</td>
+<td style="text-align: center;">Assignment 5 points</td>
+</tr>
+<tr class="odd">
+<td><em>45</em></td>
+<td style="text-align: left;"><em>Wed 4.11</em></td>
+<td style="text-align: right;">Project 2 starts</td>
+<td style="text-align: center;"></td>
+</tr>
+</tbody>
+</table>
+</section>
 <section id="machine-learning-and-black-boxes" class="slide level2 smaller">
 <h2>Machine learning and “black boxes”</h2>
 <ul>
@@ -649,6 +712,9 @@
 <li>Model coefficients can often be interpreted directly.</li>
 <li>Complex nonlinear relationships and interactions may be difficult to specify and interpret.</li>
 </ul></li>
+</ul>
+<div class="fragment">
+<ul>
 <li><strong>Machine learning models (e.g., random forests and neural networks):</strong>
 <ul>
 <li>Can learn complex, nonlinear relationships and interactions from data.</li>
@@ -656,6 +722,7 @@
 <li>Often described as <strong>“black-box” models</strong>.</li>
 </ul></li>
 </ul>
+</div>
 </section>
 <section id="machine-learning-and-black-boxes-1" class="slide level2 smaller">
 <h2>Machine learning and “black boxes”</h2>
@@ -670,13 +737,13 @@
 <p>Particular care is needed when AI affects <strong>vulnerable groups</strong> or when there are <strong>power imbalances</strong> (e.g., employers vs employees).</p>
 <p>AI can bring substantial benefits, but also pose risks and have negative impacts that are difficult to predict or measure (e.g.&nbsp;on democracy, the rule of law, or on the human mind itself.)</p>
 </section>
-<section id="case-study-1" class="slide level2">
-<h2>Case study 1</h2>
+<section id="case-study" class="slide level2">
+<h2>Case study</h2>
 
 <img data-src="images/clipboard-3263672917.png" class="r-stretch"><p><strong>Recidivism:</strong> relapse into criminal behavior, rearrest, reconviction, or return to prison after serving a prior sentence</p>
 </section>
-<section id="case-study-1-1" class="slide level2 smaller">
-<h2>Case study 1</h2>
+<section id="case-study-1" class="slide level2 smaller">
+<h2>Case study</h2>
 <p><strong>Prediction task:</strong> Will a person commit another crime within 2 years? Yes / No</p>
 <div class="fragment">
 <table class="caption-top">
@@ -708,6 +775,11 @@
 <td>2 features: age and number of prior convictions</td>
 <td>≈ 67%</td>
 </tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+</tr>
 </tbody>
 </table>
 </div>
@@ -720,7 +792,7 @@
 </div>
 <div class="fragment">
 <blockquote>
-<p>Use ML only when it actually adds value</p>
+<p>Use ML and other complex models only when it actually adds value</p>
 </blockquote>
 </div>
 </section>
@@ -778,11 +850,14 @@
 <li>Repeat for different ages and plot the results.</li>
 </ol>
 </div>
-<div class="fragment">
-<p><img data-src="images/clipboard-874815363.png"></p>
-</div>
 </section>
 <section id="feature-importance-global-2" class="slide level2 smaller">
+<h2>Feature importance: Global</h2>
+<p><strong>Question:</strong> How does a feature (e.g., age) affect the model’s predictions?</p>
+<p><strong>Partial dependence plots (PDP):</strong></p>
+
+<img data-src="images/clipboard-874815363.png" class="r-stretch"></section>
+<section id="feature-importance-global-3" class="slide level2 smaller">
 <h2>Feature importance: Global</h2>
 <p><strong>Question:</strong> How does a feature (e.g., age) affect the model’s predictions?</p>
 <p><strong>Partial dependence plots (PDP):</strong></p>
@@ -803,7 +878,11 @@
 <section id="feature-importance-shap" class="slide level2 smaller">
 <h2>Feature importance: SHAP</h2>
 
-<img data-src="generaltopics_PT1_PT2_files/figure-revealjs/unnamed-chunk-3-1.png" width="960" class="r-stretch"><p><strong>How to read the beeswarm plot:</strong></p>
+<img data-src="generaltopics_PT1_PT2_files/figure-revealjs/unnamed-chunk-3-1.png" width="960" class="r-stretch"></section>
+<section id="feature-importance-shap-1" class="slide level2 smaller">
+<h2>Feature importance: SHAP</h2>
+
+<img data-src="generaltopics_PT1_PT2_files/figure-revealjs/unnamed-chunk-4-1.png" width="960" class="r-stretch"><p><strong>How to read the beeswarm plot:</strong></p>
 <ul>
 <li><strong>Each dot</strong> represents one person; <strong>each row</strong> represents one feature.</li>
 <li><strong>Right</strong> (positive SHAP): higher predicted risk, <strong>Left</strong> (negative SHAP): lower predicted risk.</li>
@@ -811,19 +890,19 @@
 <li><strong>Feature order:</strong> Most important features at the top.</li>
 </ul>
 </section>
-<section id="feature-importance-shap-1" class="slide level2 smaller">
+<section id="feature-importance-shap-2" class="slide level2 smaller">
 <h2>Feature importance: SHAP</h2>
 
-<img data-src="generaltopics_PT1_PT2_files/figure-revealjs/unnamed-chunk-4-1.png" width="960" class="r-stretch"><p><strong>Global interpretation:</strong></p>
+<img data-src="generaltopics_PT1_PT2_files/figure-revealjs/unnamed-chunk-5-1.png" width="960" class="r-stretch"><p><strong>Global interpretation:</strong></p>
 <ul>
 <li><p>The beeswarm plot combines SHAP values from many individuals.</p></li>
 <li><p>Shows which features are important overall and how they contribute to predictions.</p></li>
 </ul>
 </section>
-<section id="feature-importance-shap-2" class="slide level2 smaller">
+<section id="feature-importance-shap-3" class="slide level2 smaller">
 <h2>Feature importance: SHAP</h2>
 
-<img data-src="generaltopics_PT1_PT2_files/figure-revealjs/unnamed-chunk-5-1.png" width="960" class="r-stretch"><p><strong>Local interpretation:</strong></p>
+<img data-src="generaltopics_PT1_PT2_files/figure-revealjs/unnamed-chunk-6-1.png" width="960" class="r-stretch"><p><strong>Local interpretation:</strong></p>
 <ul>
 <li><p>Each person has their own SHAP value for every feature.</p></li>
 <li><p>Select one person and examine their SHAP values across all features.</p></li>

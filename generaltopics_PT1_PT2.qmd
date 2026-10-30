@@ -8,7 +8,7 @@ editor: visual
 ## Time table {.smaller}
 
 | Week | Date | Planned Activity | Delivery |
-|----|:---|---:|:--:|
+|------------------|:-----------------|-----------------:|:----------------:|
 |  | ~~*Fri 09.10*~~ | ~~Logistic regression~~ | ~~Assignment 5 points~~ |
 | ~~*42*~~ | ~~*Wed 07.10*~~ | ~~Intro to ML~~ | ~~Assignment 5 points~~ |
 |  | ~~*Fri 14.10*~~ | ~~Tree based methods~~ | ~~Assignment 5 points~~ |
@@ -204,7 +204,7 @@ Accuracy depends on the class probabilities, and even a trivial classifier can a
 ## Classification metrics
 
 |   | **Predicted positive** | **Predicted negative** |
-|:---|:--:|:--:|
+|:-----------------------|:----------------------:|:----------------------:|
 | **Actual positive** | [**True Positive (TP)**]{style="color: #21803a;"} | [**False Negative (FN)**]{style="color: #c0392b;"} |
 | **Actual negative** | [**False Positive (FP)**]{style="color: #c0392b;"} | [**True Negative (TN)**]{style="color: #21803a;"} |
 
@@ -218,7 +218,7 @@ Accuracy depends on the class probabilities, and even a trivial classifier can a
 ## Classification metrics
 
 |   | **Predicted positive** | **Predicted negative** |
-|:---|:--:|:--:|
+|:-----------------------|:----------------------:|:----------------------:|
 | **Actual positive** | [**True Positive (TP)**]{style="color: #21803a;"} | [**False Negative (FN)**]{style="color: #c0392b;"} |
 | **Actual negative** | [**False Positive (FP)**]{style="color: #c0392b;"} | [**True Negative (TN)**]{style="color: #21803a;"} |
 
@@ -309,7 +309,7 @@ $$
 ## Classification metrics {.smaller}
 
 | Metric | Question |
-|----|----|
+|------------------------------------|------------------------------------|
 | **Accuracy** | Of all predictions, how many were correct? |
 | **Sensitivity / Recall / True positive rate** | Of the actual positives, how many did we identify? |
 | **Specificity / True negative rate** | Of the actual negatives, how many did we identify? |
@@ -321,7 +321,7 @@ $$
 ## Classification metrics {.smaller}
 
 |   | **Predicted positive** | **Predicted negative** |
-|:---|:--:|:--:|
+|:-----------------------|:----------------------:|:----------------------:|
 | **Actual positive** | [**True Positive (TP)**]{style="color: #21803a;"} | [**False Negative (FN)**]{style="color: #c0392b;"} |
 | **Actual negative** | [**False Positive (FP)**]{style="color: #c0392b;"} | [**True Negative (TN)**]{style="color: #21803a;"} |
 
@@ -428,7 +428,7 @@ PR-curve: **P**recision vs **R**ecall
 Both ROC and PR curves are constructed by varying the classification threshold.
 
 | ROC curve | PR curve |
-|----|----|
+|------------------------------------|------------------------------------|
 | x-axis: False positive rate | x-axis: Recall |
 | y-axis: True positive rate (recall) | y-axis: Precision |
 | Shows discrimination between classes | Shows the trade-off between recall and precision |
@@ -445,12 +445,27 @@ PR curves are particularly informative when the positive class is rare and we ca
 
 # Part 2
 
+## Time table {.smaller}
+
+| Week | Date | Planned Activity | Delivery |
+|------------------|:-----------------|-----------------:|:----------------:|
+|  | ~~*Fri 09.10*~~ | ~~Logistic regression~~ | ~~Assignment 5 points~~ |
+| ~~*42*~~ | ~~*Wed 07.10*~~ | ~~Intro to ML~~ | ~~Assignment 5 points~~ |
+|  | ~~*Fri 14.10*~~ | ~~Tree based methods~~ | ~~Assignment 5 points~~ |
+| ~~*43*~~ | ~~*Wed 21.10*~~ | ~~Neural Networks~~ |  |
+| ~~*44*~~ | ~~*Wed 28.10*~~ | ~~Model evaluation and science practice PT 1~~ |  |
+|  | *Fri 30.10* | Model evaluation and science practice PT 2 | Assignment 5 points |
+| *45* | *Wed 4.11* | Project 2 starts |  |
+
 ## Machine learning and "black boxes" {.smaller}
 
 -   **Linear and logistic regression:**
     -   We specify a mathematical relationship between the features and the response.
     -   Model coefficients can often be interpreted directly.
     -   Complex nonlinear relationships and interactions may be difficult to specify and interpret.
+    
+. . .
+
 -   **Machine learning models (e.g., random forests and neural networks):**
     -   Can learn complex, nonlinear relationships and interactions from data.
     -   The fitted relationship between features and predictions is often difficult to interpret directly.
@@ -471,23 +486,24 @@ Particular care is needed when AI affects **vulnerable groups** or when there ar
 
 AI can bring substantial benefits, but also pose risks and have negative impacts that are difficult to predict or measure (e.g. on democracy, the rule of law, or on the human mind itself.)
 
-## Case study 1
+## Case study
 
 ![](images/clipboard-3263672917.png)
 
 **Recidivism:** relapse into criminal behavior, rearrest, reconviction, or return to prison after serving a prior sentence
 
-## Case study 1 {.smaller}
+## Case study {.smaller}
 
 **Prediction task:** Will a person commit another crime within 2 years? Yes / No
 
 . . .
 
 | Model | Information used | Accuracy |
-|----|----|----|
+|------------------------|------------------------|------------------------|
 | **COMPAS** (commercial tool) | 137 features; proprietary algorithm | ≈ 65% |
 | **Humans** (average of 20 opinions) | 7 features, including age, sex and criminal history | ≈ 67% |
 | **Logistic regression** | 2 features: age and number of prior convictions | ≈ 67% |
+|
 
 . . .
 
@@ -498,7 +514,7 @@ AI can bring substantial benefits, but also pose risks and have negative impacts
 
 . . .
 
-> Use ML only when it actually adds value
+> Use ML and other complex models only when it actually adds value
 
 ## Feature importance {.smaller}
 
@@ -554,7 +570,13 @@ Idea: If a feature is important for the model, randomly shuffling its values sho
 2.  Set everyone's age to 30 → compute the average prediction.
 3.  Repeat for different ages and plot the results.
 
-. . .
+## Feature importance: Global {.smaller}
+
+**Question:** How does a feature (e.g., age) affect the model's predictions?
+
+
+**Partial dependence plots (PDP):**
+
 
 ![](images/clipboard-874815363.png)
 
@@ -653,6 +675,17 @@ p <- ggplot(df, aes(x = shap, y = feature, colour = value_scaled)) +
     legend.position = "top",
     panel.grid.major.y = element_blank()
   )
+
+p
+
+```
+
+
+
+
+## Feature importance: SHAP {.smaller}
+
+```{r}
 
 p
 
